@@ -11,8 +11,8 @@ const HeadingLink = ({ id, ...rest }: Readonly<{ id?: string }>) => {
   const strippedId = stripDiacritics(id);
 
   return (
-    <Link href={`#${strippedId}`}>
-      <h2 id={strippedId} {...rest} />
+    <Link href={`#${strippedId}`} className="no-underline">
+      <h2 id={strippedId} className="hover:text-orange-900" {...rest} />
     </Link>
   );
 };
