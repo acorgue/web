@@ -1,15 +1,17 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link, { LinkProps } from "next/link";
 import { PropsWithChildren } from "react";
-import { buttonVariants } from "./ui/button";
 
-export function ButtonLink(props: PropsWithChildren<LinkProps>) {
+export function ButtonLink({
+  className,
+  ...rest
+}: PropsWithChildren<LinkProps & { target?: string; className?: string }>) {
   return (
-    <Link
-      className={cn(buttonVariants({ variant: "outline" }), "no-underline")}
-      {...props}
-    />
+    <Button variant="outline" asChild className={className}>
+      <Link className={cn("no-underline")} {...rest} />
+    </Button>
   );
 }
