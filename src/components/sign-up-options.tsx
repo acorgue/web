@@ -1,19 +1,24 @@
+import { ButtonLink } from "@/components/button-link";
+import { Badge } from "@/components/ui/badge";
 import {
   Card,
+  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { EnvelopeClosedIcon, FileIcon } from "@radix-ui/react-icons";
+import {
+  DownloadIcon,
+  EnvelopeClosedIcon,
+  FileIcon,
+  Pencil2Icon,
+} from "@radix-ui/react-icons";
 import Link from "next/link";
 import { ReactNode } from "react";
-import { ButtonLink } from "./button-link";
-import { Badge } from "./ui/badge";
-import { Separator } from "./ui/separator";
 
-export function SignUp() {
+export function SignUpOptions() {
   return (
     <>
       <div className="flex flex-col gap-y-6">
@@ -22,33 +27,35 @@ export function SignUp() {
           description="en línia"
           isRecommended
           cta={
-            <ButtonLink href="https://forms.gle/nYWSTWgjdLT4WP6S8">
-              Vés al formulari
+            <ButtonLink
+              href="https://forms.gle/nYWSTWgjdLT4WP6S8"
+              target="_blank"
+            >
+              <Pencil2Icon className="mr-2 h-4 w-4" aria-hidden="true" /> Vés al
+              formulari
             </ButtonLink>
           }
-          className="flex-0"
         />
         <SignUpOption
           title="Baixant la butlleta"
-          description={
-            <ul className="flex list-none h-32 text-start p-0 mb-0">
-              <li className="flex-1 px-6">
+          content={
+            <ul className="flex flex-col sm:flex-row divide-y sm:divide-y-0 sm:divide-x divide-slate-200 list-none text-start text-sm text-muted-foreground p-0 mb-0">
+              <li className="flex-1 px-6 py-3 m-0">
                 <div className="flex justify-center mb-3">
-                  <EnvelopeClosedIcon width={24} height={24} />
+                  <EnvelopeClosedIcon className="h-6 w-6" aria-hidden="true" />
                 </div>
                 Omplint-la, signant-la digitalment i enviant-la per correu
                 electrònic a{" "}
                 <Link href="mailto:aco@acorgue.cat">aco@acorgue.cat</Link>.
               </li>
-              <Separator orientation="vertical" />
-              <li className="flex-1 px-6">
+              <li className="flex-1 px-6 py-3 m-0">
                 <div className="flex justify-center mb-3">
-                  <FileIcon width={24} height={24} />
+                  <FileIcon className="h-6 w-6" aria-hidden="true" />
                 </div>
                 Imprimint-la, omplint-la, signant-la i enviant-la per correu
                 postal a{" "}
                 <Link href="https://maps.app.goo.gl/81kLGSTZy1c812g39">
-                  Carrer de Rocafort 242 bis, 08029 Barcelona
+                  Carrer de Rocafort, 242 bis, 08029 Barcelona
                 </Link>
                 .
               </li>
@@ -56,10 +63,10 @@ export function SignUp() {
           }
           cta={
             <ButtonLink href="https://nextcloud.acorgue.cat/s/a6jB33E8cZTwDCp/download">
-              Baixa la butlleta
+              <DownloadIcon className="mr-2 h-4 w-4" aria-hidden="true" /> Baixa
+              la butlleta
             </ButtonLink>
           }
-          className="flex-0"
         />
       </div>
     </>
@@ -69,34 +76,37 @@ export function SignUp() {
 export function SignUpOption({
   title,
   description,
+  content,
   isRecommended,
   cta,
   className,
 }: Readonly<{
   title: string;
-  description: ReactNode;
+  description?: ReactNode;
+  content?: ReactNode;
   isRecommended?: boolean;
+  /** Call To Action. */
   cta: ReactNode;
-  className: string;
+  className?: string;
 }>) {
   return (
     <Card
       className={cn(
-        className,
         "text-center flex flex-col",
-        isRecommended && "border-2 border-gray-800"
+        isRecommended && "border-2 border-gray-800",
+        className
       )}
     >
-      <CardHeader>
+      <CardHeader className="pb-4">
         {isRecommended && (
           <div className="-mt-2 mb-2">
             <Badge>Recomanat</Badge>
           </div>
         )}
         <CardTitle className="m-0 text-base">{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
+        {description && <CardDescription>{description}</CardDescription>}
       </CardHeader>
-
+      {content && <CardContent>{content}</CardContent>}
       <CardFooter className="flex-auto justify-center items-end">
         {cta}
       </CardFooter>

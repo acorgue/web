@@ -1,3 +1,4 @@
+import { ButtonLink } from "@/components/button-link";
 import {
   Card,
   CardContent,
@@ -7,24 +8,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { ButtonLink } from "./button-link";
 
 export function Membership() {
   return (
     <>
-      <div className="flex flex-wrap justify-around gap-x-4 gap-y-6 mx-0 lg:-mx-[180px] md:-mx-[70px]">
-        <MembershipOption
-          title="Menors d’edat"
-          description=""
-          price={0}
-          className="flex-1"
-        />
-        <MembershipOption
-          title="Estudiant d’orgue"
-          description="menors de 35 anys"
-          price={20}
-          className="flex-1"
-        />
+      <div className="flex flex-wrap justify-around gap-x-4 gap-y-6 mx-0 lg:-mx-[100px]">
         <MembershipOption
           title="Jubilat"
           description=""
@@ -44,6 +32,18 @@ export function Membership() {
           description="per a persones i entitats"
           price={100}
           highlight="border-yellow-600"
+          className="flex-1"
+        />
+        <MembershipOption
+          title="Menors d’edat"
+          description=""
+          price={0}
+          className="flex-1 order-last lg:order-none"
+        />
+        <MembershipOption
+          title="Estudiant d’orgue"
+          description="menors de 35 anys"
+          price={20}
           className="flex-1"
         />
       </div>
@@ -67,30 +67,32 @@ export function MembershipOption({
   return (
     <Card
       className={cn(
-        className,
-        "text-center flex flex-col",
+        "text-center flex flex-col min-w-[240px]",
         highlight && "border-2",
-        highlight
+        highlight,
+        className
       )}
     >
       <CardHeader>
         <CardTitle className="m-0 text-base">{title}</CardTitle>
         <CardDescription>
-          <div className="text-xs">&nbsp;{description}&nbsp;</div>
+          <span className="font-medium text-xs">&nbsp;{description}&nbsp;</span>
         </CardDescription>
       </CardHeader>
       <CardContent className="flex-auto content-center">
         {price === 0 ? (
-          <div className="text-2xl">Gratuït</div>
+          <div className="text-2xl tracking-tight">Gratuït</div>
         ) : (
           <>
             <div className="text-3xl">
-              {price}
-              <span className="align-text-top text-xl text-muted-foreground">
+              <span className="tracking-tighter">{price}</span>
+              <span className="align-text-top text-xl text-muted-foreground ms-1">
                 &euro;
               </span>
             </div>
-            <div className="text-xs text-muted-foreground">/any</div>
+            <div className="font-medium text-xs text-muted-foreground">
+              /any
+            </div>
           </>
         )}
       </CardContent>
