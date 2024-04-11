@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
-    <html lang="ca">
+    <html lang="ca" className="scroll-smooth">
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
