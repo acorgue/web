@@ -94,7 +94,7 @@ export function SignUpOption({
       className={cn(
         "text-center flex flex-col",
         isRecommended && "border-2 border-gray-800",
-        className
+        className,
       )}
     >
       <CardHeader className="pb-4">

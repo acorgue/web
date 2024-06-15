@@ -21,7 +21,7 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         <main className="container mx-auto px-2 sm:px-4 prose">{children}</main>
