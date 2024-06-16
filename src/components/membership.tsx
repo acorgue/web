@@ -70,7 +70,7 @@ export function MembershipOption({
         "text-center flex flex-col min-w-[240px]",
         highlight && "border-2",
         highlight,
-        className
+        className,
       )}
     >
       <CardHeader className="flex-auto">
