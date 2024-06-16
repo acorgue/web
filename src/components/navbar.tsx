@@ -113,7 +113,7 @@ function MobileNavigationMenu({ className }: Readonly<{ className: string }>) {
     <div className={className}>
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
-          <Button variant="outline" size="icon">
+          <Button variant="ghost" size="icon">
             <HamburgerMenuIcon />
           </Button>
         </SheetTrigger>
@@ -128,7 +128,7 @@ function MobileNavigationMenu({ className }: Readonly<{ className: string }>) {
               menuItem.items.map((item) => (
                 <Button
                   key={item.label}
-                  className="block"
+                  className="block whitespace-normal"
                   variant="link"
                   asChild
                   onClick={() => setOpen(false)}
@@ -139,7 +139,7 @@ function MobileNavigationMenu({ className }: Readonly<{ className: string }>) {
             ) : (
               <Button
                 key={menuItem.label}
-                className="block"
+                className="block whitespace-normal"
                 variant="link"
                 asChild
                 onClick={() => setOpen(false)}
