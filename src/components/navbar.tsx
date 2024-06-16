@@ -10,6 +10,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { BookmarkIcon, ReaderIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
 export function Navbar() {
@@ -33,13 +34,18 @@ export function Navbar() {
           <NavigationMenuTrigger>Publicacions</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-              <NavigationMenuListItem href="/full" title="Full informatiu">
+              <NavigationMenuListItem
+                href="/full"
+                title="Full informatiu"
+                icon={<ReaderIcon className="h-6 w-6" aria-hidden="true" />}
+              >
                 La publicació trimestral amb les últimes notícies exclusives per
                 als socis.
               </NavigationMenuListItem>
               <NavigationMenuListItem
                 href="/publicacions"
                 title="Notícies i articles"
+                icon={<BookmarkIcon className="h-6 w-6" aria-hidden="true" />}
               >
                 Les darreres notes d’actualitat en format blog.
               </NavigationMenuListItem>
