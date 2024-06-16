@@ -17,21 +17,21 @@ export function Membership() {
           title="Jubilat"
           description=""
           price={35}
-          highlight="border-gray-500"
+          highlight="border-gray-400"
           className="flex-1"
         />
         <MembershipOption
           title="Numerari"
           description="per a persones i entitats"
           price={50}
-          highlight="border-blue-700"
+          highlight="border-blue-500"
           className="flex-1"
         />
         <MembershipOption
           title="Protector"
           description="per a persones i entitats"
           price={100}
-          highlight="border-yellow-600"
+          highlight="border-yellow-400"
           className="flex-1"
         />
         <MembershipOption
@@ -70,24 +70,26 @@ export function MembershipOption({
         "text-center flex flex-col min-w-[240px]",
         highlight && "border-2",
         highlight,
-        className
+        className,
       )}
     >
-      <CardHeader>
+      <CardHeader className="flex-auto">
         <CardTitle className="m-0 text-base">{title}</CardTitle>
-        <CardDescription>
-          <span className="font-medium text-xs">&nbsp;{description}&nbsp;</span>
-        </CardDescription>
+        {description && (
+          <CardDescription>
+            <span className="font-medium text-xs">{description}</span>
+          </CardDescription>
+        )}
       </CardHeader>
-      <CardContent className="flex-auto content-center">
+      <CardContent className="content-center">
         {price === 0 ? (
           <div className="text-2xl tracking-tight">Gratuït</div>
         ) : (
           <>
             <div className="text-3xl">
               <span className="tracking-tighter">{price}</span>
-              <span className="align-text-top text-xl text-muted-foreground ms-1">
-                &euro;
+              <span className="align-text-top text-xl text-muted-foreground">
+                &nbsp;&euro;
               </span>
             </div>
             <div className="font-medium text-xs text-muted-foreground">

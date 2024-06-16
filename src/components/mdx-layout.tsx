@@ -1,6 +1,6 @@
 "use client";
 
-import { stripDiacritics } from "@/utils/normalize";
+import { stripDiacritics } from "@/utils/stripDiacritics";
 import { MDXProvider } from "@mdx-js/react";
 import Link from "next/link";
 import { PropsWithChildren } from "react";
