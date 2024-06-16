@@ -122,31 +122,18 @@ function MobileNavigationMenu({ className }: Readonly<{ className: string }>) {
             <SheetTitle className="text-left">ACO</SheetTitle>
           </SheetHeader>
 
-          {/* TODO: simplify flatMap nested operation. */}
           {menuItems.flatMap((menuItem) =>
-            menuItem.items ? (
-              menuItem.items.map((item) => (
-                <Button
-                  key={item.label}
-                  className="block whitespace-normal"
-                  variant="link"
-                  asChild
-                  onClick={() => setOpen(false)}
-                >
-                  <Link href={item.href}>{item.label}</Link>
-                </Button>
-              ))
-            ) : (
+            (menuItem.items ?? [menuItem]).map((item) => (
               <Button
-                key={menuItem.label}
+                key={item.label}
                 className="block whitespace-normal"
                 variant="link"
                 asChild
                 onClick={() => setOpen(false)}
               >
-                <Link href={menuItem.href!}>{menuItem.label}</Link>
+                <Link href={item.href}>{item.label}</Link>
               </Button>
-            ),
+            )),
           )}
         </SheetContent>
       </Sheet>
