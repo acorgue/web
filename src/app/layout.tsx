@@ -28,9 +28,7 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
         <header className="fixed w-full p-4 backdrop-blur-md bg-white/50 border-b">
           <Navbar />
         </header>
-        <main className="container pt-32 mx-auto px-2 sm:px-4 prose">
-          {children}
-        </main>
+        <main className="container pt-32 mx-auto px-4 prose">{children}</main>
       </body>
     </html>
   );
