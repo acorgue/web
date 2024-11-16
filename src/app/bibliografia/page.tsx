@@ -1,5 +1,3 @@
-"use client";
-
 import Bibliografia from "./bibliografia.mdx";
 
 export default function Page() {
