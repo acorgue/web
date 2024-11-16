@@ -1,9 +1,6 @@
-"use client";
-
 import { stripDiacritics } from "@/utils/stripDiacritics";
-import { MDXProvider } from "@mdx-js/react";
+import type { MDXComponents } from "mdx/types";
 import Link from "next/link";
-import { PropsWithChildren } from "react";
 
 const HeadingLink = ({ id, ...rest }: Readonly<{ id?: string }>) => {
   if (!id) return <h2 {...rest} />;
@@ -17,6 +14,9 @@ const HeadingLink = ({ id, ...rest }: Readonly<{ id?: string }>) => {
   );
 };
 
-export default function MDXLayout({ children }: Readonly<PropsWithChildren>) {
-  return <MDXProvider components={{ h2: HeadingLink }}>{children}</MDXProvider>;
+export function useMDXComponents(components: MDXComponents): MDXComponents {
+  return {
+    h2: HeadingLink,
+    ...components,
+  };
 }
