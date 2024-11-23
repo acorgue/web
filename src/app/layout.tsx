@@ -1,4 +1,5 @@
-import { Navbar } from "@/components/navbar";
+import { MainHeader } from "@/components/main-header";
+import { DesktopNavigationMenu } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -32,9 +33,7 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
           enableSystem
           disableTransitionOnChange
         >
-          <header className="fixed w-full p-4 backdrop-blur-md bg-white/50 border-b z-50">
-            <Navbar />
-          </header>
+          <MainHeader nav={<DesktopNavigationMenu />} />
           <main className="container pt-32 mx-auto px-4 prose">{children}</main>
         </ThemeProvider>
       </body>
