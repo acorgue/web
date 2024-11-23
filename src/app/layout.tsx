@@ -29,7 +29,7 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <MainHeader nav={<DesktopNavigationMenu />} />
-          <main className="container pt-32 mx-auto px-4 prose">{children}</main>
+          <main className="container pt-8 mx-auto px-4 prose">{children}</main>
         </ThemeProvider>
       </body>
     </html>
