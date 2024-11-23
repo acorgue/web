@@ -25,6 +25,7 @@ import {
 } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { Fragment, useState } from "react";
+import { ModeToggle } from "./mode-toggle";
 
 export function Navbar() {
   return (
@@ -101,6 +102,9 @@ function DesktopNavigationMenu({ className }: Readonly<{ className: string }>) {
             </NavigationMenuItem>
           </Fragment>
         ))}
+        <NavigationMenuItem>
+          <ModeToggle />
+        </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
   );
@@ -135,6 +139,7 @@ function MobileNavigationMenu({ className }: Readonly<{ className: string }>) {
               </Button>
             )),
           )}
+          <ModeToggle />
         </SheetContent>
       </Sheet>
     </div>
