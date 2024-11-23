@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/navbar";
+import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
@@ -18,17 +19,24 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
-    <html lang="ca" className="scroll-smooth">
+    <html lang="ca" className="scroll-smooth" suppressHydrationWarning>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable,
         )}
       >
-        <header className="fixed w-full p-4 backdrop-blur-md bg-white/50 border-b">
-          <Navbar />
-        </header>
-        <main className="container pt-32 mx-auto px-4 prose">{children}</main>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <header className="fixed w-full p-4 backdrop-blur-md bg-white/50 border-b">
+            <Navbar />
+          </header>
+          <main className="container pt-32 mx-auto px-4 prose">{children}</main>
+        </ThemeProvider>
       </body>
     </html>
   );
