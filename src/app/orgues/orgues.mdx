@@ -1,6 +1,17 @@
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { SymbolIcon } from "@radix-ui/react-icons";
+
 # Els orgues del principat
 
-Estem treballant activament per completar aquesta llista d’orgues. Us podeu adreçar a [web@acorgue.cat](mailto:web@acorgue.cat) si voleu contribuir en aquest projecte.
+<Alert className="not-prose">
+  <SymbolIcon className="h-4 w-4" />
+  <AlertTitle>Treball en progrés</AlertTitle>
+  <AlertDescription>
+    Estem treballant activament per completar aquesta llista d’orgues. Us podeu
+    adreçar a [web@acorgue.cat](mailto:web@acorgue.cat) si voleu contribuir en
+    aquest projecte.
+  </AlertDescription>
+</Alert>
 
 Actualment, tenim inventariats {159} orgues. Entre tots, la base de dades acumula {330} teclats manuals, {145} pedalers (de tradició ibèrica, francesa i alemanya), aproximadament {3415} registres, {2785} dels quals pertanyents als manuals i {630} pertanyents al pedaler i {680} fotografies que acompanyen la descripció dels instruments.
 
