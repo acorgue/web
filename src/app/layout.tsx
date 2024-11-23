@@ -27,12 +27,7 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
           fontSans.variable,
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <MainHeader nav={<DesktopNavigationMenu />} />
           <main className="container pt-32 mx-auto px-4 prose">{children}</main>
         </ThemeProvider>
