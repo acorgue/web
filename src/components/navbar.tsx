@@ -11,33 +11,12 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import {
-  BookmarkIcon,
-  HamburgerMenuIcon,
-  ReaderIcon,
-} from "@radix-ui/react-icons";
+import { BookmarkIcon, ReaderIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
-import { Fragment, useState } from "react";
-import { ModeToggle } from "./mode-toggle";
-
-export function Navbar() {
-  return (
-    <>
-      <DesktopNavigationMenu className="hidden md:block" />
-      <MobileNavigationMenu className="block md:hidden" />
-    </>
-  );
-}
+import { Fragment } from "react";
+import { DrawerClose } from "./ui/drawer";
 
 const menuItems = [
-  { href: "/", label: "Inici" },
   { href: "/qui-som", label: "Qui som" },
   {
     label: "Publicacions",
@@ -64,7 +43,9 @@ const menuItems = [
   { href: "/cicle", label: "Cicle «Els orgues de Catalunya»" },
 ];
 
-function DesktopNavigationMenu({ className }: Readonly<{ className: string }>) {
+export function DesktopNavigationMenu({
+  className,
+}: Readonly<{ className?: string }>) {
   const triggerClassName = navigationMenuTriggerStyle();
   return (
     <NavigationMenu className={className}>
@@ -102,46 +83,19 @@ function DesktopNavigationMenu({ className }: Readonly<{ className: string }>) {
             </NavigationMenuItem>
           </Fragment>
         ))}
-        <NavigationMenuItem>
-          <ModeToggle />
-        </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
   );
 }
 
-function MobileNavigationMenu({ className }: Readonly<{ className: string }>) {
-  const [open, setOpen] = useState(false);
-
-  return (
-    <div className={className}>
-      <Sheet open={open} onOpenChange={setOpen}>
-        <SheetTrigger asChild>
-          <Button variant="ghost" size="icon">
-            <HamburgerMenuIcon />
-          </Button>
-        </SheetTrigger>
-        <SheetContent side="left">
-          <SheetHeader>
-            <SheetTitle className="text-left">ACO</SheetTitle>
-          </SheetHeader>
-
-          {menuItems.flatMap((menuItem) =>
-            (menuItem.items ?? [menuItem]).map((item) => (
-              <Button
-                key={item.label}
-                className="block whitespace-normal"
-                variant="link"
-                asChild
-                onClick={() => setOpen(false)}
-              >
-                <Link href={item.href}>{item.label}</Link>
-              </Button>
-            )),
-          )}
-          <ModeToggle />
-        </SheetContent>
-      </Sheet>
-    </div>
+export function MobileNavigationMenu() {
+  return menuItems.flatMap((menuItem) =>
+    (menuItem.items ?? [menuItem]).map((item) => (
+      <DrawerClose key={item.label} asChild>
+        <Button className="block whitespace-normal" variant="link" asChild>
+          <Link href={item.href}>{item.label}</Link>
+        </Button>
+      </DrawerClose>
+    )),
   );
 }
