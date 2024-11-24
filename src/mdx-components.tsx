@@ -9,7 +9,11 @@ const HeadingLink = ({ id, ...rest }: Readonly<{ id?: string }>) => {
 
   return (
     <Link href={`#${strippedId}`} className="no-underline">
-      <h2 id={strippedId} className="hover:text-orange-900" {...rest} />
+      <h2
+        id={strippedId}
+        className="hover:text-orange-900 mt-[-60px] pt-[80px]"
+        {...rest}
+      />
     </Link>
   );
 };
