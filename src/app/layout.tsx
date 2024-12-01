@@ -1,6 +1,8 @@
+import { CookieToast } from "@/components/cookie-toast";
 import { MainHeader } from "@/components/main-header";
 import { DesktopNavigationMenu } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
@@ -30,6 +32,8 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <MainHeader nav={<DesktopNavigationMenu />} />
           <main className="container pt-8 mx-auto px-4 prose">{children}</main>
+          <Toaster />
+          <CookieToast />
         </ThemeProvider>
       </body>
     </html>
