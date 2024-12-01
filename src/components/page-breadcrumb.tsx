@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -20,10 +21,9 @@ export function PageBreadcrumb({
     <Breadcrumb className={className}>
       <BreadcrumbList itemScope itemType="https://schema.org/BreadcrumbList">
         {crumbs.map(({ href, label }, index) => (
-          <>
+          <Fragment key={index}>
             {!!index && <BreadcrumbSeparator />}
             <BreadcrumbItem
-              key={index}
               itemProp="itemListElement"
               itemScope
               itemType="https://schema.org/ListItem"
@@ -37,7 +37,7 @@ export function PageBreadcrumb({
               )}
               <meta itemProp="position" content={`${index + 1}`} />
             </BreadcrumbItem>
-          </>
+          </Fragment>
         ))}
       </BreadcrumbList>
     </Breadcrumb>
