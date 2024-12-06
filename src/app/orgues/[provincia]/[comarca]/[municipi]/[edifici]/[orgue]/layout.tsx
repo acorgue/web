@@ -1,4 +1,4 @@
-import orgues from "@/database/orgues.json" with { type: "json" };
+import { orgueNavigation } from "@/app/orgues/orgueNavigation";
 import { PropsWithChildren } from "react";
 import { OrguesEdificiParams } from "../layout";
 
@@ -9,25 +9,13 @@ export interface OrguesOrgueParams extends OrguesEdificiParams {
 }
 
 export async function generateStaticParams({
-  params: { provincia, comarca, municipi, edifici },
+  params,
 }: {
   params: OrguesEdificiParams;
 }) {
-  const detallsEdifici = orgues.orgues
-    .find(({ link }) => link === provincia)
-    ?.comarques.find(({ link }) => link === comarca)
-    ?.poblacions?.find(({ link }) => link === municipi)
-    ?.edificis?.find(({ link }) => link === edifici);
+  const { edifici } = orgueNavigation(params);
 
-  if (!detallsEdifici) return null;
-
-  return (
-    ("orgues" in detallsEdifici
-      ? (detallsEdifici?.orgues as { link: string }[])?.map(({ link }) => ({
-          orgue: link,
-        }))
-      : null) ?? []
-  );
+  return edifici.orgues?.map(({ link }) => ({ orgue: link })) ?? [];
 }
 
 export default async function Layout({

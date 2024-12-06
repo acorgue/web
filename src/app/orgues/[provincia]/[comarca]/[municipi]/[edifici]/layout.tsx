@@ -1,4 +1,4 @@
-import orgues from "@/database/orgues.json" with { type: "json" };
+import { orgueNavigation } from "@/app/orgues/orgueNavigation";
 import { PropsWithChildren } from "react";
 import { OrguesMunicipiParams } from "../layout";
 
@@ -9,17 +9,13 @@ export interface OrguesEdificiParams extends OrguesMunicipiParams {
 }
 
 export async function generateStaticParams({
-  params: { provincia, comarca, municipi },
+  params,
 }: {
   params: OrguesMunicipiParams;
 }) {
-  return (
-    orgues.orgues
-      .find(({ link }) => link === provincia)
-      ?.comarques.find(({ link }) => link === comarca)
-      ?.poblacions?.find(({ link }) => link === municipi)
-      ?.edificis?.map(({ link }) => ({ edifici: link })) ?? []
-  );
+  const { municipi } = orgueNavigation(params);
+
+  return municipi?.edificis?.map(({ link }) => ({ edifici: link })) ?? [];
 }
 
 export default async function Layout({
