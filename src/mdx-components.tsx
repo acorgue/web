@@ -1,4 +1,4 @@
-import { stripDiacritics } from "@/utils/stripDiacritics";
+import { stripDiacritics } from "@/lib/stripDiacritics";
 import type { MDXComponents } from "mdx/types";
 import Link from "next/link";
 
