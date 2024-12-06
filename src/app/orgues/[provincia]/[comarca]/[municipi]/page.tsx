@@ -1,4 +1,4 @@
-import { useOrgue } from "@/app/orgues/useOrgue";
+import { orgueNavigation } from "@/app/orgues/orgueNavigation";
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
 import { OrguesMunicipiParams } from "./layout";
 
@@ -7,7 +7,7 @@ export default async function Page({
 }: {
   params: Promise<OrguesMunicipiParams>;
 }) {
-  const { provincia, comarca, municipi } = useOrgue(await params);
+  const { provincia, comarca, municipi } = orgueNavigation(await params);
   return (
     <>
       <PageBreadcrumb

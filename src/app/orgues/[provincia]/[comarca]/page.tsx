@@ -1,5 +1,5 @@
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
-import { useOrgue } from "../../useOrgue";
+import { orgueNavigation } from "../../orgueNavigation";
 import { OrguesProvinciaParams } from "../page";
 
 export interface OrguesComarcaParams extends OrguesProvinciaParams {
@@ -11,7 +11,7 @@ export default async function Page({
 }: {
   params: Promise<OrguesComarcaParams>;
 }) {
-  const { provincia, comarca } = useOrgue(await params);
+  const { provincia, comarca } = orgueNavigation(await params);
 
   return (
     <>

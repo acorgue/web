@@ -1,5 +1,5 @@
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
-import { useOrgue } from "../useOrgue";
+import { orgueNavigation } from "../orgueNavigation";
 
 export interface OrguesProvinciaParams {
   provincia: string;
@@ -10,7 +10,7 @@ export default async function Page({
 }: {
   params: Promise<OrguesProvinciaParams>;
 }) {
-  const { provincia } = useOrgue(await params);
+  const { provincia } = orgueNavigation(await params);
 
   return (
     <>

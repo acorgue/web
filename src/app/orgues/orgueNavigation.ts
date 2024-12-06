@@ -20,7 +20,7 @@ export interface Orgue {
   nom: string;
 }
 
-export type UseOrgueProps =
+export type OrgueNavigationProps =
   | {
       provincia: string;
       comarca?: never;
@@ -60,15 +60,16 @@ export type UseOrgueProps =
 type UnwrapArray<A> = A extends unknown[] ? UnwrapArray<A[number]> : A;
 type NonNullable<T> = Exclude<T, null | undefined>;
 
-type UseOrgueReturn<T extends UseOrgueProps> = (T["provincia"] extends string
-  ? { provincia: Provincia }
-  : {}) &
-  (T["comarca"] extends string ? { comarca: Comarca } : {}) &
-  (T["municipi"] extends string ? { municipi: Municipi } : {}) &
-  (T["edifici"] extends string ? { edifici: Edifici } : {}) &
-  (T["orgue"] extends string ? { orgue: Orgue } : {});
+type OrgueNavigationReturn<T extends OrgueNavigationProps> =
+  (T["provincia"] extends string ? { provincia: Provincia } : {}) &
+    (T["comarca"] extends string ? { comarca: Comarca } : {}) &
+    (T["municipi"] extends string ? { municipi: Municipi } : {}) &
+    (T["edifici"] extends string ? { edifici: Edifici } : {}) &
+    (T["orgue"] extends string ? { orgue: Orgue } : {});
 
-export function useOrgue<T extends UseOrgueProps>(params: Readonly<T>) {
+export function orgueNavigation<T extends OrgueNavigationProps>(
+  params: Readonly<T>,
+) {
   let municipi: Municipi | undefined;
   let edifici: Edifici | undefined;
   let orgue: Orgue | undefined;
@@ -106,5 +107,5 @@ export function useOrgue<T extends UseOrgueProps>(params: Readonly<T>) {
     ...(params.municipi ? { municipi } : {}),
     ...(params.edifici ? { edifici } : {}),
     ...(params.orgue ? { orgue } : {}),
-  } as UseOrgueReturn<T>;
+  } as OrgueNavigationReturn<T>;
 }
