@@ -1,16 +1,27 @@
-import orgues from "@/database/orgues.json" with { type: "json" };
+import { PageBreadcrumb } from "@/components/page-breadcrumb";
+import { useOrgue } from "../useOrgue";
 
-export const dynamicParams = false;
-
-export async function generateStaticParams() {
-  return orgues.provincies.map(({ link }) => ({ provincia: link }));
+export interface OrguesProvinciaParams {
+  provincia: string;
 }
 
 export default async function Page({
   params,
 }: {
-  params: Promise<{ provincia: string }>;
+  params: Promise<OrguesProvinciaParams>;
 }) {
-  const { provincia } = await params;
-  return <div>Província: {provincia}</div>;
+  const { provincia } = useOrgue(await params);
+
+  return (
+    <>
+      <PageBreadcrumb
+        fragments={[
+          { href: "/", label: "Inici", position: 1 },
+          { href: "/orgues", label: "Orgues", position: 2 },
+          { label: provincia.nom, position: 3 },
+        ]}
+        className="not-prose mb-8"
+      />
+    </>
+  );
 }

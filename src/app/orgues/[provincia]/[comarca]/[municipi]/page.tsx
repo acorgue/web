@@ -1,33 +1,33 @@
-import orgues from "@/database/orgues.json" with { type: "json" };
-
-export const dynamicParams = false;
-
-export async function generateStaticParams({
-  params: { provincia, comarca },
-}: {
-  params: { provincia: string; comarca: string };
-}) {
-  return (
-    orgues.orgues
-      .find(({ link }) => link === provincia)
-      ?.comarques.find(({ link }) => link === comarca)
-      ?.poblacions?.map(({ link }) => ({ municipi: link })) ?? []
-  );
-}
+import { useOrgue } from "@/app/orgues/useOrgue";
+import { PageBreadcrumb } from "@/components/page-breadcrumb";
+import { OrguesMunicipiParams } from "./layout";
 
 export default async function Page({
   params,
 }: {
-  params: Promise<{ provincia: string; comarca: string; municipi: string }>;
+  params: Promise<OrguesMunicipiParams>;
 }) {
-  const { provincia, comarca, municipi } = await params;
+  const { provincia, comarca, municipi } = useOrgue(await params);
   return (
-    <div>
-      Província: {provincia}
-      <br />
-      Comarca: {comarca}
-      <br />
-      Municipi: {municipi}
-    </div>
+    <>
+      <PageBreadcrumb
+        fragments={[
+          { href: "/", label: "Inici", position: 1 },
+          { href: "/orgues", label: "Orgues", position: 2 },
+          {
+            href: `/orgues/${provincia.link}`,
+            label: provincia.nom,
+            position: 3,
+          },
+          {
+            href: `/orgues/${provincia.link}/${comarca.link}`,
+            label: comarca.nom,
+            position: 4,
+          },
+          { label: municipi.nom, position: 5 },
+        ]}
+        className="not-prose mb-8"
+      />
+    </>
   );
 }
