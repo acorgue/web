@@ -11,7 +11,10 @@ export default function Layout({ children }: Readonly<PropsWithChildren>) {
   return (
     <>
       <PageBreadcrumb
-        crumbs={[{ href: "/", label: "Inici" }, { label: "Full informatiu" }]}
+        fragments={[
+          { href: "/", label: "Inici", position: 1 },
+          { label: "Full informatiu", position: 2 },
+        ]}
         className="not-prose mb-8"
       />
       {children}
