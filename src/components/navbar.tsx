@@ -106,7 +106,7 @@ const menuItems = [
       {
         href: "/cicle",
         label: "Cicle «Els orgues de Catalunya»",
-        description: "Concerts d’estiu amb història.",
+        description: "Reviu el so del passat redescobrint la nostra terra.",
         icon: <SewingPinIcon className="h-6 w-6" aria-hidden="true" />,
       },
     ],
