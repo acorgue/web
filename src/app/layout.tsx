@@ -1,4 +1,4 @@
-import { CookieToast } from "@/components/cookie-toast";
+import { CookieToast } from "@/components/cookie/cookie-toast";
 import { MainHeader } from "@/components/main-header";
 import { DesktopNavigationMenu } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
