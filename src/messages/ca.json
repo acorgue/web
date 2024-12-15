@@ -1,0 +1,9 @@
+{
+  "cookieBanner": {
+    "title": "Vols permetre l’ús de galetes?",
+    "description": "Aquest web utilitza galetes de tercers (Google Analytics).",
+    "moreInfo": "Més informació",
+    "accept": "Accepto",
+    "decline": "Declino"
+  }
+}

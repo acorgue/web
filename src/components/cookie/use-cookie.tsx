@@ -1,4 +1,5 @@
 import { CookieIcon } from "@radix-ui/react-icons";
+import type { useTranslations } from "next-intl";
 import Link from "next/link";
 import { toast } from "sonner";
 
@@ -27,19 +28,19 @@ function alreadyAnswered() {
   return Boolean(consentValue());
 }
 
-function showMessage() {
-  toast.info("Vols permetre l’ús de galetes?", {
+function showMessage(t: ReturnType<typeof useTranslations<never>>) {
+  toast.info(t("cookieBanner.title"), {
     id: "cookie-consent",
     description: (
       <span>
-        Aquest web utilitza galetes de tercers (Google Analytics).
+        {t("cookieBanner.description")}
         <Link href="/politica-de-privacitat" className="block underline mt-1">
-          Més informació
+          {t("cookieBanner.moreInfo")}
         </Link>
       </span>
     ),
-    action: { label: "Accepto", onClick: acceptConsent },
-    cancel: { label: "Declino", onClick: declineConsent },
+    action: { label: t("cookieBanner.accept"), onClick: acceptConsent },
+    cancel: { label: t("cookieBanner.decline"), onClick: declineConsent },
     invert: true,
     duration: Infinity,
     style: { width: 400, maxWidth: "calc(100vw - 2rem)", right: 0 },
