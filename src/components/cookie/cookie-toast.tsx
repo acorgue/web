@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useCookie } from "./use-cookie";
 
 export function CookieToast() {
-  const t = useTranslations();
+  const t = useTranslations("cookieBanner");
   const { alreadyAnswered, showMessage } = useCookie();
 
   useEffect(() => {

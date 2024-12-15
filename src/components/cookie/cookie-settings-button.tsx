@@ -9,7 +9,7 @@ import { useCookie } from "./use-cookie";
 export function CookieSettingsButton({
   children,
 }: Readonly<PropsWithChildren>) {
-  const t = useTranslations();
+  const t = useTranslations("cookieBanner");
   const { showMessage } = useCookie();
 
   return (
