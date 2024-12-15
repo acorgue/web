@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
 import { Inter as FontSans } from "next/font/google";
 import { PropsWithChildren } from "react";
 
@@ -20,21 +22,30 @@ export const metadata: Metadata = {
   description: "Associació Catalana de l’Orgue",
 };
 
-export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
+export default async function RootLayout({
+  children,
+}: Readonly<PropsWithChildren>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
-    <html lang="ca" className="scroll-smooth" suppressHydrationWarning>
+    <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable,
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <MainHeader nav={<DesktopNavigationMenu />} />
-          <main className="container pt-8 mx-auto px-4 prose">{children}</main>
-          <Toaster />
-          <CookieToast />
-        </ThemeProvider>
+        <NextIntlClientProvider messages={messages}>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <MainHeader nav={<DesktopNavigationMenu />} />
+            <main className="container pt-8 mx-auto px-4 prose">
+              {children}
+            </main>
+            <Toaster />
+            <CookieToast />
+          </ThemeProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

@@ -1,4 +1,5 @@
 import createMDX from "@next/mdx";
+import createNextIntlPlugin from "next-intl/plugin";
 import rehypeSlug from "rehype-slug";
 
 /** @type {import('next').NextConfig} */
@@ -7,10 +8,12 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
+const withNextIntl = createNextIntlPlugin();
+
 const withMDX = createMDX({
   options: {
     rehypePlugins: [rehypeSlug],
   },
 });
 
-export default withMDX(nextConfig);
+export default withNextIntl(withMDX(nextConfig));
