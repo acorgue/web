@@ -45,6 +45,12 @@ export default async function Page({
         ]}
         className="not-prose mb-8"
       />
+      <h1>
+        {edifici.nom} ({orgue.nom})
+      </h1>
+      <p>
+        {municipi.nom} ({comarca.nom})
+      </p>
     </>
   );
 }
