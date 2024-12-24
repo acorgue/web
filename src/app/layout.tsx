@@ -1,10 +1,12 @@
 import { CookieToast } from "@/components/cookie/cookie-toast";
 import { MainHeader } from "@/components/main-header";
+import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { Inter as FontSans } from "next/font/google";
 import { PropsWithChildren } from "react";
 

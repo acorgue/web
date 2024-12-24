@@ -30,7 +30,7 @@ export interface MenuItem {
   })[];
 }
 
-export async function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
+export function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
   const t = useTranslations("metadata");
 
   const menuItems = [

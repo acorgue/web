@@ -10,7 +10,7 @@ export function CookieToast() {
 
   useEffect(() => {
     if (!alreadyAnswered()) showMessage(t);
-  }, []);
+  }, [alreadyAnswered, showMessage, t]);
 
   return <></>;
 }
