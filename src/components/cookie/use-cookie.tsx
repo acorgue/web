@@ -7,7 +7,7 @@ const CONSENT_ACCEPTED_NAME = "isConsentAccepted";
 const CONSENT_ACCEPTED_TRUE = "yes";
 const CONSENT_ACCEPTED_FALSE = "no";
 
-type ConsentValue =
+export type CookieConsentValue =
   | typeof CONSENT_ACCEPTED_TRUE
   | typeof CONSENT_ACCEPTED_FALSE
   | null;
@@ -21,7 +21,7 @@ function declineConsent() {
 }
 
 function consentValue() {
-  return localStorage.getItem(CONSENT_ACCEPTED_NAME) as ConsentValue;
+  return localStorage.getItem(CONSENT_ACCEPTED_NAME) as CookieConsentValue;
 }
 
 function alreadyAnswered() {

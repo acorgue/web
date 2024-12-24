@@ -12,41 +12,72 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { BookmarkIcon, ReaderIcon } from "@radix-ui/react-icons";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { Fragment } from "react";
+import { Fragment, ReactNode } from "react";
 import { DrawerClose } from "./ui/drawer";
 
-const menuItems = [
-  { href: "/qui-som", label: "Qui som" },
-  {
-    label: "Publicacions",
-    items: [
-      {
-        href: "/full",
-        label: "Full informatiu",
-        description:
-          "La publicació trimestral amb les últimes notícies exclusives per als socis.",
-        icon: <ReaderIcon className="h-6 w-6" aria-hidden="true" />,
-      },
-      {
-        href: "/publicacions",
-        label: "Notícies i articles",
-        description: "Les darreres notes d’actualitat en format blog.",
-        icon: <BookmarkIcon className="h-6 w-6" aria-hidden="true" />,
-      },
-    ],
-  },
-  { href: "/orgues", label: "Orgues" },
-  { href: "/bibliografia", label: "Bibliografia" },
-  { href: "/associacions", label: "Associacions" },
-  { href: "/formacio", label: "Formació" },
-  { href: "/cicle", label: "Cicle «Els orgues de Catalunya»" },
-];
+export interface NavigationMenuProps {
+  isMobile?: boolean;
+}
 
-export function DesktopNavigationMenu({
+export interface MenuItem {
+  label: string;
+  href: string;
+  items?: (MenuItem & {
+    description?: string;
+    icon?: ReactNode;
+  })[];
+}
+
+export async function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
+  const t = useTranslations("metadata");
+
+  const menuItems = [
+    { href: "/qui-som", label: t("aboutUs") },
+    {
+      href: "#",
+      label: t("articles"),
+      items: [
+        {
+          href: "/full",
+          label: t("factSheet"),
+          description: t("factSheetDescription"),
+          icon: <ReaderIcon className="h-6 w-6" aria-hidden="true" />,
+        },
+        {
+          href: "/publicacions",
+          label: t("newsAndArticles"),
+          description: t("newsAndArticlesDescription"),
+          icon: <BookmarkIcon className="h-6 w-6" aria-hidden="true" />,
+        },
+      ],
+    },
+    { href: "/orgues", label: t("pipeOrgans") },
+    { href: "/bibliografia", label: t("references") },
+    { href: "/associacions", label: t("associations") },
+    { href: "/formacio", label: t("education") },
+    { href: "/cicle", label: t("concertSeries") },
+  ] satisfies MenuItem[];
+
+  return isMobile ? (
+    <MobileNavigationMenu menuItems={menuItems} />
+  ) : (
+    <DesktopNavigationMenu menuItems={menuItems} />
+  );
+}
+
+interface DesktopNavigationMenuProps {
+  menuItems: MenuItem[];
+  className?: string;
+}
+
+async function DesktopNavigationMenu({
   className,
-}: Readonly<{ className?: string }>) {
+  menuItems,
+}: Readonly<DesktopNavigationMenuProps>) {
   const triggerClassName = navigationMenuTriggerStyle();
+
   return (
     <NavigationMenu className={className}>
       <NavigationMenuList>
@@ -88,7 +119,13 @@ export function DesktopNavigationMenu({
   );
 }
 
-export function MobileNavigationMenu() {
+interface MobileNavigationMenuProps {
+  menuItems: MenuItem[];
+}
+
+export function MobileNavigationMenu({
+  menuItems,
+}: Readonly<MobileNavigationMenuProps>) {
   return menuItems.flatMap((menuItem) =>
     (menuItem.items ?? [menuItem]).map((item) => (
       <DrawerClose key={item.label} asChild>

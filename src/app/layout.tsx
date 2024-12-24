@@ -1,12 +1,10 @@
 import { CookieToast } from "@/components/cookie/cookie-toast";
 import { MainHeader } from "@/components/main-header";
-import { DesktopNavigationMenu } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { NextIntlClientProvider } from "next-intl";
-import { getLocale, getMessages } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import { Inter as FontSans } from "next/font/google";
 import { PropsWithChildren } from "react";
 
@@ -17,10 +15,14 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 
-export const metadata: Metadata = {
-  title: "Associació Catalana de l’Orgue",
-  description: "Associació Catalana de l’Orgue",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("organization");
+
+  return {
+    title: t("name"),
+    description: t("description"),
+  };
+}
 
 export default async function RootLayout({
   children,
@@ -38,7 +40,7 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <MainHeader nav={<DesktopNavigationMenu />} />
+            <MainHeader nav={<Navbar />} />
             <main className="container pt-8 mx-auto px-4 prose">
               {children}
             </main>
