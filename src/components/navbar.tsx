@@ -14,6 +14,7 @@ import {
 import {
   BarChartIcon,
   BookmarkIcon,
+  ExternalLinkIcon,
   FileTextIcon,
   GlobeIcon,
   Pencil1Icon,
@@ -276,6 +277,7 @@ export function HighlightedMenuItems({
                   key={item.href}
                   href={item.href}
                   title={item.label}
+                  icon={item.isExternal ? <ExternalLinkIcon /> : undefined}
                 >
                   {"description" in item ? item.description : null}
                   {"date" in item ? (
