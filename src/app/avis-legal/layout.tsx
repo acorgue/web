@@ -1,7 +1,7 @@
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
 import type { Metadata, ResolvingMetadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 
 export async function generateMetadata(
   {},
@@ -11,8 +11,8 @@ export async function generateMetadata(
   const { title } = await parent;
 
   return {
-    title: `${t("articles")} · ${title}`,
-    description: t("articlesDescription"),
+    title: `${t("legalNotice")} · ${title}`,
+    description: t("legalNoticeDescription"),
   };
 }
 
@@ -26,7 +26,7 @@ export default async function Layout({
       <PageBreadcrumb
         fragments={[
           { href: "/", label: t("home"), position: 1 },
-          { label: t("articles"), position: 2 },
+          { label: t("legalNotice"), position: 2 },
         ]}
         className="not-prose mb-8"
       />

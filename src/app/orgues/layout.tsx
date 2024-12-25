@@ -7,11 +7,11 @@ export async function generateMetadata(
   parent: ResolvingMetadata,
 ): Promise<Metadata> {
   const t = await getTranslations("metadata");
-  const { title, description } = await parent;
+  const { title } = await parent;
 
   return {
     title: `${t("pipeOrgans")} · ${title}`,
-    description,
+    description: t("pipeOrgansDescription"),
   };
 }
 
