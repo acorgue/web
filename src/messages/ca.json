@@ -1,0 +1,67 @@
+{
+  "cookieBanner": {
+    "accept": "Accepto",
+    "decline": "Declino",
+    "description": "Aquest web utilitza galetes de tercers (Google Analytics).",
+    "moreInfo": "Més informació",
+    "title": "Vols permetre l’ús de galetes?"
+  },
+  "membership": {
+    "becomeAMember": "Fes-te’n soci!",
+    "eachYear": "/any",
+    "forIndividualsAndEntities": "per a persones i entitats",
+    "free": "Gratuït",
+    "minor": "Menor d’edat",
+    "organStudent": "Estudiant d’orgue",
+    "regularMember": "Numerari",
+    "retired": "Jubilat",
+    "supportingMember": "Protector",
+    "under35": "menors de 35 anys"
+  },
+  "metadata": {
+    "aboutUs": "Qui som",
+    "aboutUsDescription": "L’Associació Catalana de l’Orgue (ACO) és una entitat sense ànim de lucre que pretén aglutinar tots els elements que conformen el món de l’orgue a Catalunya.",
+    "articles": "Publicacions",
+    "articlesDescription": "Publicacions de l’Associació Catalana de l’Orgue.",
+    "associations": "Associacions",
+    "associationsDescription": "Recull de les diferents associacions que existeixen a Catalunya que s’han format al voltant dels diferents orgues. Amics de l’orgue.",
+    "concertSeries": "Cicle «Els orgues de Catalunya»",
+    "concertSeriesDescription": "El cicle «Els Orgues de Catalunya» està format per un conjunt de concerts d’estiu que donen veu als diferents orgues històrics que hi ha repartits pel territori català, així com un gran nombre d’organistes de renom.",
+    "education": "Formació",
+    "educationDescription": "Recull dels centres de formació musical de Catalunya que tenen aula d’orgue en tots els nivells, tant elemental, com mitjà o professional com superior.",
+    "factSheet": "Full informatiu",
+    "factSheetDescription": "La publicació trimestral amb les últimes notícies exclusives per als socis.",
+    "home": "Inici",
+    "legalNotice": "Avís legal",
+    "legalNoticeDescription": "Avís legal de la pàgina web.",
+    "newsAndArticles": "Notícies i articles",
+    "newsAndArticlesDescription": "Les darreres notes d’actualitat en format blog.",
+    "pipeOrgans": "Orgues",
+    "pipeOrgansDescription": "Inventari dels orgues de Catalunya. Cercador d’orgues de Catalunya. Orgues classificats per orguener, per constructor, per poble, comarca, província i bisbat.",
+    "privacyPolicy": "Política de privacitat",
+    "privacyPolicyDescription": "Política de privacitat per utilitzar la pàgina web.",
+    "privacyPolicyMembers": "Fer-se soci: política de privacitat",
+    "privacyPolicyMembersDescription": "Política de privacitat en fer-se soci de l’Associació Catalana de l’Orgue.",
+    "references": "Bibliografia",
+    "referencesDescription": "Recull de la bibliografia sobre els orgues de Catalunya i sobre l’orgue en general."
+  },
+  "modeToggle": {
+    "changeTheme": "Canvia el tema",
+    "dark": "Fosc",
+    "light": "Clar",
+    "system": "Sistema"
+  },
+  "navbar": {
+    "search": "Cerca…",
+    "toggleMenu": "Commuta el menú"
+  },
+  "notFound": {
+    "backHome": "Torna a l’inici",
+    "subtitle": "Sempre ho podeu tornar a intentar.",
+    "title": "No hem trobat la pàgina que cercaves!"
+  },
+  "organization": {
+    "description": "L’Associació Catalana de l’Orgue (ACO) és una entitat sense ànim de lucre que pretén aglutinar tots els elements que conformen el món de l’orgue a Catalunya.",
+    "name": "Associació Catalana de l’Orgue"
+  }
+}

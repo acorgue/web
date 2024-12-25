@@ -1,4 +1,5 @@
 import { CookieIcon } from "@radix-ui/react-icons";
+import type { useTranslations } from "next-intl";
 import Link from "next/link";
 import { toast } from "sonner";
 
@@ -6,7 +7,7 @@ const CONSENT_ACCEPTED_NAME = "isConsentAccepted";
 const CONSENT_ACCEPTED_TRUE = "yes";
 const CONSENT_ACCEPTED_FALSE = "no";
 
-type ConsentValue =
+export type CookieConsentValue =
   | typeof CONSENT_ACCEPTED_TRUE
   | typeof CONSENT_ACCEPTED_FALSE
   | null;
@@ -20,26 +21,26 @@ function declineConsent() {
 }
 
 function consentValue() {
-  return localStorage.getItem(CONSENT_ACCEPTED_NAME) as ConsentValue;
+  return localStorage.getItem(CONSENT_ACCEPTED_NAME) as CookieConsentValue;
 }
 
 function alreadyAnswered() {
   return Boolean(consentValue());
 }
 
-function showMessage() {
-  toast.info("Vols permetre l’ús de galetes?", {
+function showMessage(t: ReturnType<typeof useTranslations<"cookieBanner">>) {
+  toast.info(t("title"), {
     id: "cookie-consent",
     description: (
       <span>
-        Aquest web utilitza galetes de tercers (Google Analytics).
+        {t("description")}
         <Link href="/politica-de-privacitat" className="block underline mt-1">
-          Més informació
+          {t("moreInfo")}
         </Link>
       </span>
     ),
-    action: { label: "Accepto", onClick: acceptConsent },
-    cancel: { label: "Declino", onClick: declineConsent },
+    action: { label: t("accept"), onClick: acceptConsent },
+    cancel: { label: t("decline"), onClick: declineConsent },
     invert: true,
     duration: Infinity,
     style: { width: 400, maxWidth: "calc(100vw - 2rem)", right: 0 },
