@@ -72,7 +72,7 @@ interface DesktopNavigationMenuProps {
   className?: string;
 }
 
-async function DesktopNavigationMenu({
+function DesktopNavigationMenu({
   className,
   menuItems,
 }: Readonly<DesktopNavigationMenuProps>) {
