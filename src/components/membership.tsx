@@ -8,41 +8,44 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import { getTranslations } from "next-intl/server";
 
-export function Membership() {
+export async function Membership() {
+  const t = await getTranslations("membership");
+
   return (
     <>
       <div className="flex flex-wrap justify-around gap-x-4 gap-y-6 mx-0 lg:-mx-[100px]">
         <MembershipOption
-          title="Jubilat"
+          title={t("retired")}
           description=""
           price={35}
           highlight="border-gray-400"
           className="flex-1"
         />
         <MembershipOption
-          title="Numerari"
-          description="per a persones i entitats"
+          title={t("regularMember")}
+          description={t("forIndividualsAndEntities")}
           price={50}
           highlight="border-blue-500"
           className="flex-1"
         />
         <MembershipOption
-          title="Protector"
-          description="per a persones i entitats"
+          title={t("supportingMember")}
+          description={t("forIndividualsAndEntities")}
           price={100}
           highlight="border-yellow-400"
           className="flex-1"
         />
         <MembershipOption
-          title="Menors d’edat"
+          title={t("minor")}
           description=""
           price={0}
           className="flex-1 order-last lg:order-none"
         />
         <MembershipOption
-          title="Estudiant d’orgue"
-          description="menors de 35 anys"
+          title={t("organStudent")}
+          description={t("under35")}
           price={20}
           className="flex-1"
         />
@@ -51,7 +54,7 @@ export function Membership() {
   );
 }
 
-export function MembershipOption({
+export async function MembershipOption({
   title,
   description,
   price,
@@ -64,6 +67,8 @@ export function MembershipOption({
   highlight?: string;
   className: string;
 }>) {
+  const t = await getTranslations("membership");
+
   return (
     <Card
       className={cn(
@@ -83,7 +88,7 @@ export function MembershipOption({
       </CardHeader>
       <CardContent className="content-center">
         {price === 0 ? (
-          <div className="text-2xl tracking-tight">Gratuït</div>
+          <div className="text-2xl tracking-tight">{t("free")}</div>
         ) : (
           <>
             <div className="text-3xl">
@@ -93,14 +98,14 @@ export function MembershipOption({
               </span>
             </div>
             <div className="font-medium text-xs text-muted-foreground">
-              /any
+              {t("eachYear")}
             </div>
           </>
         )}
       </CardContent>
       <CardFooter className="justify-center">
         <ButtonLink href="#com-fer-sen-soci" className={highlight}>
-          Fes-te’n soci!
+          {t("becomeAMember")}
         </ButtonLink>
       </CardFooter>
     </Card>

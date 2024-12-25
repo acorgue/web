@@ -1,19 +1,32 @@
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
-import type { Metadata } from "next";
+import type { Metadata, ResolvingMetadata } from "next";
+import { getTranslations } from "next-intl/server";
 import { PropsWithChildren } from "react";
 
-export const metadata: Metadata = {
-  title: "Política de privacitat · Associació Catalana de l’Orgue",
-  description: "Política de privacitat per utilitzar la pàgina web",
-};
+export async function generateMetadata(
+  {},
+  parent: ResolvingMetadata,
+): Promise<Metadata> {
+  const t = await getTranslations("metadata");
+  const { title, description } = await parent;
 
-export default function Layout({ children }: Readonly<PropsWithChildren>) {
+  return {
+    title: `${t("privacyPolicy")} · ${title}`,
+    description,
+  };
+}
+
+export default async function Layout({
+  children,
+}: Readonly<PropsWithChildren>) {
+  const t = await getTranslations("metadata");
+
   return (
     <>
       <PageBreadcrumb
         fragments={[
-          { href: "/", label: "Inici", position: 1 },
-          { label: "Política de privacitat", position: 2 },
+          { href: "/", label: t("home"), position: 1 },
+          { label: t("privacyPolicy"), position: 2 },
         ]}
         className="not-prose mb-8"
       />

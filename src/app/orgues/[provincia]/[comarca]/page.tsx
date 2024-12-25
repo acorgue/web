@@ -1,4 +1,5 @@
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
+import { getTranslations } from "next-intl/server";
 import { orgueNavigation } from "../../orgueNavigation";
 import { OrguesProvinciaParams } from "../page";
 
@@ -11,14 +12,15 @@ export default async function Page({
 }: {
   params: Promise<OrguesComarcaParams>;
 }) {
+  const t = await getTranslations("metadata");
   const { provincia, comarca } = orgueNavigation(await params);
 
   return (
     <>
       <PageBreadcrumb
         fragments={[
-          { href: "/", label: "Inici", position: 1 },
-          { href: "/orgues", label: "Orgues", position: 2 },
+          { href: "/", label: t("home"), position: 1 },
+          { href: "/orgues", label: t("pipeOrgans"), position: 2 },
           {
             href: `/orgues/${provincia.link}`,
             label: provincia.nom,
