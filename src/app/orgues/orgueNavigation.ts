@@ -61,7 +61,6 @@ export type OrgueNavigationProps =
     };
 
 type UnwrapArray<A> = A extends unknown[] ? UnwrapArray<A[number]> : A;
-type NonNullable<T> = Exclude<T, null | undefined>;
 
 type OrgueNavigationReturn<T extends OrgueNavigationProps> =
   (T["provincia"] extends string ? { provincia: Provincia } : {}) &
