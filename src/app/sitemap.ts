@@ -1,6 +1,6 @@
 import orgues from "@/database/orgues.json";
 import type { MetadataRoute } from "next";
-import { Edifici } from "./orgues/orgueNavigation";
+import { OrguesEdifici } from "./orgues/orgueNavigation";
 
 export const baseURL = new URL("https://www.acorgue.cat");
 
@@ -37,7 +37,7 @@ function sitemapOrgues() {
             `/orgues/${provincia.link}/${comarca.link}/${municipi.link}`,
           ),
         },
-        ...(municipi.edificis as Edifici[]).flatMap((edifici) => [
+        ...(municipi.edificis as OrguesEdifici[]).flatMap((edifici) => [
           {
             url: url(
               `/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}`,
