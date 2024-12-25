@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import { orgues } from "@/database/orgues-repository";
 import { getTranslations } from "next-intl/server";
+import Link from "next/link";
 import { OrguesMunicipiParams } from "./layout";
 
 export default async function Page({
@@ -41,21 +42,51 @@ export default async function Page({
       />
       <h1>Orgues {de ?? `de ${nom}`}</h1>
       <div className="grid grid-cols-2 gap-4">
-        {edificis.map((edifici) => (
-          <article className="not-prose">
-            <a
+        {edificis.flatMap((edifici) =>
+          "orgues" in edifici ? (
+            edifici.orgues?.map((orgue) => (
+              <PipeOrganCard
+                key={`${edifici.link}-${orgue.link}`}
+                href={`/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}/${orgue.link}`}
+                title={`${edifici.nom} (${orgue.nom})`}
+                description={edifici.adreca}
+              />
+            ))
+          ) : (
+            <PipeOrganCard
+              key={edifici.link}
               href={`/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}`}
-            >
-              <Card>
-                <CardHeader>
-                  <CardTitle>{edifici.nom}</CardTitle>
-                  <CardDescription>{edifici.adreca}</CardDescription>
-                </CardHeader>
-              </Card>
-            </a>
-          </article>
-        ))}
+              title={edifici.nom}
+              description={edifici.adreca}
+            />
+          ),
+        )}
       </div>
     </>
+  );
+}
+
+interface PipeOrganCardProps {
+  href: string;
+  title: string;
+  description: string;
+}
+
+function PipeOrganCard({
+  href,
+  title,
+  description,
+}: Readonly<PipeOrganCardProps>) {
+  return (
+    <article className="not-prose">
+      <Link href={href}>
+        <Card>
+          <CardHeader>
+            <CardTitle>{title}</CardTitle>
+            <CardDescription>{description}</CardDescription>
+          </CardHeader>
+        </Card>
+      </Link>
+    </article>
   );
 }
