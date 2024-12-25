@@ -11,8 +11,8 @@ export async function generateMetadata(
   const { title } = await parent;
 
   return {
-    title: `${t("articles")} · ${title}`,
-    description: t("articlesDescription"),
+    title: `${t("privacyPolicy")} · ${title}`,
+    description: t("privacyPolicyDescription"),
   };
 }
 
@@ -26,7 +26,7 @@ export default async function Layout({
       <PageBreadcrumb
         fragments={[
           { href: "/", label: t("home"), position: 1 },
-          { label: t("articles"), position: 2 },
+          { label: t("privacyPolicy"), position: 2 },
         ]}
         className="not-prose mb-8"
       />

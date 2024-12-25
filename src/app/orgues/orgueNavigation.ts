@@ -2,10 +2,13 @@ import orgues from "@/database/orgues.json" with { type: "json" };
 
 export type Provincia = (typeof orgues.provincies)[number];
 export type Comarca = (typeof orgues.comarques)[number];
-export type Municipi = NonNullable<
-  UnwrapArray<(typeof orgues.orgues)[number]["comarques"][number]["poblacions"]>
->;
-export interface Edifici {
+export type OrguesProvincia = (typeof orgues.orgues)[number];
+export type OrguesComarca = OrguesProvincia["comarques"][number];
+export type OrguesMunicipi = NonNullable<
+  UnwrapArray<OrguesComarca["poblacions"]>
+> & { de?: string };
+
+export interface OrguesEdifici {
   nom: string;
   link: string;
   adreca: string;
@@ -13,7 +16,7 @@ export interface Edifici {
     latitud: number;
     longitud: number;
   };
-  orgues: Orgue[];
+  orgues?: Orgue[];
 }
 export interface Orgue {
   link: string;
@@ -62,15 +65,15 @@ type UnwrapArray<A> = A extends unknown[] ? UnwrapArray<A[number]> : A;
 type OrgueNavigationReturn<T extends OrgueNavigationProps> =
   (T["provincia"] extends string ? { provincia: Provincia } : {}) &
     (T["comarca"] extends string ? { comarca: Comarca } : {}) &
-    (T["municipi"] extends string ? { municipi: Municipi } : {}) &
-    (T["edifici"] extends string ? { edifici: Edifici } : {}) &
+    (T["municipi"] extends string ? { municipi: OrguesMunicipi } : {}) &
+    (T["edifici"] extends string ? { edifici: OrguesEdifici } : {}) &
     (T["orgue"] extends string ? { orgue: Orgue } : {});
 
 export function orgueNavigation<T extends OrgueNavigationProps>(
   params: Readonly<T>,
 ) {
-  let municipi: Municipi | undefined;
-  let edifici: Edifici | undefined;
+  let municipi: OrguesMunicipi | undefined;
+  let edifici: OrguesEdifici | undefined;
   let orgue: Orgue | undefined;
 
   if (params.municipi) {
@@ -82,10 +85,10 @@ export function orgueNavigation<T extends OrgueNavigationProps>(
   if (params.edifici) {
     edifici = municipi?.edificis.find(
       ({ link }) => link === params.edifici,
-    )! as Edifici;
+    )! as OrguesEdifici;
   }
   if (params.orgue) {
-    orgue = edifici?.orgues.find(({ link }) => link === params.orgue)!;
+    orgue = edifici?.orgues?.find(({ link }) => link === params.orgue)!;
   }
 
   return {

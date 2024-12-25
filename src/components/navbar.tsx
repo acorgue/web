@@ -20,128 +20,146 @@ import {
   ReaderIcon,
   SewingPinIcon,
 } from "@radix-ui/react-icons";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
-import { Fragment } from "react";
+import { Fragment, ReactNode } from "react";
 import { DrawerClose } from "./ui/drawer";
 
-const dateTimeFormat = Intl.DateTimeFormat("ca", {
-  day: "numeric",
-  month: "long",
-  year: "numeric",
-});
+export interface NavigationMenuProps {
+  isMobile?: boolean;
+}
 
-const menuItems = [
-  { href: "/qui-som", label: "Qui som" },
-  {
-    label: "Publicacions",
-    items: [
-      {
-        href: "/publicacions",
-        label: "Notícies i articles",
-        description: "Les darreres notes d’actualitat en format blog.",
-        icon: <BookmarkIcon className="h-6 w-6" aria-hidden="true" />,
-        items: [
-          {
-            href: "/publicacions/2024/07/03/presentacio-43e-cicle.html",
-            label:
-              "Presentació de la 44a edició del cicle «Els Orgues de Catalunya»",
-            date: new Date("2024-07-03"),
-            icon: undefined,
-          },
-          {
-            href: "/publicacions/2023/07/06/nou-orgue-a-cabrera-de-mar.html",
-            label: "Nou orgue de tubs a l'ermita de Santa Elena d’Agell",
-            date: new Date("2023-07-06"),
-            icon: undefined,
-          },
-          {
-            href: "/publicacions/2023/02/01/carta-vanguardia.html",
-            label: "Parafonies a la sala Oval",
-            date: new Date("2023-02-01"),
-            icon: undefined,
-          },
-        ],
-      },
-      {
-        href: "/full",
-        label: "Full informatiu",
-        description:
-          "La publicació trimestral amb les últimes notícies exclusives per als socis.",
-        icon: <ReaderIcon className="h-6 w-6" aria-hidden="true" />,
-        items: [
-          {
-            href: "https://nextcloud.acorgue.cat/s/FXAytnxJC5XyBfr/download",
-            label: "Full 40",
-            description: "Tardor de 2021",
-            isExternal: true,
-            icon: undefined,
-          },
-          {
-            href: "https://nextcloud.acorgue.cat/s/mEqSWAr9WX7bHGJ/download",
-            label: "Full 39",
-            description: "Estiu de 2021",
-            isExternal: true,
-            icon: undefined,
-          },
-          {
-            href: "https://nextcloud.acorgue.cat/s/kbjcGppdKL6TEFm/download",
-            label: "Full 38",
-            description: "Primavera de 2021",
-            isExternal: true,
-            icon: undefined,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Orgues",
-    items: [
-      {
-        href: "/orgues",
-        label: "Inventari d’orgues",
-        description: "Mapa dels orgues del principat en constant creixement.",
-        icon: <BarChartIcon className="h-6 w-6" aria-hidden="true" />,
-      },
-      {
-        href: "/cicle",
-        label: "Cicle «Els orgues de Catalunya»",
-        description: "Reviu el so del passat redescobrint la nostra terra.",
-        icon: <SewingPinIcon className="h-6 w-6" aria-hidden="true" />,
-      },
-    ],
-  },
-  {
-    label: "Recursos",
-    items: [
-      {
-        href: "/bibliografia",
-        label: "Bibliografia",
-        description:
-          "Història, llibrets, bibliografia i música d’orgues catalans.",
-        icon: <FileTextIcon className="h-6 w-6" aria-hidden="true" />,
-      },
-      {
-        href: "/associacions",
-        label: "Associacions",
-        description:
-          "Amics dels orgues: associacions per preservar i difondre.",
-        icon: <GlobeIcon className="h-6 w-6" aria-hidden="true" />,
-      },
-      {
-        href: "/formacio",
-        label: "Formació",
-        description: "Centres i recursos per a la formació organística.",
-        icon: <Pencil1Icon className="h-6 w-6" aria-hidden="true" />,
-      },
-    ],
-  },
-];
+export interface MenuItem {
+  label: string;
+  href: string;
+  items?: (MenuItem & {
+    description?: string;
+    icon?: ReactNode;
+    date?: Date;
+    isExternal?: boolean;
+  })[];
+}
 
-export function DesktopNavigationMenu({
+export function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
+  const t = useTranslations();
+
+  const menuItems = [
+    { href: "/qui-som", label: t("metadata.aboutUs") },
+    {
+      label: t("metadata.articles"),
+      items: [
+        {
+          href: "/publicacions",
+          label: t("metadata.newsAndArticles"),
+          description: t("navbar.newsAndArticlesDescription"),
+          icon: <BookmarkIcon className="h-6 w-6" aria-hidden="true" />,
+          items: [
+            {
+              href: "/publicacions/2024/07/03/presentacio-43e-cicle.html",
+              label:
+                "Presentació de la 44a edició del cicle «Els Orgues de Catalunya»",
+              date: new Date("2024-07-03"),
+            },
+            {
+              href: "/publicacions/2023/07/06/nou-orgue-a-cabrera-de-mar.html",
+              label: "Nou orgue de tubs a l'ermita de Santa Elena d’Agell",
+              date: new Date("2023-07-06"),
+            },
+            {
+              href: "/publicacions/2023/02/01/carta-vanguardia.html",
+              label: "Parafonies a la sala Oval",
+              date: new Date("2023-02-01"),
+            },
+          ],
+        },
+        {
+          href: "/full",
+          label: t("metadata.factSheet"),
+          description: t("navbar.factSheetDescription"),
+          icon: <ReaderIcon className="h-6 w-6" aria-hidden="true" />,
+          items: [
+            {
+              href: "https://nextcloud.acorgue.cat/s/FXAytnxJC5XyBfr/download",
+              label: "Full 40",
+              description: "Tardor de 2021",
+              isExternal: true,
+            },
+            {
+              href: "https://nextcloud.acorgue.cat/s/mEqSWAr9WX7bHGJ/download",
+              label: "Full 39",
+              description: "Estiu de 2021",
+              isExternal: true,
+            },
+            {
+              href: "https://nextcloud.acorgue.cat/s/kbjcGppdKL6TEFm/download",
+              label: "Full 38",
+              description: "Primavera de 2021",
+              isExternal: true,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      label: t("metadata.pipeOrgans"),
+      items: [
+        {
+          href: "/orgues",
+          label: t("metadata.pipeOrgans"),
+          description: t("navbar.pipeOrgansDescription"),
+          icon: <BarChartIcon className="h-6 w-6" aria-hidden="true" />,
+        },
+        {
+          href: "/cicle",
+          label: t("metadata.concertSeries"),
+          description: t("navbar.concertSeriesDescription"),
+          icon: <SewingPinIcon className="h-6 w-6" aria-hidden="true" />,
+        },
+      ],
+    },
+    {
+      label: t("navbar.resources"),
+      items: [
+        {
+          href: "/bibliografia",
+          label: t("metadata.references"),
+          description: t("navbar.referencesDescription"),
+          icon: <FileTextIcon className="h-6 w-6" aria-hidden="true" />,
+        },
+        {
+          href: "/associacions",
+          label: t("metadata.associations"),
+          description: t("navbar.associationsDescription"),
+          icon: <GlobeIcon className="h-6 w-6" aria-hidden="true" />,
+        },
+        {
+          href: "/formacio",
+          label: t("metadata.education"),
+          description: t("navbar.educationDescription"),
+          icon: <Pencil1Icon className="h-6 w-6" aria-hidden="true" />,
+        },
+      ],
+    },
+  ] as MenuItem[];
+
+  return isMobile ? (
+    <MobileNavigationMenu menuItems={menuItems} />
+  ) : (
+    <DesktopNavigationMenu menuItems={menuItems} />
+  );
+}
+
+interface DesktopNavigationMenuProps {
+  menuItems: MenuItem[];
+  className?: string;
+}
+
+function DesktopNavigationMenu({
   className,
-}: Readonly<{ className?: string }>) {
+  menuItems,
+}: Readonly<DesktopNavigationMenuProps>) {
   const triggerClassName = navigationMenuTriggerStyle();
+
   return (
     <NavigationMenu className={className}>
       <NavigationMenuList>
@@ -176,7 +194,13 @@ export function DesktopNavigationMenu({
   );
 }
 
-export function MobileNavigationMenu() {
+interface MobileNavigationMenuProps {
+  menuItems: MenuItem[];
+}
+
+export function MobileNavigationMenu({
+  menuItems,
+}: Readonly<MobileNavigationMenuProps>) {
   return menuItems.flatMap((menuItem) =>
     (menuItem.items ?? [menuItem]).map((item) => (
       <DrawerClose key={item.label} asChild>
@@ -189,7 +213,7 @@ export function MobileNavigationMenu() {
 }
 
 export interface NavigationMenuItemsProps {
-  items: NonNullable<(typeof menuItems)[number]["items"]>;
+  items: NonNullable<MenuItem["items"]>;
 }
 
 export function NavigationMenuItems({
@@ -212,12 +236,20 @@ export function NavigationMenuItems({
 }
 
 export interface HighlightedMenuItemsProps {
-  items: NonNullable<(typeof menuItems)[number]["items"]>;
+  items: NonNullable<MenuItem["items"]>;
 }
 
 export function HighlightedMenuItems({
   items,
 }: Readonly<HighlightedMenuItemsProps>) {
+  const locale = useLocale();
+
+  const dateTimeFormat = Intl.DateTimeFormat(locale, {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+
   return (
     <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
       {items.map((item) => (
@@ -239,7 +271,7 @@ export function HighlightedMenuItems({
             </NavigationMenuLink>
           </li>
           {"items" in item
-            ? item.items.map((item) => (
+            ? item.items?.map((item) => (
                 <NavigationMenuListItem
                   key={item.href}
                   href={item.href}
@@ -247,7 +279,7 @@ export function HighlightedMenuItems({
                 >
                   {"description" in item ? item.description : null}
                   {"date" in item ? (
-                    <time dateTime={item.date.toISOString()}>
+                    <time dateTime={item.date?.toISOString()}>
                       {dateTimeFormat.format(item.date)}
                     </time>
                   ) : null}

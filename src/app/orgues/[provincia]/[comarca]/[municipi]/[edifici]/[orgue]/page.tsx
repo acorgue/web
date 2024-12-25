@@ -1,5 +1,6 @@
 import { orgueNavigation } from "@/app/orgues/orgueNavigation";
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
+import { getTranslations } from "next-intl/server";
 import { OrguesOrgueParams } from "./layout";
 
 export default async function Page({
@@ -7,6 +8,7 @@ export default async function Page({
 }: {
   params: Promise<OrguesOrgueParams>;
 }) {
+  const t = await getTranslations("metadata");
   const { provincia, comarca, municipi, edifici, orgue } = orgueNavigation(
     await params,
   );
@@ -15,8 +17,8 @@ export default async function Page({
     <>
       <PageBreadcrumb
         fragments={[
-          { href: "/", label: "Inici", position: 1 },
-          { href: "/orgues", label: "Orgues", position: 2 },
+          { href: "/", label: t("home"), position: 1 },
+          { href: "/orgues", label: t("pipeOrgans"), position: 2 },
           {
             collapsed: [
               {
@@ -45,6 +47,12 @@ export default async function Page({
         ]}
         className="not-prose mb-8"
       />
+      <h1>
+        {edifici.nom} ({orgue.nom})
+      </h1>
+      <p>
+        {municipi.nom} ({comarca.nom})
+      </p>
     </>
   );
 }

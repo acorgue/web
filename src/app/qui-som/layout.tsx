@@ -1,19 +1,32 @@
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
-import type { Metadata } from "next";
-import { PropsWithChildren } from "react";
+import type { Metadata, ResolvingMetadata } from "next";
+import { getTranslations } from "next-intl/server";
+import type { PropsWithChildren } from "react";
 
-export const metadata: Metadata = {
-  title: "Qui som · Associació Catalana de l’Orgue",
-  description: "Associació Catalana de l’Orgue",
-};
+export async function generateMetadata(
+  {},
+  parent: ResolvingMetadata,
+): Promise<Metadata> {
+  const t = await getTranslations("metadata");
+  const { title } = await parent;
 
-export default function Layout({ children }: Readonly<PropsWithChildren>) {
+  return {
+    title: `${t("aboutUs")} · ${title}`,
+    description: t("aboutUsDescription"),
+  };
+}
+
+export default async function Layout({
+  children,
+}: Readonly<PropsWithChildren>) {
+  const t = await getTranslations("metadata");
+
   return (
     <>
       <PageBreadcrumb
         fragments={[
-          { href: "/", label: "Inici", position: 1 },
-          { label: "Qui som", position: 2 },
+          { href: "/", label: t("home"), position: 1 },
+          { label: t("aboutUs"), position: 2 },
         ]}
         className="not-prose mb-8"
       />
