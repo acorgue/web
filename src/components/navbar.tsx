@@ -51,7 +51,7 @@ export function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
       items: [
         {
           href: "/publicacions",
-          label: t("metadata.newsAndArticles"),
+          label: t("navbar.newsAndArticles"),
           description: t("navbar.newsAndArticlesDescription"),
           icon: <BookmarkIcon className="h-6 w-6" aria-hidden="true" />,
           items: [
