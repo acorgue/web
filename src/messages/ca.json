@@ -1,0 +1,55 @@
+{
+  "cookieBanner": {
+    "accept": "Accepto",
+    "decline": "Declino",
+    "description": "Aquest web utilitza galetes de tercers (Google Analytics).",
+    "moreInfo": "Més informació",
+    "title": "Vols permetre l’ús de galetes?"
+  },
+  "membership": {
+    "becomeAMember": "Fes-te’n soci!",
+    "eachYear": "/any",
+    "forIndividualsAndEntities": "per a persones i entitats",
+    "free": "Gratuït",
+    "minor": "Menor d’edat",
+    "organStudent": "Estudiant d’orgue",
+    "regularMember": "Numerari",
+    "retired": "Jubilat",
+    "supportingMember": "Protector",
+    "under35": "menors de 35 anys"
+  },
+  "metadata": {
+    "aboutUs": "Qui som",
+    "articles": "Publicacions",
+    "associations": "Associacions",
+    "concertSeries": "Cicle «Els orgues de Catalunya»",
+    "education": "Formació",
+    "factSheet": "Full informatiu",
+    "factSheetDescription": "La publicació trimestral amb les últimes notícies exclusives per als socis.",
+    "home": "Inici",
+    "newsAndArticles": "Notícies i articles",
+    "newsAndArticlesDescription": "Les darreres notes d’actualitat en format blog.",
+    "pipeOrgans": "Orgues",
+    "privacyPolicy": "Política de privacitat",
+    "references": "Bibliografia"
+  },
+  "modeToggle": {
+    "changeTheme": "Canvia el tema",
+    "dark": "Fosc",
+    "light": "Clar",
+    "system": "Sistema"
+  },
+  "navbar": {
+    "search": "Cerca…",
+    "toggleMenu": "Commuta el menú"
+  },
+  "notFound": {
+    "backHome": "Torna a l’inici",
+    "subtitle": "Sempre ho podeu tornar a intentar.",
+    "title": "No hem trobat la pàgina que cercaves!"
+  },
+  "organization": {
+    "description": "L’Associació Catalana de l’Orgue (ACO) és una entitat sense ànim de lucre que pretén aglutinar tots els elements que conformen el món de l’orgue a Catalunya.",
+    "name": "Associació Catalana de l’Orgue"
+  }
+}

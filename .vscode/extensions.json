@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "dsznajder.es7-react-js-snippets",
+    "oven.bun-vscode",
+    "dbaeumer.vscode-eslint",
+    "lokalise.i18n-ally",
+    "unifiedjs.vscode-mdx",
+    "esbenp.prettier-vscode",
+    "shardulm94.trailing-spaces"
+  ]
+}
