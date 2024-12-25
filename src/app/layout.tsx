@@ -43,7 +43,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <MainHeader nav={<Navbar />} />
-            <main className="container pt-8 mx-auto px-4 prose">
+            <main className="container pt-8 mx-auto px-4 prose dark:prose-invert">
               {children}
             </main>
             <Toaster />

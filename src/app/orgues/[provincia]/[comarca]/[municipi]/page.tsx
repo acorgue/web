@@ -41,7 +41,7 @@ export default async function Page({
         className="not-prose mb-8"
       />
       <h1>Orgues {de ?? `de ${nom}`}</h1>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {edificis.flatMap((edifici) =>
           "orgues" in edifici ? (
             edifici.orgues?.map((orgue) => (
@@ -80,7 +80,7 @@ function PipeOrganCard({
   return (
     <article className="not-prose">
       <Link href={href}>
-        <Card>
+        <Card className="hover:bg-slate-500/5">
           <CardHeader>
             <CardTitle>{title}</CardTitle>
             <CardDescription>{description}</CardDescription>
