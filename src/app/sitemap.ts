@@ -11,6 +11,7 @@ function url(url: string) {
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: url("/") },
+    { url: url("/avis-legal") },
     { url: url("/associacions") },
     { url: url("/bibliografia") },
     { url: url("/cicle") },
