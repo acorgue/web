@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: url("/orgues") },
     ...sitemapOrgues(),
     { url: url("/politica-de-privacitat") },
+    { url: url("/politica-de-privacitat-socis") },
     { url: url("/publicacions") },
     { url: url("/qui-som") },
   ];
