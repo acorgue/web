@@ -2,8 +2,10 @@ import orgues from "@/database/orgues.json";
 import type { MetadataRoute } from "next";
 import { Edifici } from "./orgues/orgueNavigation";
 
+export const baseURL = new URL("https://www.acorgue.cat");
+
 function url(url: string) {
-  return new URL(url, "https://www.acorgue.cat").toString();
+  return new URL(url, baseURL).toString();
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -15,35 +17,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: url("/formacio") },
     { url: url("/full") },
     { url: url("/orgues") },
-    ...orgues.orgues.flatMap((provincia) => [
-      { url: url(`/orgues/${provincia.link}`) },
-      ...provincia.comarques.flatMap((comarca) => [
-        { url: url(`/orgues/${provincia.link}/${comarca.link}`) },
-        ...(comarca.poblacions?.flatMap((municipi) => [
-          {
-            url: url(
-              `/orgues/${provincia.link}/${comarca.link}/${municipi.link}`,
-            ),
-          },
-          ...(municipi.edificis as Edifici[]).flatMap((edifici) => [
-            {
-              url: url(
-                `/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}`,
-              ),
-            },
-            ...(edifici.orgues?.flatMap((orgue) => [
-              {
-                url: url(
-                  `/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}/${orgue.link}`,
-                ),
-              },
-            ]) ?? []),
-          ]),
-        ]) ?? []),
-      ]),
-    ]),
+    ...sitemapOrgues(),
     { url: url("/politica-de-privacitat") },
     { url: url("/publicacions") },
     { url: url("/qui-som") },
   ];
+}
+
+function sitemapOrgues() {
+  return orgues.orgues.flatMap((provincia) => [
+    { url: url(`/orgues/${provincia.link}`) },
+    ...provincia.comarques.flatMap((comarca) => [
+      { url: url(`/orgues/${provincia.link}/${comarca.link}`) },
+      ...(comarca.poblacions?.flatMap((municipi) => [
+        {
+          url: url(
+            `/orgues/${provincia.link}/${comarca.link}/${municipi.link}`,
+          ),
+        },
+        ...(municipi.edificis as Edifici[]).flatMap((edifici) => [
+          {
+            url: url(
+              `/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}`,
+            ),
+          },
+          ...(edifici.orgues?.flatMap((orgue) => [
+            {
+              url: url(
+                `/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}/${orgue.link}`,
+              ),
+            },
+          ]) ?? []),
+        ]),
+      ]) ?? []),
+    ]),
+  ]);
 }
