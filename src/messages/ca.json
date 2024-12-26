@@ -43,12 +43,6 @@
     "references": "Bibliografia",
     "referencesDescription": "Recull de la bibliografia sobre els orgues de Catalunya i sobre l’orgue en general."
   },
-  "modeToggle": {
-    "changeTheme": "Canvia el tema",
-    "dark": "Fosc",
-    "light": "Clar",
-    "system": "Sistema"
-  },
   "navbar": {
     "associationsDescription": "Amics dels orgues: associacions per preservar i difondre.",
     "concertSeriesDescription": "Reviu el so del passat redescobrint la nostra terra.",
@@ -70,5 +64,15 @@
   "organization": {
     "description": "L’Associació Catalana de l’Orgue (ACO) és una entitat sense ànim de lucre que pretén aglutinar tots els elements que conformen el món de l’orgue a Catalunya.",
     "name": "Associació Catalana de l’Orgue"
+  },
+  "profileMenu": {
+    "changeTheme": "Canvia el tema",
+    "dark": "Fosc",
+    "light": "Clar",
+    "logOut": "Tanca la sessió",
+    "memberSpace": "Espai per a membres",
+    "profile": "Perfil",
+    "settings": "Ajustos",
+    "system": "Sistema"
   }
 }
