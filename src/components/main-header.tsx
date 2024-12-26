@@ -43,11 +43,15 @@ export async function MainHeader({ nav }: Readonly<MainHeaderProps>) {
             <HamburgerMenuIcon />
             <span className="sr-only">{t("navbar.toggleMenu")}</span>
           </DrawerTrigger>
-          <DrawerContent className="min-h-[500px]">
+          <DrawerContent className="h-[500px] max-h-[calc(100vh-4rem)]">
             <DrawerHeader>
-              <DrawerTitle>{t("organization.name")}</DrawerTitle>
+              <DrawerTitle className="text-center">
+                {t("organization.name")}
+              </DrawerTitle>
             </DrawerHeader>
-            <Navbar isMobile />
+            <div className="overflow-y-auto">
+              <Navbar isMobile />
+            </div>
           </DrawerContent>
         </Drawer>
         <div className="flex flex-1 items-center justify-between gap-2 md:justify-end">
