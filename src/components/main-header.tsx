@@ -3,9 +3,9 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
-import { ProfileMenu } from "./profile-menu";
 import { Navbar } from "./navbar";
-import { Button } from "./ui/button";
+import { ProfileMenu } from "./profile-menu";
+import { SearchBar } from "./search-bar";
 import {
   Drawer,
   DrawerContent,
@@ -39,7 +39,7 @@ export async function MainHeader({ nav }: Readonly<MainHeaderProps>) {
           <nav className="flex items-center gap-4 text-sm xl:gap-6">{nav}</nav>
         </div>
         <Drawer>
-          <DrawerTrigger className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:text-accent-foreground py-2 -ms-2 mr-2 h-8 w-8 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden">
+          <DrawerTrigger className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:text-accent-foreground py-2 -ms-2 mr-2 h-8 w-8 px-0 text-base hover:bg-transparent md:hidden">
             <HamburgerMenuIcon />
             <span className="sr-only">{t("navbar.toggleMenu")}</span>
           </DrawerTrigger>
@@ -55,14 +55,7 @@ export async function MainHeader({ nav }: Readonly<MainHeaderProps>) {
           </DrawerContent>
         </Drawer>
         <div className="flex flex-1 items-center gap-2 justify-end">
-          <div className="w-full md:max-w-[300px] flex-1 md:w-auto md:flex-none">
-            <Button className="inline-flex items-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input hover:bg-accent hover:text-accent-foreground px-4 py-2 relative h-8 w-full justify-start rounded-[0.5rem] bg-muted/50 text-sm font-normal text-muted-foreground shadow-none sm:pr-12 md:w-40 lg:w-56 xl:w-64">
-              <span>{t("navbar.search")}</span>
-              <kbd className="pointer-events-none absolute right-[0.3rem] top-[0.3rem] hidden h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex">
-                <span className="text-xs">⌘</span>K
-              </kbd>
-            </Button>
-          </div>
+          <SearchBar />
           <nav className="flex items-center gap-0.5 -me-2">
             <ProfileMenu />
           </nav>

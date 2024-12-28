@@ -53,7 +53,6 @@
     "pipeOrgansDescription": "Mapa dels orgues del principat en constant creixement.",
     "referencesDescription": "Història, llibrets, bibliografia i música d’orgues catalans.",
     "resources": "Recursos",
-    "search": "Cerca…",
     "toggleMenu": "Commuta el menú"
   },
   "notFound": {
@@ -74,5 +73,8 @@
     "profile": "Perfil",
     "settings": "Ajustos",
     "system": "Sistema"
+  },
+  "searchBar": {
+    "search": "Cerca…"
   }
 }
