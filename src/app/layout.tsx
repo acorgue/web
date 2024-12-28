@@ -2,6 +2,7 @@ import { CookieToast } from "@/components/cookie/cookie-toast";
 import { MainHeader } from "@/components/main-header";
 import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import { DrawerWrapper } from "@/components/ui/drawer";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -42,12 +43,14 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <MainHeader nav={<Navbar />} />
-            <main className="container pt-8 mx-auto px-4 prose dark:prose-invert">
-              {children}
-            </main>
-            <Toaster />
-            <CookieToast />
+            <DrawerWrapper>
+              <MainHeader nav={<Navbar />} />
+              <main className="container pt-8 mx-auto px-4 prose dark:prose-invert">
+                {children}
+              </main>
+              <Toaster />
+              <CookieToast />
+            </DrawerWrapper>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

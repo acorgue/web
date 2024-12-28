@@ -34,6 +34,20 @@ const DrawerOverlay = React.forwardRef<
 ));
 DrawerOverlay.displayName = DrawerPrimitive.Overlay.displayName;
 
+const DrawerWrapper = (props: React.HTMLAttributes<HTMLDivElement>) => {
+  return (
+    <div vaul-drawer-wrapper="">
+      <div className="relative flex min-h-svh flex-col bg-background">
+        <div
+          data-wrapper=""
+          className="border-grid flex flex-1 flex-col"
+          {...props}
+        />
+      </div>
+    </div>
+  );
+};
+
 const DrawerContent = React.forwardRef<
   React.ComponentRef<typeof DrawerPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Content>
@@ -115,4 +129,5 @@ export {
   DrawerPortal,
   DrawerTitle,
   DrawerTrigger,
+  DrawerWrapper,
 };
