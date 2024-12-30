@@ -6,6 +6,7 @@ export interface RedirectEntry {
   destination: string;
 }
 
+/** Short slug to destination ({@link RedirectEntry}). */
 export const redirects = Object.fromEntries(computeRedirects());
 
 function redirectEntry(
@@ -22,35 +23,37 @@ function* computeRedirects() {
   for (const provincia of rawOrgues.orgues as OrguesProvincia[]) {
     for (const comarca of provincia.comarques) {
       if (!comarca.poblacions) continue;
-      for (const poble of comarca.poblacions) {
-        if (poble.edificis.length === 0) continue;
-        if (poble.edificis.length === 1) {
-          const [edifici] = poble.edificis as OrguesEdifici[];
+      for (const municipi of comarca.poblacions) {
+        if (municipi.edificis.length === 0) continue;
+        if (municipi.edificis.length === 1) {
+          const [edifici] = municipi.edificis as OrguesEdifici[];
           if (!edifici.orgues) {
             yield redirectEntry(
-              poble.link,
-              [provincia, comarca, poble, edifici].map((e) => e.link),
+              municipi.link,
+              [provincia, comarca, municipi, edifici].map((e) => e.link),
             );
           } else {
             for (const orgue of edifici.orgues) {
               yield redirectEntry(
-                `${poble.link}-${orgue.link}`,
-                [provincia, comarca, poble, edifici, orgue].map((e) => e.link),
+                `${municipi.link}-${orgue.link}`,
+                [provincia, comarca, municipi, edifici, orgue].map(
+                  (e) => e.link,
+                ),
               );
             }
           }
         } else {
-          for (const edifici of poble.edificis as OrguesEdifici[]) {
+          for (const edifici of municipi.edificis as OrguesEdifici[]) {
             if (!edifici.orgues) {
               yield redirectEntry(
-                `${edifici.link}-${poble.link}`,
-                [provincia, comarca, poble, edifici].map((e) => e.link),
+                `${edifici.link}-${municipi.link}`,
+                [provincia, comarca, municipi, edifici].map((e) => e.link),
               );
             } else {
               for (const orgue of edifici.orgues) {
                 yield redirectEntry(
-                  `${edifici.link}-${poble.link}-${orgue.link}`,
-                  [provincia, comarca, poble, edifici, orgue].map(
+                  `${edifici.link}-${municipi.link}-${orgue.link}`,
+                  [provincia, comarca, municipi, edifici, orgue].map(
                     (e) => e.link,
                   ),
                 );
