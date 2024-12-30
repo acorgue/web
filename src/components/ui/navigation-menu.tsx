@@ -4,6 +4,7 @@ import { cva } from "class-variance-authority";
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const NavigationMenu = React.forwardRef<
   React.ComponentRef<typeof NavigationMenuPrimitive.Root>,
@@ -116,13 +117,13 @@ NavigationMenuIndicator.displayName =
   NavigationMenuPrimitive.Indicator.displayName;
 
 const NavigationMenuListItem = React.forwardRef<
-  React.ComponentRef<"a">,
-  React.ComponentPropsWithoutRef<"a"> & { icon?: React.ReactNode }
+  React.ComponentRef<typeof Link>,
+  React.ComponentPropsWithoutRef<typeof Link> & { icon?: React.ReactNode }
 >(({ className, title, icon, children, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a
+        <Link
           ref={ref}
           className={cn(
             "flex select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
@@ -137,7 +138,7 @@ const NavigationMenuListItem = React.forwardRef<
               {children}
             </p>
           </div>
-        </a>
+        </Link>
       </NavigationMenuLink>
     </li>
   );
