@@ -6,6 +6,10 @@
     "moreInfo": "Més informació",
     "title": "Vols permetre l’ús de galetes?"
   },
+  "error": {
+    "retry": "Torneu-ho a intentar",
+    "title": "Hi ha hagut un error"
+  },
   "membership": {
     "becomeAMember": "Fes-te’n soci!",
     "eachYear": "/any",
