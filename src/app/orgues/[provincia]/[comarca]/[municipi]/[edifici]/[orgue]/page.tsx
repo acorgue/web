@@ -1,4 +1,6 @@
 import { orgueNavigation } from "@/app/orgues/orgueNavigation";
+import { slugs } from "@/app/orgues/redirects";
+import { CopyButton } from "@/components/copy-button";
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
 import { getTranslations } from "next-intl/server";
 import { OrguesOrgueParams } from "./layout";
@@ -50,9 +52,18 @@ export default async function Page({
       <h1>
         {edifici.nom} ({orgue.nom})
       </h1>
-      <p>
-        {municipi.nom} ({comarca.nom})
-      </p>
+      <div className="not-prose flex justify-between items-baseline">
+        <p>
+          {municipi.nom} ({comarca.nom})
+        </p>
+        <CopyButton
+          slug={
+            slugs[
+              `/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}/${orgue.link}`
+            ]
+          }
+        />
+      </div>
     </>
   );
 }
