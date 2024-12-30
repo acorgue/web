@@ -11,6 +11,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { Link } from "@/i18n/routing";
 import {
   BarChartIcon,
   BookmarkIcon,
@@ -22,7 +23,6 @@ import {
   SewingPinIcon,
 } from "@radix-ui/react-icons";
 import { useLocale, useTranslations } from "next-intl";
-import Link from "next/link";
 import { Fragment, ReactNode } from "react";
 import { DrawerClose } from "./ui/drawer";
 

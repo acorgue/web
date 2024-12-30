@@ -1,14 +1,13 @@
-import { getTranslations } from "next-intl/server";
-import Link from "next/link";
+"use client";
 
-export default async function NotFound() {
-  const t = await getTranslations("notFound");
+import Error from "next/error";
 
+export default function NotFound() {
   return (
-    <div>
-      <h2>{t("title")}</h2>
-      <p>{t("subtitle")}</p>
-      <Link href="/">{t("backHome")}</Link>
-    </div>
+    <html lang="en">
+      <body>
+        <Error statusCode={404} />
+      </body>
+    </html>
   );
 }

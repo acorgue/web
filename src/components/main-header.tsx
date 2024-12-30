@@ -1,10 +1,10 @@
+import { Link } from "@/i18n/routing";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import Link from "next/link";
 import { ReactNode } from "react";
-import { ProfileMenu } from "./profile-menu";
 import { Navbar } from "./navbar";
+import { ProfileMenu } from "./profile-menu";
 import { Button } from "./ui/button";
 import {
   Drawer,

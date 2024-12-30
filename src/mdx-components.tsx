@@ -1,6 +1,6 @@
+import { Link } from "@/i18n/routing";
 import { stripDiacritics } from "@/lib/stripDiacritics";
 import type { MDXComponents } from "mdx/types";
-import Link from "next/link";
 
 const HeadingLink = ({ id, ...rest }: Readonly<{ id?: string }>) => {
   if (!id) return <h2 {...rest} />;
