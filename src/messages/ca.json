@@ -78,5 +78,9 @@
     "profile": "Perfil",
     "settings": "Ajustos",
     "system": "Sistema"
+  },
+  "copyButton": {
+    "copy": "Copia",
+    "copied": "Copiat!"
   }
 }
