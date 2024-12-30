@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { DrawerWrapper } from "@/components/ui/drawer";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
@@ -41,6 +42,7 @@ export default async function RootLayout({
           fontSans.variable,
         )}
       >
+        <SpeedInsights />
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <DrawerWrapper>
