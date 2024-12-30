@@ -6,8 +6,15 @@ export interface RedirectEntry {
   destination: string;
 }
 
+const computedRedirects = computeRedirects().toArray();
+
 /** Short slug to destination ({@link RedirectEntry}). */
-export const redirects = Object.fromEntries(computeRedirects());
+export const redirects = Object.fromEntries(computedRedirects);
+
+/** Destination to short slug. */
+export const slugs = Object.fromEntries(
+  computedRedirects.map(([slug, { destination }]) => [destination, slug]),
+);
 
 function redirectEntry(
   source: string,
