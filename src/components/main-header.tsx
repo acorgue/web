@@ -3,8 +3,8 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
-import { ProfileMenu } from "./profile-menu";
 import { Navbar } from "./navbar";
+import { ProfileMenu } from "./profile-menu";
 import { Button } from "./ui/button";
 import {
   Drawer,
