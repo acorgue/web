@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Link } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 import {
   DownloadIcon,
@@ -15,7 +16,6 @@ import {
   FileIcon,
   Pencil2Icon,
 } from "@radix-ui/react-icons";
-import Link from "next/link";
 import { ReactNode } from "react";
 
 export function SignUpOptions() {

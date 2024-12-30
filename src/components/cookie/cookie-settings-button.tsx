@@ -2,7 +2,7 @@
 
 import { CookieIcon } from "@radix-ui/react-icons";
 import { useTranslations } from "next-intl";
-import { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 import { Button } from "../ui/button";
 import { useCookie } from "./use-cookie";
 

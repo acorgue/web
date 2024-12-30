@@ -1,6 +1,6 @@
+import { Link } from "@/i18n/routing";
 import { CookieIcon } from "@radix-ui/react-icons";
 import type { useTranslations } from "next-intl";
-import Link from "next/link";
 import { toast } from "sonner";
 
 const CONSENT_ACCEPTED_NAME = "isConsentAccepted";
