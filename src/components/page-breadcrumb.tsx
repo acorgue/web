@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { Fragment } from "react";
 import {
   Breadcrumb,
   BreadcrumbEllipsis,
@@ -8,13 +6,15 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "./ui/breadcrumb";
+} from "@/components/ui/breadcrumb";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "./ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu";
+import Link from "next/link";
+import { Fragment } from "react";
 
 interface BreadcrumbFragment {
   href?: string;

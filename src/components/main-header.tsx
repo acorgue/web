@@ -1,3 +1,11 @@
+import { Button } from "@/components/ui/button";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
@@ -5,14 +13,6 @@ import Link from "next/link";
 import { ReactNode } from "react";
 import { Navbar } from "./navbar";
 import { ProfileMenu } from "./profile-menu";
-import { Button } from "./ui/button";
-import {
-  Drawer,
-  DrawerContent,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "./ui/drawer";
 
 export interface MainHeaderProps {
   nav: ReactNode;
