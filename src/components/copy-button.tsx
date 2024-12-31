@@ -1,15 +1,15 @@
 "use client";
 
-import { CheckIcon, Share1Icon } from "@radix-ui/react-icons";
-import { useTranslations } from "next-intl";
-import { useState } from "react";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "./ui/tooltip";
+} from "@/components/ui/tooltip";
+import { CheckIcon, Share1Icon } from "@radix-ui/react-icons";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 export interface CopyButtonProps {
   slug: string;
