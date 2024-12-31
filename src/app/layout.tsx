@@ -24,7 +24,6 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     title: {
-      absolute: t("name"),
       template: `%s · ${t("name")}`,
       default: t("name"),
     },
