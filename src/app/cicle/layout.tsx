@@ -1,17 +1,13 @@
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
-import type { Metadata, ResolvingMetadata } from "next";
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { PropsWithChildren } from "react";
 
-export async function generateMetadata(
-  {},
-  parent: ResolvingMetadata,
-): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("metadata");
-  const { title } = await parent;
 
   return {
-    title: `${t("concertSeries")} · ${title}`,
+    title: t("concertSeries"),
     description: t("concertSeriesDescription"),
   };
 }

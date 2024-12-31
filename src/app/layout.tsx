@@ -23,7 +23,11 @@ export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("organization");
 
   return {
-    title: t("name"),
+    title: {
+      absolute: t("name"),
+      template: `%s · ${t("name")}`,
+      default: t("name"),
+    },
     description: t("description"),
   };
 }
