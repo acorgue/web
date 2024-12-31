@@ -16,6 +16,8 @@ export interface PostData extends MatterPostData {
   id: string;
 }
 
+type MatchTuple = [string, string, string];
+
 const postsDirectory = join(process.cwd(), "src/app/publicacions/posts");
 const fileNameRegExp = /^(\d{4}-\d{2}-\d{2})-(.*?)\.mdx?$/;
 
@@ -29,7 +31,7 @@ async function getPosts() {
   const fileNames = readdirSync(postsDirectory);
 
   const postEntries = fileNames.map(async (fileName) => {
-    const match = fileName.match(fileNameRegExp) as [string, string, string];
+    const match = fileName.match(fileNameRegExp) as MatchTuple | null;
     if (!match) {
       throw Error(
         `File ${fileName} does not match the expected ${fileNameRegExp} expression.`,
