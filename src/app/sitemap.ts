@@ -1,6 +1,6 @@
 import orgues from "@/database/orgues.json";
 import type { MetadataRoute } from "next";
-import { OrguesEdifici } from "./orgues/orgueNavigation";
+import { OrguesEdifici } from "./(markdown)/orgues/orgueNavigation";
 
 export const baseURL = new URL("https://www.acorgue.cat");
 

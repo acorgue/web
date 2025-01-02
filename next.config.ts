@@ -7,6 +7,15 @@ import remarkGfm from "remark-gfm";
 const nextConfig: NextConfig = {
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
   reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "nextcloud.acorgue.cat",
+        pathname: "/s/**",
+      },
+    ],
+  },
 };
 
 const withNextIntl = createNextIntlPlugin();
