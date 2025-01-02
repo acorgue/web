@@ -1,5 +1,5 @@
-import { orgueNavigation } from "@/app/orgues/orgueNavigation";
-import { slugs } from "@/app/orgues/redirects";
+import { orgueNavigation } from "@/app/(markdown)/orgues/orgueNavigation";
+import { slugs } from "@/app/(markdown)/orgues/redirects";
 import { CopyButton } from "@/components/copy-button";
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
 import { getTranslations } from "next-intl/server";
