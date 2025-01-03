@@ -79,7 +79,7 @@ export default async function Home() {
               <Card
                 key={item.href}
                 className={cn(
-                  "group flex rounded-2xl backdrop-blur-md text-white bg-slate-300/40 transition-colors hover:bg-slate-50/40 border-slate-300/40",
+                  "group flex rounded-2xl border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 dark:border-border",
                 )}
               >
                 <Link
