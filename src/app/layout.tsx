@@ -9,15 +9,19 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
-import { Inter as FontSans } from "next/font/google";
+import localFont from "next/font/local";
 import { PropsWithChildren } from "react";
 
 import "./globals.css";
 
-const fontSans = FontSans({
-  subsets: ["latin"],
+const fontSans = localFont({
+  src: [
+    { path: "../../public/fonts/InterVariable.ttf", style: "normal" },
+    { path: "../../public/fonts/InterVariable-Italic.ttf", style: "italic" },
+  ],
   variable: "--font-sans",
   display: "swap",
+  preload: true,
 });
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -39,13 +43,12 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
-      <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
-        )}
-      >
+    <html
+      lang={locale}
+      className={cn("scroll-smooth", fontSans.variable)}
+      suppressHydrationWarning
+    >
+      <body className="min-h-screen bg-background antialiased">
         <SpeedInsights />
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
