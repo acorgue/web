@@ -17,13 +17,17 @@ import "./globals.css";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
+  display: "swap",
 });
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("organization");
 
   return {
-    title: t("name"),
+    title: {
+      template: `%s · ${t("name")}`,
+      default: t("name"),
+    },
     description: t("description"),
   };
 }
@@ -47,9 +51,7 @@ export default async function RootLayout({
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <DrawerWrapper>
               <MainHeader nav={<Navbar />} />
-              <main className="container pt-8 mx-auto px-4 prose dark:prose-invert">
-                {children}
-              </main>
+              {children}
               <Toaster />
               <CookieToast />
             </DrawerWrapper>

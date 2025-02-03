@@ -31,7 +31,7 @@ export function CopyButton({ slug }: Readonly<CopyButtonProps>) {
                 new URL(slug, window.location.origin).toString(),
               );
               setCopied(true);
-              setTimeout(() => setCopied(false), 20000);
+              setTimeout(() => setCopied(false), 2000);
             }}
           >
             {copied ? (
