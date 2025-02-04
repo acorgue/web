@@ -18,7 +18,7 @@ export function SearchBar() {
   const commandRef = useRef<HTMLDivElement>(null);
   const [results, setResults] = useState<
     Awaited<ReturnType<typeof findOrgues>>
-  >([]);
+  >({ orgues: [] });
 
   const [query, setQuery] = useState("");
 
@@ -67,32 +67,34 @@ export function SearchBar() {
         <Command className="border" shouldFilter={false} loop>
           <CommandList>
             <CommandEmpty>Sense resultats</CommandEmpty>
-            {results.length ? (
+            {results.orgues.length ? (
               <CommandGroup heading="Orgues">
-                {results.map(({ link, orgue, edifici, municipi, comarca }) => {
-                  return (
-                    <CommandItem
-                      key={link}
-                      value={link}
-                      onSelect={() => (window.location.href = link)}
-                    >
-                      <div className="w-full">
-                        <p className="line-clamp-2">
-                          <HighlightedText
-                            text={`${edifici.nom} ${orgue ? `(${orgue.nom})` : ""}`}
-                            query={query}
-                          />
-                        </p>
-                        <p className="truncate text-muted-foreground">
-                          <HighlightedText
-                            text={`${municipi.nom} (${comarca?.nom})`}
-                            query={query}
-                          />
-                        </p>
-                      </div>
-                    </CommandItem>
-                  );
-                })}
+                {results.orgues.map(
+                  ({ link, orgue, edifici, municipi, comarca }) => {
+                    return (
+                      <CommandItem
+                        key={link}
+                        value={link}
+                        onSelect={() => (window.location.href = link)}
+                      >
+                        <div className="w-full">
+                          <p className="line-clamp-2">
+                            <HighlightedText
+                              text={`${edifici.nom} ${orgue ? `(${orgue.nom})` : ""}`}
+                              query={query}
+                            />
+                          </p>
+                          <p className="truncate text-muted-foreground">
+                            <HighlightedText
+                              text={`${municipi.nom} (${comarca?.nom})`}
+                              query={query}
+                            />
+                          </p>
+                        </div>
+                      </CommandItem>
+                    );
+                  },
+                )}
               </CommandGroup>
             ) : null}
           </CommandList>

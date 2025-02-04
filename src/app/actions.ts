@@ -40,13 +40,15 @@ const orgues = rawOrgues.orgues.flatMap((provincia) =>
 
 export async function findOrgues(query: string) {
   const strippedQuery = stripDiacritics(query).toLocaleLowerCase();
-  return orgues
-    .filter(({ municipi, edifici, orgue }) => {
-      return [municipi?.nom, edifici?.nom, orgue?.nom]
-        .filter((nom) => nom !== undefined)
-        .some((nom) =>
-          stripDiacritics(nom).toLocaleLowerCase().includes(strippedQuery),
-        );
-    })
-    .slice(0, 10);
+  return {
+    orgues: orgues
+      .filter(({ municipi, edifici, orgue }) => {
+        return [municipi?.nom, edifici?.nom, orgue?.nom]
+          .filter((nom) => nom !== undefined)
+          .some((nom) =>
+            stripDiacritics(nom).toLocaleLowerCase().includes(strippedQuery),
+          );
+      })
+      .slice(0, 10),
+  };
 }
