@@ -82,5 +82,6 @@
 #search-popover {
   position-anchor: --search-bar;
   inset-block-start: anchor(--search-bar bottom);
-  inset-inline-start: anchor(--search-bar right);
+  inset-inline-start: anchor(--search-bar start);
+  inset-inline-end: anchor(--search-bar end);
 }
