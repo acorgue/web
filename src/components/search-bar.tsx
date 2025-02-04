@@ -1,6 +1,6 @@
 "use client";
 
-import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
+import { findOrgues } from "@/app/actions";
 import { useTranslations } from "next-intl";
 import { ChangeEvent, useEffect, useRef, useState } from "react";
 import {
@@ -16,14 +16,22 @@ export function SearchBar() {
 
   const inputRef = useRef<HTMLInputElement>(null);
   const commandRef = useRef<HTMLDivElement>(null);
+  const [results, setResults] = useState<
+    Awaited<ReturnType<typeof findOrgues>>
+  >([]);
 
   const [query, setQuery] = useState("");
 
-  function handleChangeSearch(e: ChangeEvent<HTMLInputElement>) {
+  async function handleChangeSearch(e: ChangeEvent<HTMLInputElement>) {
     setQuery(e.target.value);
 
-    if (e.target.value) commandRef.current?.showPopover();
-    else commandRef.current?.hidePopover();
+    if (e.target.value) {
+      commandRef.current?.showPopover();
+      commandRef.current?.focus();
+      setResults(await findOrgues(e.target.value));
+    } else {
+      commandRef.current?.hidePopover();
+    }
   }
 
   useEffect(() => {
@@ -50,19 +58,58 @@ export function SearchBar() {
       <kbd className="pointer-events-none absolute right-[0.35rem] top-[0.35rem] hidden h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex">
         <span className="text-xs">⌘</span>K
       </kbd>
-      <div ref={commandRef} id="search-popover" popover="auto">
-        <Command className="border">
+      <div
+        ref={commandRef}
+        id="search-popover"
+        popover="auto"
+        className="w-auto"
+      >
+        <Command className="border" shouldFilter={false} loop>
           <CommandList>
-            <CommandEmpty>Sense resultats.</CommandEmpty>
-            <CommandGroup>
-              <CommandItem value="1">
-                <MagnifyingGlassIcon className="mr-2 h-4 w-4" />
-                {query}
-              </CommandItem>
-            </CommandGroup>
+            <CommandEmpty>Sense resultats</CommandEmpty>
+            {results.length ? (
+              <CommandGroup heading="Orgues">
+                {results.map(({ link, orgue, edifici, municipi, comarca }) => {
+                  return (
+                    <CommandItem
+                      key={link}
+                      value={link}
+                      onSelect={() => (window.location.href = link)}
+                    >
+                      <div className="w-full">
+                        <p className="line-clamp-2">
+                          <HighlightedText
+                            text={`${edifici.nom} ${orgue ? `(${orgue.nom})` : ""}`}
+                            query={query}
+                          />
+                        </p>
+                        <p className="truncate text-muted-foreground">
+                          <HighlightedText
+                            text={`${municipi.nom} (${comarca?.nom})`}
+                            query={query}
+                          />
+                        </p>
+                      </div>
+                    </CommandItem>
+                  );
+                })}
+              </CommandGroup>
+            ) : null}
           </CommandList>
         </Command>
       </div>
     </div>
+  );
+}
+
+function HighlightedText({ text, query }: { text: string; query: string }) {
+  return text.split(new RegExp(`(${query})`, "gi")).map((part, i) =>
+    part.toLowerCase() === query.toLowerCase() ? (
+      <mark key={i} className="bg-yellow-200 dark:bg-yellow-800">
+        {part}
+      </mark>
+    ) : (
+      part
+    ),
   );
 }
