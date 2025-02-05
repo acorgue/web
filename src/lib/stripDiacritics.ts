@@ -10,5 +10,9 @@
  * @returns The resulting string with diacritic marks removed.
  */
 export function stripDiacritics(string: string) {
-  return string.normalize("NFD").replace(/\p{Diacritic}/gu, "");
+  return string
+    .trim()
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLocaleLowerCase();
 }
