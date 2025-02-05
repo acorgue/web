@@ -12,6 +12,7 @@ import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { Inter as FontSans } from "next/font/google";
 import { PropsWithChildren } from "react";
 
+import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
 
 const fontSans = FontSans({
@@ -49,12 +50,14 @@ export default async function RootLayout({
         <SpeedInsights />
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <DrawerWrapper>
-              <MainHeader nav={<Navbar />} />
-              {children}
-              <Toaster />
-              <CookieToast />
-            </DrawerWrapper>
+            <TooltipProvider delayDuration={100}>
+              <DrawerWrapper>
+                <MainHeader nav={<Navbar />} />
+                {children}
+                <Toaster />
+                <CookieToast />
+              </DrawerWrapper>
+            </TooltipProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
