@@ -1,9 +1,13 @@
 "use client";
 
-import { findOrgues } from "@/app/actions";
+import { findOrgues, SearchResultOrgue } from "@/app/actions";
 
+import { normalizeString } from "@/lib/normalizeString";
+import { cn } from "@/lib/utils";
+import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import { useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import { PropsWithChildren, useEffect, useState } from "react";
+import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import {
   CommandDialog,
@@ -14,23 +18,39 @@ import {
   CommandList,
 } from "./ui/command";
 import { DialogDescription, DialogTitle } from "./ui/dialog";
+import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
+
+const bisbatToClassName: Record<string, string> = {
+  barcelona: "bg-red-300 dark:bg-red-700",
+  girona: "bg-purple-300 dark:bg-purple-700",
+  lleida: "bg-yellow-300 dark:bg-yellow-700",
+  "sant-feliu": "bg-blue-300 dark:bg-blue-700",
+  solsona: "bg-teal-300 dark:bg-teal-700",
+  tarragona: "bg-green-300 dark:bg-green-700",
+  terrassa: "bg-green-300 dark:bg-green-700",
+  tortosa: "bg-blue-300 dark:bg-blue-700",
+  urgell: "bg-violet-300 dark:bg-violet-700",
+  vic: "bg-orange-300 dark:bg-orange-700",
+  civil: "bg-gray-300 dark:bg-gray-700",
+};
+
+type SearchResults = Awaited<ReturnType<typeof findOrgues>>;
 
 export function SearchBar() {
   const t = useTranslations("searchBar");
 
   const [open, setOpen] = useState(false);
-  const [results, setResults] = useState<
-    Awaited<ReturnType<typeof findOrgues>>
-  >({ orgues: [] });
-
   const [query, setQuery] = useState("");
+  const [results, setResults] = useState<SearchResults>([]);
 
-  async function handleChangeSearch(query: string) {
-    setQuery(query);
-    if (!query) return setResults({ orgues: [] });
-
-    setResults(await findOrgues(query));
-  }
+  useEffect(() => {
+    if (!query) return setResults([]);
+    // Debounce: evita consultes innecessàries mentre l’usuari escriu
+    const handler = setTimeout(async () => {
+      setResults(await findOrgues(query));
+    }, 300);
+    return () => clearTimeout(handler);
+  }, [query]);
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -55,66 +75,127 @@ export function SearchBar() {
         </kbd>
       </Button>
 
-      <CommandDialog open={open} onOpenChange={setOpen}>
-        <DialogTitle className="sr-only">{t("search")}</DialogTitle>
-        <DialogDescription className="sr-only">{t("search")}</DialogDescription>
+      <CommandDialog
+        open={open}
+        onOpenChange={setOpen}
+        shouldFilter={false}
+        loop
+      >
+        <DialogTitle className="sr-only">{t("searchFull")}</DialogTitle>
+        <DialogDescription className="sr-only">
+          {t("searchFull")}
+        </DialogDescription>
         <CommandInput
-          placeholder={t("search")}
+          placeholder={t("searchFull")}
           onChangeCapture={(event) => {
             const input = event.target as HTMLInputElement;
-            handleChangeSearch(input.value);
+            setQuery(normalizeString(input.value));
           }}
         />
         <CommandList>
-          <CommandEmpty>Sense resultats</CommandEmpty>
-          {results.orgues.length ? (
-            <CommandGroup heading={`Orgues (${results.orgues.length})`}>
-              {results.orgues.map(
-                ({ link, orgue, edifici, municipi, comarca }) => (
-                  <CommandItem
-                    key={link}
-                    value={link}
-                    onSelect={() => (window.location.href = link)}
-                  >
-                    <div className="w-full">
-                      <p className="line-clamp-2">
-                        <HighlightedText text={edifici.nom} query={query} />
-                        {orgue && (
-                          <>
-                            <span className="text-muted-foreground px-2">
-                              ›
-                            </span>
-                            <HighlightedText text={orgue.nom} query={query} />
-                          </>
-                        )}
-                      </p>
-                      <p className="truncate text-muted-foreground">
-                        <HighlightedText
-                          text={`${municipi.nom} (${comarca?.nom})`}
-                          query={query}
-                        />
-                      </p>
-                    </div>
-                  </CommandItem>
-                ),
+          {query && !results.length ? (
+            <CommandEmpty>{t("noResults")}</CommandEmpty>
+          ) : null}
+          {results.map(({ group, label, items, total, moreLink }) => (
+            <CommandGroup
+              key={group}
+              heading={`${label} (${items.length}${total > items.length ? "+" : ""})`}
+            >
+              {group === "orgues"
+                ? items.map((item) => (
+                    <SearchItemOrgue
+                      key={item.link}
+                      query={query}
+                      orgue={item}
+                    />
+                  ))
+                : items.map((item) => (
+                    <SearchItem key={item.link} link={item.link}>
+                      {item.link}
+                    </SearchItem>
+                  ))}
+              {total > items.length && (
+                <SearchItem link={moreLink}>
+                  <MagnifyingGlassIcon /> Mostra tots els resultats ({total})
+                </SearchItem>
               )}
             </CommandGroup>
-          ) : null}
+          ))}
         </CommandList>
       </CommandDialog>
     </>
   );
 }
 
+function SearchItem({
+  link,
+  children,
+}: Readonly<PropsWithChildren<{ link: string }>>) {
+  return (
+    <CommandItem value={link} onSelect={() => (window.location.href = link)}>
+      {children}
+    </CommandItem>
+  );
+}
+
+function SearchItemOrgue({
+  query,
+  orgue,
+}: {
+  query: string;
+  orgue: SearchResultOrgue;
+}) {
+  return (
+    <SearchItem link={orgue.link}>
+      <div className="w-full">
+        <p className="line-clamp-2">
+          <HighlightedText text={orgue.edifici.nom} query={query} />
+          {orgue.orgue && (
+            <>
+              <span className="text-muted-foreground px-2">›</span>
+              <HighlightedText text={orgue.orgue.nom} query={query} />
+            </>
+          )}
+        </p>
+        <p className="truncate text-muted-foreground">
+          <HighlightedText
+            text={`${orgue.municipi.nom} (${orgue.comarca?.nom})`}
+            query={query}
+          />
+        </p>
+      </div>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <Badge
+            variant="circle"
+            className={cn(
+              "flex-shrink-0",
+              orgue.bisbat?.link
+                ? bisbatToClassName[orgue.bisbat.link]
+                : "bg-gray-500",
+            )}
+          >
+            {orgue.bisbat?.caps}
+          </Badge>
+        </TooltipTrigger>
+        <TooltipContent>
+          {orgue.bisbat?.link === "civil"
+            ? orgue.bisbat.nom
+            : `Bisbat ${orgue.bisbat?.de}${orgue.bisbat?.nom}`}
+        </TooltipContent>
+      </Tooltip>
+    </SearchItem>
+  );
+}
+
 function HighlightedText({ text, query }: { text: string; query: string }) {
-  if (query.length < 3) return text;
-  return text.split(new RegExp(`(${query})`, "gi")).map((part, i) =>
-    part.toLowerCase() === query.toLowerCase() ? (
+  if (query.length < 2) return text;
+  return text.split(new RegExp(`(${query})`, "gi")).map((part, i) => {
+    if (normalizeString(part) !== query) return part;
+    return (
       <mark key={i} className="bg-yellow-200 dark:bg-yellow-800">
         {part}
       </mark>
-    ) : (
-      part
-    ),
-  );
+    );
+  });
 }

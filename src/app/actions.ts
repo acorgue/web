@@ -1,7 +1,7 @@
 "use server";
 
 import rawOrgues from "@/database/orgues.json";
-import { stripDiacritics } from "@/lib/stripDiacritics";
+import { normalizeString } from "@/lib/normalizeString";
 import { Orgue, OrguesEdifici } from "./(markdown)/orgues/orgueNavigation";
 
 const orgues = rawOrgues.orgues.flatMap((provincia) =>
@@ -38,15 +38,25 @@ const orgues = rawOrgues.orgues.flatMap((provincia) =>
   ),
 );
 
-export async function findOrgues(query: string) {
-  const strippedQuery = stripDiacritics(query).toLocaleLowerCase();
-  return {
-    orgues: orgues.filter(({ municipi, edifici, orgue }) => {
-      return [municipi?.nom, edifici?.nom, orgue?.nom]
-        .filter((nom) => nom !== undefined)
-        .some((nom) =>
-          stripDiacritics(nom).toLocaleLowerCase().includes(strippedQuery),
-        );
-    }),
-  };
+export type SearchResultOrgue = (typeof orgues)[number];
+
+export async function findOrgues(normalizedQuery: string) {
+  const filteredOrgues = orgues.filter(({ municipi, edifici, orgue }) => {
+    return [municipi?.nom, edifici?.nom, orgue?.nom]
+      .filter((nom) => nom !== undefined)
+      .some((part) => normalizeString(part).includes(normalizedQuery));
+  });
+  return [
+    ...(filteredOrgues.length
+      ? [
+          {
+            group: "orgues",
+            label: "Orgues",
+            total: filteredOrgues.length,
+            items: filteredOrgues.slice(0, 4),
+            moreLink: `/orgues/?q=${normalizedQuery}`,
+          },
+        ]
+      : []),
+  ];
 }
