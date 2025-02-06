@@ -1,4 +1,4 @@
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { MenuIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
@@ -40,7 +40,7 @@ export async function MainHeader({ nav }: Readonly<MainHeaderProps>) {
         </div>
         <Drawer>
           <DrawerTrigger className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:text-accent-foreground py-2 -ms-2 mr-2 h-8 w-8 px-0 text-base hover:bg-transparent md:hidden">
-            <HamburgerMenuIcon />
+            <MenuIcon />
             <span className="sr-only">{t("navbar.toggleMenu")}</span>
           </DrawerTrigger>
           <DrawerContent className="h-[500px] max-h-[calc(100vh-4rem)]">

@@ -16,12 +16,12 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import {
-  ExitIcon,
-  GearIcon,
+  LogOutIcon,
   MoonIcon,
-  PersonIcon,
+  SettingsIcon,
   SunIcon,
-} from "@radix-ui/react-icons";
+  UserIcon,
+} from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { useTranslations } from "next-intl";
@@ -34,7 +34,7 @@ export function ProfileMenu() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon">
-          <PersonIcon />
+          <UserIcon />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56 right-10">
@@ -42,11 +42,11 @@ export function ProfileMenu() {
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem>
-            <PersonIcon />
+            <UserIcon />
             <span>{t("profile")}</span>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <GearIcon />
+            <SettingsIcon />
             <span>{t("settings")}</span>
           </DropdownMenuItem>
         </DropdownMenuGroup>
@@ -75,7 +75,7 @@ export function ProfileMenu() {
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
-          <ExitIcon />
+          <LogOutIcon />
           <span>{t("logOut")}</span>
           <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
         </DropdownMenuItem>

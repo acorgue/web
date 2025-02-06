@@ -4,7 +4,7 @@ import { findOrgues, SearchResultOrgue } from "@/app/actions";
 
 import { normalizeString } from "@/lib/normalizeString";
 import { cn } from "@/lib/utils";
-import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
+import { SearchIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { PropsWithChildren, useEffect, useState } from "react";
 import { Badge } from "./ui/badge";
@@ -116,7 +116,7 @@ export function SearchBar() {
                   ))}
               {total > items.length && (
                 <SearchItem link={moreLink}>
-                  <MagnifyingGlassIcon /> Mostra tots els resultats ({total})
+                  <SearchIcon /> Mostra tots els resultats ({total})
                 </SearchItem>
               )}
             </CommandGroup>

@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckIcon, Share1Icon } from "@radix-ui/react-icons";
+import { CheckIcon, CopyIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { Button } from "./ui/button";
@@ -28,7 +28,7 @@ export function CopyButton({ slug }: Readonly<CopyButtonProps>) {
             setTimeout(() => setCopied(false), 2000);
           }}
         >
-          {copied ? <CheckIcon className="text-emerald-500" /> : <Share1Icon />}
+          {copied ? <CheckIcon className="text-emerald-500" /> : <CopyIcon />}
         </Button>
       </TooltipTrigger>
       <TooltipContent>{copied ? t("copied") : t("copy")}</TooltipContent>

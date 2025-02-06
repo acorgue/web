@@ -1,7 +1,7 @@
 import { HomeCarousel } from "@/components/home-carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { ArrowRightIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Literata } from "next/font/google";
 import Link from "next/link";
