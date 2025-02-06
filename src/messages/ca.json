@@ -29,8 +29,6 @@
   "metadata": {
     "aboutUs": "Qui som",
     "aboutUsDescription": "L’Associació Catalana de l’Orgue (ACO) és una entitat sense ànim de lucre que pretén aglutinar tots els elements que conformen el món de l’orgue a Catalunya.",
-    "articles": "Publicacions",
-    "articlesDescription": "Publicacions de l’Associació Catalana de l’Orgue.",
     "associations": "Associacions",
     "associationsDescription": "Recull de les diferents associacions que existeixen a Catalunya que s’han format al voltant dels diferents orgues. Amics de l’orgue.",
     "concertSeries": "Cicle «Els orgues de Catalunya»",
@@ -42,6 +40,8 @@
     "home": "Inici",
     "legalNotice": "Avís legal",
     "legalNoticeDescription": "Avís legal de la pàgina web.",
+    "news": "Notícies i articles",
+    "newsDescription": "Notícies i articles de l’Associació Catalana de l’Orgue.",
     "pipeOrgans": "Orgues",
     "pipeOrgansDescription": "Inventari dels orgues de Catalunya. Cercador d’orgues de Catalunya. Orgues classificats per orguener, per constructor, per poble, comarca, província i bisbat.",
     "privacyPolicy": "Política de privacitat",
@@ -83,8 +83,8 @@
     "system": "Sistema"
   },
   "searchBar": {
-    "search": "Cerca…",
     "noResults": "Sense resultats",
-    "searchFull": "Cerca orgues, concerts, publicacions…"
+    "search": "Cerca…",
+    "searchFull": "Cerca orgues, concerts, notícies"
   }
 }
