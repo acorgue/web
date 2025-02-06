@@ -1,6 +1,8 @@
+import { ArticleCard } from "@/components/article-card";
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
 import { getTranslations } from "next-intl/server";
 import Noticies from "./noticies.mdx";
+import { sortedPosts } from "./posts";
 
 export default async function Page() {
   const t = await getTranslations("metadata");
@@ -15,6 +17,14 @@ export default async function Page() {
         className="not-prose mb-8"
       />
       <Noticies />
+
+      <ul className="not-prose flex flex-col gap-4">
+        {sortedPosts.map((post) => (
+          <a key={post.slug} href={`/noticies/${post.slug}`}>
+            <ArticleCard key={post.slug} post={post} />
+          </a>
+        ))}
+      </ul>
     </>
   );
 }
