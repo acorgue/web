@@ -1,8 +1,9 @@
+import { ArticleCard } from "@/components/article-card";
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
 import { Badge } from "@/components/ui/badge";
 import { UserIcon } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
-import { posts } from "../posts";
+import { posts, sortedPosts } from "../posts";
 import { PublicacioParams } from "./layout";
 
 export default async function Page({
@@ -42,14 +43,14 @@ export default async function Page({
           </h1>
 
           <div className="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
-            <span
+            <address
               itemProp="author"
               itemScope
               itemType="https://schema.org/Person"
-              className="flex gap-1 items-center"
+              className="flex gap-1 items-center not-italic"
             >
               <UserIcon className="w-4 h-4" /> {post.author}
-            </span>
+            </address>
             <time
               itemProp="datePublished"
               content={post.date.toISOString()}
@@ -74,6 +75,16 @@ export default async function Page({
           <Body />
         </section>
       </article>
+      <section>
+        <h2>Últimes notícies</h2>
+        <ul className="not-prose flex flex-col gap-4">
+          {sortedPosts.slice(0, 3).map((post) => (
+            <a key={post.slug} href={`/noticies/${post.slug}`}>
+              <ArticleCard key={post.slug} post={post} />
+            </a>
+          ))}
+        </ul>
+      </section>
     </>
   );
 }
