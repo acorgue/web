@@ -4,8 +4,8 @@ import {
   ExternalLinkIcon,
   FileIcon,
   FileTextIcon,
-  Pencil2Icon,
-} from "@radix-ui/react-icons";
+  PencilIcon,
+} from "lucide-react";
 import Link from "next/link";
 
 export function ProcedenciaDades() {
@@ -23,7 +23,7 @@ export function ProcedenciaDades() {
       <li className="flex-1 px-6 pt-3 pb-6 sm:py-6 m-0">
         <Button asChild type="button" variant="ghost" className="w-full">
           <Link href="https://nextcloud.acorgue.cat/s/a6jB33E8cZTwDCp/download">
-            <Pencil2Icon className="h-5 w-5 me-2" aria-hidden="true" />
+            <PencilIcon className="h-5 w-5 me-2" aria-hidden="true" />
             <span className="w-full">Formulari en PDF signat digitalment</span>
             <ExternalLinkIcon className="h-4 w-4 ms-4" aria-hidden="true" />
           </Link>

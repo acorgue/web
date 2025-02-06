@@ -1,4 +1,4 @@
-import { CookieIcon } from "@radix-ui/react-icons";
+import { CookieIcon } from "lucide-react";
 import type { useTranslations } from "next-intl";
 import Link from "next/link";
 import { toast } from "sonner";

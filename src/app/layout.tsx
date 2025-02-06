@@ -4,6 +4,7 @@ import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { DrawerWrapper } from "@/components/ui/drawer";
 import { Toaster } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
@@ -12,7 +13,6 @@ import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { Inter as FontSans } from "next/font/google";
 import { PropsWithChildren } from "react";
 
-import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
 
 const fontSans = FontSans({
