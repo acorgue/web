@@ -1,5 +1,6 @@
 import orgues from "@/database/orgues.json";
 import type { MetadataRoute } from "next";
+import { sortedPosts } from "./(markdown)/noticies/posts";
 import { OrguesEdifici } from "./(markdown)/orgues/orgueNavigation";
 
 export const baseURL = new URL("https://www.acorgue.cat");
@@ -22,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: url("/politica-de-privacitat") },
     { url: url("/politica-de-privacitat-socis") },
     { url: url("/noticies") },
+    ...sitemapNoticies(),
     { url: url("/qui-som") },
   ];
 }
@@ -54,4 +56,8 @@ function sitemapOrgues() {
       ]) ?? []),
     ]),
   ]);
+}
+
+function sitemapNoticies() {
+  return sortedPosts.map((post) => ({ url: url(`/noticies/${post.slug}`) }));
 }
