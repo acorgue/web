@@ -51,17 +51,17 @@ export default async function Home() {
   ];
 
   return (
-    <main className="mt-[-56px]">
+    <main>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }}
       />
 
-      <div className="relative">
-        <div className="min-h-[600px] h-screen overflow-hidden flex items-center">
+      <div className="relative p-8">
+        <div className="min-h-[600px] h-[calc(100vh-4rem-56px)] overflow-hidden flex items-center rounded-[3rem] shadow-xl">
           <HomeCarousel images={images} />
         </div>
-        <div className="absolute flex flex-col justify-between gap-24 h-full w-full px-4 min-[425px]:px-8 sm:px-18 md:px-24 lg:px-32 pt-24 sm:pt-32 pb-8 sm:pb-16 top-0">
+        <div className="absolute flex flex-col justify-between gap-24 h-full px-4 min-[425px]:px-8 sm:px-18 md:px-24 lg:px-32 pt-24 sm:pt-32 pb-8 sm:pb-16 top-0">
           <h1
             className={cn(
               "text-5xl lg:text-6xl xl:text-7xl font-semibold text-white/90 drop-shadow-2xl [text-shadow:_0_5px_50px_rgb(0_0_0_/_0.6)] sm:[text-shadow:_0_5px_50px_rgb(0_0_0_/_0.4)]",
