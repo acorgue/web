@@ -62,7 +62,9 @@ export default async function Page({
           </div>
           <div className="flex gap-2">
             {post.tags.map((tag) => (
-              <Badge variant="secondary">{tag}</Badge>
+              <Badge key={tag} variant="secondary">
+                {tag}
+              </Badge>
             ))}
           </div>
         </header>

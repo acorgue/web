@@ -29,7 +29,9 @@ export async function ArticleCard({ post }: Readonly<{ post: PostData }>) {
         </div>
         <div className="flex gap-2">
           {post.tags.map((tag) => (
-            <Badge variant="secondary">{tag}</Badge>
+            <Badge key={tag} variant="secondary">
+              {tag}
+            </Badge>
           ))}
         </div>
       </CardHeader>
