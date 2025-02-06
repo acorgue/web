@@ -1,4 +1,4 @@
-import { orgueNavigation } from "@/app/orgues/orgueNavigation";
+import { orgueNavigation } from "@/app/(markdown)/orgues/orgueNavigation";
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
 import {
   Card,

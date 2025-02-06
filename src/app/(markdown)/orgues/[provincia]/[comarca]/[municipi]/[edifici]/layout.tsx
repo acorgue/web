@@ -1,4 +1,4 @@
-import { orgueNavigation } from "@/app/orgues/orgueNavigation";
+import { orgueNavigation } from "@/app/(markdown)/orgues/orgueNavigation";
 import { PropsWithChildren } from "react";
 import { OrguesMunicipiParams } from "../layout";
 

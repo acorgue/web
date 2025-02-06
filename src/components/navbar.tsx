@@ -1,4 +1,4 @@
-import { sortedPosts } from "@/app/publicacions/posts";
+import { sortedPosts } from "@/app/(markdown)/publicacions/posts";
 import { Button } from "@/components/ui/button";
 import { DrawerClose } from "@/components/ui/drawer";
 import {
@@ -17,10 +17,10 @@ import {
   ExternalLinkIcon,
   FileTextIcon,
   GlobeIcon,
-  Pencil1Icon,
-  ReaderIcon,
-  SewingPinIcon,
-} from "@radix-ui/react-icons";
+  NewspaperIcon,
+  PencilIcon,
+  PinIcon,
+} from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { Fragment, ReactNode } from "react";
@@ -63,7 +63,7 @@ export function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
           href: "/full",
           label: t("metadata.factSheet"),
           description: t("navbar.factSheetDescription"),
-          icon: <ReaderIcon className="h-6 w-6" aria-hidden="true" />,
+          icon: <NewspaperIcon className="h-6 w-6" aria-hidden="true" />,
           items: [
             {
               href: "https://nextcloud.acorgue.cat/s/FXAytnxJC5XyBfr/download",
@@ -100,7 +100,7 @@ export function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
           href: "/cicle",
           label: t("metadata.concertSeries"),
           description: t("navbar.concertSeriesDescription"),
-          icon: <SewingPinIcon className="h-6 w-6" aria-hidden="true" />,
+          icon: <PinIcon className="h-6 w-6" aria-hidden="true" />,
         },
       ],
     },
@@ -123,7 +123,7 @@ export function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
           href: "/formacio",
           label: t("metadata.education"),
           description: t("navbar.educationDescription"),
-          icon: <Pencil1Icon className="h-6 w-6" aria-hidden="true" />,
+          icon: <PencilIcon className="h-6 w-6" aria-hidden="true" />,
         },
       ],
     },
@@ -270,7 +270,11 @@ export function HighlightedMenuItems({
                   key={item.href}
                   href={item.href}
                   title={item.label}
-                  icon={item.isExternal ? <ExternalLinkIcon /> : undefined}
+                  icon={
+                    item.isExternal ? (
+                      <ExternalLinkIcon className="w-4 h-4" />
+                    ) : undefined
+                  }
                 >
                   {"description" in item ? item.description : null}
                   {"date" in item ? (

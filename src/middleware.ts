@@ -1,4 +1,4 @@
-import { redirects as orguesRedirects } from "@/app/orgues/redirects";
+import { redirects as orguesRedirects } from "@/app/(markdown)/orgues/redirects";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function middleware(request: NextRequest) {

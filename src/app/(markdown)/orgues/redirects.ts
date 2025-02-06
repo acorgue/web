@@ -6,7 +6,7 @@ export interface RedirectEntry {
   destination: string;
 }
 
-const computedRedirects = computeRedirects().toArray();
+const computedRedirects = [...computeRedirects()];
 
 /** Short slug to destination ({@link RedirectEntry}). */
 export const redirects = Object.fromEntries(computedRedirects);

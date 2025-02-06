@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { CookieIcon } from "@radix-ui/react-icons";
+import { CookieIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { PropsWithChildren } from "react";
 import { useCookie } from "./use-cookie";

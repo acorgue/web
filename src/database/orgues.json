@@ -327,57 +327,67 @@
     {
       "nom": "Barcelona",
       "link": "barcelona",
-      "marker": "vermell"
+      "de": "de ",
+      "caps": "B"
     },
     {
       "nom": "Girona",
       "link": "girona",
-      "marker": "lila"
+      "de": "de ",
+      "caps": "G"
     },
     {
       "nom": "Lleida",
       "link": "lleida",
-      "marker": "groc"
+      "de": "de ",
+      "caps": "L"
     },
     {
       "nom": "Sant Feliu de Llobregat",
       "link": "sant-feliu",
-      "marker": "blau-clar"
+      "de": "de ",
+      "caps": "SF"
     },
     {
       "nom": "Solsona",
       "link": "solsona",
-      "marker": "turquesa"
+      "de": "de ",
+      "caps": "S"
     },
     {
       "nom": "Tarragona",
       "link": "tarragona",
-      "marker": "verd-clar"
+      "de": "de ",
+      "caps": "T"
     },
     {
       "nom": "Terrassa",
       "link": "terrassa",
-      "marker": "verd"
+      "de": "de ",
+      "caps": "TE"
     },
     {
       "nom": "Tortosa",
       "link": "tortosa",
-      "marker": "blau-fosc"
+      "de": "de ",
+      "caps": "TO"
     },
     {
       "nom": "Urgell",
       "link": "urgell",
-      "marker": "magenta"
+      "de": "d’",
+      "caps": "U"
     },
     {
       "nom": "Vic",
       "link": "vic",
-      "marker": "taronja"
+      "de": "de ",
+      "caps": "V"
     },
     {
       "nom": "No pertanyent a cap bisbat",
       "link": "civil",
-      "marker": "gris"
+      "caps": ""
     }
   ],
   "orgues": [
@@ -2882,7 +2892,7 @@
             {
               "nom": "La Pobla de Mafumet",
               "de": "de la Pobla de Mafumet",
-              "link": "pobla-de-mafumet",
+              "link": "la-pobla-de-mafumet",
               "bisbat": "tarragona",
               "relation": 340526,
               "edificis": [
