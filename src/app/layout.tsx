@@ -13,6 +13,7 @@ import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import localFont from "next/font/local";
 import { PropsWithChildren } from "react";
 
+import Footer from "@/components/footer";
 import "./globals.css";
 
 const fontSans = localFont({
@@ -57,6 +58,7 @@ export default async function RootLayout({
               <DrawerWrapper>
                 <MainHeader nav={<Navbar />} />
                 {children}
+                <Footer className="mt-24" />
                 <Toaster />
                 <CookieToast />
               </DrawerWrapper>
