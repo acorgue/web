@@ -1,8 +1,8 @@
 "use client";
 
-import { findOrgues, SearchResultOrgue } from "@/app/actions";
+import { quickSearch, SearchResultOrgue } from "@/app/_actions/quick-search";
 
-import { normalizeString } from "@/lib/normalizeString";
+import { normalizeString } from "@/lib/normalize-string";
 import { cn } from "@/lib/utils";
 import { SearchIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -34,7 +34,7 @@ const bisbatToClassName: Record<string, string> = {
   civil: "bg-gray-300 dark:bg-gray-700",
 };
 
-type SearchResults = Awaited<ReturnType<typeof findOrgues>>;
+type SearchResults = Awaited<ReturnType<typeof quickSearch>>;
 
 export function SearchBar() {
   const t = useTranslations("searchBar");
@@ -47,7 +47,7 @@ export function SearchBar() {
     if (!query) return setResults([]);
     // Debounce: evita consultes innecessàries mentre l’usuari escriu
     const handler = setTimeout(async () => {
-      setResults(await findOrgues(query));
+      setResults(await quickSearch(query));
     }, 300);
     return () => clearTimeout(handler);
   }, [query]);
@@ -111,7 +111,9 @@ export function SearchBar() {
                   ))
                 : items.map((item) => (
                     <SearchItem key={item.link} link={item.link}>
-                      {item.link}
+                      <p>
+                        <HighlightedText text={item.label} query={query} />
+                      </p>
                     </SearchItem>
                   ))}
               {total > items.length && (

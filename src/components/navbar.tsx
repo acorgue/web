@@ -1,6 +1,6 @@
-"use client";
-
+import { sortedPosts } from "@/app/(markdown)/noticies/posts";
 import { Button } from "@/components/ui/button";
+import { DrawerClose } from "@/components/ui/drawer";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -24,7 +24,6 @@ import {
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { Fragment, ReactNode } from "react";
-import { DrawerClose } from "./ui/drawer";
 
 export interface NavigationMenuProps {
   isMobile?: boolean;
@@ -47,31 +46,18 @@ export function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
   const menuItems = [
     { href: "/qui-som", label: t("metadata.aboutUs") },
     {
-      label: t("metadata.articles"),
+      label: t("metadata.news"),
       items: [
         {
-          href: "/publicacions",
+          href: "/noticies",
           label: t("navbar.newsAndArticles"),
           description: t("navbar.newsAndArticlesDescription"),
           icon: <BookmarkIcon className="h-6 w-6" aria-hidden="true" />,
-          items: [
-            {
-              href: "/publicacions/2024/07/03/presentacio-43e-cicle.html",
-              label:
-                "Presentació de la 44a edició del cicle «Els Orgues de Catalunya»",
-              date: new Date("2024-07-03"),
-            },
-            {
-              href: "/publicacions/2023/07/06/nou-orgue-a-cabrera-de-mar.html",
-              label: "Nou orgue de tubs a l'ermita de Santa Elena d’Agell",
-              date: new Date("2023-07-06"),
-            },
-            {
-              href: "/publicacions/2023/02/01/carta-vanguardia.html",
-              label: "Parafonies a la sala Oval",
-              date: new Date("2023-02-01"),
-            },
-          ],
+          items: sortedPosts.slice(0, 3).map((post) => ({
+            href: `/noticies/${post.slug}`,
+            label: post.title,
+            date: post.date,
+          })),
         },
         {
           href: "/full",

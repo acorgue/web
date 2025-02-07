@@ -1,8 +1,9 @@
 "use server";
 
 import rawOrgues from "@/database/orgues.json";
-import { normalizeString } from "@/lib/normalizeString";
-import { Orgue, OrguesEdifici } from "./(markdown)/orgues/orgueNavigation";
+import { matchFragments } from "@/lib/match-fragments";
+import { sortedPosts } from "../(markdown)/noticies/posts";
+import { Orgue, OrguesEdifici } from "../(markdown)/orgues/orgueNavigation";
 
 const orgues = rawOrgues.orgues.flatMap((provincia) =>
   provincia.comarques.flatMap(
@@ -38,14 +39,30 @@ const orgues = rawOrgues.orgues.flatMap((provincia) =>
   ),
 );
 
+export interface SearchResult {
+  link: string;
+  label: string;
+}
+
 export type SearchResultOrgue = (typeof orgues)[number];
 
-export async function findOrgues(normalizedQuery: string) {
-  const filteredOrgues = orgues.filter(({ municipi, edifici, orgue }) => {
-    return [municipi?.nom, edifici?.nom, orgue?.nom]
-      .filter((nom) => nom !== undefined)
-      .some((part) => normalizeString(part).includes(normalizedQuery));
-  });
+export type SearchResultGroup = {
+  label: string;
+  total: number;
+  moreLink: string;
+} & (
+  | { group: "orgues"; items: SearchResultOrgue[] }
+  | { group: "noticies"; items: SearchResult[] }
+);
+
+export async function quickSearch(normalizedQuery: string) {
+  const filteredOrgues = orgues.filter(({ municipi, edifici, orgue }) =>
+    matchFragments([municipi?.nom, edifici?.nom, orgue?.nom], normalizedQuery),
+  );
+  const filteredPosts = sortedPosts.filter(
+    ({ title, subtitle, author, tags }) =>
+      matchFragments([title, subtitle, author, ...tags], normalizedQuery),
+  );
   return [
     ...(filteredOrgues.length
       ? [
@@ -58,5 +75,19 @@ export async function findOrgues(normalizedQuery: string) {
           },
         ]
       : []),
-  ];
+    ...(filteredPosts.length
+      ? [
+          {
+            group: "noticies",
+            label: "Notícies",
+            total: filteredPosts.length,
+            items: filteredPosts.slice(0, 4).map((post) => ({
+              link: `/noticies/${post.slug}`,
+              label: post.title,
+            })),
+            moreLink: `/noticies/?q=${normalizedQuery}`,
+          },
+        ]
+      : []),
+  ] as SearchResultGroup[];
 }
