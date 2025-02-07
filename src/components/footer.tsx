@@ -6,6 +6,7 @@ import {
   TwitterIcon,
 } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+import Link from "next/link";
 import { Button } from "./ui/button";
 
 export default async function Footer({ className }: { className?: string }) {
@@ -23,40 +24,40 @@ export default async function Footer({ className }: { className?: string }) {
           <p className="mt-2">Rocafort, 242 bis, 08029 Barcelona</p>
 
           <Button asChild variant="secondary" size="sm">
-            <a href="/qui-som#com-fer-sen-soci" className="mt-2">
+            <Link href="/qui-som#com-fer-sen-soci" className="mt-2">
               {t("footer.joinUs")}
-            </a>
+            </Link>
           </Button>
 
           <ul className="flex gap-2 mt-4">
             <li>
-              <a href="mailto:aco@orgue.cat" className="hover:text-white">
+              <Link href="mailto:aco@orgue.cat" className="hover:text-white">
                 <MailIcon />
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="https://www.facebook.com/acorgue/"
                 className="hover:text-white"
               >
                 <FacebookIcon />
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="https://twitter.com/acorgue"
                 className="hover:text-white"
               >
                 <TwitterIcon />
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="https://www.instagram.com/acorgue/"
                 className="hover:text-white"
               >
                 <InstagramIcon />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -67,44 +68,44 @@ export default async function Footer({ className }: { className?: string }) {
           </h2>
           <ul className="mt-2 space-y-1">
             <li>
-              <a href="/associacions" className="hover:text-white">
+              <Link href="/associacions" className="hover:text-white">
                 {t("metadata.associations")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/bibliografia" className="hover:text-white">
+              <Link href="/bibliografia" className="hover:text-white">
                 {t("metadata.references")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/cicle" className="hover:text-white">
+              <Link href="/cicle" className="hover:text-white">
                 {t("metadata.concertSeries")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/formacio" className="hover:text-white">
+              <Link href="/formacio" className="hover:text-white">
                 {t("metadata.education")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/full" className="hover:text-white">
+              <Link href="/full" className="hover:text-white">
                 {t("metadata.factSheet")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/orgues" className="hover:text-white">
+              <Link href="/orgues" className="hover:text-white">
                 {t("metadata.pipeOrgans")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/noticies" className="hover:text-white">
+              <Link href="/noticies" className="hover:text-white">
                 {t("metadata.news")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/qui-som" className="hover:text-white">
+              <Link href="/qui-som" className="hover:text-white">
                 {t("metadata.aboutUs")}
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -115,22 +116,22 @@ export default async function Footer({ className }: { className?: string }) {
           </h2>
           <ul className="mt-2 space-y-1">
             <li>
-              <a href="/avis-legal" className="hover:text-white">
+              <Link href="/avis-legal" className="hover:text-white">
                 {t("metadata.legalNotice")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/politica-de-privacitat" className="hover:text-white">
+              <Link href="/politica-de-privacitat" className="hover:text-white">
                 {t("metadata.privacyPolicy")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/politica-de-privacitat-socis"
                 className="hover:text-white"
               >
                 {t("metadata.privacyPolicyMembers")}
-              </a>
+              </Link>
             </li>
           </ul>
           <p className="mt-6 text-gray-400">

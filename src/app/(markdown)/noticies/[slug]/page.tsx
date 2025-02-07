@@ -3,6 +3,7 @@ import { PageBreadcrumb } from "@/components/page-breadcrumb";
 import { Badge } from "@/components/ui/badge";
 import { UserIcon } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
+import Link from "next/link";
 import { posts, sortedPosts } from "../posts";
 import { PublicacioParams } from "./layout";
 
@@ -81,9 +82,9 @@ export default async function Page({
         <h2>Últimes notícies</h2>
         <ul className="not-prose flex flex-col gap-4">
           {sortedPosts.slice(0, 3).map((post) => (
-            <a key={post.slug} href={`/noticies/${post.slug}`}>
+            <Link key={post.slug} href={`/noticies/${post.slug}`}>
               <ArticleCard key={post.slug} post={post} />
-            </a>
+            </Link>
           ))}
         </ul>
       </section>
