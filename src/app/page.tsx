@@ -51,7 +51,7 @@ export default async function Home() {
   ];
 
   return (
-    <main className="mt-[-56px]">
+    <main className="mt-[-56px] flex-1">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }}
