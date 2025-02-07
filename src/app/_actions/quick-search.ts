@@ -2,6 +2,7 @@
 
 import rawOrgues from "@/database/orgues.json";
 import { matchFragments } from "@/lib/match-fragments";
+import { route } from "@/lib/route";
 import { sortedPosts } from "../(markdown)/noticies/posts";
 import { Orgue, OrguesEdifici } from "../(markdown)/orgues/orgueNavigation";
 
@@ -13,7 +14,12 @@ const orgues = rawOrgues.orgues.flatMap((provincia) =>
         return (edificis as OrguesEdifici[]).flatMap((edifici) => {
           const { orgues, ...restEdifici } = edifici;
           const data = {
-            link: `/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}`,
+            link: route("edifici", {
+              provincia: provincia.link,
+              comarca: comarca.link,
+              municipi: municipi.link,
+              edifici: edifici.link,
+            }),
             provincia: rawOrgues.provincies.find(
               ({ link }) => link === provincia.link,
             ),
@@ -30,9 +36,15 @@ const orgues = rawOrgues.orgues.flatMap((provincia) =>
           return (
             orgues?.flatMap((orgue) => ({
               ...data,
-              link: `${data.link}/${orgue.link}`,
+              link: route("orgue", {
+                provincia: provincia.link,
+                comarca: comarca.link,
+                municipi: municipi.link,
+                edifici: edifici.link,
+                orgue: orgue.link,
+              }),
               orgue,
-            })) ?? data
+            })) ?? [data]
           );
         });
       }) ?? [],
@@ -71,7 +83,7 @@ export async function quickSearch(normalizedQuery: string) {
             label: "Orgues",
             total: filteredOrgues.length,
             items: filteredOrgues.slice(0, 4),
-            moreLink: `/orgues/?q=${normalizedQuery}`,
+            moreLink: route("orgues", {}, { q: normalizedQuery }),
           },
         ]
       : []),
@@ -82,10 +94,10 @@ export async function quickSearch(normalizedQuery: string) {
             label: "Notícies",
             total: filteredPosts.length,
             items: filteredPosts.slice(0, 4).map((post) => ({
-              link: `/noticies/${post.slug}`,
+              link: route("post", { slug: post.slug }),
               label: post.title,
             })),
-            moreLink: `/noticies/?q=${normalizedQuery}`,
+            moreLink: route("noticies", {}, { q: normalizedQuery }),
           },
         ]
       : []),

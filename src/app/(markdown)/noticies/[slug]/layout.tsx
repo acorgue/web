@@ -1,3 +1,4 @@
+import { route } from "@/lib/route";
 import type { Metadata } from "next";
 import type { PropsWithChildren } from "react";
 import { posts } from "../posts";
@@ -19,13 +20,14 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const post = posts[slug];
+  const canonical = route("post", { slug: post.slug });
 
   return {
     title: post.title,
     description: post.subtitle,
     alternates: {
-      canonical: `noticies/${post.slug}`,
-      languages: { "x-default": `noticies/${post.slug}` },
+      canonical,
+      languages: { "x-default": canonical },
     },
   };
 }

@@ -1,3 +1,4 @@
+import { route } from "@/lib/route";
 import { CookieIcon } from "lucide-react";
 import type { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -34,7 +35,10 @@ function showMessage(t: ReturnType<typeof useTranslations<"cookieBanner">>) {
     description: (
       <span>
         {t("description")}
-        <Link href="/politica-de-privacitat" className="block underline mt-1">
+        <Link
+          href={route("politica-de-privacitat")}
+          className="block underline mt-1"
+        >
           {t("moreInfo")}
         </Link>
       </span>

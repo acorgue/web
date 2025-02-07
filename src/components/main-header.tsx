@@ -5,6 +5,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import { route } from "@/lib/route";
 import { MenuIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
@@ -25,7 +26,10 @@ export async function MainHeader({ nav }: Readonly<MainHeaderProps>) {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 dark:border-border">
       <div className="flex h-14 items-center px-4">
         <div className="mr-4 hidden md:flex">
-          <Link className="mr-4 flex items-center gap-2 lg:mr-6" href="/">
+          <Link
+            className="mr-4 flex items-center gap-2 lg:mr-6"
+            href={route("home")}
+          >
             <Image
               src="/favicons/favicon180x180.png"
               alt="Logotip de l’Associació Catalana de l’Orgue"

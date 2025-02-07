@@ -1,4 +1,5 @@
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
+import { route } from "@/lib/route";
 import { getTranslations } from "next-intl/server";
 import { orgueNavigation } from "../../orgueNavigation";
 import { OrguesComarcaParams } from "./layout";
@@ -15,10 +16,10 @@ export default async function Page({
     <>
       <PageBreadcrumb
         fragments={[
-          { href: "/", label: t("home"), position: 1 },
-          { href: "/orgues", label: t("pipeOrgans"), position: 2 },
+          { href: route("home"), label: t("home"), position: 1 },
+          { href: route("orgues"), label: t("pipeOrgans"), position: 2 },
           {
-            href: `/orgues/${provincia.link}`,
+            href: route("provincia", { provincia: provincia.link }),
             label: provincia.nom,
             position: 3,
           },

@@ -1,10 +1,12 @@
 import { CookieToast } from "@/components/cookie/cookie-toast";
+import { Footer } from "@/components/footer";
 import { MainHeader } from "@/components/main-header";
 import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { DrawerWrapper } from "@/components/ui/drawer";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { baseURL, route } from "@/lib/route";
 import { cn } from "@/lib/utils";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
@@ -13,7 +15,6 @@ import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import localFont from "next/font/local";
 import { PropsWithChildren } from "react";
 
-import Footer from "@/components/footer";
 import "./globals.css";
 
 const fontSans = localFont({
@@ -28,6 +29,7 @@ const fontSans = localFont({
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("organization");
+  const canonical = route("home");
 
   return {
     title: {
@@ -35,10 +37,13 @@ export async function generateMetadata(): Promise<Metadata> {
       default: t("name"),
     },
     description: t("description"),
-    metadataBase: new URL("https://www.acorgue.cat"),
+    metadataBase: baseURL,
+    icons: {
+      icon: "/favicon180x180.png",
+    },
     alternates: {
-      canonical: "./",
-      languages: { "x-default": "./" },
+      canonical,
+      languages: { "x-default": canonical },
     },
     verification: {
       google: "6gM0wXu4-PfRs-mHaxZXSCSSnY9EZdpUnTgEUAth_jY",

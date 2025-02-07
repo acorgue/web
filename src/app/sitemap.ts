@@ -1,9 +1,8 @@
 import orgues from "@/database/orgues.json";
+import { baseURL, route } from "@/lib/route";
 import type { MetadataRoute } from "next";
 import { sortedPosts } from "./(markdown)/noticies/posts";
 import { OrguesEdifici } from "./(markdown)/orgues/orgueNavigation";
-
-export const baseURL = new URL("https://www.acorgue.cat");
 
 function url(url: string) {
   return new URL(url, baseURL).toString();
@@ -11,44 +10,66 @@ function url(url: string) {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    { url: url("/") },
-    { url: url("/avis-legal") },
-    { url: url("/associacions") },
-    { url: url("/bibliografia") },
-    { url: url("/cicle") },
-    { url: url("/formacio") },
-    { url: url("/full") },
-    { url: url("/orgues") },
+    { url: url(route("home")) },
+    { url: url(route("avis-legal")) },
+    { url: url(route("associacions")) },
+    { url: url(route("bibliografia")) },
+    { url: url(route("cicle")) },
+    { url: url(route("formacio")) },
+    { url: url(route("full")) },
+    { url: url(route("orgues")) },
     ...sitemapOrgues(),
-    { url: url("/politica-de-privacitat") },
-    { url: url("/politica-de-privacitat-socis") },
-    { url: url("/noticies") },
+    { url: url(route("politica-de-privacitat")) },
+    { url: url(route("politica-de-privacitat-socis")) },
+    { url: url(route("noticies")) },
     ...sitemapNoticies(),
-    { url: url("/qui-som") },
+    { url: url(route("qui-som")) },
   ];
 }
 
 function sitemapOrgues(): MetadataRoute.Sitemap {
   return orgues.orgues.flatMap((provincia) => [
-    { url: url(`/orgues/${provincia.link}`) },
+    { url: url(route("provincia", { provincia: provincia.link })) },
     ...provincia.comarques.flatMap((comarca) => [
-      { url: url(`/orgues/${provincia.link}/${comarca.link}`) },
+      {
+        url: url(
+          route("comarca", {
+            provincia: provincia.link,
+            comarca: comarca.link,
+          }),
+        ),
+      },
       ...(comarca.poblacions?.flatMap((municipi) => [
         {
           url: url(
-            `/orgues/${provincia.link}/${comarca.link}/${municipi.link}`,
+            route("municipi", {
+              provincia: provincia.link,
+              comarca: comarca.link,
+              municipi: municipi.link,
+            }),
           ),
         },
         ...(municipi.edificis as OrguesEdifici[]).flatMap((edifici) => [
           {
             url: url(
-              `/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}`,
+              route("edifici", {
+                provincia: provincia.link,
+                comarca: comarca.link,
+                municipi: municipi.link,
+                edifici: edifici.link,
+              }),
             ),
           },
           ...(edifici.orgues?.flatMap((orgue) => [
             {
               url: url(
-                `/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}/${orgue.link}`,
+                route("orgue", {
+                  provincia: provincia.link,
+                  comarca: comarca.link,
+                  municipi: municipi.link,
+                  edifici: edifici.link,
+                  orgue: orgue.link,
+                }),
               ),
             },
           ]) ?? []),
@@ -60,7 +81,7 @@ function sitemapOrgues(): MetadataRoute.Sitemap {
 
 function sitemapNoticies(): MetadataRoute.Sitemap {
   return sortedPosts.map((post) => ({
-    url: url(`/noticies/${post.slug}`),
+    url: url(route("post", { slug: post.slug })),
     lastModified: post.date,
   }));
 }

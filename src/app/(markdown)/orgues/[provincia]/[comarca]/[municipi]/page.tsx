@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { orgues } from "@/database/orgues-repository";
+import { route } from "@/lib/route";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { OrguesMunicipiParams } from "./layout";
@@ -24,15 +25,18 @@ export default async function Page({
     <>
       <PageBreadcrumb
         fragments={[
-          { href: "/", label: t("home"), position: 1 },
-          { href: "/orgues", label: t("pipeOrgans"), position: 2 },
+          { href: route("home"), label: t("home"), position: 1 },
+          { href: route("orgues"), label: t("pipeOrgans"), position: 2 },
           {
-            href: `/orgues/${provincia.link}`,
+            href: route("provincia", { provincia: provincia.link }),
             label: provincia.nom,
             position: 3,
           },
           {
-            href: `/orgues/${provincia.link}/${comarca.link}`,
+            href: route("comarca", {
+              provincia: provincia.link,
+              comarca: comarca.link,
+            }),
             label: comarca.nom,
             position: 4,
           },
@@ -47,7 +51,13 @@ export default async function Page({
             edifici.orgues?.map((orgue) => (
               <PipeOrganCard
                 key={`${edifici.link}-${orgue.link}`}
-                href={`/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}/${orgue.link}`}
+                href={route("orgue", {
+                  provincia: provincia.link,
+                  comarca: comarca.link,
+                  municipi: municipi.link,
+                  edifici: edifici.link,
+                  orgue: orgue.link,
+                })}
                 title={`${edifici.nom} (${orgue.nom})`}
                 description={edifici.adreca}
               />
@@ -55,7 +65,12 @@ export default async function Page({
           ) : (
             <PipeOrganCard
               key={edifici.link}
-              href={`/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}`}
+              href={route("edifici", {
+                provincia: provincia.link,
+                comarca: comarca.link,
+                municipi: municipi.link,
+                edifici: edifici.link,
+              })}
               title={edifici.nom}
               description={edifici.adreca}
             />
