@@ -17,7 +17,7 @@ export interface PostData extends MatterPostData {
 
 type MatchTuple = [string, string, string];
 
-const postsDirectory = join(process.cwd(), "src/app/(markdown)/noticies/posts");
+const postsDirectory = join(process.cwd(), "src/app/(markdown)/noticies/_posts");
 const fileNameRegExp = /^(\d{4}-\d{2}-\d{2})-(.*?)\.mdx?$/;
 
 export const posts = await getPosts();
@@ -37,7 +37,7 @@ async function getPosts() {
     }
     const [, date] = match;
 
-    const frontmatter = (await import(`./posts/${fileName}`))
+    const frontmatter = (await import(`./_posts/${fileName}`))
       .frontmatter as MatterPostData;
 
     return [

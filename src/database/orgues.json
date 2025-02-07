@@ -38,49 +38,49 @@
     },
     {
       "nom": "Bages",
-      "de": "del",
+      "de": "del ",
       "link": "bages",
       "provincia": "barcelona",
       "relation": 2350331
     },
     {
       "nom": "Baix Llobregat",
-      "de": "del",
+      "de": "del ",
       "link": "baix-llobregat",
       "provincia": "barcelona",
       "relation": 2809457
     },
     {
       "nom": "Barcelonès",
-      "de": "del",
+      "de": "del ",
       "link": "barcelones",
       "provincia": "barcelona",
       "relation": 2417889
     },
     {
       "nom": "Berguedà",
-      "de": "del",
+      "de": "del ",
       "link": "bergueda",
       "provincia": "barcelona",
       "relation": 358838
     },
     {
       "nom": "Garraf",
-      "de": "del",
+      "de": "del ",
       "link": "garraf",
       "provincia": "barcelona",
       "relation": 2809538
     },
     {
       "nom": "Maresme",
-      "de": "del",
+      "de": "del ",
       "link": "maresme",
       "provincia": "barcelona",
       "relation": 2140187
     },
     {
       "nom": "Moianès",
-      "de": "del",
+      "de": "del ",
       "link": "moianes",
       "provincia": "barcelona",
       "relation": 4791885
@@ -94,14 +94,14 @@
     },
     {
       "nom": "Vallès Occidental",
-      "de": "del",
+      "de": "del ",
       "link": "valles-occidental",
       "provincia": "barcelona",
       "relation": 2350067
     },
     {
       "nom": "Vallès Oriental",
-      "de": "del",
+      "de": "del ",
       "link": "valles-oriental",
       "provincia": "barcelona",
       "relation": 2417929
@@ -115,49 +115,49 @@
     },
     {
       "nom": "Baix Empordà",
-      "de": "del",
+      "de": "del ",
       "link": "baix-emporda",
       "provincia": "girona",
       "relation": 2805694
     },
     {
       "nom": "Cerdanya (meitat oriental)",
-      "de": "de la",
+      "de": "de la ",
       "link": "cerdanya-oriental",
       "provincia": "girona",
       "relation": 2805972
     },
     {
       "nom": "Garrotxa",
-      "de": "de la",
+      "de": "de la ",
       "link": "garrotxa",
       "provincia": "girona",
       "relation": 2806999
     },
     {
       "nom": "Gironès",
-      "de": "del",
+      "de": "del ",
       "link": "girones",
       "provincia": "girona",
       "relation": 2807130
     },
     {
-      "nom": "Pla de l'Estany",
-      "de": "del",
+      "nom": "Pla de l’Estany",
+      "de": "del ",
       "link": "pla-estany",
       "provincia": "girona",
       "relation": 2807146
     },
     {
       "nom": "Ripollès",
-      "de": "del",
+      "de": "del ",
       "link": "ripolles",
       "provincia": "girona",
       "relation": 2806754
     },
     {
       "nom": "Selva",
-      "de": "de la",
+      "de": "de la ",
       "link": "selva",
       "provincia": "girona",
       "relation": 368462
@@ -178,7 +178,7 @@
     },
     {
       "nom": "Cerdanya (meitat occidental)",
-      "de": "de la",
+      "de": "de la ",
       "link": "cerdanya-occidental",
       "provincia": "lleida",
       "relation": 2805972
@@ -192,48 +192,48 @@
     },
     {
       "nom": "Noguera",
-      "de": "de la",
+      "de": "de la ",
       "link": "noguera",
       "provincia": "lleida",
       "relation": 2816276
     },
     {
       "nom": "Pallars Jussà",
-      "de": "del",
+      "de": "del ",
       "link": "pallars-jussa",
       "provincia": "lleida",
       "relation": 2810954
     },
     {
       "nom": "Pallars Sobirà",
-      "de": "del",
+      "de": "del ",
       "link": "pallars-sobira",
       "provincia": "lleida",
       "relation": 2810705
     },
     {
-      "nom": "Pla d'Urgell",
+      "nom": "Pla d’Urgell",
       "link": "pla-urgell",
       "provincia": "lleida",
       "relation": 2819346
     },
     {
       "nom": "Segarra",
-      "de": "de la",
+      "de": "de la ",
       "link": "segarra",
       "provincia": "lleida",
       "relation": 2815579
     },
     {
       "nom": "Segrià",
-      "de": "del",
+      "de": "del ",
       "link": "segria",
       "provincia": "lleida",
       "relation": 2819857
     },
     {
       "nom": "Solsonès",
-      "de": "del",
+      "de": "del ",
       "link": "solsones",
       "provincia": "lleida",
       "relation": 2809162
@@ -246,8 +246,8 @@
       "relation": 2818895
     },
     {
-      "nom": "Vall d'Aran",
-      "de": "de la",
+      "nom": "Vall d’Aran",
+      "de": "de la ",
       "link": "vall-aran",
       "provincia": "lleida",
       "relation": 2810776
@@ -261,63 +261,63 @@
     },
     {
       "nom": "Baix Camp",
-      "de": "del",
+      "de": "del ",
       "link": "baix-camp",
       "provincia": "tarragona",
       "relation": 2824935
     },
     {
       "nom": "Baix Ebre",
-      "de": "del",
+      "de": "del ",
       "link": "baix-ebre",
       "provincia": "tarragona",
       "relation": 2826423
     },
     {
       "nom": "Baix Penedès",
-      "de": "del",
+      "de": "del ",
       "link": "baix-penedes",
       "provincia": "tarragona",
       "relation": 2822410
     },
     {
       "nom": "Conca de Barberà",
-      "de": "de la",
+      "de": "de la ",
       "link": "conca-barbera",
       "provincia": "tarragona",
       "relation": 2822039
     },
     {
       "nom": "Montsià",
-      "de": "del",
+      "de": "del ",
       "link": "montsia",
       "provincia": "tarragona",
       "relation": 2827413
     },
     {
       "nom": "Priorat",
-      "de": "del",
+      "de": "del ",
       "link": "priorat",
       "provincia": "tarragona",
       "relation": 2826145
     },
     {
-      "nom": "Ribera d'Ebre",
-      "de": "de la",
+      "nom": "Ribera d’Ebre",
+      "de": "de la ",
       "link": "ribera-ebre",
       "provincia": "tarragona",
       "relation": 2829952
     },
     {
       "nom": "Tarragonès",
-      "de": "del",
+      "de": "del ",
       "link": "tarragones",
       "provincia": "tarragona",
       "relation": 2822691
     },
     {
       "nom": "Terra Alta",
-      "de": "de la",
+      "de": "de la ",
       "link": "terra-alta",
       "provincia": "tarragona",
       "relation": 2829953
@@ -405,6 +405,7 @@
               "edificis": [
                 {
                   "nom": "Basílica parroquial de Santa Maria",
+                  "de": "de la ",
                   "link": "santa-maria",
                   "adreca": "Plaça de Jaume I, S/N, 08720 Vilafranca del Penedès, Barcelona",
                   "geolocalitzacio": {
@@ -414,7 +415,8 @@
                 },
                 {
                   "nom": "Església parroquial de la Santíssima Trinitat",
-                  "link": "trinitat",
+                  "de": "de l’",
+                  "link": "santissima-trinitat",
                   "adreca": "Carrer de la Font, 45, 08720 Vilafranca del Penedès, Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.34823278947378,
@@ -423,7 +425,8 @@
                 },
                 {
                   "nom": "Monestir de la Mare de Déu del Carme",
-                  "link": "monges",
+                  "de": "del ",
+                  "link": "monestir",
                   "adreca": "Carrer Salines, 29, 08720 Vilafranca del Penedès, Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.351734970271266,
@@ -432,6 +435,7 @@
                 },
                 {
                   "nom": "Auditori del Fòrum Berger Balaguer",
+                  "de": "de l’",
                   "link": "forum",
                   "adreca": "Rambla de Nostra Senyora, 6, 08720 Vilafranca del Penedès, Barcelona",
                   "geolocalitzacio": {
@@ -450,6 +454,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Maria",
+                  "de": "de l’",
                   "link": "santa-maria",
                   "adreca": "BV-2156, 7, 08792 Santa Fe del Penedès, Barcelona",
                   "geolocalitzacio": {
@@ -467,8 +472,9 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Margarida",
+                  "de": "de l’",
                   "link": "santa-margarida",
-                  "adreca": "Plaça de l'Església, 2, 08730 Santa Margarida i els Monjos, Barcelona",
+                  "adreca": "Plaça de l’Església, 2, 08730 Santa Margarida i els Monjos, Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.32012,
                     "longitud": 1.66233
@@ -483,13 +489,14 @@
           "poblacions": [
             {
               "nom": "Igualada",
-              "de": "d’Igualada",
+              "de_nom": "d’Igualada",
               "link": "igualada",
               "bisbat": "vic",
               "relation": 345402,
               "edificis": [
                 {
                   "nom": "Basílica de Santa Maria",
+                  "de": "de la ",
                   "link": "santa-maria",
                   "adreca": "Plaça del Bruc, 08700 Igualada, Barcelona",
                   "geolocalitzacio": {
@@ -501,13 +508,14 @@
             },
             {
               "nom": "El Bruc",
-              "de": "del Bruc",
+              "de_nom": "del Bruc",
               "link": "bruc",
               "bisbat": "sant-feliu",
               "relation": 343718,
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Maria",
+                  "de": "de l’",
                   "link": "santa-maria",
                   "adreca": "Carrer de la Parròquia, 1, 08294 El Bruc, Barcelona",
                   "geolocalitzacio": {
@@ -525,6 +533,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Maria",
+                  "de": "de l’",
                   "link": "santa-maria",
                   "adreca": "Carrer de Ramon Godó, 4, 08786 Capellades, Barcelona",
                   "geolocalitzacio": {
@@ -547,6 +556,7 @@
               "edificis": [
                 {
                   "nom": "Abadia de Santa Maria de Montserrat",
+                  "de": "de l’",
                   "link": "abadia",
                   "adreca": "08199 Montserrat, Barcelona",
                   "geolocalitzacio": {
@@ -555,15 +565,18 @@
                   },
                   "orgues": [
                     {
-                      "nom": "Basílica",
+                      "nom": "Orgue major de la basílica",
+                      "de_nom": "de l’orgue major de la basílica",
                       "link": "basilica"
                     },
                     {
-                      "nom": "Capella de Sant Fructuós",
+                      "nom": "Orgue de la Capella de Sant Fructuós",
+                      "de_nom": "de l’orgue de la Capella de Sant Fructuós",
                       "link": "sant-fructuos"
                     },
                     {
-                      "nom": "Cambril",
+                      "nom": "Orgue del Cambril",
+                      "de_nom": "de l’orgue del Cambril",
                       "link": "cambril"
                     }
                   ]
@@ -578,6 +591,7 @@
               "edificis": [
                 {
                   "nom": "Col·legiata-basílica de Santa Maria de la Seu",
+                  "de": "de la ",
                   "link": "seu",
                   "adreca": "Baixada de la Seu, 1, 08242 Manresa, Barcelona",
                   "geolocalitzacio": {
@@ -600,8 +614,9 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Just i Pastor",
+                  "de": "de l’",
                   "link": "sant-just-i-pastor",
-                  "adreca": "Carrer de l'Església, 4, 08960 Sant Just Desvern, Barcelona",
+                  "adreca": "Carrer de l’Església, 4, 08960 Sant Just Desvern, Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.386113885898794,
                     "longitud": 2.0758174660917033
@@ -617,8 +632,9 @@
               "edificis": [
                 {
                   "nom": "Església de Sant Andreu",
+                  "de": "de l’",
                   "link": "sant-andreu",
-                  "adreca": "Carrer de l'església, 11, 08740 Sant Andreu de la Barca, Barcelona",
+                  "adreca": "Carrer de l’església, 11, 08740 Sant Andreu de la Barca, Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.447016887304834,
                     "longitud": 1.975196085368805
@@ -628,13 +644,14 @@
             },
             {
               "nom": "Olesa de Montserrat",
-              "de": "d’Olesa de Montserrat",
+              "de_nom": "d’Olesa de Montserrat",
               "link": "olesa-de-montserrat",
               "bisbat": "sant-feliu",
               "relation": 342826,
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Maria",
+                  "de": "de l’",
                   "link": "santa-maria",
                   "adreca": "Plaça Nova, 21, 08640 Olesa de Montserrat, Barcelona",
                   "geolocalitzacio": {
@@ -652,8 +669,9 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Corneli",
+                  "de": "de l’",
                   "link": "sant-corneli",
-                  "adreca": "Plaça de l'Església, 2, 08293 Collbató, Barcelona",
+                  "adreca": "Plaça de l’Església, 2, 08293 Collbató, Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.57031200718075,
                     "longitud": 1.8280436828685314
@@ -669,8 +687,9 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Miquel",
+                  "de": "de l’",
                   "link": "sant-miquel",
-                  "adreca": "Plaça de l'Església, 1, 08750 Molins de Rei, Barcelona",
+                  "adreca": "Plaça de l’Església, 1, 08750 Molins de Rei, Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.41331878070606,
                     "longitud": 2.0176496908130943
@@ -686,6 +705,7 @@
               "edificis": [
                 {
                   "nom": "Església del Parc Sanitari de Sant Joan de Déu",
+                  "de": "de l’",
                   "link": "parc-sanitari",
                   "adreca": "Camí Vell de la Colòni, 25, 08830 Sant Boi de Llobregat, Barcelona",
                   "geolocalitzacio": {
@@ -695,6 +715,7 @@
                 },
                 {
                   "nom": "Capella del Complex Assistencial en Salut Mental Benito Menni",
+                  "de": "de la ",
                   "link": "casm-benito-menni",
                   "adreca": "Carrer Doctor Pujades, 38, 08830 Sant Boi de Llobregat, Barcelona",
                   "geolocalitzacio": {
@@ -717,6 +738,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Maria",
+                  "de": "de l’",
                   "link": "santa-maria",
                   "adreca": "Carrer del Temple, 40, 08911 Badalona, Barcelona",
                   "geolocalitzacio": {
@@ -726,8 +748,9 @@
                 },
                 {
                   "nom": "Església parroquial de Sant Josep",
+                  "de": "de l’",
                   "link": "sant-josep",
-                  "adreca": "Carrer d'Enric Borràs, 69, 08912 Badalona, Barcelona",
+                  "adreca": "Carrer d’Enric Borràs, 69, 08912 Badalona, Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.445536411381184,
                     "longitud": 2.245223936440365
@@ -743,6 +766,7 @@
               "edificis": [
                 {
                   "nom": "Basílica parroquial de Santa Maria del Mar",
+                  "de": "de la ",
                   "link": "santa-maria-del-mar",
                   "adreca": "Plaça de Santa Maria, 1, 08003 Barcelona",
                   "geolocalitzacio": {
@@ -752,6 +776,7 @@
                 },
                 {
                   "nom": "Església catedral basílica de la Santa Creu i Santa Eulàlia",
+                  "de": "de l’",
                   "link": "catedral",
                   "adreca": "Pla de la Seu, s/n, 08002 Barcelona",
                   "geolocalitzacio": {
@@ -760,17 +785,20 @@
                   },
                   "orgues": [
                     {
-                      "nom": "Tribuna",
-                      "link": "tribuna"
+                      "nom": "Orgue major",
+                      "de_nom": "de l’orgue major",
+                      "link": "orgue-major"
                     },
                     {
-                      "nom": "Capella del Sant Crist de Lepant",
+                      "nom": "Orgue de la Capella del Sant Crist de Lepant",
+                      "de_nom": "de l’orgue de la Capella del Sant Crist de Lepant",
                       "link": "capella-lepant"
                     }
                   ]
                 },
                 {
                   "nom": "Església de Sant Sever",
+                  "de": "de l’",
                   "link": "sant-sever",
                   "adreca": "Carrer de Sant Sever, 11, 08002 Barcelona",
                   "geolocalitzacio": {
@@ -780,6 +808,7 @@
                 },
                 {
                   "nom": "Església de Santa Anna (Caputxins de Sarrià)",
+                  "de": "de l’",
                   "link": "caputxins-de-sarria",
                   "adreca": "Plaça de Cirici Pellicer, 1571, 08034 Barcelona",
                   "geolocalitzacio": {
@@ -789,6 +818,7 @@
                 },
                 {
                   "nom": "Església de Nostra Senyora de Pompeia",
+                  "de": "de l’",
                   "link": "pompeia",
                   "adreca": "Avinguda Diagonal, 450, 08006 CP, Barcelona",
                   "geolocalitzacio": {
@@ -798,6 +828,7 @@
                 },
                 {
                   "nom": "Església del Sagrat Cor (Jesuïtes de Casp)",
+                  "de": "de l’",
                   "link": "jesuites-casp",
                   "adreca": "Carrer de Casp, 27, 08010 Barcelona",
                   "geolocalitzacio": {
@@ -806,7 +837,8 @@
                   }
                 },
                 {
-                  "nom": "Capella de l'Esperança",
+                  "nom": "Capella de l’Esperança",
+                  "de": "de la ",
                   "link": "capella-esperanca",
                   "adreca": "Carrer de la Palma de Sant Just, 4, 08002 Barcelona",
                   "geolocalitzacio": {
@@ -816,6 +848,7 @@
                 },
                 {
                   "nom": "Santuari de Santa Gemma",
+                  "de": "del ",
                   "link": "santa-gemma",
                   "adreca": "Carrer del Capitán Arenas, 9, 08034 Barcelona",
                   "geolocalitzacio": {
@@ -825,6 +858,7 @@
                 },
                 {
                   "nom": "Església parroquial de la Puríssima Concepció",
+                  "de": "de l’",
                   "link": "concepcio",
                   "adreca": "Carrer de Roger de Llúria, 70, 08009 Barcelona",
                   "geolocalitzacio": {
@@ -834,6 +868,7 @@
                 },
                 {
                   "nom": "Església parroquial de Santa Maria del Remei de les Corts",
+                  "de": "de l’",
                   "link": "remei-de-les-corts",
                   "adreca": "Plaça de la Concòrdia, 1, 08014 Barcelona",
                   "geolocalitzacio": {
@@ -843,6 +878,7 @@
                 },
                 {
                   "nom": "Església parroquial de Santa Maria de Gràcia",
+                  "de": "de l’",
                   "link": "santa-maria-de-gracia",
                   "adreca": "Carrer de Gràcia, 3, 08012 Barcelona",
                   "geolocalitzacio": {
@@ -852,8 +888,9 @@
                 },
                 {
                   "nom": "Escola Superior de Música de Catalunya",
+                  "de": "de l’",
                   "link": "esmuc",
-                  "adreca": "Edifici de L'Auditori, Carrer de Padilla, 155, 08013 Barcelona",
+                  "adreca": "Edifici de L’Auditori, Carrer de Padilla, 155, 08013 Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.398772686863765,
                     "longitud": 2.185416013652979
@@ -861,7 +898,8 @@
                   "civil": true
                 },
                 {
-                  "nom": "Conservatori Municipal de Música de Barcelona",
+                  "nom": "Conservatori Municipal de Música",
+                  "de": "del ",
                   "link": "conservatori",
                   "adreca": "Carrer del Bruc, 110, 112, 08009 Barcelona",
                   "geolocalitzacio": {
@@ -871,17 +909,20 @@
                   "civil": true,
                   "orgues": [
                     {
-                      "nom": "Aula 101",
+                      "nom": "Orgue de l’aula 101",
+                      "de_nom": "de l’orgue de l’aula 101",
                       "link": "aula-101"
                     },
                     {
-                      "nom": "Aula 102",
+                      "nom": "Orgue de l’aula 102",
+                      "de_nom": "de l’orgue de l’aula 102",
                       "link": "aula-102"
                     }
                   ]
                 },
                 {
                   "nom": "Palau de la Música Catalana",
+                  "de": "del ",
                   "link": "palau-de-la-musica",
                   "adreca": "Carrer Palau de la Música, 4-6, 08003 Barcelona",
                   "geolocalitzacio": {
@@ -891,17 +932,20 @@
                   "civil": true,
                   "orgues": [
                     {
-                      "nom": "Sala de concerts",
+                      "nom": "Orgue de la sala de concerts",
+                      "de_nom": "de l’orgue de la sala de concerts",
                       "link": "sala-concerts"
                     },
                     {
-                      "nom": "Sala d'assaig de l'Orfeó Català",
+                      "nom": "Positiu de la sala d’assaig de l’Orfeó Català",
+                      "de_nom": "del positiu de la sala d’assaig de l’Orfeó Català",
                       "link": "sala-assaig"
                     }
                   ]
                 },
                 {
                   "nom": "Basílica parroquial de Santa Maria del Pi",
+                  "de": "de la ",
                   "link": "santa-maria-del-pi",
                   "adreca": "Plaça del Pi, 7, 08002 Barcelona",
                   "geolocalitzacio": {
@@ -910,9 +954,10 @@
                   }
                 },
                 {
-                  "nom": "Basílica parroquial de la Mare de Déu de la Mercè",
+                  "nom": "Basílica parroquial de la Mare de Déu de la Mercè i de Sant Miquel Arcàngel",
+                  "de": "de la ",
                   "link": "basilica-merce",
-                  "adreca": "Carrer de la Mercè, 1, 08002 Barcelona",
+                  "adreca": "Plaça de la Mercè, 1, 08002 Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.37960873596435,
                     "longitud": 2.179582040636958
@@ -920,6 +965,7 @@
                 },
                 {
                   "nom": "Església parroquial de Sant Vicenç de Sarrià",
+                  "de": "de l’",
                   "link": "sant-vicenc-sarria",
                   "adreca": "Carrer del Rector Voltà, 5, 08034 Barcelona",
                   "geolocalitzacio": {
@@ -929,6 +975,7 @@
                 },
                 {
                   "nom": "Oratori de Sant Felip Neri",
+                  "de": "de l’",
                   "link": "sant-felip-neri",
                   "adreca": "Plaça de Sant Felip Neri, 5, 08002 Barcelona",
                   "geolocalitzacio": {
@@ -938,16 +985,19 @@
                   "orgues": [
                     {
                       "nom": "Orgue major",
-                      "link": "tribuna"
+                      "de_nom": "de l’orgue major",
+                      "link": "orgue-major"
                     },
                     {
-                      "nom": "Orgue de cor",
-                      "link": "cor"
+                      "nom": "Orgue menor",
+                      "de_nom": "de l’orgue menor",
+                      "link": "orgue-menor"
                     }
                   ]
                 },
                 {
                   "nom": "Església parroquial de Sant Pacià",
+                  "de": "de l’",
                   "link": "sant-pacia",
                   "adreca": "Carrer de les Monges, 33, 08030 Barcelona",
                   "geolocalitzacio": {
@@ -957,7 +1007,8 @@
                 },
                 {
                   "nom": "Oratori de Santa Maria de Bonaigua",
-                  "link": "bonaigua",
+                  "de": "de l’",
+                  "link": "oratori-bonaigua",
                   "adreca": "Carrer Jiménez i Iglesias, 1, 08034 Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.388198352249326,
@@ -966,6 +1017,7 @@
                 },
                 {
                   "nom": "Palau Nacional",
+                  "de": "del ",
                   "link": "palau-nacional",
                   "adreca": "Palau Nacional, 08038 Barcelona",
                   "geolocalitzacio": {
@@ -976,6 +1028,7 @@
                 },
                 {
                   "nom": "Església parroquial de Sant Pius X",
+                  "de": "de l’",
                   "link": "sant-pius-x",
                   "adreca": "Carrer del Cardenal Tedeschini, 52, 08027 Barcelona",
                   "geolocalitzacio": {
@@ -985,6 +1038,7 @@
                 },
                 {
                   "nom": "Basílica parroquial de Sant Josep Oriol",
+                  "de": "de la ",
                   "link": "sant-josep-oriol",
                   "adreca": "Carrer de la Diputació, 149, 08011 Barcelona",
                   "geolocalitzacio": {
@@ -994,16 +1048,19 @@
                   "orgues": [
                     {
                       "nom": "Orgue major",
+                      "de_nom": "de l’orgue major",
                       "link": "orgue-major"
                     },
                     {
-                      "nom": "Capella de la Mare de Déu de Montserrat",
+                      "nom": "Positiu de la Capella de la Mare de Déu de Montserrat",
+                      "de_nom": "del positiu de la Capella de la Mare de Déu de Montserrat",
                       "link": "capella-mare-de-deu-de-montserrat"
                     }
                   ]
                 },
                 {
                   "nom": "Església parroquial de la Verge de Gràcia i Sant Josep (Josepets)",
+                  "de": "de l’",
                   "link": "verge-de-gracia-i-sant-josep",
                   "adreca": "Plaça de Lesseps, 25, 08023 Barcelona",
                   "geolocalitzacio": {
@@ -1013,6 +1070,7 @@
                 },
                 {
                   "nom": "Església del Reial Santuari de Sant Josep de la Muntanya",
+                  "de": "de l’",
                   "link": "sant-josep-de-la-muntanya",
                   "adreca": "Av. del Santuari de Sant Josep de la Muntanya, 25, 08024 Barcelona",
                   "geolocalitzacio": {
@@ -1022,6 +1080,7 @@
                 },
                 {
                   "nom": "Església parroquial de Sant Joan de Gràcia",
+                  "de": "de l’",
                   "link": "sant-joan-de-gracia",
                   "adreca": "Carrer de la Santa Creu, 2, 08024 Barcelona",
                   "geolocalitzacio": {
@@ -1030,7 +1089,8 @@
                   }
                 },
                 {
-                  "nom": "Santuari-Parròquia de l'Immaculat Cor de Maria (Claretians)",
+                  "nom": "Santuari-Parròquia de l’Immaculat Cor de Maria (Claretians)",
+                  "de": "del ",
                   "link": "claretians",
                   "adreca": "Carrer de Sant Antoni Maria Claret, 47, 08025 Barcelona",
                   "geolocalitzacio": {
@@ -1040,6 +1100,7 @@
                 },
                 {
                   "nom": "Església parroquial de la Mare de Déu de Núria",
+                  "de": "de l’",
                   "link": "mare-de-deu-de-nuria",
                   "adreca": "Carrer del Bon Pastor, 7-9, 08021 Barcelona",
                   "geolocalitzacio": {
@@ -1049,6 +1110,7 @@
                 },
                 {
                   "nom": "Basílica parroquial de la Sagrada Família",
+                  "de": "de la ",
                   "link": "sagrada-familia",
                   "adreca": "Carrer de Mallorca, 401, 08013 Barcelona",
                   "geolocalitzacio": {
@@ -1057,17 +1119,20 @@
                   },
                   "orgues": [
                     {
-                      "nom": "Cripta",
+                      "nom": "Orgue de la cripta",
+                      "de_nom": "de l’orgue de la cripta",
                       "link": "cripta"
                     },
                     {
-                      "nom": "Orgue de Cor",
+                      "nom": "Orgue del presbiteri",
+                      "de_nom": "de l’orgue del presbiteri",
                       "link": "cor"
                     }
                   ]
                 },
                 {
-                  "nom": "Consell Superior d'Investigacions Científiques (CSIC)",
+                  "nom": "Consell Superior d’Investigacions Científiques (CSIC)",
+                  "de": "del ",
                   "link": "csic",
                   "adreca": "Carrer de les Egipcíaques, 15, 08001 Barcelona",
                   "geolocalitzacio": {
@@ -1078,6 +1143,7 @@
                 },
                 {
                   "nom": "Santuari de Sant Antoni de Pàdua",
+                  "de": "del ",
                   "link": "santuari-de-padua",
                   "adreca": "Carrer de Santaló, 80, 08021 Barcelona",
                   "geolocalitzacio": {
@@ -1087,6 +1153,7 @@
                 },
                 {
                   "nom": "Església parroquial de Sant Gaietà",
+                  "de": "de l’",
                   "link": "sant-gaieta",
                   "adreca": "Carrer del Consell de Cent, 293, 08007 Barcelona",
                   "geolocalitzacio": {
@@ -1096,6 +1163,7 @@
                 },
                 {
                   "nom": "Basílica parroquial dels Sants Màrtirs Just i Pastor",
+                  "de": "de la ",
                   "link": "sant-just-i-pastor",
                   "adreca": "Plaça de Sant Just, s/n, 08002 Barcelona",
                   "geolocalitzacio": {
@@ -1105,6 +1173,7 @@
                 },
                 {
                   "nom": "Museu de la Música",
+                  "de": "del ",
                   "link": "museu-de-la-musica",
                   "adreca": "Carrer de Lepant, 150, 08013 Barcelona",
                   "geolocalitzacio": {
@@ -1115,20 +1184,24 @@
                   "orgues": [
                     {
                       "nom": "Orgue Pérez Molero (MDMB 581)",
+                      "de_nom": "de l’orgue Pérez Molero (MDMB 581)",
                       "link": "perez-molero"
                     },
                     {
                       "nom": "Claviorgue Hauslaib (MDMB 821)",
+                      "de_nom": "del claviorgue Hauslaib (MDMB 821)",
                       "link": "hauslaib"
                     },
                     {
                       "nom": "Orgue aragonès (MDMB 592)",
-                      "link": "zaragozano"
+                      "de_nom": "de l’orgue aragonès (MDMB 592)",
+                      "link": "aragones"
                     }
                   ]
                 },
                 {
                   "nom": "Església parroquial de Santa Tecla",
+                  "de": "de l’",
                   "link": "santa-tecla",
                   "adreca": "Av. de Madrid, 107, 08028 Barcelona",
                   "geolocalitzacio": {
@@ -1138,6 +1211,7 @@
                 },
                 {
                   "nom": "Palau Güell",
+                  "de": "del ",
                   "link": "palau-guell",
                   "adreca": "Carrer Nou de la Rambla, 3-5, 08001 Barcelona",
                   "geolocalitzacio": {
@@ -1148,6 +1222,7 @@
                 },
                 {
                   "nom": "Palau de la Generalitat de Catalunya",
+                  "de": "del ",
                   "link": "palau-generalitat",
                   "adreca": "Pl. de Sant Jaume, 08002 Barcelona",
                   "geolocalitzacio": {
@@ -1158,6 +1233,7 @@
                 },
                 {
                   "nom": "Facultat de Geografia i Història (UB)",
+                  "de": "de la ",
                   "link": "ub",
                   "adreca": "Carrer de Montalegre, 6, 08001 Barcelona",
                   "geolocalitzacio": {
@@ -1168,6 +1244,7 @@
                 },
                 {
                   "nom": "Església parroquial de Sant Medir",
+                  "de": "de l’",
                   "link": "sant-medir",
                   "adreca": "Carrer de la Constitució, 17, 08014 Barcelona",
                   "geolocalitzacio": {
@@ -1176,7 +1253,8 @@
                   }
                 },
                 {
-                  "nom": "Església Evangèlica Luterana de parla Alemanya",
+                  "nom": "Església Evangèlica Luterana de parla alemanya",
+                  "de": "de l’",
                   "link": "luterans",
                   "adreca": "Carrer de Brusi, 94, 08006 Barcelona",
                   "geolocalitzacio": {
@@ -1187,6 +1265,7 @@
                 },
                 {
                   "nom": "Església parroquial de la Mare de Déu dels Àngels",
+                  "de": "de l’",
                   "link": "mare-de-deu-dels-angels",
                   "adreca": "Carrer Balmes, 78, 08007 Barcelona",
                   "geolocalitzacio": {
@@ -1196,8 +1275,9 @@
                 },
                 {
                   "nom": "Seminari Conciliar de Barcelona",
+                  "de": "del ",
                   "link": "seminari",
-                  "adreca": "Carrer de la Diputació, 231, L'Eixample, 08007 Barcelona",
+                  "adreca": "Carrer de la Diputació, 231, L’Eixample, 08007 Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.388096917136096,
                     "longitud": 2.163215190735498
@@ -1218,6 +1298,7 @@
               "edificis": [
                 {
                   "nom": "Església de Santa Eulàlia",
+                  "de": "de l’",
                   "link": "santa-eulalia",
                   "adreca": "Plaça Sant Pere, 6, 08600 Berga, Barcelona",
                   "geolocalitzacio": {
@@ -1229,14 +1310,16 @@
             },
             {
               "nom": "La Pobla de Lillet",
+              "de_nom": "de la Pobla de Lillet",
               "link": "la-pobla-de-lillet",
               "bisbat": "solsona",
               "relation": 345694,
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Maria",
+                  "de": "de l’",
                   "link": "santa-maria",
-                  "adreca": "Plaça de l'Església, 9, 08696 La Pobla de Lillet, Barcelona",
+                  "adreca": "Plaça de l’Església, 9, 08696 La Pobla de Lillet, Barcelona",
                   "geolocalitzacio": {
                     "latitud": 42.24415402401299,
                     "longitud": 1.974174518911367
@@ -1257,8 +1340,9 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Bartomeu i Santa Tecla",
+                  "de": "de l’",
                   "link": "sant-bartomeu",
-                  "adreca": "Plaça de l'Ajuntament, 20, 08870 Sitges, Barcelona",
+                  "adreca": "Plaça de l’Ajuntament, 20, 08870 Sitges, Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.23478449793519,
                     "longitud": 1.8115043216637963
@@ -1279,15 +1363,17 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Feliu",
+                  "de": "de l’",
                   "link": "sant-feliu",
-                  "adreca": "Plaça de l'Església, 4, 08349 Cabrera de Mar, Barcelona",
+                  "adreca": "Plaça de l’Església, 4, 08349 Cabrera de Mar, Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.52801117316493,
                     "longitud": 2.3923356717964017
                   }
                 },
                 {
-                  "nom": "Ermita de Santa Elena d'Agell",
+                  "nom": "Ermita de Santa Elena d’Agell",
+                  "de": "de l’",
                   "link": "santa-elena",
                   "adreca": "Carrer Camí Santa Elena, 20B, 08349 Cabrera de Mar, Barcelona",
                   "geolocalitzacio": {
@@ -1305,8 +1391,9 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Vicenç",
+                  "de": "de l’",
                   "link": "sant-vicenc",
-                  "adreca": "Plaça de l'Esglesia, 2, 08394 Sant Vicenç de Montalt, Barcelona",
+                  "adreca": "Plaça de l’Esglesia, 2, 08394 Sant Vicenç de Montalt, Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.57862318723929,
                     "longitud": 2.509526915509015
@@ -1322,8 +1409,9 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de la Santa Creu",
+                  "de": "de l’",
                   "link": "santa-creu",
-                  "adreca": "Plaça de l'Església, 1, 08348 Cabrils, Barcelona",
+                  "adreca": "Plaça de l’Església, 1, 08348 Cabrils, Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.52614030357167,
                     "longitud": 2.3684074
@@ -1339,20 +1427,23 @@
               "edificis": [
                 {
                   "nom": "Basílica parroquial de Santa Maria",
+                  "de": "de la ",
                   "link": "santa-maria",
-                  "adreca": "Carrer Sant Francesc d'Assís, 25, 08301 Mataró, Barcelona",
+                  "adreca": "Carrer Sant Francesc d’Assís, 25, 08301 Mataró, Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.54094669241407,
                     "longitud": 2.446452118389853
                   },
                   "orgues": [
                     {
-                      "nom": "Tribuna",
-                      "link": "tribuna"
+                      "nom": "Orgue major",
+                      "de_nom": "de l’orgue major",
+                      "link": "orgue-major"
                     },
                     {
-                      "nom": "Orgue de Cor",
-                      "link": "cor"
+                      "nom": "Orgue menor",
+                      "de_nom": "de l’orgue menor",
+                      "link": "orgue-menor"
                     }
                   ]
                 }
@@ -1366,8 +1457,9 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Joan",
+                  "de": "de l’",
                   "link": "sant-joan",
-                  "adreca": "Plaça de l'Església, s/n, 08340 Vilassar de Mar, Barcelona",
+                  "adreca": "Plaça de l’Església, s/n, 08340 Vilassar de Mar, Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.50323772407596,
                     "longitud": 2.391881570550961
@@ -1377,13 +1469,14 @@
             },
             {
               "nom": "Arenys de Mar",
-              "de": "d’Arenys de Mar",
+              "de_nom": "d’Arenys de Mar",
               "link": "arenys-de-mar",
-              "bisbat": "barcelona",
+              "bisbat": "girona",
               "relation": 343407,
               "edificis": [
                 {
                   "nom": "Església de la Visitació de la Mare de Déu (Caputxins)",
+                  "de": "de l’",
                   "link": "visitacio-de-la-mare-de-deu",
                   "adreca": "Carrer de Santa Maria, 7, 08350 Arenys de Mar, Barcelona",
                   "geolocalitzacio": {
@@ -1403,13 +1496,14 @@
           "poblacions": [
             {
               "nom": "Les Masies de Voltregà",
-              "de": "de les Masies de Voltregà",
+              "de_nom": "de les Masies de Voltregà",
               "link": "masies-de-voltrega",
               "bisbat": "vic",
               "relation": 340696,
               "edificis": [
                 {
                   "nom": "Santuari de la Mare de Déu de la Gleva",
+                  "de": "del ",
                   "link": "la-gleva",
                   "adreca": "Carrer del Marquès de Palmerola, 2, 08508 Les Masies de Voltregà, Barcelona",
                   "geolocalitzacio": {
@@ -1427,6 +1521,7 @@
               "edificis": [
                 {
                   "nom": "Catedral de Sant Pere",
+                  "de": "de la ",
                   "link": "catedral",
                   "adreca": "Carrer del Cloquer, 5, 08500 Vic, Barcelona",
                   "geolocalitzacio": {
@@ -1444,6 +1539,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Genís",
+                  "de": "de l’",
                   "link": "sant-genis",
                   "adreca": "Plaça Rectoria, 1, 08552 Taradell, Barcelona",
                   "geolocalitzacio": {
@@ -1466,6 +1562,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Maria",
+                  "de": "de l’",
                   "link": "santa-maria",
                   "adreca": "Av. de la Generalitat, 79, 08210 Barberà del Vallès, Barcelona",
                   "geolocalitzacio": {
@@ -1483,6 +1580,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Pere (Seu d'Ègara)",
+                  "de": "de l’",
                   "link": "sant-pere",
                   "adreca": "Plaça del Rector Homs, 1, 08222 Terrassa, Barcelona",
                   "geolocalitzacio": {
@@ -1492,6 +1590,7 @@
                 },
                 {
                   "nom": "Església parroquial de la Sagrada Família",
+                  "de": "de l’",
                   "link": "sagrada-familia",
                   "adreca": "Carrer de Faraday, 108, 08224 Terrassa, Barcelona",
                   "geolocalitzacio": {
@@ -1509,8 +1608,9 @@
               "edificis": [
                 {
                   "nom": "Monestir de Sant Cugat",
+                  "de": "del ",
                   "link": "monestir",
-                  "adreca": "Plaça d'Octavià, s/n, 08172 Sant Cugat del Vallès, Barcelona",
+                  "adreca": "Plaça d’Octavià, s/n, 08172 Sant Cugat del Vallès, Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.47379652697784,
                     "longitud": 2.085295114235729
@@ -1526,6 +1626,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Pere",
+                  "de": "de l’",
                   "link": "sant-pere",
                   "adreca": "Plaça Dr. Guardiet, 9, 08191 Rubí, Barcelona",
                   "geolocalitzacio": {
@@ -1548,8 +1649,9 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Esteve",
+                  "de": "de l’",
                   "link": "sant-esteve",
-                  "adreca": "Plaça de l'Església, 1, 08401 Granollers, Barcelona",
+                  "adreca": "Plaça de l’Església, 1, 08401 Granollers, Barcelona",
                   "geolocalitzacio": {
                     "latitud": 41.60771911444345,
                     "longitud": 2.286459635455177
@@ -1565,6 +1667,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Sebastià de Montmajor",
+                  "de": "de l’",
                   "link": "sant-sebastia-de-montmajor",
                   "adreca": "Carrer de Sant Sebastià de Montmajor, 08140 Caldes de Montbui, Barcelona",
                   "geolocalitzacio": {
@@ -1592,6 +1695,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Maria",
+                  "de": "de l’",
                   "link": "santa-maria",
                   "adreca": "Carrer Portal de Mont, 1, 3, 17488 Cadaqués, Girona",
                   "geolocalitzacio": {
@@ -1602,15 +1706,16 @@
               ]
             },
             {
-              "nom": "Castelló d'Empúries",
+              "nom": "Castelló d’Empúries",
               "link": "castello-d-empuries",
               "bisbat": "girona",
               "relation": 347511,
               "edificis": [
                 {
                   "nom": "Basílica parroquial de Santa Maria",
-                  "link": "basilica-de-santa-maria",
-                  "adreca": "Plaça Mossèn Cinto Verdaguer, 1, 17486 Castelló d'Empúries, Girona",
+                  "de": "de la ",
+                  "link": "santa-maria",
+                  "adreca": "Plaça Mossèn Cinto Verdaguer, 1, 17486 Castelló d’Empúries, Girona",
                   "geolocalitzacio": {
                     "latitud": 42.25960098879134,
                     "longitud": 3.0762062136751736
@@ -1626,20 +1731,23 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Pere",
+                  "de": "de l’",
                   "link": "sant-pere",
-                  "adreca": "Carrer de l'Església, 8, 17600 Figueres, Girona",
+                  "adreca": "Carrer de l’Església, 8, 17600 Figueres, Girona",
                   "geolocalitzacio": {
                     "latitud": 42.26784177987222,
                     "longitud": 2.9600004736508105
                   },
                   "orgues": [
                     {
-                      "nom": "Tribuna",
-                      "link": "tribuna"
+                      "nom": "Orgue major",
+                      "de_nom": "de l’orgue major",
+                      "link": "orgue-major"
                     },
                     {
-                      "nom": "Cor",
-                      "link": "cor"
+                      "nom": "Orgue menor",
+                      "de_nom": "de l’orgue menor",
+                      "link": "orgue-menor"
                     }
                   ]
                 }
@@ -1658,6 +1766,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Genís",
+                  "de": "de l’",
                   "link": "sant-genis",
                   "adreca": "Carrer Sant Genís, 2, 17257 Torroella de Montgrí, Girona",
                   "geolocalitzacio": {
@@ -1680,6 +1789,7 @@
               "edificis": [
                 {
                   "nom": "Església de la Mare de Déu dels Àngels",
+                  "de": "de l’",
                   "link": "mare-de-deu-dels-angels",
                   "adreca": "Carrer dels Forns, 11, 17527 Llívia, Girona",
                   "geolocalitzacio": {
@@ -1697,6 +1807,7 @@
               "edificis": [
                 {
                   "nom": "Església de Sant Domènec",
+                  "de": "de l’",
                   "link": "sant-domenec",
                   "adreca": "Carrer Alfons I, 21, 17520 Puigcerdà, Girona",
                   "geolocalitzacio": {
@@ -1722,6 +1833,7 @@
               "edificis": [
                 {
                   "nom": "Església catedral basílica de Santa Maria Assumpta",
+                  "de": "de l’",
                   "link": "catedral",
                   "adreca": "Plaça de la Catedral, s/n, 17004 Girona",
                   "geolocalitzacio": {
@@ -1731,6 +1843,7 @@
                 },
                 {
                   "nom": "Monestir de Sant Daniel",
+                  "de": "del ",
                   "link": "sant-daniel",
                   "adreca": "Carrer de les Monges, 2, 17007 Girona",
                   "geolocalitzacio": {
@@ -1748,6 +1861,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Martí de Tours",
+                  "de": "de l’",
                   "link": "sant-marti-de-tours",
                   "adreca": "Carrer Reverend Joaquím Bosch, 2, 17244 Cassà de la Selva, Girona",
                   "geolocalitzacio": {
@@ -1765,6 +1879,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Martí Vell",
+                  "de": "de l’",
                   "link": "sant-marti-vell",
                   "adreca": "Carrer de Dalt, 2-4, 17462 Sant Martí Vell, Girona",
                   "geolocalitzacio": {
@@ -1790,6 +1905,7 @@
               "edificis": [
                 {
                   "nom": "Santuari de la Mare de Déu de Núria",
+                  "de": "del ",
                   "link": "santuari-nuria",
                   "adreca": "Núria, s/n, 17534 Queralbs, Girona",
                   "geolocalitzacio": {
@@ -1812,6 +1928,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Coloma de Farners",
+                  "de": "de l’",
                   "link": "santa-coloma",
                   "adreca": "Plaça Farners, 1, 17430 Santa Coloma de Farners, Girona",
                   "geolocalitzacio": {
@@ -1829,6 +1946,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Maria",
+                  "de": "de l’",
                   "link": "santa-maria",
                   "adreca": "Carrer Nou, 22, 17300 Blanes, Girona",
                   "geolocalitzacio": {
@@ -1849,16 +1967,17 @@
           "link": "alt-urgell",
           "poblacions": [
             {
-              "nom": "La Seu d'Urgell",
-              "de": "de la Seu d'Urgell",
+              "nom": "La Seu d’Urgell",
+              "de_nom": "de la Seu d’Urgell",
               "link": "la-seu-d-urgell",
               "bisbat": "urgell",
               "relation": 347353,
               "edificis": [
                 {
-                  "nom": "Catedral de Santa Maria d'Urgell",
+                  "nom": "Catedral de Santa Maria d’Urgell",
+                  "de": "de la ",
                   "link": "catedral",
-                  "adreca": "Plaça del Deganat, 16, 25700 La Seu d'Urgell, Lleida",
+                  "adreca": "Plaça del Deganat, 16, 25700 La Seu d’Urgell, Lleida",
                   "geolocalitzacio": {
                     "latitud": 42.35789427947527,
                     "longitud": 1.4619392981183617
@@ -1866,8 +1985,9 @@
                 },
                 {
                   "nom": "Església de la Sagrada Família",
+                  "de": "de l’",
                   "link": "sagrada-familia",
-                  "adreca": "Passeig Joan Brudieu, 1, 25700 La Seu d'Urgell, Lleida",
+                  "adreca": "Passeig Joan Brudieu, 1, 25700 La Seu d’Urgell, Lleida",
                   "geolocalitzacio": {
                     "latitud": 42.35451392578107,
                     "longitud": 1.4605626140883208
@@ -1888,15 +2008,16 @@
           "poblacions": [
             {
               "nom": "La Pobla de Cérvoles",
-              "de": "de la Pobla de Cérvoles",
+              "de_nom": "de la Pobla de Cérvoles",
               "link": "la-pobla-de-cervoles",
               "bisbat": "tarragona",
               "relation": 346981,
               "edificis": [
                 {
                   "nom": "Església parroquial de la Mare de Déu de la Jonquera",
+                  "de": "de l’",
                   "link": "mare-de-deu-de-la-jonquera",
-                  "adreca": "Plaça de l'Església, 7, 4, 25471 La Pobla de Cérvoles, Lleida",
+                  "adreca": "Plaça de l’Església, 7, 4, 25471 La Pobla de Cérvoles, Lleida",
                   "geolocalitzacio": {
                     "latitud": 41.368046155491704,
                     "longitud": 0.9154556783094845
@@ -1906,13 +2027,14 @@
             },
             {
               "nom": "Les Borges Blanques",
-              "de": "de les Borges Blanques",
+              "de_nom": "de les Borges Blanques",
               "link": "borges-blanques",
               "bisbat": "lleida",
               "relation": 344255,
               "edificis": [
                 {
-                  "nom": "Església parroquial de l'Assumpció de la Mare de Déu",
+                  "nom": "Església parroquial de l’Assumpció de la Mare de Déu",
+                  "de": "de l’",
                   "link": "assumpcio-mare-de-deu",
                   "adreca": "Carrer Costa Mn. Just s/n, 25400 Les Borges Blanques, Lleida",
                   "geolocalitzacio": {
@@ -1929,13 +2051,14 @@
           "poblacions": [
             {
               "nom": "Àger",
-              "de": "d’Àger",
+              "de_nom": "d’Àger",
               "link": "ager",
               "bisbat": "lleida",
               "relation": 348146,
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Vicenç",
+                  "de": "de l’",
                   "link": "sant-vicenc",
                   "adreca": "Carrer Sant Vicent, 25691 Àger, Lleida",
                   "geolocalitzacio": {
@@ -1953,8 +2076,9 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Maria",
+                  "de": "de l’",
                   "link": "santa-maria",
-                  "adreca": "Plaça de l'Església, 25740 Ponts, Lleida",
+                  "adreca": "Plaça de l’Església, 25740 Ponts, Lleida",
                   "geolocalitzacio": {
                     "latitud": 41.91780891059158,
                     "longitud": 1.1878791102750497
@@ -1964,14 +2088,15 @@
             },
             {
               "nom": "Os de Balaguer",
-              "de": "d’Os de Balaguer",
+              "de_nom": "d’Os de Balaguer",
               "link": "os-de-balaguer",
               "bisbat": "urgell",
               "relation": 342495,
               "edificis": [
                 {
-                  "nom": "Montestir de Santa Maria de les Avellanes",
-                  "link": "avellanes",
+                  "nom": "Monestir de Santa Maria de Bellpuig de les Avellanes",
+                  "de": "del ",
+                  "link": "monestir-avellanes",
                   "adreca": "Monestir de les Avellanes, C-12, Km. 181, 25612 Os de Balaguer, Lleida",
                   "geolocalitzacio": {
                     "latitud": 41.87502495721435,
@@ -1993,6 +2118,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Martí de Tours",
+                  "de": "de l’",
                   "link": "sant-marti",
                   "adreca": "Plaça del Doctor Vidal Sivilla, 9, 25630 Talarn, Lleida",
                   "geolocalitzacio": {
@@ -2004,13 +2130,14 @@
             },
             {
               "nom": "La Pobla de Segur",
-              "de": "de la Pobla de Segur",
+              "de_nom": "de la Pobla de Segur",
               "link": "la-pobla-de-segur",
               "bisbat": "urgell",
               "relation": 342833,
               "edificis": [
                 {
                   "nom": "Església parroquial de la Mare de Déu de la Ribera",
+                  "de": "de l’",
                   "link": "mare-de-deu-de-la-ribera",
                   "adreca": "Av. Sant Miquel del Pui, 8, 25500 La Pobla de Segur, Lleida",
                   "geolocalitzacio": {
@@ -2028,8 +2155,9 @@
               "edificis": [
                 {
                   "nom": "Basílica de la Mare de Déu de Valldeflors",
+                  "de": "de la ",
                   "link": "mare-de-deu-de-valldeflors",
-                  "adreca": "Placeta de l'Església, 2, 25620 Tremp, Lleida",
+                  "adreca": "Placeta de l’Església, 2, 25620 Tremp, Lleida",
                   "geolocalitzacio": {
                     "latitud": 42.1674047429208,
                     "longitud": 0.8954005880573832
@@ -2056,6 +2184,7 @@
               "edificis": [
                 {
                   "nom": "Convent de Sant Agustí",
+                  "de": "del ",
                   "link": "sant-agusti",
                   "adreca": "Carrer Major, 103, 25200 Cervera, Lleida",
                   "geolocalitzacio": {
@@ -2078,6 +2207,7 @@
               "edificis": [
                 {
                   "nom": "Catedral de Santa Maria. Seu Vella",
+                  "de": "de la ",
                   "link": "seu-vella",
                   "adreca": "25002 Lleida",
                   "geolocalitzacio": {
@@ -2086,7 +2216,8 @@
                   }
                 },
                 {
-                  "nom": "Església catedral de l'Assumpció de la Mare de Déu. Seu Nova",
+                  "nom": "Església catedral de l’Assumpció de la Mare de Déu. Seu Nova",
+                  "de": "de l’",
                   "link": "seu-nova",
                   "adreca": "Plaça de la Catedral, 25002 Lleida",
                   "geolocalitzacio": {
@@ -2096,6 +2227,7 @@
                 },
                 {
                   "nom": "Convent del Sagrat Cor de Jesús (carmelites descalces)",
+                  "de": "del ",
                   "link": "sagrat-cor",
                   "adreca": "Partida Caparrella, 159, 25192 Lleida",
                   "geolocalitzacio": {
@@ -2105,6 +2237,7 @@
                 },
                 {
                   "nom": "Santuari de Sant Antoni de Pàdua (Pares Franciscans)",
+                  "de": "del ",
                   "link": "sant-antoni-de-padua",
                   "adreca": "Carrer Vila Antònia, 12, 25007 Lleida",
                   "geolocalitzacio": {
@@ -2114,6 +2247,7 @@
                 },
                 {
                   "nom": "Església parroquial de Sant Llorenç",
+                  "de": "de l’",
                   "link": "sant-llorenc",
                   "adreca": "Plaça Sant Josep, 7, 25002 Lleida",
                   "geolocalitzacio": {
@@ -2122,11 +2256,13 @@
                   },
                   "orgues": [
                     {
-                      "nom": "Tribuna",
-                      "link": "tribuna"
+                      "nom": "Orgue major",
+                      "de_nom": "de l’orgue major",
+                      "link": "orgue-major"
                     },
                     {
                       "nom": "Positiu",
+                      "de_nom": "del positiu",
                       "link": "positiu"
                     }
                   ]
@@ -2140,7 +2276,8 @@
               "relation": 343011,
               "edificis": [
                 {
-                  "nom": "Església parroquial de l'Assumpció de la Mare de Déu",
+                  "nom": "Església parroquial de l’Assumpció de la Mare de Déu",
+                  "de": "de l’",
                   "link": "assumpcio-mare-de-deu",
                   "adreca": "Plaça Església, s/n, 25170 Torres de Segre, Lleida",
                   "geolocalitzacio": {
@@ -2163,6 +2300,7 @@
               "edificis": [
                 {
                   "nom": "Santuari del Miracle",
+                  "de": "del ",
                   "link": "santuari-del-miracle",
                   "adreca": "Santuari del Miracle, 25287 El Miracle, Lleida",
                   "geolocalitzacio": {
@@ -2171,11 +2309,13 @@
                   },
                   "orgues": [
                     {
-                      "nom": "Tribuna",
+                      "nom": "Orgue de tribuna",
+                      "de_nom": "de l’orgue de tribuna",
                       "link": "tribuna"
                     },
                     {
-                      "nom": "Capella del Santíssim",
+                      "nom": "Orgue de la Capella del Santíssim",
+                      "de_nom": "de l’orgue de la Capella del Santíssim",
                       "link": "santissim"
                     }
                   ]
@@ -2190,8 +2330,9 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Llorenç",
+                  "de": "de l’",
                   "link": "sant-llorenc",
-                  "adreca": "Plaça de l'Església, 8, 25282 Sant Llorenç de Morunys, Lleida",
+                  "adreca": "Plaça de l’Església, 8, 25282 Sant Llorenç de Morunys, Lleida",
                   "geolocalitzacio": {
                     "latitud": 42.137579412898894,
                     "longitud": 1.5912330981000895
@@ -2206,7 +2347,8 @@
               "relation": 347349,
               "edificis": [
                 {
-                  "nom": "Església catedral basílica de l'Assumpció de la Mare de Déu",
+                  "nom": "Església catedral basílica de l’Assumpció de la Mare de Déu",
+                  "de": "de l’",
                   "link": "catedral",
                   "adreca": "Carrer de les Campanes, 1, 25280 Solsona, Lleida",
                   "geolocalitzacio": {
@@ -2215,11 +2357,13 @@
                   },
                   "orgues": [
                     {
-                      "nom": "Orgue gran",
-                      "link": "gran"
+                      "nom": "Orgue major",
+                      "de_nom": "de l’orgue major",
+                      "link": "orgue-major"
                     },
                     {
-                      "nom": "Capella de la Mare de Déu del Claustre",
+                      "nom": "Orgue de la Capella de la Mare de Déu del Claustre",
+                      "de_nom": "de l’orgue de la Capella de la Mare de Déu del Claustre",
                       "link": "claustre"
                     }
                   ]
@@ -2239,8 +2383,9 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Nicolau",
+                  "de": "de l’",
                   "link": "sant-nicolau",
-                  "adreca": "Carrer Replà de l'Església, 1, 25250 Bellpuig, Lleida",
+                  "adreca": "Carrer Replà de l’Església, 1, 25250 Bellpuig, Lleida",
                   "geolocalitzacio": {
                     "latitud": 41.625322756649034,
                     "longitud": 1.0121642406432736
@@ -2256,6 +2401,7 @@
               "edificis": [
                 {
                   "nom": "Monestir de Santa Maria",
+                  "de": "del ",
                   "link": "monestir-santa-maria",
                   "adreca": "Carrer Major, s/n, 25268 Vallbona de les Monges, Lleida",
                   "geolocalitzacio": {
@@ -2264,11 +2410,13 @@
                   },
                   "orgues": [
                     {
-                      "nom": "Orgue gran",
-                      "link": "gran"
+                      "nom": "Orgue major",
+                      "de_nom": "de l’orgue major",
+                      "link": "orgue-major"
                     },
                     {
                       "nom": "Portatiu",
+                      "de_nom": "del portatiu",
                       "link": "portatiu"
                     }
                   ]
@@ -2283,6 +2431,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Maria",
+                  "de": "de l’",
                   "link": "santa-maria",
                   "adreca": "25341 Guimerà, Lleida",
                   "geolocalitzacio": {
@@ -2300,6 +2449,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Llorenç Màrtir",
+                  "de": "de l’",
                   "link": "sant-llorenc-martir",
                   "adreca": "25269 Rocallaura, Lleida",
                   "geolocalitzacio": {
@@ -2316,7 +2466,8 @@
               "relation": 342727,
               "edificis": [
                 {
-                  "nom": "Església parroquial de Santa Maria de l'Alba",
+                  "nom": "Església parroquial de Santa Maria de l’Alba",
+                  "de": "de l’",
                   "link": "santa-maria-de-l-alba",
                   "adreca": "Plaça Major, 3, 25300 Tàrrega, Lleida",
                   "geolocalitzacio": {
@@ -2334,6 +2485,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Maria",
+                  "de": "de l’",
                   "link": "santa-maria",
                   "adreca": "Plaça Bisbe Comelles, 6, 25340 Verdú, Lleida",
                   "geolocalitzacio": {
@@ -2356,8 +2508,9 @@
               "edificis": [
                 {
                   "nom": "Església de Sant Miquèu",
+                  "de": "de l’",
                   "link": "sant-miqueu",
-                  "adreca": "Av. deth Pas d'Arró, 8, 25530 Vielha, Lleida",
+                  "adreca": "Av. deth Pas d’Arró, 8, 25530 Vielha, Lleida",
                   "geolocalitzacio": {
                     "latitud": 42.701431467836564,
                     "longitud": 0.7958535831402043
@@ -2383,8 +2536,9 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Maria",
+                  "de": "de l’",
                   "link": "santa-maria",
-                  "adreca": "Plaça de l'Església, 3, 43144 Vallmoll, Tarragona",
+                  "adreca": "Plaça de l’Església, 3, 43144 Vallmoll, Tarragona",
                   "geolocalitzacio": {
                     "latitud": 41.24235350382095,
                     "longitud": 1.2490589675847061
@@ -2394,13 +2548,14 @@
             },
             {
               "nom": "El Pla de Santa Maria",
-              "de": "del Pla de Santa Maria",
+              "de_nom": "del Pla de Santa Maria",
               "link": "pla-de-santa-maria",
               "bisbat": "tarragona",
               "relation": 340527,
               "edificis": [
                 {
                   "nom": "Església de Sant Ramon de Penyafort",
+                  "de": "de l’",
                   "link": "sant-ramon",
                   "adreca": "Plaça Sant Ramon, 5, 43810 El Pla de Santa Maria, Tarragona",
                   "geolocalitzacio": {
@@ -2412,13 +2567,14 @@
             },
             {
               "nom": "Alió",
-              "de": "d’Alió",
+              "de_nom": "d’Alió",
               "link": "alio",
               "bisbat": "tarragona",
               "relation": 346862,
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Bartomeu",
+                  "de": "de l’",
                   "link": "sant-bartomeu",
                   "adreca": "Plaça de Sant Bartomeu, 1, 43813 Alió, Tarragona",
                   "geolocalitzacio": {
@@ -2436,6 +2592,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Joan Baptista",
+                  "de": "de l’",
                   "link": "sant-joan",
                   "adreca": "Plaça Església, 1, 43800 Valls, Tarragona",
                   "geolocalitzacio": {
@@ -2447,13 +2604,14 @@
             },
             {
               "nom": "Aiguamúrcia",
-              "de": "d’Aiguamúrcia",
+              "de_nom": "d’Aiguamúrcia",
               "link": "aiguamurcia",
               "bisbat": "tarragona",
               "relation": 342688,
               "edificis": [
                 {
                   "nom": "Església del Reial Monestir de Santes Creus",
+                  "de": "de l’",
                   "link": "santes-creus",
                   "adreca": "Plaça de Jaume el Just, s/n, 43815 Aiguamúrcia, Tarragona",
                   "geolocalitzacio": {
@@ -2469,16 +2627,17 @@
           "link": "baix-camp",
           "poblacions": [
             {
-              "nom": "L'Aleixar",
-              "de": "de l’Aleixar",
+              "nom": "L’Aleixar",
+              "de_nom": "de l’Aleixar",
               "link": "aleixar",
               "bisbat": "tarragona",
               "relation": 342694,
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Martí Bisbe",
+                  "de": "de l’",
                   "link": "sant-marti",
-                  "adreca": "Carrer Pont de l'Abadia, 1, 43381 L'Aleixar, Tarragona",
+                  "adreca": "Carrer Pont de l’Abadia, 1, 43381 L’Aleixar, Tarragona",
                   "geolocalitzacio": {
                     "latitud": 41.20167664992466,
                     "longitud": 1.0459011376004186
@@ -2494,6 +2653,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Pere Apòstol",
+                  "de": "de l’",
                   "link": "sant-pere-apostol",
                   "adreca": "Carrer Major, 12, 43340 Montbrió del Camp, Tarragona",
                   "geolocalitzacio": {
@@ -2505,13 +2665,14 @@
             },
             {
               "nom": "La Selva del Camp",
-              "de": "de la Selva del Camp",
+              "de_nom": "de la Selva del Camp",
               "link": "la-selva-del-camp",
               "bisbat": "tarragona",
               "relation": 339873,
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Andreu",
+                  "de": "de l’",
                   "link": "sant-andreu",
                   "adreca": "Carrer Major, 63, 43470 La Selva del Camp, Tarragona",
                   "geolocalitzacio": {
@@ -2529,6 +2690,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Pere Apòstol",
+                  "de": "de l’",
                   "link": "sant-pere-apostol",
                   "adreca": "Carrer de Pau Casals, 14, 43850 Cambrils, Tarragona",
                   "geolocalitzacio": {
@@ -2538,6 +2700,7 @@
                 },
                 {
                   "nom": "Església del Santuari de la Mare de Déu del Camí",
+                  "de": "de l’",
                   "link": "santuari-cami",
                   "adreca": "Avinguda del Baix Camp, 35, 43850 Cambrils, Tarragona",
                   "geolocalitzacio": {
@@ -2555,6 +2718,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial Prioral de Sant Pere",
+                  "de": "de l’",
                   "link": "prioral",
                   "adreca": "Plaça Sant Pere, 43201 Reus, Tarragona",
                   "geolocalitzacio": {
@@ -2564,6 +2728,7 @@
                 },
                 {
                   "nom": "Església parroquial de Sant Francesc d’Assís",
+                  "de": "de l’",
                   "link": "sant-francesc",
                   "adreca": "Carrer de Misericòrdia, 12, 43205 Reus, Tarragona",
                   "geolocalitzacio": {
@@ -2581,8 +2746,9 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Jaume Apòstol",
+                  "de": "de l’",
                   "link": "sant-jaume-apostol",
-                  "adreca": "Plaça d'Arnau de Palomar, 1975, 43330 Riudoms, Tarragona",
+                  "adreca": "Plaça d’Arnau de Palomar, 1975, 43330 Riudoms, Tarragona",
                   "geolocalitzacio": {
                     "latitud": 41.139151300184785,
                     "longitud": 1.051259440273873
@@ -2603,6 +2769,7 @@
               "edificis": [
                 {
                   "nom": "Església de Santa Teresa de Jesús",
+                  "de": "de l’",
                   "link": "santa-teresa-de-jesus",
                   "adreca": "Av. de Santa Teresa de Jesús, 16, 43590 Jesús, Tarragona",
                   "geolocalitzacio": {
@@ -2619,13 +2786,14 @@
           "poblacions": [
             {
               "nom": "La Bisbal del Penedès",
-              "de": "de la Bisbal del Penedès",
+              "de_nom": "de la Bisbal del Penedès",
               "link": "la-bisbal-del-penedes",
               "bisbat": "tarragona",
               "relation": 342333,
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Maria",
+                  "de": "de l’",
                   "link": "santa-maria",
                   "adreca": "Carrer Major, 11, 43717 La Bisbal del Penedès, Tarragona",
                   "geolocalitzacio": {
@@ -2637,13 +2805,14 @@
             },
             {
               "nom": "El Vendrell",
-              "de": "del Vendrell",
+              "de_nom": "del Vendrell",
               "link": "el-vendrell",
               "bisbat": "tarragona",
               "relation": 340193,
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Salvador",
+                  "de": "de l’",
                   "link": "sant-salvador",
                   "adreca": "Plaça Vella, s/n, 43700 El Vendrell, Tarragona",
                   "geolocalitzacio": {
@@ -2653,7 +2822,8 @@
                 },
                 {
                   "nom": "Escola de Música Pau Casals",
-                  "link": "em-pau-casals",
+                  "de": "de l’",
+                  "link": "emm-pau-casals",
                   "adreca": "Passatge del Tívoli, 3, 43700 El Vendrell, Tarragona",
                   "geolocalitzacio": {
                     "latitud": 41.221722670693104,
@@ -2664,15 +2834,16 @@
             },
             {
               "nom": "L’Arboç",
-              "de": "de l’Arboç",
+              "de_nom": "de l’Arboç",
               "link": "arboc",
               "bisbat": "tarragona",
               "relation": 346856,
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Julià",
+                  "de": "de l’",
                   "link": "sant-julia",
-                  "adreca": "Carrer Major, 9, 43720 L'Arboç, Tarragona",
+                  "adreca": "Carrer Major, 9, 43720 L’Arboç, Tarragona",
                   "geolocalitzacio": {
                     "latitud": 41.26795,
                     "longitud": 1.60421
@@ -2693,6 +2864,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Maria la Major",
+                  "de": "de l’",
                   "link": "santa-maria-la-major",
                   "adreca": "Plaça de Santa Maria, 2, 43400 Montblanc, Tarragona",
                   "geolocalitzacio": {
@@ -2710,6 +2882,7 @@
               "edificis": [
                 {
                   "nom": "Reial Monestir de Santa Maria de Poblet",
+                  "de": "del ",
                   "link": "monestir",
                   "adreca": "43448 Poblet, Tarragona",
                   "geolocalitzacio": {
@@ -2719,10 +2892,12 @@
                   "orgues": [
                     {
                       "nom": "Orgue major",
+                      "de_nom": "de l’orgue major",
                       "link": "orgue-major"
                     },
                     {
                       "nom": "Orgue de cor",
+                      "de_nom": "de l’orgue de cor",
                       "link": "orgue-cor"
                     }
                   ]
@@ -2742,8 +2917,9 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Santa Bàrbara",
+                  "de": "de l’",
                   "link": "santa-barbara",
-                  "adreca": "Plaça de l'Alcalde Cid i Cid, 12, 43570 Santa Bàrbara, Tarragona",
+                  "adreca": "Plaça de l’Alcalde Cid i Cid, 12, 43570 Santa Bàrbara, Tarragona",
                   "geolocalitzacio": {
                     "latitud": 40.71485372978114,
                     "longitud": 0.4927822889502269
@@ -2753,15 +2929,16 @@
             },
             {
               "nom": "La Sénia",
-              "de": "de la Sénia",
+              "de_nom": "de la Sénia",
               "link": "la-senia",
               "bisbat": "tortosa",
               "relation": 341999,
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Bartomeu",
+                  "de": "de l’",
                   "link": "sant-bartomeu",
-                  "adreca": "Plaça de l'Església, 7, 43560 La Sénia, Tarragona",
+                  "adreca": "Plaça de l’Església, 7, 43560 La Sénia, Tarragona",
                   "geolocalitzacio": {
                     "latitud": 40.63478852208632,
                     "longitud": 0.27978950797135493
@@ -2782,6 +2959,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Miquel Arcàngel",
+                  "de": "de l’",
                   "link": "sant-miquel-arcangel",
                   "adreca": "43737 Torroja del Priorat, Tarragona",
                   "geolocalitzacio": {
@@ -2793,15 +2971,16 @@
             },
             {
               "nom": "Ulldemolins",
-              "de": "d’Ulldemolins",
+              "de_nom": "d’Ulldemolins",
               "link": "ulldemolins",
               "bisbat": "tarragona",
               "relation": 344611,
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Jaume",
+                  "de": "de l’",
                   "link": "sant-jaume",
-                  "adreca": "Pla de l'Església, 9, 43363 Ulldemolins, Tarragona",
+                  "adreca": "Pla de l’Església, 9, 43363 Ulldemolins, Tarragona",
                   "geolocalitzacio": {
                     "latitud": 41.322376339136085,
                     "longitud": 0.8763603862331761
@@ -2821,9 +3000,10 @@
               "relation": 341701,
               "edificis": [
                 {
-                  "nom": "Església parroquial de l'Assumpció de Maria",
+                  "nom": "Església parroquial de l’Assumpció de Maria",
+                  "de": "de l’",
                   "link": "assumpcio-de-maria",
-                  "adreca": "Plaça l'Esglesia, 2, 43750 Flix, Tarragona",
+                  "adreca": "Plaça l’Esglesia, 2, 43750 Flix, Tarragona",
                   "geolocalitzacio": {
                     "latitud": 41.23125425795955,
                     "longitud": 0.5505797916088103
@@ -2844,6 +3024,7 @@
               "edificis": [
                 {
                   "nom": "Església catedral basílica metropolitana i primada de Santa Tecla",
+                  "de": "de l’",
                   "link": "catedral",
                   "adreca": "Pla de la Seu, 43003 Tarragona",
                   "geolocalitzacio": {
@@ -2853,16 +3034,19 @@
                   "orgues": [
                     {
                       "nom": "Orgue major",
-                      "link": "major"
+                      "de_nom": "de l’orgue major",
+                      "link": "orgue-major"
                     },
                     {
-                      "nom": "Capella de la Mare de Déu del Claustre",
+                      "nom": "Orgue de la Capella de la Mare de Déu del Claustre",
+                      "de_nom": "de l’orgue de la Capella de la Mare de Déu del Claustre",
                       "link": "claustre"
                     }
                   ]
                 },
                 {
                   "nom": "Església parroquial de Sant Joan Baptista",
+                  "de": "de l’",
                   "link": "sant-joan-baptista",
                   "adreca": "Plaça General Prim, 8, 43001 Tarragona",
                   "geolocalitzacio": {
@@ -2880,6 +3064,7 @@
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Pere Apòstol",
+                  "de": "de l’",
                   "link": "sant-pere-apostol",
                   "adreca": "Carrer de Joan Güell, 16, 43830 Torredembarra, Tarragona",
                   "geolocalitzacio": {
@@ -2891,13 +3076,14 @@
             },
             {
               "nom": "La Pobla de Mafumet",
-              "de": "de la Pobla de Mafumet",
-              "link": "la-pobla-de-mafumet",
+              "de_nom": "de la Pobla de Mafumet",
+              "link": "pobla-de-mafumet",
               "bisbat": "tarragona",
               "relation": 340526,
               "edificis": [
                 {
                   "nom": "Església parroquial de Sant Joan Baptista",
+                  "de": "de l’",
                   "link": "sant-joan-baptista",
                   "adreca": "Carrer Sant Isidre, 2, 43140 La Pobla de Mafumet, Tarragona",
                   "geolocalitzacio": {

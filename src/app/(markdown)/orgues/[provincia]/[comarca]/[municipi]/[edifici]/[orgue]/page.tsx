@@ -50,7 +50,8 @@ export default async function Page({
         className="not-prose mb-8"
       />
       <h1>
-        {edifici.nom} ({orgue.nom})
+        {edifici.nom}
+        <span className="block mt-2 text-2xl font-semibold">{orgue.nom}</span>
       </h1>
       <div className="not-prose flex justify-between items-baseline">
         <p>

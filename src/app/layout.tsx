@@ -35,6 +35,14 @@ export async function generateMetadata(): Promise<Metadata> {
       default: t("name"),
     },
     description: t("description"),
+    metadataBase: new URL("https://www.acorgue.cat"),
+    alternates: {
+      canonical: "./",
+      languages: { "x-default": "./" },
+    },
+    verification: {
+      google: "6gM0wXu4-PfRs-mHaxZXSCSSnY9EZdpUnTgEUAth_jY",
+    },
   };
 }
 

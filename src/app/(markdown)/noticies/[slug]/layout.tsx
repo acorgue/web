@@ -20,7 +20,14 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = posts[slug];
 
-  return { title: post.title, description: post.subtitle };
+  return {
+    title: post.title,
+    description: post.subtitle,
+    alternates: {
+      canonical: `noticies/${post.slug}`,
+      languages: { "x-default": `noticies/${post.slug}` },
+    },
+  };
 }
 
 export default async function Layout({

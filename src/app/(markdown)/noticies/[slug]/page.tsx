@@ -22,7 +22,7 @@ export default async function Page({
   const t = await getTranslations("metadata");
   const { slug } = await params;
   const post = posts[slug];
-  const Body = (await import(`../posts/${post.fileName}`)).default;
+  const Body = (await import(`../_posts/${post.fileName}`)).default;
 
   return (
     <>

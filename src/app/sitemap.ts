@@ -28,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 }
 
-function sitemapOrgues() {
+function sitemapOrgues(): MetadataRoute.Sitemap {
   return orgues.orgues.flatMap((provincia) => [
     { url: url(`/orgues/${provincia.link}`) },
     ...provincia.comarques.flatMap((comarca) => [
@@ -58,6 +58,9 @@ function sitemapOrgues() {
   ]);
 }
 
-function sitemapNoticies() {
-  return sortedPosts.map((post) => ({ url: url(`/noticies/${post.slug}`) }));
+function sitemapNoticies(): MetadataRoute.Sitemap {
+  return sortedPosts.map((post) => ({
+    url: url(`/noticies/${post.slug}`),
+    lastModified: post.date,
+  }));
 }

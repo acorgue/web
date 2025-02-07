@@ -18,7 +18,7 @@ export default async function Page({
 }) {
   const t = await getTranslations("metadata");
   const { provincia, comarca, municipi } = orgueNavigation(await params);
-  const { de, nom, edificis } = orgues(await params);
+  const { de_nom, nom, edificis } = orgues(await params);
 
   return (
     <>
@@ -40,7 +40,7 @@ export default async function Page({
         ]}
         className="not-prose mb-8"
       />
-      <h1>Orgues {de ?? `de ${nom}`}</h1>
+      <h1>Orgues {de_nom ?? `de ${nom}`}</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {edificis.flatMap((edifici) =>
           "orgues" in edifici ? (
