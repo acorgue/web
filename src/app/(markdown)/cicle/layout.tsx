@@ -9,6 +9,10 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: t("concertSeries"),
     description: t("concertSeriesDescription"),
+    alternates: {
+      canonical: "cicle",
+      languages: { "x-default": "cicle" },
+    },
   };
 }
 

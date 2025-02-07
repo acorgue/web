@@ -9,6 +9,10 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: t("references"),
     description: t("referencesDescription"),
+    alternates: {
+      canonical: "bibliografia",
+      languages: { "x-default": "bibliografia" },
+    },
   };
 }
 

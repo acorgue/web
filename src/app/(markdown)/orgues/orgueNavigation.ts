@@ -3,10 +3,12 @@ import orgues from "@/database/orgues.json" with { type: "json" };
 export type Provincia = (typeof orgues.provincies)[number];
 export type Comarca = (typeof orgues.comarques)[number];
 export type OrguesProvincia = (typeof orgues.orgues)[number];
-export type OrguesComarca = OrguesProvincia["comarques"][number];
+export type OrguesComarca = OrguesProvincia["comarques"][number] & {
+  de?: string;
+};
 export type OrguesMunicipi = NonNullable<
   UnwrapArray<OrguesComarca["poblacions"]>
-> & { de?: string };
+> & { de_nom?: string };
 
 export interface OrguesEdifici {
   nom: string;
@@ -17,10 +19,13 @@ export interface OrguesEdifici {
     longitud: number;
   };
   orgues?: Orgue[];
+  de?: string;
 }
+
 export interface Orgue {
   link: string;
   nom: string;
+  de_nom?: string;
 }
 
 export type OrgueNavigationProps =

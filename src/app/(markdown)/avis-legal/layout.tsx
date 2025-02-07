@@ -9,6 +9,10 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: t("legalNotice"),
     description: t("legalNoticeDescription"),
+    alternates: {
+      canonical: "avis-legal",
+      languages: { "x-default": "avis-legal" },
+    },
   };
 }
 

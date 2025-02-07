@@ -1,10 +1,7 @@
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
 import { getTranslations } from "next-intl/server";
 import { orgueNavigation } from "../orgueNavigation";
-
-export interface OrguesProvinciaParams {
-  provincia: string;
-}
+import { OrguesProvinciaParams } from "./layout";
 
 export default async function Page({
   params,

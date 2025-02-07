@@ -9,6 +9,10 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: t("privacyPolicyMembers"),
     description: t("privacyPolicyMembersDescription"),
+    alternates: {
+      canonical: "politica-de-privacitat-socis",
+      languages: { "x-default": "politica-de-privacitat-socis" },
+    },
   };
 }
 
