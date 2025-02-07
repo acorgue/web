@@ -11,6 +11,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { route } from "@/lib/route";
 import {
   BarChartIcon,
   BookmarkIcon,
@@ -44,23 +45,23 @@ export function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
   const t = useTranslations();
 
   const menuItems = [
-    { href: "/qui-som", label: t("metadata.aboutUs") },
+    { href: route("qui-som"), label: t("metadata.aboutUs") },
     {
       label: t("metadata.news"),
       items: [
         {
-          href: "/noticies",
+          href: route("noticies"),
           label: t("navbar.newsAndArticles"),
           description: t("navbar.newsAndArticlesDescription"),
           icon: <BookmarkIcon className="h-6 w-6" aria-hidden="true" />,
           items: sortedPosts.slice(0, 3).map((post) => ({
-            href: `/noticies/${post.slug}`,
+            href: route("post", { slug: post.slug }),
             label: post.title,
             date: post.date,
           })),
         },
         {
-          href: "/full",
+          href: route("full"),
           label: t("metadata.factSheet"),
           description: t("navbar.factSheetDescription"),
           icon: <NewspaperIcon className="h-6 w-6" aria-hidden="true" />,
@@ -91,13 +92,13 @@ export function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
       label: t("metadata.pipeOrgans"),
       items: [
         {
-          href: "/orgues",
+          href: route("orgues"),
           label: t("metadata.pipeOrgans"),
           description: t("navbar.pipeOrgansDescription"),
           icon: <BarChartIcon className="h-6 w-6" aria-hidden="true" />,
         },
         {
-          href: "/cicle",
+          href: route("cicle"),
           label: t("metadata.concertSeries"),
           description: t("navbar.concertSeriesDescription"),
           icon: <PinIcon className="h-6 w-6" aria-hidden="true" />,
@@ -108,19 +109,19 @@ export function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
       label: t("navbar.resources"),
       items: [
         {
-          href: "/bibliografia",
+          href: route("bibliografia"),
           label: t("metadata.references"),
           description: t("navbar.referencesDescription"),
           icon: <FileTextIcon className="h-6 w-6" aria-hidden="true" />,
         },
         {
-          href: "/associacions",
+          href: route("associacions"),
           label: t("metadata.associations"),
           description: t("navbar.associationsDescription"),
           icon: <GlobeIcon className="h-6 w-6" aria-hidden="true" />,
         },
         {
-          href: "/formacio",
+          href: route("formacio"),
           label: t("metadata.education"),
           description: t("navbar.educationDescription"),
           icon: <PencilIcon className="h-6 w-6" aria-hidden="true" />,

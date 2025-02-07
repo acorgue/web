@@ -1,5 +1,6 @@
 import { HomeCarousel } from "@/components/home-carousel";
 import { Card, CardContent } from "@/components/ui/card";
+import { route } from "@/lib/route";
 import { cn } from "@/lib/utils";
 import { ArrowRightIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
@@ -44,10 +45,10 @@ export default async function Home() {
   };
 
   const mainItems = [
-    { href: "/qui-som", label: t("metadata.aboutUs") },
-    { href: "/orgues", label: t("metadata.pipeOrgans") },
-    { href: "/bibliografia", label: t("metadata.references") },
-    { href: "/cicle", label: t("metadata.concertSeries") },
+    { href: route("qui-som"), label: t("metadata.aboutUs") },
+    { href: route("orgues"), label: t("metadata.pipeOrgans") },
+    { href: route("bibliografia"), label: t("metadata.references") },
+    { href: route("cicle"), label: t("metadata.concertSeries") },
   ];
 
   return (

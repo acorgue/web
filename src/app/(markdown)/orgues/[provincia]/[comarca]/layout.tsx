@@ -1,4 +1,5 @@
 import orgues from "@/database/orgues.json" with { type: "json" };
+import { route } from "@/lib/route";
 import type { Metadata } from "next";
 import { PropsWithChildren } from "react";
 import { orgueNavigation } from "../../orgueNavigation";
@@ -26,12 +27,16 @@ export async function generateMetadata({
   params: Promise<OrguesComarcaParams>;
 }): Promise<Metadata> {
   const { provincia, comarca } = orgueNavigation(await params);
+  const canonical = route("comarca", {
+    provincia: provincia.link,
+    comarca: comarca.link,
+  });
 
   return {
     title: `Orgues ${comarca.de}${comarca.nom}`,
     alternates: {
-      canonical: `${provincia.link}/${comarca.link}`,
-      languages: { "x-default": `${provincia.link}/${comarca.link}` },
+      canonical,
+      languages: { "x-default": canonical },
     },
   };
 }

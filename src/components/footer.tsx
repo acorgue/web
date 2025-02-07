@@ -1,3 +1,4 @@
+import { route } from "@/lib/route";
 import { cn } from "@/lib/utils";
 import {
   FacebookIcon,
@@ -10,7 +11,7 @@ import Link from "next/link";
 import { PropsWithChildren } from "react";
 import { Button } from "./ui/button";
 
-export default async function Footer({ className }: { className?: string }) {
+export async function Footer({ className }: { className?: string }) {
   const t = await getTranslations();
 
   return (
@@ -26,7 +27,10 @@ export default async function Footer({ className }: { className?: string }) {
           <p className="mt-2">Rocafort, 242 bis, 08029 Barcelona</p>
 
           <Button asChild variant="secondary" size="sm">
-            <Link href="/qui-som#com-fer-sen-soci" className="mt-2">
+            <Link
+              href={`${route("qui-som")}#com-fer-sen-soci`}
+              className="mt-2"
+            >
               {t("footer.joinUs")}
             </Link>
           </Button>
@@ -50,28 +54,28 @@ export default async function Footer({ className }: { className?: string }) {
         <nav>
           <FooterHeading>{t("footer.links")}</FooterHeading>
           <ul className="mt-2 space-y-1">
-            <FooterListItem href="/associacions">
+            <FooterListItem href={route("associacions")}>
               {t("metadata.associations")}
             </FooterListItem>
-            <FooterListItem href="/bibliografia">
+            <FooterListItem href={route("bibliografia")}>
               {t("metadata.references")}
             </FooterListItem>
-            <FooterListItem href="/cicle">
+            <FooterListItem href={route("cicle")}>
               {t("metadata.concertSeries")}
             </FooterListItem>
-            <FooterListItem href="/formacio">
+            <FooterListItem href={route("formacio")}>
               {t("metadata.education")}
             </FooterListItem>
-            <FooterListItem href="/full">
+            <FooterListItem href={route("full")}>
               {t("metadata.factSheet")}
             </FooterListItem>
-            <FooterListItem href="/orgues">
+            <FooterListItem href={route("orgues")}>
               {t("metadata.pipeOrgans")}
             </FooterListItem>
-            <FooterListItem href="/noticies">
+            <FooterListItem href={route("noticies")}>
               {t("metadata.news")}
             </FooterListItem>
-            <FooterListItem href="/qui-som">
+            <FooterListItem href={route("qui-som")}>
               {t("metadata.aboutUs")}
             </FooterListItem>
           </ul>
@@ -80,13 +84,13 @@ export default async function Footer({ className }: { className?: string }) {
         <div>
           <FooterHeading>{t("footer.legal")}</FooterHeading>
           <ul className="mt-2 space-y-1">
-            <FooterListItem href="/avis-legal">
+            <FooterListItem href={route("avis-legal")}>
               {t("metadata.legalNotice")}
             </FooterListItem>
-            <FooterListItem href="/politica-de-privacitat">
+            <FooterListItem href={route("politica-de-privacitat")}>
               {t("metadata.privacyPolicy")}
             </FooterListItem>
-            <FooterListItem href="/politica-de-privacitat-socis">
+            <FooterListItem href={route("politica-de-privacitat-socis")}>
               {t("metadata.privacyPolicyMembers")}
             </FooterListItem>
           </ul>

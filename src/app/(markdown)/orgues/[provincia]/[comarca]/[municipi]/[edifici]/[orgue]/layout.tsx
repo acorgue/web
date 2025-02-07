@@ -1,4 +1,5 @@
 import { orgueNavigation } from "@/app/(markdown)/orgues/orgueNavigation";
+import { route } from "@/lib/route";
 import { Metadata } from "next";
 import { PropsWithChildren } from "react";
 import { OrguesEdificiParams } from "../layout";
@@ -27,14 +28,19 @@ export async function generateMetadata({
   const { provincia, comarca, municipi, edifici, orgue } = orgueNavigation(
     await params,
   );
+  const canonical = route("orgue", {
+    provincia: provincia.link,
+    comarca: comarca.link,
+    municipi: municipi.link,
+    edifici: edifici.link,
+    orgue: orgue.link,
+  });
 
   return {
     title: `${orgue.nom} ${edifici.de ?? "de "}${edifici.nom} ${municipi.de_nom ?? `de ${municipi.nom}`}`,
     alternates: {
-      canonical: `${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}/${orgue.link}`,
-      languages: {
-        "x-default": `${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}/${orgue.link}`,
-      },
+      canonical,
+      languages: { "x-default": canonical },
     },
   };
 }

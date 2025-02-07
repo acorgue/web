@@ -1,6 +1,7 @@
 import { ArticleCard } from "@/components/article-card";
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
 import { Badge } from "@/components/ui/badge";
+import { route } from "@/lib/route";
 import { UserIcon } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
@@ -28,8 +29,8 @@ export default async function Page({
     <>
       <PageBreadcrumb
         fragments={[
-          { href: "/", label: t("home"), position: 1 },
-          { href: "/noticies", label: t("news"), position: 2 },
+          { href: route("home"), label: t("home"), position: 1 },
+          { href: route("noticies"), label: t("news"), position: 2 },
           { label: post.title, position: 3 },
         ]}
         className="not-prose mb-8"
@@ -82,7 +83,7 @@ export default async function Page({
         <h2>Últimes notícies</h2>
         <ul className="not-prose flex flex-col gap-4">
           {sortedPosts.slice(0, 3).map((post) => (
-            <Link key={post.slug} href={`/noticies/${post.slug}`}>
+            <Link key={post.slug} href={route("post", { slug: post.slug })}>
               <ArticleCard key={post.slug} post={post} />
             </Link>
           ))}

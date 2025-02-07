@@ -2,6 +2,7 @@ import { orgueNavigation } from "@/app/(markdown)/orgues/orgueNavigation";
 import { slugs } from "@/app/(markdown)/orgues/redirects";
 import { CopyButton } from "@/components/copy-button";
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
+import { route } from "@/lib/route";
 import { getTranslations } from "next-intl/server";
 import { OrguesEdificiParams } from "./layout";
 
@@ -19,22 +20,29 @@ export default async function Page({
     <>
       <PageBreadcrumb
         fragments={[
-          { href: "/", label: t("home"), position: 1 },
-          { href: "/orgues", label: t("pipeOrgans"), position: 2 },
+          { href: route("home"), label: t("home"), position: 1 },
+          { href: route("orgues"), label: t("pipeOrgans"), position: 2 },
           {
             collapsed: [
               {
-                href: `/orgues/${provincia.link}`,
+                href: route("provincia", { provincia: provincia.link }),
                 label: provincia.nom,
                 position: 3,
               },
               {
-                href: `/orgues/${provincia.link}/${comarca.link}`,
+                href: route("comarca", {
+                  provincia: provincia.link,
+                  comarca: comarca.link,
+                }),
                 label: comarca.nom,
                 position: 4,
               },
               {
-                href: `/orgues/${provincia.link}/${comarca.link}/${municipi.link}`,
+                href: route("municipi", {
+                  provincia: provincia.link,
+                  comarca: comarca.link,
+                  municipi: municipi.link,
+                }),
                 label: municipi.nom,
                 position: 5,
               },
@@ -52,7 +60,12 @@ export default async function Page({
         <CopyButton
           slug={
             slugs[
-              `/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}`
+              route("edifici", {
+                provincia: provincia.link,
+                comarca: comarca.link,
+                municipi: municipi.link,
+                edifici: edifici.link,
+              })
             ]
           }
         />
