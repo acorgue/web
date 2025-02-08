@@ -39,7 +39,7 @@ export async function generateMetadata(): Promise<Metadata> {
     description: t("description"),
     metadataBase: baseURL,
     icons: {
-      icon: "/favicon180x180.png",
+      icon: "/favicons/favicon180x180.png",
     },
     alternates: {
       canonical,
