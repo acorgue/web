@@ -72,9 +72,7 @@ export default async function Page({
         </header>
         <section className="leading-relaxed text-md">
           {post.subtitle && (
-            <h2 className="text-lg text-gray-600 dark:text-gray-400">
-              {post.subtitle}
-            </h2>
+            <h2 className="text-lg text-aco">{post.subtitle}</h2>
           )}
           <Body />
         </section>

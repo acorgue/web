@@ -51,6 +51,14 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        aco: {
+          DEFAULT: "hsl(var(--aco-light))",
+          foreground: "hsl(var(--aco-foreground))",
+        },
+        "aco-dark": {
+          DEFAULT: "hsl(var(--aco-dark))",
+          foreground: "hsl(var(--aco-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

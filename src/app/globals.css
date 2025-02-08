@@ -4,9 +4,10 @@
 
 @layer base {
   :root {
-    --color-light-aco: 341 69% 40%;
-    --color-aco: 341 69% 25%;
-    --color-dark-aco: 341 69% 21%;
+    --aco-light: 341 69% 40%;
+    --aco-dark: 341 69% 31%;
+    --aco: 341 69% 25%;
+    --aco-foreground: 0 0% 100%;
 
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
@@ -40,6 +41,10 @@
   }
 
   .dark {
+    --aco-light: 341 60% 50%;
+    --aco-dark: 341 69% 40%;
+    --aco-foreground: 0 0% 100%;
+
     --background: 224 71.4% 4.1%;
     --foreground: 210 20% 98%;
 

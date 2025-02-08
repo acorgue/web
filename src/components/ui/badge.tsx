@@ -17,6 +17,7 @@ const badgeVariants = cva(
         outline: "text-foreground",
         circle:
           "border-transparent text-black dark:text-white text-[9px] justify-center shadow w-5 h-5 p-0 rounded-full font-bold",
+        aco: "text-aco-foreground bg-aco hover:bg-aco/80",
       },
     },
     defaultVariants: {

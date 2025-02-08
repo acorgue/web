@@ -17,7 +17,7 @@ export async function Footer({ className }: { className?: string }) {
   return (
     <footer
       className={cn(
-        "bg-[hsl(var(--color-light-aco))] dark:bg-white/95 text-white/80 dark:text-[hsl(var(--color-light-aco))] py-12 text-sm",
+        "bg-aco dark:bg-white/95 text-aco-foreground dark:text-aco-dark py-12 text-sm",
         className,
       )}
     >
