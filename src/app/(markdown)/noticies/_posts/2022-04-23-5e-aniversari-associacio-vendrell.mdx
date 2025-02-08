@@ -8,6 +8,9 @@ tags: [Associacions]
 columnes: true
 ---
 
+import { PipeOrganCard } from "@/components/pipe-organ-card";
+import { route } from "@/lib/route";
+
 Els inicis de l’Associació els podem datar
 l’any 1981 quan el Departament de Cultura i
 mitjans de comunicació servei de música de
@@ -93,3 +96,14 @@ president dels Amics de l’Orgue del Vendrell.
 Des de la seva inauguració tots els concerts
 es retransmeten en directe per la Televisió
 del Vendrell i també es poden veure en streaming per les xarxes de l’orgue.
+
+<PipeOrganCard
+  href={route("edifici", {
+    provincia: "tarragona",
+    comarca: "baix-penedes",
+    municipi: "el-vendrell",
+    edifici: "sant-salvador",
+  })}
+  title="Església parroquial de Sant Salvador"
+  description="El Vendrell (Baix Penedès)"
+/>

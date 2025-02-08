@@ -1,5 +1,5 @@
 import { PostData } from "@/app/(markdown)/noticies/posts";
-import { UserIcon } from "lucide-react";
+import { CalendarIcon, UserIcon } from "lucide-react";
 import { getLocale } from "next-intl/server";
 import { Badge } from "./ui/badge";
 import { Card, CardHeader, CardTitle } from "./ui/card";
@@ -13,21 +13,22 @@ export async function ArticleCard({ post }: Readonly<{ post: PostData }>) {
   });
 
   return (
-    <Card key={post.slug}>
-      <CardHeader>
+    <Card key={post.slug} className="hover:bg-slate-500/5">
+      <CardHeader className="space-y-2">
         <CardTitle>{post.title}</CardTitle>
-        <div className="flex gap-4 text-sm text-muted-foreground">
+        <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
           <address className="flex gap-1 items-center not-italic">
-            <UserIcon className="w-4 h-4" /> {post.author}
+            <UserIcon className="w-4 h-4 flex-shrink-0" />
+            <span className="line-clamp-1">{post.author}</span>
           </address>
-          <time
-            dateTime={post.date.toISOString()}
-            className="uppercase tracking-wide"
-          >
-            {dateFormat.format(post.date)}
-          </time>
+          <span className="flex gap-1 items-center">
+            <CalendarIcon className="w-4 h-4 flex-shrink-0" />
+            <time dateTime={post.date.toISOString()}>
+              {dateFormat.format(post.date)}
+            </time>
+          </span>
         </div>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           {post.tags.map((tag) => (
             <Badge key={tag} variant="secondary">
               {tag}

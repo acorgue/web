@@ -2,7 +2,7 @@ import { ArticleCard } from "@/components/article-card";
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
 import { Badge } from "@/components/ui/badge";
 import { route } from "@/lib/route";
-import { UserIcon } from "lucide-react";
+import { CalendarIcon, UserIcon } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { posts, sortedPosts } from "../posts";
@@ -37,32 +37,32 @@ export default async function Page({
       />
       <article itemScope itemType="https://schema.org/NewsArticle">
         <header className="space-y-4 border-b border-gray-300 dark:border-gray-700 pb-6">
-          <h1
-            itemProp="headline"
-            className="text-4xl font-extrabold tracking-tight leading-tight"
-          >
+          <h1 itemProp="headline" className="text-4xl tracking-tight">
             {post.title}
           </h1>
 
-          <div className="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
+          <div className="flex flex-wrap gap-4 items-center text-sm text-gray-500 dark:text-gray-400">
             <address
               itemProp="author"
               itemScope
               itemType="https://schema.org/Person"
               className="flex gap-1 items-center not-italic"
             >
-              <UserIcon className="w-4 h-4" /> {post.author}
+              <UserIcon className="w-4 h-4 flex-shrink-0" />
+              <span itemProp="name">{post.author}</span>
             </address>
-            <time
-              itemProp="datePublished"
-              content={post.date.toISOString()}
-              dateTime={post.date.toISOString()}
-              className="uppercase tracking-wide"
-            >
-              {dateFormat.format(post.date)}
-            </time>
+            <span className="flex gap-1 items-center">
+              <CalendarIcon className="w-4 h-4 flex-shrink-0" />
+              <time
+                itemProp="datePublished"
+                content={post.date.toISOString()}
+                dateTime={post.date.toISOString()}
+              >
+                {dateFormat.format(post.date)}
+              </time>
+            </span>
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             {post.tags.map((tag) => (
               <Badge key={tag} variant="secondary">
                 {tag}

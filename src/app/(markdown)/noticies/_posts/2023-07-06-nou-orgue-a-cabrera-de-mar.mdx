@@ -11,6 +11,9 @@ tags: [Benedicció, Inauguració]
 columnes: true
 ---
 
+import { PipeOrganCard } from "@/components/pipe-organ-card";
+import { route } from "@/lib/route";
+
 A l’ermita de Santa Elena d’Agell s’ha col·locat un orgue de tubs. Construït a Holanda, encarregat i adquirit el 1992
 amb destinació a la ciutat de Gènova per Guido Iotti, va ser ell mateix qui va contactar amb el taller d’orgues Klop:
 l’únic europeu que construeix orgues mitjans amb tubs exclusivament de fusta. L’orgue de la parròquia de Cabrera de Mar
@@ -26,4 +29,15 @@ activa, amb més de 130 veus que s’unien amb sonoritat impactant omplint de ca
 l’exterior durant aquell matí del primer diumenge després de Pasqua. Com a cloenda de l’acte, l’orgue «parlà» en un concert
 a càrrec de Guido Iotti, amb la presència dels mitjans de comunicació audiovisuals.
 
-La disposició de l’orgue es pot trobar en [aquest mateix web](https://acorgue.cat/orgues/barcelona/maresme/cabrera-de-mar/santa-elena).
+La disposició de l’orgue i tots els detalls es poden trobar a la pàgina del detall de l’orgue:
+
+<PipeOrganCard
+  href={route("edifici", {
+    provincia: "barcelona",
+    comarca: "maresme",
+    municipi: "cabrera-de-mar",
+    edifici: "santa-elena",
+  })}
+  title="Ermita de Santa Elena d’Agell"
+  description="Cabrera de Mar (Maresme)"
+/>

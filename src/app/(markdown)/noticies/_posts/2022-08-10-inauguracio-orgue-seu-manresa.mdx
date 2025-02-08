@@ -17,6 +17,9 @@ header:
   caption: Imatges cedides per Carlos M. Álvarez
 ---
 
+import { PipeOrganCard } from "@/components/pipe-organ-card";
+import { route } from "@/lib/route";
+
 L’any 2022 la ciutat de Manresa celebra diferents efemèrides importants. Enguany
 s’han commemorat els 700 anys de la signatura del contracte d’obres de la Seu amb el
 famós arquitecte Berenguer de Montagut, i
@@ -90,3 +93,14 @@ la totalitat dels canons de fusta i metall, i
 procedint a l’emmagatzematge curós dels
 secrets originals de Puggina (1922) i d’Estadella (1927), que resten desats a les dependències de la Seu, a l’espera de decidir el
 seu ús en un futur.
+
+<PipeOrganCard
+  href={route("edifici", {
+    provincia: "barcelona",
+    comarca: "bages",
+    municipi: "manresa",
+    edifici: "seu",
+  })}
+  title="Col·legiata-basílica de Santa Maria de la Seu"
+  description="Manresa (Bages)"
+/>
