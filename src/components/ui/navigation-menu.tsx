@@ -118,8 +118,11 @@ NavigationMenuIndicator.displayName =
 
 const NavigationMenuListItem = React.forwardRef<
   React.ComponentRef<typeof Link>,
-  React.ComponentPropsWithoutRef<typeof Link> & { icon?: React.ReactNode }
->(({ className, title, icon, children, ...props }, ref) => {
+  React.ComponentPropsWithoutRef<typeof Link> & {
+    icon?: React.ReactNode;
+    iconEnd?: React.ReactNode;
+  }
+>(({ className, title, icon, iconEnd, children, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
@@ -132,12 +135,13 @@ const NavigationMenuListItem = React.forwardRef<
           {...props}
         >
           <div className="pt-1 me-3">{icon}</div>
-          <div className="space-y-1">
+          <div className="space-y-1 w-full">
             <div className="text-sm font-medium leading-none">{title}</div>
             <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
               {children}
             </p>
           </div>
+          {iconEnd ? <div className="pt-1 me-3">{iconEnd}</div> : null}
         </Link>
       </NavigationMenuLink>
     </li>

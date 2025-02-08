@@ -88,14 +88,14 @@ export function SignUpOption({
     <Card
       className={cn(
         "text-center flex flex-col",
-        isRecommended && "border-2 border-gray-800",
+        isRecommended && "border-2 border-aco",
         className,
       )}
     >
       <CardHeader className="pb-4">
         {isRecommended && (
           <div className="-mt-2 mb-2">
-            <Badge>Recomanat</Badge>
+            <Badge variant="aco">Recomanat</Badge>
           </div>
         )}
         <CardTitle className="m-0 text-base">{title}</CardTitle>

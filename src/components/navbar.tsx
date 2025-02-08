@@ -15,7 +15,6 @@ import { route } from "@/lib/route";
 import {
   BarChartIcon,
   BookmarkIcon,
-  ExternalLinkIcon,
   FileTextIcon,
   GlobeIcon,
   NewspaperIcon,
@@ -25,6 +24,7 @@ import {
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { Fragment, ReactNode } from "react";
+import { ExternalLink } from "./external-link";
 
 export interface NavigationMenuProps {
   isMobile?: boolean;
@@ -221,6 +221,7 @@ export function NavigationMenuItems({
           href={item.href}
           title={item.label}
           icon={item.icon}
+          className="text-aco"
         >
           {item.description}
         </NavigationMenuListItem>
@@ -251,7 +252,7 @@ export function HighlightedMenuItems({
           <li className="row-span-3">
             <NavigationMenuLink asChild>
               <Link
-                className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none hover:opacity-80 transition-opacity text-aco"
                 href={item.href}
                 prefetch
               >
@@ -271,9 +272,9 @@ export function HighlightedMenuItems({
                   key={item.href}
                   href={item.href}
                   title={item.label}
-                  icon={
+                  iconEnd={
                     item.isExternal ? (
-                      <ExternalLinkIcon className="w-4 h-4" />
+                      <ExternalLink tooltip="Enllaç extern" />
                     ) : undefined
                   }
                 >

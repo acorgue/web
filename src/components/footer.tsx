@@ -17,14 +17,16 @@ export async function Footer({ className }: { className?: string }) {
   return (
     <footer
       className={cn(
-        "bg-gray-800 dark:bg-gray-200 text-gray-300 dark:text-gray-700 py-12 text-sm",
+        "bg-aco dark:bg-white/95 text-aco-foreground dark:text-aco-dark py-12 text-sm",
         className,
       )}
     >
       <div className="max-w-4xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <FooterHeading>{t("footer.contactWithUs")}</FooterHeading>
-          <p className="mt-2">Rocafort, 242 bis, 08029 Barcelona</p>
+          <p className="mt-2 dark:text-black/80">
+            Rocafort, 242 bis, 08029 Barcelona
+          </p>
 
           <Button asChild variant="secondary" size="sm">
             <Link
@@ -94,7 +96,7 @@ export async function Footer({ className }: { className?: string }) {
               {t("metadata.privacyPolicyMembers")}
             </FooterListItem>
           </ul>
-          <p className="mt-6 text-gray-400 dark:text-gray-600">
+          <p className="mt-6 text-white/60 dark:text-black/70">
             © 1992–2024 <br /> {t("organization.name")}
           </p>
         </div>
