@@ -1,15 +1,9 @@
 import { orgueNavigation } from "@/app/(markdown)/orgues/orgueNavigation";
 import { PageBreadcrumb } from "@/components/page-breadcrumb";
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { PipeOrganCard } from "@/components/pipe-organ-card";
 import { orgues } from "@/database/orgues-repository";
 import { route } from "@/lib/route";
 import { getTranslations } from "next-intl/server";
-import Link from "next/link";
 import { OrguesMunicipiParams } from "./layout";
 
 export default async function Page({
@@ -78,30 +72,5 @@ export default async function Page({
         )}
       </div>
     </>
-  );
-}
-
-interface PipeOrganCardProps {
-  href: string;
-  title: string;
-  description: string;
-}
-
-function PipeOrganCard({
-  href,
-  title,
-  description,
-}: Readonly<PipeOrganCardProps>) {
-  return (
-    <article className="not-prose">
-      <Link href={href}>
-        <Card className="hover:bg-slate-500/5">
-          <CardHeader>
-            <CardTitle>{title}</CardTitle>
-            <CardDescription>{description}</CardDescription>
-          </CardHeader>
-        </Card>
-      </Link>
-    </article>
   );
 }

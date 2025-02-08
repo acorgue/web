@@ -11,6 +11,9 @@ tags: [Orgueneria]
 columnes: true
 ---
 
+import { PipeOrganCard } from "@/components/pipe-organ-card";
+import { route } from "@/lib/route";
+
 Durant dècades l’orgue de la catedral de Girona ha rebut crítiques arbitràries per la seva posició al centre de la nau.
 
 La construcció d’un orgue darrere el cor (al mig de la gran nau gòtica) es remunta a 1827. En aquell moment fou instal·lat
@@ -67,3 +70,14 @@ imatge renovada: la que van voler els seus impulsors fa 80 anys.
 [^1]:
     La descripció detallada del disseny i construcció de
     l’orgue es troba a Escalona, Josep Maria: Aragonès — _Els orgueners que van viure a Girona_. Girona, Diputació de Girona, 2012. Pàgina 83 i ss.
+
+<PipeOrganCard
+  href={route("edifici", {
+    provincia: "girona",
+    comarca: "girones",
+    municipi: "girona",
+    edifici: "catedral",
+  })}
+  title="Església catedral basílica de Santa Maria Assumpta"
+  description="Girona (Gironès)"
+/>
