@@ -1,6 +1,6 @@
 import { stripDiacritics } from "@/lib/strip-diacritics";
 import { Link2Icon } from "lucide-react";
-import type { MDXComponents } from "mdx/types";
+import type { MDXComponents, MDXContent } from "mdx/types";
 import Link from "next/link";
 import { PropsWithChildren } from "react";
 
@@ -35,4 +35,15 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h2: HeadingLink,
     ...components,
   };
+}
+
+export function findMDXHeadings(page: MDXContent) {
+  return page({})
+    .props.children.filter(
+      (element: any) => element.type?.name === "HeadingLink",
+    )
+    .map((element: any) => ({
+      id: stripDiacritics(element.props.id),
+      label: element.props.children,
+    }));
 }

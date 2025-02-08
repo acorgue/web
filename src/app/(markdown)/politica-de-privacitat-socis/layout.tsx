@@ -1,5 +1,7 @@
-import { PageBreadcrumb } from "@/components/page-breadcrumb";
+import { Scaffold } from "@/components/scaffold";
+import { TOC } from "@/components/toc";
 import { route } from "@/lib/route";
+import { findMDXHeadings } from "@/mdx-components";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import type { PropsWithChildren } from "react";
@@ -22,17 +24,19 @@ export default async function Layout({
   children,
 }: Readonly<PropsWithChildren>) {
   const t = await getTranslations("metadata");
+  const headings = findMDXHeadings(
+    (await import(`./politica-de-privacitat-socis.mdx`)).default,
+  );
 
   return (
-    <>
-      <PageBreadcrumb
-        fragments={[
-          { href: route("home"), label: t("home"), position: 1 },
-          { label: t("privacyPolicyMembers"), position: 2 },
-        ]}
-        className="not-prose mb-8"
-      />
+    <Scaffold
+      breadcrumbFragments={[
+        { href: route("home"), label: t("home"), position: 1 },
+        { label: t("privacyPolicyMembers"), position: 2 },
+      ]}
+      aside={<TOC headings={headings} />}
+    >
       {children}
-    </>
+    </Scaffold>
   );
 }

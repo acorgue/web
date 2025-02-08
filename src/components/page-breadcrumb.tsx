@@ -16,7 +16,7 @@ import {
 import Link from "next/link";
 import { Fragment } from "react";
 
-interface BreadcrumbFragment {
+export interface BreadcrumbFragment {
   href?: string;
   label: string;
   position: number;
