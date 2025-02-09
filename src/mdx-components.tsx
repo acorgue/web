@@ -30,6 +30,8 @@ const HeadingLink = ({
   );
 };
 
+HeadingLink.displayName = "HeadingLink";
+
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     h2: HeadingLink,
@@ -38,12 +40,16 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 }
 
 type MDXElementProps = PropsWithChildren<{ id: string }>;
+type NamedCallableFunction = CallableFunction & { displayName: string };
 
 export function findMDXHeadings(page: ReactElement<PropsWithChildren>) {
   return (
     Children.map(page.props.children, (element) => {
       if (!element || !isReactElement<MDXElementProps>(element)) return;
-      if ((element.type as CallableFunction).name === "HeadingLink") {
+      if (
+        (element.type as unknown as NamedCallableFunction).displayName ===
+        "HeadingLink"
+      ) {
         return {
           id: stripDiacritics(element.props.id),
           label: element.props.children,
