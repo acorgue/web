@@ -27,7 +27,8 @@ export function Scaffold({
         {children}
       </main>
       {aside ? (
-        <aside className="container prose sm:max-md:px-8 md:px-0 w-full lg:max-w-[14rem] lg:pt-20 mx-auto lg:ms-10 lg:me-auto lg:pb-32">
+        // TODO(albertms10): mostra la TOC a la versió mòbil
+        <aside className="container prose hidden lg:block sm:max-md:px-8 md:px-0 w-full lg:max-w-[14rem] lg:pt-20 mx-auto lg:ms-10 lg:me-auto lg:pb-32">
           {aside}
         </aside>
       ) : null}
