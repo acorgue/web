@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "bun test --coverage",
+    "analyze": "ANALYZE=true bun run build",
     "check:format": "prettier --check .",
     "fix:format": "prettier --write ."
   },
@@ -15,6 +16,7 @@
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
     "@million/lint": "^1.0.14",
+    "@next/bundle-analyzer": "^15.1.6",
     "@next/mdx": "^15.1.6",
     "@radix-ui/react-dialog": "^1.1.5",
     "@radix-ui/react-dropdown-menu": "^2.1.5",

@@ -40,4 +40,10 @@ const withMillion = MillionLint.next({
   react: "19",
 });
 
-export default withMillion(withNextIntl(withMDX(nextConfig)));
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env["ANALYZE"] === "true",
+});
+
+export default withMillion(
+  withBundleAnalyzer(withNextIntl(withMDX(nextConfig))),
+);
