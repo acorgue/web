@@ -1,8 +1,8 @@
 import { stripDiacritics } from "@/lib/strip-diacritics";
 import { Link2Icon } from "lucide-react";
-import type { MDXComponents, MDXContent } from "mdx/types";
+import type { MDXComponents } from "mdx/types";
 import Link from "next/link";
-import { PropsWithChildren, ReactNode } from "react";
+import { Children, PropsWithChildren, ReactElement, ReactNode } from "react";
 
 const HeadingLink = ({
   id,
@@ -37,16 +37,22 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
   };
 }
 
-export function findMDXHeadings(page: MDXContent) {
+type MDXElementProps = PropsWithChildren<{ id: string }>;
+
+export function findMDXHeadings(page: ReactElement<PropsWithChildren>) {
   return (
-    page({}).props.children as {
-      type?: (...args: unknown[]) => unknown;
-      props: { id: string; children: ReactNode };
-    }[]
-  )
-    .filter((element) => element.type?.name === "HeadingLink")
-    .map((element) => ({
-      id: stripDiacritics(element.props.id),
-      label: element.props.children,
-    }));
+    Children.map(page.props.children, (element) => {
+      if (!element || !isReactElement<MDXElementProps>(element)) return;
+      if ((element.type as CallableFunction).name === "HeadingLink") {
+        return {
+          id: stripDiacritics(element.props.id),
+          label: element.props.children,
+        };
+      }
+    })?.filter(Boolean) ?? []
+  );
+}
+
+function isReactElement<P>(element: ReactNode): element is ReactElement<P> {
+  return Boolean((element as ReactElement).props);
 }

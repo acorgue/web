@@ -1,7 +1,4 @@
-import { Scaffold } from "@/components/scaffold";
-import { TOC } from "@/components/toc";
 import { route } from "@/lib/route";
-import { findMDXHeadings } from "@/mdx-components";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import type { PropsWithChildren } from "react";
@@ -23,20 +20,5 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Layout({
   children,
 }: Readonly<PropsWithChildren>) {
-  const t = await getTranslations("metadata");
-  const headings = findMDXHeadings(
-    (await import(`./politica-de-privacitat-socis.mdx`)).default,
-  );
-
-  return (
-    <Scaffold
-      breadcrumbFragments={[
-        { href: route("home"), label: t("home"), position: 1 },
-        { label: t("privacyPolicyMembers"), position: 2 },
-      ]}
-      aside={<TOC headings={headings} />}
-    >
-      {children}
-    </Scaffold>
-  );
+  return children;
 }

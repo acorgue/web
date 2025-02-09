@@ -14,7 +14,7 @@ export default async function Page() {
         { href: route("home"), label: t("home"), position: 1 },
         { label: t("aboutUs"), position: 2 },
       ]}
-      aside={<TOC headings={findMDXHeadings(QuiSom)} />}
+      aside={<TOC headings={findMDXHeadings(QuiSom({}))} />}
     >
       <QuiSom />
     </Scaffold>
