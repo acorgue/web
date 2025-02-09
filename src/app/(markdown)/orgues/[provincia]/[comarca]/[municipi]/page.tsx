@@ -1,6 +1,6 @@
 import { orgueNavigation } from "@/app/(markdown)/orgues/orgueNavigation";
-import { PageBreadcrumb } from "@/components/page-breadcrumb";
 import { PipeOrganCard } from "@/components/pipe-organ-card";
+import { Scaffold } from "@/components/scaffold";
 import { orgues } from "@/database/orgues-repository";
 import { route } from "@/lib/route";
 import { getTranslations } from "next-intl/server";
@@ -16,28 +16,26 @@ export default async function Page({
   const { de_nom, nom, edificis } = orgues(await params);
 
   return (
-    <>
-      <PageBreadcrumb
-        fragments={[
-          { href: route("home"), label: t("home"), position: 1 },
-          { href: route("orgues"), label: t("pipeOrgans"), position: 2 },
-          {
-            href: route("provincia", { provincia: provincia.link }),
-            label: provincia.nom,
-            position: 3,
-          },
-          {
-            href: route("comarca", {
-              provincia: provincia.link,
-              comarca: comarca.link,
-            }),
-            label: comarca.nom,
-            position: 4,
-          },
-          { label: municipi.nom, position: 5 },
-        ]}
-        className="not-prose mb-8"
-      />
+    <Scaffold
+      breadcrumbFragments={[
+        { href: route("home"), label: t("home"), position: 1 },
+        { href: route("orgues"), label: t("pipeOrgans"), position: 2 },
+        {
+          href: route("provincia", { provincia: provincia.link }),
+          label: provincia.nom,
+          position: 3,
+        },
+        {
+          href: route("comarca", {
+            provincia: provincia.link,
+            comarca: comarca.link,
+          }),
+          label: comarca.nom,
+          position: 4,
+        },
+        { label: municipi.nom, position: 5 },
+      ]}
+    >
       <h1>Orgues {de_nom ?? `de ${nom}`}</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {edificis.flatMap((edifici) =>
@@ -71,6 +69,6 @@ export default async function Page({
           ),
         )}
       </div>
-    </>
+    </Scaffold>
   );
 }

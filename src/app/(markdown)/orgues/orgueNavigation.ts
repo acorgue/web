@@ -68,11 +68,11 @@ export type OrgueNavigationProps =
 type UnwrapArray<A> = A extends unknown[] ? UnwrapArray<A[number]> : A;
 
 type OrgueNavigationReturn<T extends OrgueNavigationProps> =
-  (T["provincia"] extends string ? { provincia: Provincia } : {}) &
-    (T["comarca"] extends string ? { comarca: Comarca } : {}) &
-    (T["municipi"] extends string ? { municipi: OrguesMunicipi } : {}) &
-    (T["edifici"] extends string ? { edifici: OrguesEdifici } : {}) &
-    (T["orgue"] extends string ? { orgue: Orgue } : {});
+  (T["provincia"] extends string ? { provincia: Provincia } : unknown) &
+    (T["comarca"] extends string ? { comarca: Comarca } : unknown) &
+    (T["municipi"] extends string ? { municipi: OrguesMunicipi } : unknown) &
+    (T["edifici"] extends string ? { edifici: OrguesEdifici } : unknown) &
+    (T["orgue"] extends string ? { orgue: Orgue } : unknown);
 
 export function orgueNavigation<T extends OrgueNavigationProps>(
   params: Readonly<T>,
@@ -85,15 +85,15 @@ export function orgueNavigation<T extends OrgueNavigationProps>(
     municipi = orgues.orgues
       .find(({ link }) => link === params.provincia)
       ?.comarques.find(({ link }) => link === params.comarca)
-      ?.poblacions?.find(({ link }) => link === params.municipi)!;
+      ?.poblacions?.find(({ link }) => link === params.municipi);
   }
   if (params.edifici) {
     edifici = municipi?.edificis.find(
       ({ link }) => link === params.edifici,
-    )! as OrguesEdifici;
+    ) as OrguesEdifici;
   }
   if (params.orgue) {
-    orgue = edifici?.orgues?.find(({ link }) => link === params.orgue)!;
+    orgue = edifici?.orgues?.find(({ link }) => link === params.orgue);
   }
 
   return {
@@ -101,7 +101,7 @@ export function orgueNavigation<T extends OrgueNavigationProps>(
       ? {
           provincia: orgues.provincies.find(
             ({ link }) => link === params.provincia,
-          )!,
+          ),
         }
       : {}),
     ...(params.comarca
