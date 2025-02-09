@@ -2,7 +2,7 @@ import { stripDiacritics } from "@/lib/strip-diacritics";
 import { Link2Icon } from "lucide-react";
 import type { MDXComponents, MDXContent } from "mdx/types";
 import Link from "next/link";
-import { PropsWithChildren } from "react";
+import { PropsWithChildren, ReactNode } from "react";
 
 const HeadingLink = ({
   id,
@@ -38,11 +38,14 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 }
 
 export function findMDXHeadings(page: MDXContent) {
-  return page({})
-    .props.children.filter(
-      (element: any) => element.type?.name === "HeadingLink",
-    )
-    .map((element: any) => ({
+  return (
+    page({}).props.children as {
+      type?: Function;
+      props: { id: string; children: ReactNode };
+    }[]
+  )
+    .filter((element) => element.type?.name === "HeadingLink")
+    .map((element) => ({
       id: stripDiacritics(element.props.id),
       label: element.props.children,
     }));

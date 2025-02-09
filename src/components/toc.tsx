@@ -1,11 +1,12 @@
 "use client";
 
+import { ReactNode } from "react";
 import ScrollSpy from "react-scrollspy-navigation";
 
 export function TOC({
   headings,
 }: {
-  headings: { label: string; id: string }[];
+  headings: { id: string; label: ReactNode }[];
 }) {
   return (
     <ScrollSpy
