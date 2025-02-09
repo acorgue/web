@@ -14,43 +14,41 @@ export async function Membership() {
   const t = await getTranslations("membership");
 
   return (
-    <>
-      <div className="flex flex-wrap justify-around gap-x-4 gap-y-6 mx-0 lg:-mx-[100px]">
-        <MembershipOption
-          title={t("retired")}
-          description=""
-          price={35}
-          highlight="border-gray-400"
-          className="flex-1"
-        />
-        <MembershipOption
-          title={t("regularMember")}
-          description={t("forIndividualsAndEntities")}
-          price={50}
-          highlight="border-blue-500"
-          className="flex-1"
-        />
-        <MembershipOption
-          title={t("supportingMember")}
-          description={t("forIndividualsAndEntities")}
-          price={100}
-          highlight="border-yellow-400"
-          className="flex-1"
-        />
-        <MembershipOption
-          title={t("minor")}
-          description=""
-          price={0}
-          className="flex-1 order-last lg:order-none"
-        />
-        <MembershipOption
-          title={t("organStudent")}
-          description={t("under35")}
-          price={20}
-          className="flex-1"
-        />
-      </div>
-    </>
+    <div className="flex flex-col justify-around gap-x-4 gap-y-6 mx-0 mb-12">
+      <MembershipOption
+        title={t("retired")}
+        description=""
+        price={35}
+        highlight="bg-aco/5 border-aco/50"
+        className="flex-1"
+      />
+      <MembershipOption
+        title={t("regularMember")}
+        description={t("forIndividualsAndEntities")}
+        price={50}
+        highlight="bg-aco/10 border-aco/50"
+        className="flex-1"
+      />
+      <MembershipOption
+        title={t("supportingMember")}
+        description={t("forIndividualsAndEntities")}
+        price={100}
+        highlight="bg-aco/15 border-aco/50"
+        className="flex-1"
+      />
+      <MembershipOption
+        title={t("organStudent")}
+        description={t("under35")}
+        price={20}
+        className="flex-1"
+      />
+      <MembershipOption
+        title={t("minor")}
+        description=""
+        price={0}
+        className="flex-1 order-last lg:order-none"
+      />
+    </div>
   );
 }
 
@@ -72,13 +70,13 @@ export async function MembershipOption({
   return (
     <Card
       className={cn(
-        "text-center flex flex-col min-w-[240px]",
+        "text-center flex flex-row items-center gap-10 min-w-[240px] transition-transform hover:scale-[102%]",
         highlight && "border-2",
         highlight,
         className,
       )}
     >
-      <CardHeader className="flex-auto">
+      <CardHeader className="flex-auto space-y-0 py-4">
         <CardTitle className="m-0 text-base">{title}</CardTitle>
         {description && (
           <CardDescription>
@@ -86,27 +84,25 @@ export async function MembershipOption({
           </CardDescription>
         )}
       </CardHeader>
-      <CardContent className="content-center">
+      <CardContent className="content-center py-4 me-6 sm:me-0">
         {price === 0 ? (
           <div className="text-2xl tracking-tight">{t("free")}</div>
         ) : (
           <>
             <div className="text-3xl">
-              <span className="tracking-tighter">{price}</span>
+              <span className="tracking-tight">{price}</span>
               <span className="align-text-top text-xl text-muted-foreground">
                 &nbsp;&euro;
               </span>
             </div>
-            <div className="font-medium text-xs text-muted-foreground">
+            <div className="font-medium text-xs text-muted-foreground text-end me-4">
               {t("eachYear")}
             </div>
           </>
         )}
       </CardContent>
-      <CardFooter className="justify-center">
-        <ButtonLink href="#com-fer-sen-soci" className={highlight}>
-          {t("becomeAMember")}
-        </ButtonLink>
+      <CardFooter className="justify-center p-0 me-6 hidden sm:flex">
+        <ButtonLink href="#com-fer-sen-soci">{t("becomeAMember")}</ButtonLink>
       </CardFooter>
     </Card>
   );

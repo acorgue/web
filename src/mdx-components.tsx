@@ -2,7 +2,7 @@ import { stripDiacritics } from "@/lib/strip-diacritics";
 import { Link2Icon } from "lucide-react";
 import type { MDXComponents } from "mdx/types";
 import Link from "next/link";
-import { PropsWithChildren } from "react";
+import { Children, PropsWithChildren, ReactElement, ReactNode } from "react";
 
 const HeadingLink = ({
   id,
@@ -30,9 +30,35 @@ const HeadingLink = ({
   );
 };
 
+HeadingLink.displayName = "HeadingLink";
+
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     h2: HeadingLink,
     ...components,
   };
+}
+
+type MDXElementProps = PropsWithChildren<{ id: string }>;
+type NamedCallableFunction = CallableFunction & { displayName: string };
+
+export function findMDXHeadings(page: ReactElement<PropsWithChildren>) {
+  return (
+    Children.map(page.props.children, (element) => {
+      if (!element || !isReactElement<MDXElementProps>(element)) return;
+      if (
+        (element.type as unknown as NamedCallableFunction).displayName ===
+        "HeadingLink"
+      ) {
+        return {
+          id: stripDiacritics(element.props.id),
+          label: element.props.children,
+        };
+      }
+    })?.filter(Boolean) ?? []
+  );
+}
+
+function isReactElement<P>(element: ReactNode): element is ReactElement<P> {
+  return Boolean((element as ReactElement).props);
 }

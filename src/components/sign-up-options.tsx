@@ -34,7 +34,7 @@ export function SignUpOptions() {
         <SignUpOption
           title="Baixant la butlleta"
           content={
-            <ul className="flex flex-col sm:flex-row divide-y sm:divide-y-0 sm:divide-x divide-slate-200 list-none text-start text-sm text-muted-foreground p-0 my-0">
+            <ul className="flex flex-col sm:flex-row divide-y sm:divide-y-0 sm:divide-x divide-slate-200 dark:divide-slate-200/30 list-none text-start text-sm text-muted-foreground p-0 my-0">
               <li className="flex-1 px-6 pt-3 pb-6 sm:py-6 m-0">
                 <div className="flex justify-center mb-3">
                   <MailIcon className="h-6 w-6" aria-hidden="true" />

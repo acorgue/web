@@ -1,4 +1,3 @@
-import { PageBreadcrumb } from "@/components/page-breadcrumb";
 import { route } from "@/lib/route";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
@@ -21,18 +20,5 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Layout({
   children,
 }: Readonly<PropsWithChildren>) {
-  const t = await getTranslations("metadata");
-
-  return (
-    <>
-      <PageBreadcrumb
-        fragments={[
-          { href: route("home"), label: t("home"), position: 1 },
-          { label: t("education"), position: 2 },
-        ]}
-        className="not-prose mb-8"
-      />
-      {children}
-    </>
-  );
+  return children;
 }

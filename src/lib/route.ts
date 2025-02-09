@@ -7,24 +7,24 @@ type OrgueParams = {
 };
 
 interface RouteBuilders {
-  associacions: {};
-  "avis-legal": {};
-  bibliografia: {};
-  cicle: {};
-  formacio: {};
-  full: {};
-  home: {};
-  noticies: {};
+  associacions: undefined;
+  "avis-legal": undefined;
+  bibliografia: undefined;
+  cicle: undefined;
+  formacio: undefined;
+  full: undefined;
+  home: undefined;
+  noticies: undefined;
   post: { slug: string };
-  orgues: {};
+  orgues: undefined;
   provincia: Pick<OrgueParams, "provincia">;
   comarca: Pick<OrgueParams, "provincia" | "comarca">;
   municipi: Pick<OrgueParams, "provincia" | "comarca" | "municipi">;
   edifici: Pick<OrgueParams, "provincia" | "comarca" | "municipi" | "edifici">;
   orgue: OrgueParams;
-  "politica-de-privacitat": {};
-  "politica-de-privacitat-socis": {};
-  "qui-som": {};
+  "politica-de-privacitat": undefined;
+  "politica-de-privacitat-socis": undefined;
+  "qui-som": undefined;
 }
 
 export const baseURL = new URL("https://www.acorgue.cat");
@@ -92,7 +92,8 @@ export function route<T extends keyof RouteBuilders>(
   query?: Record<string, string>,
 ) {
   const url = new URL(
-    [...routeBuilders[route](options as any)].join("/"),
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    routeBuilders[route](options as any).join("/"),
     baseURL,
   );
   url.search = new URLSearchParams(query).toString();

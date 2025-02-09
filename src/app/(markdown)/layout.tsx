@@ -4,8 +4,6 @@ export default async function Layout({
   children,
 }: Readonly<PropsWithChildren>) {
   return (
-    <main className="container pt-8 sm:max-md:px-8 md:px-0 prose dark:prose-invert flex-1">
-      {children}
-    </main>
+    <div className="flex flex-col-reverse lg:flex-row flex-1">{children}</div>
   );
 }
