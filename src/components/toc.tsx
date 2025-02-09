@@ -13,14 +13,9 @@ export function TOC({
       activeAttr
       rootMargin="180px"
       onClickEach={(e) => {
-        const heading = document.querySelector(
-          (e.target as HTMLElement).getAttribute("href")!,
-        );
-        if (!heading) return;
-        window.scrollTo({
-          top: heading.getBoundingClientRect().top + window.scrollY,
-          behavior: "smooth",
-        });
+        const heading = (e.target as HTMLElement).getAttribute("href");
+        if (!heading || !/^#[a-z-]+$/.test(heading)) return;
+        window.location.href = heading;
       }}
     >
       <nav className="not-prose sticky top-24 text-sm">
