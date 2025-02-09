@@ -70,13 +70,13 @@ export async function MembershipOption({
   return (
     <Card
       className={cn(
-        "text-center flex flex-row gap-10 min-w-[240px] transition-transform hover:scale-[102%]",
+        "text-center flex flex-row items-center gap-10 min-w-[240px] transition-transform hover:scale-[102%]",
         highlight && "border-2",
         highlight,
         className,
       )}
     >
-      <CardHeader className="flex-auto space-y-0">
+      <CardHeader className="flex-auto space-y-0 py-4">
         <CardTitle className="m-0 text-base">{title}</CardTitle>
         {description && (
           <CardDescription>
@@ -84,7 +84,7 @@ export async function MembershipOption({
           </CardDescription>
         )}
       </CardHeader>
-      <CardContent className="content-center p-0 me-6 sm:me-0">
+      <CardContent className="content-center py-4 me-6 sm:me-0">
         {price === 0 ? (
           <div className="text-2xl tracking-tight">{t("free")}</div>
         ) : (
