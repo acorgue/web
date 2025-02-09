@@ -1,7 +1,9 @@
 import { ArticleCard } from "@/components/article-card";
-import { PageBreadcrumb } from "@/components/page-breadcrumb";
+import { Scaffold } from "@/components/scaffold";
+import { TOC } from "@/components/toc";
 import { Badge } from "@/components/ui/badge";
 import { route } from "@/lib/route";
+import { findMDXHeadings } from "@/mdx-components";
 import { CalendarIcon, UserIcon } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
@@ -24,17 +26,17 @@ export default async function Page({
   const { slug } = await params;
   const post = posts[slug];
   const Body = (await import(`../_posts/${post.fileName}`)).default;
+  const headings = findMDXHeadings(Body({}));
 
   return (
-    <>
-      <PageBreadcrumb
-        fragments={[
-          { href: route("home"), label: t("home"), position: 1 },
-          { href: route("noticies"), label: t("news"), position: 2 },
-          { label: post.title, position: 3 },
-        ]}
-        className="not-prose mb-8"
-      />
+    <Scaffold
+      breadcrumbFragments={[
+        { href: route("home"), label: t("home"), position: 1 },
+        { href: route("noticies"), label: t("news"), position: 2 },
+        { label: post.title, position: 3 },
+      ]}
+      aside={headings.length ? <TOC headings={headings} /> : null}
+    >
       <article itemScope itemType="https://schema.org/NewsArticle">
         <header className="space-y-4 border-b border-gray-300 dark:border-gray-700 pb-6">
           <h1 itemProp="headline" className="text-4xl tracking-tight">
@@ -87,6 +89,6 @@ export default async function Page({
           ))}
         </ul>
       </section>
-    </>
+    </Scaffold>
   );
 }

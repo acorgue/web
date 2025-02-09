@@ -1,4 +1,4 @@
-import { PageBreadcrumb } from "@/components/page-breadcrumb";
+import { Scaffold } from "@/components/scaffold";
 import { route } from "@/lib/route";
 import { getTranslations } from "next-intl/server";
 import { orgueNavigation } from "../orgueNavigation";
@@ -13,15 +13,12 @@ export default async function Page({
   const { provincia } = orgueNavigation(await params);
 
   return (
-    <>
-      <PageBreadcrumb
-        fragments={[
-          { href: route("home"), label: t("home"), position: 1 },
-          { href: route("orgues"), label: t("pipeOrgans"), position: 2 },
-          { label: provincia.nom, position: 3 },
-        ]}
-        className="not-prose mb-8"
-      />
-    </>
+    <Scaffold
+      breadcrumbFragments={[
+        { href: route("home"), label: t("home"), position: 1 },
+        { href: route("orgues"), label: t("pipeOrgans"), position: 2 },
+        { label: provincia.nom, position: 3 },
+      ]}
+    />
   );
 }
