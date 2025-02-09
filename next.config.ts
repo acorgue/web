@@ -1,3 +1,4 @@
+import MillionLint from "@million/lint";
 import createMDX from "@next/mdx";
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
@@ -18,6 +19,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  experimental: {
+    reactCompiler: true,
+  },
 };
 
 const withNextIntl = createNextIntlPlugin();
@@ -30,4 +34,16 @@ const withMDX = createMDX({
   },
 });
 
-export default withNextIntl(withMDX(nextConfig));
+const withMillion = MillionLint.next({
+  enabled: true,
+  rsc: true,
+  react: "19",
+});
+
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env["ANALYZE"] === "true",
+});
+
+export default withMillion(
+  withBundleAnalyzer(withNextIntl(withMDX(nextConfig))),
+);
