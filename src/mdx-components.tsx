@@ -40,7 +40,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 export function findMDXHeadings(page: MDXContent) {
   return (
     page({}).props.children as {
-      type?: Function;
+      type?: (...args: unknown[]) => unknown;
       props: { id: string; children: ReactNode };
     }[]
   )

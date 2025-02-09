@@ -1,4 +1,3 @@
-// @ts-nocheck
 import {
   Orgue,
   OrgueNavigationProps,
@@ -27,23 +26,25 @@ export function orgues<T extends OrgueNavigationProps>(
 ): OrgueNavigationReturn<T> {
   const provincia = rawOrgues.orgues.find(
     ({ link }) => link === params.provincia,
-  )!;
-  if (!params.comarca) return provincia;
+  );
+  if (!params.comarca) return provincia as OrgueNavigationReturn<T>;
 
   const comarca = provincia?.comarques.find(
     ({ link }) => link === params.comarca,
-  )!;
-  if (!params.municipi) return comarca;
+  );
+  if (!params.municipi) return comarca as OrgueNavigationReturn<T>;
 
   const municipi = comarca?.poblacions?.find(
     ({ link }) => link === params.municipi,
-  )!;
-  if (!params.edifici) return municipi;
+  );
+  if (!params.edifici) return municipi as OrgueNavigationReturn<T>;
 
   const edifici = municipi?.edificis.find(
     ({ link }) => link === params.edifici,
-  )! as OrguesEdifici;
-  if (!params.orgue) return edifici;
+  ) as OrguesEdifici;
+  if (!params.orgue) return edifici as OrgueNavigationReturn<T>;
 
-  return edifici.orgues?.find(({ link }) => link === params.orgue)!;
+  return edifici.orgues?.find(
+    ({ link }) => link === params.orgue,
+  ) as OrgueNavigationReturn<T>;
 }

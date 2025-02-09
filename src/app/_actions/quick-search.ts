@@ -83,7 +83,7 @@ export async function quickSearch(normalizedQuery: string) {
             label: "Orgues",
             total: filteredOrgues.length,
             items: filteredOrgues.slice(0, 4),
-            moreLink: route("orgues", {}, { q: normalizedQuery }),
+            moreLink: route("orgues", undefined, { q: normalizedQuery }),
           },
         ]
       : []),
@@ -97,7 +97,7 @@ export async function quickSearch(normalizedQuery: string) {
               link: route("post", { slug: post.slug }),
               label: post.title,
             })),
-            moreLink: route("noticies", {}, { q: normalizedQuery }),
+            moreLink: route("noticies", undefined, { q: normalizedQuery }),
           },
         ]
       : []),
