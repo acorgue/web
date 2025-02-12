@@ -28,46 +28,41 @@ export interface Orgue {
   de_nom?: string;
 }
 
+export interface OrgueRouteParams {
+  provincia: string;
+  comarca: string;
+  municipi: string;
+  edifici: string;
+  orgue: string;
+}
+
+export interface OrgueNavigationData {
+  provincia: Provincia;
+  comarca: Comarca;
+  municipi: OrguesMunicipi;
+  edifici: OrguesEdifici;
+  orgue: Orgue;
+}
+
+type PickOrNever<T, K extends keyof T> = {
+  [P in K]: T[P];
+} & {
+  [P in Exclude<keyof T, K>]?: never;
+};
+
 export type OrgueNavigationProps =
-  | {
-      provincia: string;
-      comarca?: never;
-      municipi?: never;
-      edifici?: never;
-      orgue?: never;
-    }
-  | {
-      provincia: string;
-      comarca: string;
-      municipi?: never;
-      edifici?: never;
-      orgue?: never;
-    }
-  | {
-      provincia: string;
-      comarca: string;
-      municipi: string;
-      edifici?: never;
-      orgue?: never;
-    }
-  | {
-      provincia: string;
-      comarca: string;
-      municipi: string;
-      edifici: string;
-      orgue?: never;
-    }
-  | {
-      provincia: string;
-      comarca: string;
-      municipi: string;
-      edifici: string;
-      orgue: string;
-    };
+  | PickOrNever<OrgueRouteParams, "provincia">
+  | PickOrNever<OrgueRouteParams, "provincia" | "comarca">
+  | PickOrNever<OrgueRouteParams, "provincia" | "comarca" | "municipi">
+  | PickOrNever<
+      OrgueRouteParams,
+      "provincia" | "comarca" | "municipi" | "edifici"
+    >
+  | OrgueRouteParams;
 
 type UnwrapArray<A> = A extends unknown[] ? UnwrapArray<A[number]> : A;
 
-type OrgueNavigationReturn<T extends OrgueNavigationProps> =
+export type OrgueNavigationReturn<T extends OrgueNavigationProps> =
   (T["provincia"] extends string ? { provincia: Provincia } : unknown) &
     (T["comarca"] extends string ? { comarca: Comarca } : unknown) &
     (T["municipi"] extends string ? { municipi: OrguesMunicipi } : unknown) &

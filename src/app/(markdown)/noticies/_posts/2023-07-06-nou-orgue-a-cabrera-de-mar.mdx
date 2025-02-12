@@ -12,12 +12,14 @@ columnes: true
 ---
 
 import { PipeOrganCard } from "@/components/pipe-organ-card";
+import { PipeOrganHoverCard } from "@/components/pipe-organ-hover-card";
 import { route } from "@/lib/route";
 
-A l’ermita de Santa Elena d’Agell s’ha col·locat un orgue de tubs. Construït a Holanda, encarregat i adquirit el 1992
+A <PipeOrganHoverCard params={{ provincia: 'barcelona', comarca: 'maresme', municipi: 'cabrera-de-mar', edifici: 'santa-elena' }}>l’ermita de Santa Elena d’Agell</PipeOrganHoverCard>
+s’ha col·locat un orgue de tubs. Construït a Holanda, encarregat i adquirit el 1992
 amb destinació a la ciutat de Gènova per Guido Iotti, va ser ell mateix qui va contactar amb el taller d’orgues Klop:
-l’únic europeu que construeix orgues mitjans amb tubs exclusivament de fusta. L’orgue de la parròquia de Cabrera de Mar
-(Späth, 1990) està relacionat amb el d’Agell, perquè el taller Klop va ser-ne el proveïdor de fusta per a la construcció
+l’únic europeu que construeix orgues mitjans amb tubs exclusivament de fusta. <PipeOrganHoverCard params={{ provincia: 'barcelona', comarca: 'maresme', municipi: 'cabrera-de-mar', edifici: 'sant-feliu' }}>L’orgue de la parròquia de Cabrera de Mar (Späth, 1990)</PipeOrganHoverCard>
+està relacionat amb el d’Agell, perquè el taller Klop va ser-ne el proveïdor de fusta per a la construcció
 d’ambdós orgues, tal com ens va dir Hans Späth. En una conversa entre l’aleshores rector de la parròquia, mossèn Raimon Canalias
 i Guido Iotti, fa 20 anys, ja parlaven que un dia s’ubicaria aquest orgue a Santa Elena d’Agell. Aquesta data s’ha
 escaigut en el mateix dia de la setmana dels 453 anys de la consagració de la parròquia de Cabrera: diumenge 26 de febrer.
@@ -32,12 +34,10 @@ a càrrec de Guido Iotti, amb la presència dels mitjans de comunicació audiovi
 La disposició de l’orgue i tots els detalls es poden trobar a la pàgina del detall de l’orgue:
 
 <PipeOrganCard
-  href={route("edifici", {
+  params={{
     provincia: "barcelona",
     comarca: "maresme",
     municipi: "cabrera-de-mar",
     edifici: "santa-elena",
-  })}
-  title="Ermita de Santa Elena d’Agell"
-  description="Cabrera de Mar (Maresme)"
+  }}
 />

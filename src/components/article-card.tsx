@@ -17,10 +17,12 @@ export async function ArticleCard({ post }: Readonly<{ post: PostData }>) {
       <CardHeader className="space-y-2">
         <CardTitle>{post.title}</CardTitle>
         <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
-          <address className="flex gap-1 items-center not-italic">
-            <UserIcon className="w-4 h-4 flex-shrink-0" />
-            <span className="line-clamp-1">{post.author}</span>
-          </address>
+          {post.author ? (
+            <address className="flex gap-1 items-center not-italic">
+              <UserIcon className="w-4 h-4 flex-shrink-0" />
+              <span className="line-clamp-1">{post.author}</span>
+            </address>
+          ) : null}
           <span className="flex gap-1 items-center">
             <CalendarIcon className="w-4 h-4 flex-shrink-0" />
             <time dateTime={post.date.toISOString()}>
