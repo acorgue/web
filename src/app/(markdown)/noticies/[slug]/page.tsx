@@ -44,15 +44,18 @@ export default async function Page({
           </h1>
 
           <div className="flex flex-wrap gap-4 items-center text-sm text-gray-500 dark:text-gray-400">
-            <address
-              itemProp="author"
-              itemScope
-              itemType="https://schema.org/Person"
-              className="flex gap-1 items-center not-italic"
-            >
-              <UserIcon className="w-4 h-4 flex-shrink-0" />
-              <span itemProp="name">{post.author}</span>
-            </address>
+            {post.author ? (
+              <address
+                itemProp="author"
+                itemScope
+                itemType="https://schema.org/Person"
+                className="flex gap-1 items-center not-italic"
+              >
+                <UserIcon className="w-4 h-4 flex-shrink-0" />
+                <span itemProp="name">{post.author}</span>
+              </address>
+            ) : null}
+
             <span className="flex gap-1 items-center">
               <CalendarIcon className="w-4 h-4 flex-shrink-0" />
               <time

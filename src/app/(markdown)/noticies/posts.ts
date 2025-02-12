@@ -6,7 +6,7 @@ interface MatterPostData {
   slug: string;
   subtitle: string;
   categories: string;
-  author: string;
+  author?: string;
   tags: string[];
 }
 

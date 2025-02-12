@@ -43,28 +43,24 @@ export default async function Page({
             edifici.orgues?.map((orgue) => (
               <PipeOrganCard
                 key={`${edifici.link}-${orgue.link}`}
-                href={route("orgue", {
+                params={{
                   provincia: provincia.link,
                   comarca: comarca.link,
                   municipi: municipi.link,
                   edifici: edifici.link,
                   orgue: orgue.link,
-                })}
-                title={`${edifici.nom} (${orgue.nom})`}
-                description={edifici.adreca}
+                }}
               />
             ))
           ) : (
             <PipeOrganCard
               key={edifici.link}
-              href={route("edifici", {
+              params={{
                 provincia: provincia.link,
                 comarca: comarca.link,
                 municipi: municipi.link,
                 edifici: edifici.link,
-              })}
-              title={edifici.nom}
-              description={edifici.adreca}
+              }}
             />
           ),
         )}

@@ -1,24 +1,33 @@
+import {
+  orgueNavigation,
+  OrgueNavigationData,
+  OrgueRouteParams,
+} from "@/app/(markdown)/orgues/orgueNavigation";
+import { routeFromParams } from "@/lib/route";
+import { MapPinIcon } from "lucide-react";
 import Link from "next/link";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 
-interface PipeOrganCardProps {
-  href: string;
-  title: string;
-  description: string;
-}
-
 export function PipeOrganCard({
-  href,
-  title,
-  description,
-}: Readonly<PipeOrganCardProps>) {
+  params,
+}: Readonly<{ params: Omit<OrgueRouteParams, "orgue"> & { orgue?: string } }>) {
+  const orgue = orgueNavigation(params) as OrgueNavigationData;
+  if (!orgue) return;
   return (
     <article className="not-prose">
-      <Link href={href}>
+      <Link href={routeFromParams(params)}>
         <Card className="hover:bg-slate-500/5">
           <CardHeader>
-            <CardTitle>{title}</CardTitle>
-            <CardDescription>{description}</CardDescription>
+            <CardTitle>{orgue.orgue?.nom ?? orgue.edifici.nom}</CardTitle>
+            <CardDescription>
+              {orgue.municipi.nom} ({orgue.comarca.nom})
+              <span className="flex items-center pt-2">
+                <MapPinIcon className="mr-2 h-4 w-4" />
+                <span className="text-xs text-muted-foreground">
+                  {orgue.edifici.adreca}
+                </span>
+              </span>
+            </CardDescription>
           </CardHeader>
         </Card>
       </Link>

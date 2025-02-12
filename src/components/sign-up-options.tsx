@@ -49,9 +49,9 @@ export function SignUpOptions() {
                 </div>
                 Imprimint-la, omplint-la, signant-la i enviant-la per correu
                 postal a{" "}
-                <Link href="https://maps.app.goo.gl/81kLGSTZy1c812g39">
+                <a href="https://maps.app.goo.gl/81kLGSTZy1c812g39">
                   Carrer de Rocafort, 242 bis, 08029 Barcelona
-                </Link>
+                </a>
                 .
               </li>
             </ul>

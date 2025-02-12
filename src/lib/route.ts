@@ -1,3 +1,8 @@
+import {
+  OrgueNavigationData,
+  OrgueNavigationProps,
+} from "@/app/(markdown)/orgues/orgueNavigation";
+
 type OrgueParams = {
   provincia: string;
   comarca: string;
@@ -98,4 +103,23 @@ export function route<T extends keyof RouteBuilders>(
   );
   url.search = new URLSearchParams(query).toString();
   return url.pathname + url.search;
+}
+
+export function routeFromParams(orgue: OrgueNavigationProps) {
+  if (orgue.orgue) return route("orgue", orgue);
+  if (orgue.edifici) return route("edifici", orgue);
+  if (orgue.municipi) return route("municipi", orgue);
+  if (orgue.comarca) return route("comarca", orgue);
+  if (orgue.provincia) return route("provincia", orgue);
+  return route("orgues");
+}
+
+export function routeParamsFrom(orgue: OrgueNavigationData) {
+  return {
+    provincia: orgue.provincia.link,
+    comarca: orgue.comarca.link,
+    municipi: orgue.municipi.link,
+    edifici: orgue.edifici.link,
+    orgue: orgue.orgue.link,
+  };
 }
