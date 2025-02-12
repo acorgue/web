@@ -17,16 +17,18 @@ export async function Footer({ className }: { className?: string }) {
   return (
     <footer
       className={cn(
-        "bg-aco dark:bg-white/95 text-aco-foreground dark:text-aco-dark py-12 text-sm",
+        "bg-aco dark:bg-primary text-aco-foreground dark:text-aco-dark py-12 text-sm",
         className,
       )}
     >
       <div className="max-w-4xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <FooterHeading>{t("footer.contactWithUs")}</FooterHeading>
-          <p className="mt-2 dark:text-black/80">
-            Rocafort, 242 bis, 08029 Barcelona
-          </p>
+          <address className="mt-2 dark:text-black/80 not-italic">
+            <a href="https://maps.app.goo.gl/81kLGSTZy1c812g39">
+              Rocafort, 242 bis, 08029 Barcelona
+            </a>
+          </address>
 
           <Button asChild variant="secondary" size="sm">
             <Link
@@ -96,7 +98,7 @@ export async function Footer({ className }: { className?: string }) {
               {t("metadata.privacyPolicyMembers")}
             </FooterListItem>
           </ul>
-          <p className="mt-6 text-white/60 dark:text-black/70">
+          <p className="mt-6 text-primary-foreground/70 dark:text-primary-foreground/70">
             © 1992–2024 <br /> {t("organization.name")}
           </p>
         </div>
@@ -107,7 +109,7 @@ export async function Footer({ className }: { className?: string }) {
 
 function FooterHeading({ children }: Readonly<PropsWithChildren>) {
   return (
-    <h2 className="text-lg font-semibold text-white dark:text-black">
+    <h2 className="text-lg font-semibold text-primary-foreground">
       {children}
     </h2>
   );
@@ -119,7 +121,10 @@ function FooterListItem({
 }: Readonly<PropsWithChildren<{ href: string }>>) {
   return (
     <li>
-      <Link href={href} className="hover:text-white hover:dark:text-black">
+      <Link
+        href={href}
+        className="text-primary-foreground/85 hover:text-primary-foreground dark:text-aco-dark dark:hover:text-aco-dark/70"
+      >
         {children}
       </Link>
     </li>

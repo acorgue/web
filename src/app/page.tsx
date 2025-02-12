@@ -59,7 +59,7 @@ export default async function Home() {
       />
 
       <div className="relative">
-        <div className="min-h-[600px] h-[calc(100vh-3rem)] overflow-hidden flex items-center">
+        <div className="min-h-[600px] h-[calc(100vh-1.5rem)] overflow-hidden flex items-center">
           <HomeCarousel images={images} />
         </div>
         <div className="absolute flex flex-col justify-between gap-24 h-full w-full px-4 min-[425px]:px-8 sm:px-18 md:px-24 lg:px-32 pt-24 sm:pt-32 pb-8 sm:pb-16 top-0">
