@@ -46,10 +46,10 @@ export function SearchBar() {
   useEffect(() => {
     if (!query) return setResults([]);
     // Debounce: evita consultes innecessàries mentre l’usuari escriu
-    const handler = setTimeout(async () => {
+    const timer = setTimeout(async () => {
       setResults(await quickSearch(query));
     }, 300);
-    return () => clearTimeout(handler);
+    return () => clearTimeout(timer);
   }, [query]);
 
   useEffect(() => {

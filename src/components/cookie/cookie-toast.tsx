@@ -9,8 +9,12 @@ export function CookieToast() {
   const { alreadyAnswered, showMessage } = useCookie();
 
   useEffect(() => {
-    if (!alreadyAnswered()) showMessage(t);
+    let timer: Timer | undefined;
+    if (!alreadyAnswered()) timer = setTimeout(() => showMessage(t));
+    return () => {
+      if (timer) clearTimeout(timer);
+    };
   }, [alreadyAnswered, showMessage, t]);
 
-  return <></>;
+  return null;
 }

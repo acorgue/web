@@ -25,6 +25,7 @@ export function CopyButton({ slug }: Readonly<CopyButtonProps>) {
               new URL(slug, window.location.origin).toString(),
             );
             setCopied(true);
+            // TODO(albertms10): call clearTimeout?
             setTimeout(() => setCopied(false), 2000);
           }}
         >
