@@ -5,9 +5,7 @@ import ScrollSpy from "react-scrollspy-navigation";
 
 export function TOC({
   headings,
-}: {
-  headings: { id: string; label: ReactNode }[];
-}) {
+}: Readonly<{ headings: { id: string; label: ReactNode }[] }>) {
   return (
     <ScrollSpy
       activeAttr

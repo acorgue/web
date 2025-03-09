@@ -3,41 +3,42 @@ import { Slot } from "@radix-ui/react-slot";
 import { ChevronRightIcon, EllipsisIcon } from "lucide-react";
 import * as React from "react";
 
-const Breadcrumb = (props: React.ComponentProps<"nav">) => (
-  <nav aria-label="breadcrumb" {...props} />
-);
-Breadcrumb.displayName = "Breadcrumb";
+export function Breadcrumb(props: React.ComponentPropsWithoutRef<"nav">) {
+  return <nav aria-label="breadcrumb" {...props} />;
+}
 
-const BreadcrumbList = ({
+export function BreadcrumbList({
   className,
   ...props
-}: React.ComponentPropsWithoutRef<"ol">) => (
-  <ol
-    className={cn(
-      "flex flex-wrap items-center gap-1.5 break-words text-sm text-muted-foreground sm:gap-2.5",
-      className,
-    )}
-    {...props}
-  />
-);
-BreadcrumbList.displayName = "BreadcrumbList";
+}: React.ComponentPropsWithoutRef<"ol">) {
+  return (
+    <ol
+      className={cn(
+        "flex flex-wrap items-center gap-1.5 break-words text-sm text-muted-foreground sm:gap-2.5",
+        className,
+      )}
+      {...props}
+    />
+  );
+}
 
-const BreadcrumbItem = ({
+export function BreadcrumbItem({
   className,
   ...props
-}: React.ComponentPropsWithoutRef<"li">) => (
-  <li
-    className={cn("inline-flex items-center gap-1.5", className)}
-    {...props}
-  />
-);
-BreadcrumbItem.displayName = "BreadcrumbItem";
+}: React.ComponentPropsWithoutRef<"li">) {
+  return (
+    <li
+      className={cn("inline-flex items-center gap-1.5", className)}
+      {...props}
+    />
+  );
+}
 
-const BreadcrumbLink = ({
+export function BreadcrumbLink({
   asChild,
   className,
   ...props
-}: React.ComponentProps<"a"> & { asChild?: boolean }) => {
+}: React.ComponentPropsWithoutRef<"a"> & { asChild?: boolean }) {
   const Comp = asChild ? Slot : "a";
 
   return (
@@ -46,61 +47,53 @@ const BreadcrumbLink = ({
       {...props}
     />
   );
-};
-BreadcrumbLink.displayName = "BreadcrumbLink";
+}
 
-const BreadcrumbPage = ({
+export function BreadcrumbPage({
   className,
   ...props
-}: React.ComponentPropsWithoutRef<"span">) => (
-  <span
-    role="link"
-    aria-disabled="true"
-    aria-current="page"
-    className={cn("font-normal text-foreground", className)}
-    {...props}
-  />
-);
-BreadcrumbPage.displayName = "BreadcrumbPage";
+}: React.ComponentPropsWithoutRef<"span">) {
+  return (
+    <span
+      role="link"
+      aria-disabled="true"
+      aria-current="page"
+      className={cn("font-normal text-foreground", className)}
+      {...props}
+    />
+  );
+}
 
-const BreadcrumbSeparator = ({
+export function BreadcrumbSeparator({
   children,
   className,
   ...props
-}: React.ComponentProps<"li">) => (
-  <li
-    role="presentation"
-    aria-hidden="true"
-    className={cn("[&>svg]:size-3.5", className)}
-    {...props}
-  >
-    {children ?? <ChevronRightIcon />}
-  </li>
-);
-BreadcrumbSeparator.displayName = "BreadcrumbSeparator";
+}: React.ComponentPropsWithoutRef<"li">) {
+  return (
+    <li
+      role="presentation"
+      aria-hidden="true"
+      className={cn("[&>svg]:size-3.5", className)}
+      {...props}
+    >
+      {children ?? <ChevronRightIcon />}
+    </li>
+  );
+}
 
-const BreadcrumbEllipsis = ({
+export function BreadcrumbEllipsis({
   className,
   ...props
-}: React.ComponentProps<"span">) => (
-  <span
-    role="presentation"
-    aria-hidden="true"
-    className={cn("flex size-9 items-center justify-center", className)}
-    {...props}
-  >
-    <EllipsisIcon className="size-4" />
-    <span className="sr-only">More</span>
-  </span>
-);
-BreadcrumbEllipsis.displayName = "BreadcrumbElipssis";
-
-export {
-  Breadcrumb,
-  BreadcrumbEllipsis,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-};
+}: React.ComponentPropsWithoutRef<"span">) {
+  return (
+    <span
+      role="presentation"
+      aria-hidden="true"
+      className={cn("flex size-9 items-center justify-center", className)}
+      {...props}
+    >
+      <EllipsisIcon className="size-4" />
+      <span className="sr-only">More</span>
+    </span>
+  );
+}

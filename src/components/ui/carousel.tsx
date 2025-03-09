@@ -8,7 +8,8 @@ import useEmblaCarousel, {
 import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
 import * as React from "react";
 
-type CarouselApi = UseEmblaCarouselType[1];
+export type CarouselApi = UseEmblaCarouselType[1];
+
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
 type CarouselOptions = UseCarouselParameters[0];
 type CarouselPlugin = UseCarouselParameters[1];
@@ -41,7 +42,7 @@ function useCarousel() {
   return context;
 }
 
-const Carousel = ({
+export function Carousel({
   orientation = "horizontal",
   opts,
   setApi,
@@ -49,7 +50,7 @@ const Carousel = ({
   className,
   children,
   ...props
-}: React.ComponentProps<"div"> & CarouselProps) => {
+}: React.ComponentPropsWithoutRef<"div"> & CarouselProps) {
   const [carouselRef, api] = useEmblaCarousel(
     { ...opts, axis: orientation === "horizontal" ? "x" : "y" },
     plugins,
@@ -128,13 +129,12 @@ const Carousel = ({
       </div>
     </CarouselContext.Provider>
   );
-};
-Carousel.displayName = "Carousel";
+}
 
-const CarouselContent = ({
+export function CarouselContent({
   className,
   ...props
-}: React.HTMLAttributes<HTMLDivElement>) => {
+}: React.HTMLAttributes<HTMLDivElement>) {
   const { carouselRef, orientation } = useCarousel();
 
   return (
@@ -149,13 +149,12 @@ const CarouselContent = ({
       />
     </div>
   );
-};
-CarouselContent.displayName = "CarouselContent";
+}
 
-const CarouselItem = ({
+export function CarouselItem({
   className,
   ...props
-}: React.HTMLAttributes<HTMLDivElement>) => {
+}: React.HTMLAttributes<HTMLDivElement>) {
   const { orientation } = useCarousel();
 
   return (
@@ -170,15 +169,14 @@ const CarouselItem = ({
       {...props}
     />
   );
-};
-CarouselItem.displayName = "CarouselItem";
+}
 
-const CarouselPrevious = ({
+export function CarouselPrevious({
   className,
   variant = "outline",
   size = "icon",
   ...props
-}: React.ComponentProps<typeof Button>) => {
+}: React.ComponentPropsWithoutRef<typeof Button>) {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel();
 
   return (
@@ -200,15 +198,14 @@ const CarouselPrevious = ({
       <span className="sr-only">Previous slide</span>
     </Button>
   );
-};
-CarouselPrevious.displayName = "CarouselPrevious";
+}
 
-const CarouselNext = ({
+export function CarouselNext({
   className,
   variant = "outline",
   size = "icon",
   ...props
-}: React.ComponentProps<typeof Button>) => {
+}: React.ComponentPropsWithoutRef<typeof Button>) {
   const { orientation, scrollNext, canScrollNext } = useCarousel();
 
   return (
@@ -230,14 +227,4 @@ const CarouselNext = ({
       <span className="sr-only">Next slide</span>
     </Button>
   );
-};
-CarouselNext.displayName = "CarouselNext";
-
-export {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-  type CarouselApi,
-};
+}
