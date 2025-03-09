@@ -16,7 +16,7 @@ export function Scaffold({
     <>
       <main
         className={cn(
-          "col-span-2 container prose dark:prose-invert pt-8 mx-auto sm:max-md:px-8 md:px-0",
+          "col-span-2 prose dark:prose-invert pt-8 mx-auto sm:max-md:px-8 px-4 md:px-0",
           aside && "lg:ms-auto lg:me-0",
         )}
       >

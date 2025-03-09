@@ -15,7 +15,7 @@ import { ReactNode } from "react";
 
 export function SignUpOptions() {
   return (
-    <div className="flex flex-col gap-y-6">
+    <div className="not-prose flex flex-col gap-y-6">
       <SignUpOption
         title="Omplint el formulari"
         description="en línia"
