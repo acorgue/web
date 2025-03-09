@@ -40,7 +40,11 @@ function Anchor({
   const anchorClassNames =
     "text-aco font-semibold no-underline hover:text-aco-dark transition-colors";
 
-  if (!href || new URL(href).hostname === baseURL.hostname) {
+  if (
+    !href ||
+    !href.startsWith("https://") ||
+    new URL(href).hostname === baseURL.hostname
+  ) {
     return <a className={cn(className, anchorClassNames)} {...props} />;
   }
 
