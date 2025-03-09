@@ -5,7 +5,7 @@ export function ExternalLink({ tooltip }: Readonly<{ tooltip: string }>) {
   return (
     <Tooltip>
       <TooltipTrigger>
-        <ExternalLinkIcon className="h-4 w-4 ms-4" aria-hidden="true" />
+        <ExternalLinkIcon className="size-4 ms-4" aria-hidden="true" />
       </TooltipTrigger>
       <TooltipContent>{tooltip}</TooltipContent>
     </Tooltip>

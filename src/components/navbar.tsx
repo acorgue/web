@@ -53,7 +53,7 @@ export function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
           href: route("noticies"),
           label: t("navbar.newsAndArticles"),
           description: t("navbar.newsAndArticlesDescription"),
-          icon: <BookmarkIcon className="h-6 w-6" aria-hidden="true" />,
+          icon: <BookmarkIcon className="size-6" aria-hidden="true" />,
           items: sortedPosts.slice(0, 3).map((post) => ({
             href: route("post", { slug: post.slug }),
             label: post.title,
@@ -64,7 +64,7 @@ export function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
           href: route("full"),
           label: t("metadata.factSheet"),
           description: t("navbar.factSheetDescription"),
-          icon: <NewspaperIcon className="h-6 w-6" aria-hidden="true" />,
+          icon: <NewspaperIcon className="size-6" aria-hidden="true" />,
           items: [
             {
               href: "https://nextcloud.acorgue.cat/s/FXAytnxJC5XyBfr/download",
@@ -95,13 +95,13 @@ export function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
           href: route("orgues"),
           label: t("metadata.pipeOrgans"),
           description: t("navbar.pipeOrgansDescription"),
-          icon: <BarChartIcon className="h-6 w-6" aria-hidden="true" />,
+          icon: <BarChartIcon className="size-6" aria-hidden="true" />,
         },
         {
           href: route("cicle"),
           label: t("metadata.concertSeries"),
           description: t("navbar.concertSeriesDescription"),
-          icon: <PinIcon className="h-6 w-6" aria-hidden="true" />,
+          icon: <PinIcon className="size-6" aria-hidden="true" />,
         },
       ],
     },
@@ -112,19 +112,19 @@ export function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
           href: route("bibliografia"),
           label: t("metadata.references"),
           description: t("navbar.referencesDescription"),
-          icon: <FileTextIcon className="h-6 w-6" aria-hidden="true" />,
+          icon: <FileTextIcon className="size-6" aria-hidden="true" />,
         },
         {
           href: route("associacions"),
           label: t("metadata.associations"),
           description: t("navbar.associationsDescription"),
-          icon: <GlobeIcon className="h-6 w-6" aria-hidden="true" />,
+          icon: <GlobeIcon className="size-6" aria-hidden="true" />,
         },
         {
           href: route("formacio"),
           label: t("metadata.education"),
           description: t("navbar.educationDescription"),
-          icon: <PencilIcon className="h-6 w-6" aria-hidden="true" />,
+          icon: <PencilIcon className="size-6" aria-hidden="true" />,
         },
       ],
     },
@@ -252,7 +252,7 @@ export function HighlightedMenuItems({
           <li className="row-span-3">
             <NavigationMenuLink asChild>
               <Link
-                className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none hover:opacity-80 transition-opacity text-aco"
+                className="flex h-full w-full select-none flex-col justify-end rounded-md bg-linear-to-b from-muted/50 to-muted p-6 no-underline outline-hidden hover:opacity-80 transition-opacity text-aco"
                 href={item.href}
                 prefetch
               >

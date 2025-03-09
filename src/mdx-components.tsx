@@ -23,7 +23,7 @@ const HeadingLink = ({
         href={`#${strippedId}`}
         className="text-muted-foreground -ms-6 hover:text-black dark:hover:text-white transition-colors"
       >
-        <Link2Icon className="w-4 h-4" />
+        <Link2Icon className="size-4" />
       </Link>
       {children}
     </h2>

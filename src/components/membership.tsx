@@ -14,7 +14,7 @@ export async function Membership() {
   const t = await getTranslations("membership");
 
   return (
-    <div className="flex flex-col justify-around gap-x-4 gap-y-6 mx-0 mb-12">
+    <div className="not-prose flex flex-col justify-around gap-x-4 gap-y-6 mx-0 mb-12">
       <MembershipOption
         title={t("retired")}
         description=""

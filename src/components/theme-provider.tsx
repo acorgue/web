@@ -6,6 +6,6 @@ import * as React from "react";
 export function ThemeProvider({
   children,
   ...props
-}: React.ComponentProps<typeof NextThemesProvider>) {
+}: React.ComponentPropsWithoutRef<typeof NextThemesProvider>) {
   return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
 }

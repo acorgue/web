@@ -14,7 +14,7 @@ export function CookieSettingsButton({
 
   return (
     <Button onClick={() => showMessage(t)}>
-      <CookieIcon className="h-4 w-4 me-2" aria-hidden="true" />
+      <CookieIcon className="size-4 me-2" aria-hidden="true" />
       {children}
     </Button>
   );

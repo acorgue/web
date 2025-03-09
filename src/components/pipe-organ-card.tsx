@@ -22,7 +22,7 @@ export function PipeOrganCard({
             <CardDescription>
               {orgue.municipi.nom} ({orgue.comarca.nom})
               <span className="flex items-center pt-2">
-                <MapPinIcon className="mr-2 h-4 w-4" />
+                <MapPinIcon className="mr-2 size-4" />
                 <span className="text-xs text-muted-foreground">
                   {orgue.edifici.adreca}
                 </span>

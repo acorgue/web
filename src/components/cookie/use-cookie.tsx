@@ -47,7 +47,7 @@ function showMessage(t: ReturnType<typeof useTranslations<"cookieBanner">>) {
     cancel: { label: t("decline"), onClick: declineConsent },
     duration: Infinity,
     style: { width: 400, maxWidth: "calc(100vw - 2rem)", right: 0 },
-    icon: <CookieIcon className="h-4 w-4" aria-hidden="true" />,
+    icon: <CookieIcon className="size-4" aria-hidden="true" />,
   });
 }
 

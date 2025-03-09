@@ -1,15 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getLocale } from "next-intl/server";
 
-export interface StatisticCardProps {
-  label: string;
-  figure: number;
-}
-
 export async function StatisticCard({
   label,
   figure,
-}: Readonly<StatisticCardProps>) {
+}: Readonly<{ label: string; figure: number }>) {
   const locale = await getLocale();
   return (
     <Card className="not-prose shadow-none">
