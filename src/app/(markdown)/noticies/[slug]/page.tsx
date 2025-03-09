@@ -51,13 +51,13 @@ export default async function Page({
                 itemType="https://schema.org/Person"
                 className="flex gap-1 items-center not-italic"
               >
-                <UserIcon className="w-4 h-4 flex-shrink-0" />
+                <UserIcon className="size-4 shrink-0" />
                 <span itemProp="name">{post.author}</span>
               </address>
             ) : null}
 
             <span className="flex gap-1 items-center">
-              <CalendarIcon className="w-4 h-4 flex-shrink-0" />
+              <CalendarIcon className="size-4 shrink-0" />
               <time
                 itemProp="datePublished"
                 content={post.date.toISOString()}

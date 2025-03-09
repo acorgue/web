@@ -85,7 +85,7 @@ export function BreadcrumbCollapsedFragments({
     <BreadcrumbItem>
       <DropdownMenu>
         <DropdownMenuTrigger className="flex items-center gap-1">
-          <BreadcrumbEllipsis className="h-4 w-4" />
+          <BreadcrumbEllipsis className="size-4" />
           <span className="sr-only">Mostra els elements amagats</span>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="start">

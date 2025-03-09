@@ -80,7 +80,7 @@ export default async function Home() {
               <Card
                 key={item.href}
                 className={cn(
-                  "group flex rounded-2xl border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 dark:border-border",
+                  "group flex rounded-2xl border-border/40 bg-background/95 backdrop-blur-sm supports-backdrop-filter:bg-background/60 dark:border-border",
                 )}
               >
                 <Link
@@ -91,7 +91,7 @@ export default async function Home() {
                     <h2 className="flex-1 font-semibold text-lg">
                       {item.label}
                     </h2>
-                    <ArrowRightIcon className="w-5 h-5 transition-transform group-hover:translate-x-2" />
+                    <ArrowRightIcon className="size-5 transition-transform group-hover:translate-x-2" />
                   </CardContent>
                 </Link>
               </Card>

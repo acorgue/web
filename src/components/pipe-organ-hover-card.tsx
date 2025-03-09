@@ -32,7 +32,7 @@ export function PipeOrganHoverCard({
               <span className="small-caps">{orgue.comarca.nom}</span>)
             </p>
             <div className="flex items-center pt-2">
-              <MapPinIcon className="mr-2 h-4 w-4 opacity-70" />
+              <MapPinIcon className="mr-2 size-4 opacity-70" />
               <span className="text-xs text-muted-foreground">
                 {orgue.edifici.adreca}
               </span>

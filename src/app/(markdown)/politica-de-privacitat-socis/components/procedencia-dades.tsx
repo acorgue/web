@@ -11,7 +11,7 @@ export function ProcedenciaDades() {
       <li className="flex-1 px-2 sm:px-4 py-2 sm:py-4">
         <ActionButton
           href="https://forms.gle/nYWSTWgjdLT4WP6S8"
-          icon={<FileIcon className="h-5 w-5 me-2" aria-hidden="true" />}
+          icon={<FileIcon className="size-4 me-2" aria-hidden="true" />}
         >
           Formulari en línia a Google Drive
         </ActionButton>
@@ -19,7 +19,7 @@ export function ProcedenciaDades() {
       <li className="flex-1 px-2 sm:px-4 py-2 sm:py-4">
         <ActionButton
           href="https://nextcloud.acorgue.cat/s/a6jB33E8cZTwDCp/download"
-          icon={<PencilIcon className="h-5 w-5 me-2" aria-hidden="true" />}
+          icon={<PencilIcon className="size-4 me-2" aria-hidden="true" />}
         >
           Formulari en PDF signat digitalment
         </ActionButton>
@@ -28,7 +28,7 @@ export function ProcedenciaDades() {
         <div
           className={cn(buttonVariants({ variant: "ghost" }), "w-full py-6")}
         >
-          <FileTextIcon className="h-5 w-5 me-2" aria-hidden="true" />
+          <FileTextIcon className="size-4 me-2" aria-hidden="true" />
           <span className="w-full">Formulari original (en paper)</span>
         </div>
       </li>

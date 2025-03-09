@@ -26,7 +26,7 @@ export function SignUpOptions() {
               href="https://forms.gle/nYWSTWgjdLT4WP6S8"
               target="_blank"
             >
-              <PencilIcon className="mr-2 h-4 w-4" aria-hidden="true" /> Vés al
+              <PencilIcon className="mr-2 size-4" aria-hidden="true" /> Vés al
               formulari
             </ButtonLink>
           }
@@ -37,7 +37,7 @@ export function SignUpOptions() {
             <ul className="flex flex-col sm:flex-row divide-y sm:divide-y-0 sm:divide-x divide-slate-200 dark:divide-slate-200/30 list-none text-start text-sm text-muted-foreground p-0 my-0">
               <li className="flex-1 px-6 pt-3 pb-6 sm:py-6 m-0">
                 <div className="flex justify-center mb-3">
-                  <MailIcon className="h-6 w-6" aria-hidden="true" />
+                  <MailIcon className="size-6" aria-hidden="true" />
                 </div>
                 Omplint-la, signant-la digitalment i enviant-la per correu
                 electrònic a{" "}
@@ -45,7 +45,7 @@ export function SignUpOptions() {
               </li>
               <li className="flex-1 px-6 pt-6 pb-3 sm:py-6 m-0">
                 <div className="flex justify-center mb-3">
-                  <FileIcon className="h-6 w-6" aria-hidden="true" />
+                  <FileIcon className="size-6" aria-hidden="true" />
                 </div>
                 Imprimint-la, omplint-la, signant-la i enviant-la per correu
                 postal a{" "}
@@ -58,7 +58,7 @@ export function SignUpOptions() {
           }
           cta={
             <ButtonLink href="https://nextcloud.acorgue.cat/s/a6jB33E8cZTwDCp/download">
-              <DownloadIcon className="mr-2 h-4 w-4" aria-hidden="true" /> Baixa
+              <DownloadIcon className="mr-2 size-4" aria-hidden="true" /> Baixa
               la butlleta
             </ButtonLink>
           }

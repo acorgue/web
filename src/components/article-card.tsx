@@ -19,12 +19,12 @@ export async function ArticleCard({ post }: Readonly<{ post: PostData }>) {
         <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
           {post.author ? (
             <address className="flex gap-1 items-center not-italic">
-              <UserIcon className="w-4 h-4 flex-shrink-0" />
+              <UserIcon className="size-4 shrink-0" />
               <span className="line-clamp-1">{post.author}</span>
             </address>
           ) : null}
           <span className="flex gap-1 items-center">
-            <CalendarIcon className="w-4 h-4 flex-shrink-0" />
+            <CalendarIcon className="size-4 shrink-0" />
             <time dateTime={post.date.toISOString()}>
               {dateFormat.format(post.date)}
             </time>
