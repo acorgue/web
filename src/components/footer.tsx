@@ -46,7 +46,7 @@ export async function Footer({ className }: { className?: string }) {
             <FooterListItem href="https://www.facebook.com/acorgue/">
               <FacebookIcon />
             </FooterListItem>
-            <FooterListItem href="https://twitter.com/acorgue">
+            <FooterListItem href="https://x.com/acorgue">
               <TwitterIcon />
             </FooterListItem>
             <FooterListItem href="https://www.instagram.com/acorgue/">
@@ -116,17 +116,18 @@ function FooterHeading({ children }: Readonly<PropsWithChildren>) {
 }
 
 function FooterListItem({
-  href,
-  children,
-}: Readonly<PropsWithChildren<{ href: string }>>) {
+  className,
+  ...props
+}: Readonly<React.ComponentPropsWithoutRef<typeof Link>>) {
   return (
     <li>
       <Link
-        href={href}
-        className="text-primary-foreground/85 hover:text-primary-foreground dark:text-aco-dark dark:hover:text-aco-dark/70"
-      >
-        {children}
-      </Link>
+        className={cn(
+          className,
+          "text-primary-foreground/85 hover:text-primary-foreground transition-colors dark:text-aco-dark dark:hover:text-aco-dark/70",
+        )}
+        {...props}
+      />
     </li>
   );
 }

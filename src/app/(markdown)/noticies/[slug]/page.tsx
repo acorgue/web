@@ -85,11 +85,14 @@ export default async function Page({
       <section>
         <h2>Últimes notícies</h2>
         <ul className="not-prose flex flex-col gap-4">
-          {sortedPosts.slice(0, 3).map((post) => (
-            <Link key={post.slug} href={route("post", { slug: post.slug })}>
-              <ArticleCard key={post.slug} post={post} />
-            </Link>
-          ))}
+          {sortedPosts
+            .filter((latest) => latest.slug !== post.slug)
+            .slice(0, 3)
+            .map((post) => (
+              <Link key={post.slug} href={route("post", { slug: post.slug })}>
+                <ArticleCard key={post.slug} post={post} />
+              </Link>
+            ))}
         </ul>
       </section>
     </Scaffold>
