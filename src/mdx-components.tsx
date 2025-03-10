@@ -32,6 +32,12 @@ function HeadingLink({
   );
 }
 
+/**
+ * Aquesta assignació és necessària per identificar el component a producció determinísticament.
+ * Vegeu {@link findMDXHeadings}.
+ */
+HeadingLink.displayName = "HeadingLink";
+
 function Anchor({
   href,
   className,
@@ -88,5 +94,5 @@ export function findMDXHeadings(page: ReactElement<PropsWithChildren>) {
 }
 
 function isReactElement<P>(element: ReactNode): element is ReactElement<P> {
-  return Boolean((element as ReactElement).props);
+  return Boolean(element && (element as ReactElement).props);
 }
