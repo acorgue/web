@@ -38,20 +38,22 @@ function HeadingLink({
  */
 HeadingLink.displayName = "HeadingLink";
 
+const anchorClassNames =
+  "text-aco font-semibold no-underline hover:text-aco-dark transition-colors";
+
 function Anchor({
   href,
   className,
   ...props
 }: React.ComponentPropsWithoutRef<"a">) {
-  const anchorClassNames =
-    "text-aco font-semibold no-underline hover:text-aco-dark transition-colors";
-
   if (
     !href ||
     !href.startsWith("https://") ||
     new URL(href).hostname === baseURL.hostname
   ) {
-    return <a className={cn(className, anchorClassNames)} {...props} />;
+    return (
+      <a href={href} className={cn(className, anchorClassNames)} {...props} />
+    );
   }
 
   return (
