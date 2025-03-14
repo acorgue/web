@@ -13,13 +13,11 @@ import {
 } from "@/components/ui/navigation-menu";
 import { route } from "@/lib/route";
 import {
-  BarChartIcon,
   BookmarkIcon,
   FileTextIcon,
   GlobeIcon,
   NewspaperIcon,
   PencilIcon,
-  PinIcon,
 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
@@ -51,8 +49,8 @@ export function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
       items: [
         {
           href: route("noticies"),
-          label: t("navbar.newsAndArticles"),
-          description: t("navbar.newsAndArticlesDescription"),
+          label: t("navbar.news"),
+          description: t("navbar.newsDescription"),
           icon: <BookmarkIcon className="size-6" aria-hidden="true" />,
           items: sortedPosts.slice(0, 3).map((post) => ({
             href: route("post", { slug: post.slug }),
@@ -89,21 +87,12 @@ export function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
       ],
     },
     {
+      href: route("orgues"),
       label: t("metadata.pipeOrgans"),
-      items: [
-        {
-          href: route("orgues"),
-          label: t("metadata.pipeOrgans"),
-          description: t("navbar.pipeOrgansDescription"),
-          icon: <BarChartIcon className="size-6" aria-hidden="true" />,
-        },
-        {
-          href: route("cicle"),
-          label: t("metadata.concertSeries"),
-          description: t("navbar.concertSeriesDescription"),
-          icon: <PinIcon className="size-6" aria-hidden="true" />,
-        },
-      ],
+    },
+    {
+      href: route("cicle"),
+      label: t("metadata.concertSeriesShort"),
     },
     {
       label: t("navbar.resources"),

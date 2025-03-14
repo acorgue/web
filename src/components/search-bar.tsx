@@ -134,7 +134,11 @@ function SearchItem({
   children,
 }: Readonly<PropsWithChildren<{ link: string }>>) {
   return (
-    <CommandItem value={link} onSelect={() => (window.location.href = link)}>
+    <CommandItem
+      value={link}
+      onSelect={() => (window.location.href = link)}
+      className="cursor-pointer"
+    >
       {children}
     </CommandItem>
   );
