@@ -3,7 +3,7 @@ import { TOC } from "@/components/toc";
 import { route } from "@/lib/route";
 import { findMDXHeadings } from "@/mdx-components";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import Associacions from "./associacions.mdx";
+import { notFound } from "next/navigation";
 
 export default async function Page({
   params,
@@ -12,6 +12,7 @@ export default async function Page({
   setRequestLocale(locale);
 
   const t = await getTranslations("metadata");
+  const Content = await localizedMDX(locale);
 
   return (
     <Scaffold
@@ -19,9 +20,17 @@ export default async function Page({
         { href: route("home"), label: "Inici", position: 1 },
         { label: t("associations"), position: 2 },
       ]}
-      aside={<TOC headings={findMDXHeadings(Associacions({}))} />}
+      aside={<TOC headings={findMDXHeadings(Content({}))} />}
     >
-      <Associacions />
+      <Content />
     </Scaffold>
   );
+}
+
+async function localizedMDX(locale: string) {
+  try {
+    return (await import(`./${locale}.mdx`)).default;
+  } catch (error) {
+    notFound();
+  }
 }

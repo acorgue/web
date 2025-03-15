@@ -20,7 +20,7 @@ type MatchTuple = [string, string, string];
 
 const fileNameRegExp = /^(\d{4}-\d{2}-\d{2})-(.*?)\.mdx?$/;
 
-const postsDirectory = join(process.cwd(), "src/content/posts");
+const postsDirectory = join(process.cwd(), "src/content/posts/ca");
 export const posts = await getPosts(postsDirectory);
 
 export const sortedPosts = Object.values(posts).toSorted(
@@ -54,7 +54,7 @@ async function getPosts(directory: string) {
     }
     const [, date] = match;
 
-    const frontmatter = (await import(`/src/content/posts/${fileName}`))
+    const frontmatter = (await import(`/src/content/posts/ca/${fileName}`))
       .frontmatter as MatterPostData;
 
     return [

@@ -3,7 +3,7 @@ import { TOC } from "@/components/toc";
 import { route } from "@/lib/route";
 import { findMDXHeadings } from "@/mdx-components";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import PoliticaDePrivacitatSocis from "./politica-de-privacitat-socis.mdx";
+import Content from "./ca.mdx";
 
 export default async function Page({
   params,
@@ -19,9 +19,9 @@ export default async function Page({
         { href: route("home"), label: t("home"), position: 1 },
         { label: t("privacyPolicyMembers"), position: 2 },
       ]}
-      aside={<TOC headings={findMDXHeadings(PoliticaDePrivacitatSocis({}))} />}
+      aside={<TOC headings={findMDXHeadings(Content({}))} />}
     >
-      <PoliticaDePrivacitatSocis />
+      <Content />
     </Scaffold>
   );
 }

@@ -23,7 +23,7 @@ import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import "../globals.css";
 
-export const fontSans = localFont({
+const fontSans = localFont({
   src: [
     { path: "../../../public/fonts/InterVariable.ttf", style: "normal" },
     { path: "../../../public/fonts/InterVariable-Italic.ttf", style: "italic" },
@@ -81,7 +81,7 @@ export default async function RootLayout({
     >
       <body className="min-h-screen bg-background antialiased">
         <SpeedInsights />
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <TooltipProvider delayDuration={100}>
               <DrawerWrapper>

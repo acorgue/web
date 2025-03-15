@@ -5,7 +5,7 @@ import { Link } from "@/i18n/routing";
 import { route } from "@/lib/route";
 import { findMDXHeadings } from "@/mdx-components";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import Noticies from "./noticies.mdx";
+import Content from "./ca.mdx";
 import { sortedPosts } from "./posts";
 
 export default async function Page({
@@ -22,9 +22,9 @@ export default async function Page({
         { href: route("home"), label: t("home"), position: 1 },
         { label: t("news"), position: 2 },
       ]}
-      aside={<TOC headings={findMDXHeadings(Noticies({}))} />}
+      aside={<TOC headings={findMDXHeadings(Content({}))} />}
     >
-      <Noticies />
+      <Content />
       <LatestPosts />
     </Scaffold>
   );

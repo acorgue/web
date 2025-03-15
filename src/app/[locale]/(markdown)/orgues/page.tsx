@@ -3,7 +3,7 @@ import { TOC } from "@/components/toc";
 import { route } from "@/lib/route";
 import { findMDXHeadings } from "@/mdx-components";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import Orgues from "./orgues.mdx";
+import Content from "./ca.mdx";
 
 export default async function Page({
   params,
@@ -19,9 +19,9 @@ export default async function Page({
         { href: route("home"), label: t("home"), position: 1 },
         { label: t("pipeOrgans"), position: 2 },
       ]}
-      aside={<TOC headings={findMDXHeadings(Orgues({}))} />}
+      aside={<TOC headings={findMDXHeadings(Content({}))} />}
     >
-      <Orgues />
+      <Content />
     </Scaffold>
   );
 }

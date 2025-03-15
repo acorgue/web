@@ -3,7 +3,7 @@ import { TOC } from "@/components/toc";
 import { route } from "@/lib/route";
 import { findMDXHeadings } from "@/mdx-components";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import QuiSom from "./qui-som.mdx";
+import Content from "./ca.mdx";
 
 export default async function Page({
   params,
@@ -19,9 +19,9 @@ export default async function Page({
         { href: route("home"), label: t("home"), position: 1 },
         { label: t("aboutUs"), position: 2 },
       ]}
-      aside={<TOC headings={findMDXHeadings(QuiSom({}))} />}
+      aside={<TOC headings={findMDXHeadings(Content({}))} />}
     >
-      <QuiSom />
+      <Content />
     </Scaffold>
   );
 }
