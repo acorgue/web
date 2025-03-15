@@ -19,7 +19,7 @@ type MatchTuple = [string, string, string];
 
 const postsDirectory = join(
   process.cwd(),
-  "src/app/[locale]/(markdown)/noticies/_posts",
+  "src/app/\[locale\]/(markdown)/noticies/_posts",
 );
 const fileNameRegExp = /^(\d{4}-\d{2}-\d{2})-(.*?)\.mdx?$/;
 

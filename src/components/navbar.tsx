@@ -11,7 +11,6 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { Link } from "@/i18n/routing";
 import { route } from "@/lib/route";
 import {
   BookmarkIcon,
@@ -21,7 +20,7 @@ import {
   PencilIcon,
 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
-import NextLink from "next/link";
+import Link from "next/link";
 import { ComponentProps, Fragment, ReactNode } from "react";
 import { ExternalLink } from "./external-link";
 
@@ -157,11 +156,9 @@ function DesktopNavigationMenu({
                   </NavigationMenuContent>
                 </>
               ) : (
-                <NextLink href={menuItem.href!} legacyBehavior passHref>
-                  <NavigationMenuLink className={triggerClassName}>
-                    {menuItem.label}
-                  </NavigationMenuLink>
-                </NextLink>
+                <NavigationMenuLink asChild className={triggerClassName}>
+                  <Link href={menuItem.href!}>{menuItem.label}</Link>
+                </NavigationMenuLink>
               )}
             </NavigationMenuItem>
           </Fragment>
