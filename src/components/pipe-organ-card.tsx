@@ -2,10 +2,10 @@ import {
   orgueNavigation,
   OrgueNavigationData,
   OrgueRouteParams,
-} from "@/app/(markdown)/orgues/orgueNavigation";
+} from "@/app/[locale]/(markdown)/orgues/orgueNavigation";
+import { Link } from "@/i18n/routing";
 import { routeFromParams } from "@/lib/route";
 import { MapPinIcon } from "lucide-react";
-import Link from "next/link";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 
 export function PipeOrganCard({

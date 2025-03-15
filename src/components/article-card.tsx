@@ -1,4 +1,4 @@
-import { PostData } from "@/app/(markdown)/noticies/posts";
+import { PostData } from "@/app/[locale]/(markdown)/noticies/posts";
 import { CalendarIcon, UserIcon } from "lucide-react";
 import { getLocale } from "next-intl/server";
 import { Badge } from "./ui/badge";

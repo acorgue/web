@@ -5,7 +5,7 @@ import {
   OrguesEdifici,
   OrguesMunicipi,
   OrguesProvincia,
-} from "@/app/(markdown)/orgues/orgueNavigation";
+} from "@/app/[locale]/(markdown)/orgues/orgueNavigation";
 import rawOrgues from "./orgues.json";
 
 type OrgueNavigationReturn<T extends OrgueNavigationProps> =

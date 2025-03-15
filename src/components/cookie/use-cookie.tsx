@@ -1,7 +1,6 @@
-import { route } from "@/lib/route";
+import { Link } from "@/i18n/routing";
 import { CookieIcon } from "lucide-react";
 import type { useTranslations } from "next-intl";
-import Link from "next/link";
 import { toast } from "sonner";
 
 const CONSENT_ACCEPTED_NAME = "isConsentAccepted";
@@ -35,10 +34,7 @@ function showMessage(t: ReturnType<typeof useTranslations<"cookieBanner">>) {
     description: (
       <span>
         {t("description")}
-        <Link
-          href={route("politica-de-privacitat")}
-          className="block underline mt-1"
-        >
+        <Link href="/politica-de-privacitat" className="block underline mt-1">
           {t("moreInfo")}
         </Link>
       </span>

@@ -18,7 +18,7 @@ export default function Error({
 
   return (
     <div>
-      <h2>{t("title")}</h2>
+      <h1>{t("title")}</h1>
       <button onClick={reset}>{t("retry")}</button>
     </div>
   );

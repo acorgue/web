@@ -3,8 +3,11 @@
 import rawOrgues from "@/database/orgues.json";
 import { matchFragments } from "@/lib/match-fragments";
 import { route } from "@/lib/route";
-import { sortedPosts } from "../(markdown)/noticies/posts";
-import { Orgue, OrguesEdifici } from "../(markdown)/orgues/orgueNavigation";
+import { sortedPosts } from "../[locale]/(markdown)/noticies/posts";
+import {
+  Orgue,
+  OrguesEdifici,
+} from "../[locale]/(markdown)/orgues/orgueNavigation";
 
 const orgues = rawOrgues.orgues.flatMap((provincia) =>
   provincia.comarques.flatMap(

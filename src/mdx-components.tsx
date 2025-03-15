@@ -22,7 +22,7 @@ function HeadingLink({
       {...props}
     >
       <Link
-        href={`#${strippedId}`}
+        href={{ hash: strippedId }}
         className="text-muted-foreground -ms-6 hover:text-black dark:hover:text-white transition-colors"
       >
         <Link2Icon className="size-4" />
