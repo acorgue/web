@@ -1,3 +1,4 @@
+import { routing } from "@/i18n/routing";
 import { existsSync } from "node:fs";
 import { readdir } from "node:fs/promises";
 import { join } from "node:path";
@@ -20,7 +21,10 @@ type MatchTuple = [string, string, string];
 
 const fileNameRegExp = /^(\d{4}-\d{2}-\d{2})-(.*?)\.mdx?$/;
 
-const postsDirectory = join(process.cwd(), "src/content/posts/ca");
+const postsDirectory = join(
+  process.cwd(),
+  `src/content/posts/${routing.defaultLocale}`,
+);
 export const posts = await getPosts(postsDirectory);
 
 export const sortedPosts = Object.values(posts).toSorted(
@@ -54,8 +58,9 @@ async function getPosts(directory: string) {
     }
     const [, date] = match;
 
-    const frontmatter = (await import(`/src/content/posts/ca/${fileName}`))
-      .frontmatter as MatterPostData;
+    const frontmatter = (
+      await import(`/src/content/posts/${routing.defaultLocale}/${fileName}`)
+    ).frontmatter as MatterPostData;
 
     return [
       frontmatter.slug,

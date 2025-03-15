@@ -2,7 +2,7 @@ import { ArticleCard } from "@/components/article-card";
 import { Scaffold } from "@/components/scaffold";
 import { TOC } from "@/components/toc";
 import { Badge } from "@/components/ui/badge";
-import { Link } from "@/i18n/routing";
+import { Link, routing } from "@/i18n/routing";
 import { route } from "@/lib/route";
 import { findMDXHeadings } from "@/mdx-components";
 import { CalendarIcon, UserIcon } from "lucide-react";
@@ -27,7 +27,9 @@ export default async function Page({
   const t = await getTranslations("metadata");
   const { slug } = await params;
   const post = posts[slug];
-  const Body = (await import(`/src/content/posts/ca/${post.fileName}`)).default;
+  const Body = (
+    await import(`/src/content/posts/${routing.defaultLocale}/${post.fileName}`)
+  ).default;
   const headings = findMDXHeadings(Body({}));
 
   return (

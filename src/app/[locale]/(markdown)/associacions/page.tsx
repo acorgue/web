@@ -1,5 +1,6 @@
 import { Scaffold } from "@/components/scaffold";
 import { TOC } from "@/components/toc";
+import { routing } from "@/i18n/routing";
 import { route } from "@/lib/route";
 import { findMDXHeadings } from "@/mdx-components";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -31,7 +32,12 @@ async function localizedMDX(locale: string) {
   try {
     return (await import(`./${locale}.mdx`)).default;
   } catch (error) {
-    console.error(error);
-    notFound();
+    console.log(`Defaulting to ${routing.defaultLocale}`, error);
+    try {
+      return (await import(`./${routing.defaultLocale}.mdx`)).default;
+    } catch (error) {
+      console.error(error);
+      notFound();
+    }
   }
 }
