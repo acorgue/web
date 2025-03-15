@@ -1,7 +1,8 @@
 import {
   OrgueNavigationData,
   OrgueNavigationProps,
-} from "@/app/(markdown)/orgues/orgueNavigation";
+} from "@/app/[locale]/(markdown)/orgues/orgueNavigation";
+import { LinkHref } from "@/i18n/routing";
 
 type OrgueParams = {
   provincia: string;
@@ -102,7 +103,7 @@ export function route<T extends keyof RouteBuilders>(
     baseURL,
   );
   url.search = new URLSearchParams(query).toString();
-  return url.pathname + url.search;
+  return (url.pathname + url.search) as LinkHref;
 }
 
 export function routeFromParams(orgue: OrgueNavigationProps) {

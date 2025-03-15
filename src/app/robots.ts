@@ -1,3 +1,4 @@
+import { baseURL } from "@/lib/route";
 import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
@@ -6,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.acorgue.cat/sitemap.xml",
+    sitemap: new URL("/sitemap.xml", baseURL).toString(),
   };
 }

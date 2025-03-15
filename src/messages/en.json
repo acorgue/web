@@ -1,0 +1,97 @@
+{
+  "cookieBanner": {
+    "accept": "Accept",
+    "decline": "Decline",
+    "description": "This website uses third party cookies (Google Analytics).",
+    "moreInfo": "More info",
+    "title": "Do you want to allow cookies?"
+  },
+  "copyButton": {
+    "copied": "Copied!",
+    "copy": "Copy"
+  },
+  "error": {
+    "retry": "Try again",
+    "title": "There has been an error"
+  },
+  "footer": {
+    "contactWithUs": "Contact us",
+    "joinUs": "Become a member",
+    "legal": "Legal",
+    "links": "Links"
+  },
+  "membership": {
+    "becomeAMember": "Become a member!",
+    "eachYear": "/year",
+    "forIndividualsAndEntities": "for individuals and entities",
+    "free": "Free",
+    "minor": "Minor",
+    "organStudent": "Organ student",
+    "regularMember": "Regular member",
+    "retired": "Retired",
+    "supportingMember": "Supporting member",
+    "under35": "under 35 years old"
+  },
+  "metadata": {
+    "aboutUs": "About us",
+    "aboutUsDescription": "The Catalan Organ Association (ACO) is a non-profit organization that aims to bring together all the elements that make up the world of organs in Catalonia.",
+    "associations": "Associations",
+    "associationsDescription": "Collection of the different associations that exist in Catalonia that have formed around the different organs. Friends of the organ.",
+    "concertSeriesShort": "Series",
+    "concertSeries": "Series «The Organs of Catalonia»",
+    "concertSeriesDescription": "The «Organs of Catalonia» series consists of a set of summer concerts that give voice to the different historical organs scattered throughout the Catalan territory, as well as a large number of renowned organists.",
+    "education": "Education",
+    "educationDescription": "Collection of music training centers in Catalonia that have organ classes at all levels, from elementary to intermediate or professional to advanced.",
+    "factSheet": "Newsletter",
+    "factSheetDescription": "The quarterly publication with the latest news exclusively for members.",
+    "home": "Home",
+    "legalNotice": "Legal notice",
+    "legalNoticeDescription": "Legal notice of the website.",
+    "news": "News",
+    "newsDescription": "News from the Catalan Organ Association.",
+    "pipeOrgans": "Pipe organs",
+    "pipeOrgansDescription": "Inventory of organs in Catalonia. Catalonia organ finder. Organs classified by organ builder, by constructor, by town, region, province and bishopric.",
+    "privacyPolicy": "Privacy policy",
+    "privacyPolicyDescription": "Privacy policy for using the website.",
+    "privacyPolicyMembers": "Become a member: privacy policy",
+    "privacyPolicyMembersDescription": "Privacy policy when becoming a member of the Catalan Organ Association.",
+    "references": "Bibliography",
+    "referencesDescription": "Collection of bibliography about the organs of Catalonia and about the organ in general."
+  },
+  "navbar": {
+    "associationsDescription": "Friends of the organs: associations to preserve and disseminate.",
+    "concertSeriesDescription": "Relive the sound of the past rediscovering our land.",
+    "educationDescription": "Centers and resources for organ training.",
+    "factSheetDescription": "The quarterly publication with the latest news exclusively for members.",
+    "news": "News",
+    "newsDescription": "The latest current notes in blog format.",
+    "pipeOrgansDescription": "Map of the organs of the principality in constant growth.",
+    "referencesDescription": "History, booklets, bibliography and music of Catalan organs.",
+    "resources": "Resources",
+    "toggleMenu": "Toggle menu"
+  },
+  "notFound": {
+    "backHome": "Back to home",
+    "subtitle": "You can always try again.",
+    "title": "We couldn't find the page you were looking for!"
+  },
+  "organization": {
+    "description": "The Catalan Organ Association (ACO) is a non-profit organization that aims to bring together all the elements that make up the world of organs in Catalonia.",
+    "name": "Associació Catalana de l’Orgue"
+  },
+  "profileMenu": {
+    "changeTheme": "Change theme",
+    "dark": "Dark",
+    "light": "Light",
+    "logOut": "Log out",
+    "memberSpace": "Member space",
+    "profile": "Profile",
+    "settings": "Settings",
+    "system": "System"
+  },
+  "searchBar": {
+    "noResults": "No results",
+    "search": "Search...",
+    "searchFull": "Search organs, concerts, news..."
+  }
+}

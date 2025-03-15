@@ -1,7 +1,7 @@
 import {
   orgueNavigation,
   OrgueRouteParams,
-} from "@/app/(markdown)/orgues/orgueNavigation";
+} from "@/app/[locale]/(markdown)/orgues/orgueNavigation";
 import { routeFromParams } from "@/lib/route";
 import { MapPinIcon } from "lucide-react";
 import { PropsWithChildren } from "react";
@@ -16,7 +16,7 @@ export function PipeOrganHoverCard({
   return (
     <HoverCard openDelay={500} closeDelay={100}>
       <HoverCardTrigger
-        href={routeFromParams(params)}
+        href={routeFromParams(params) as string}
         className="no-underline box-decoration-clone rounded-sm px-[4px] py-[2px] transition-colors text-aco bg-aco/20 hover:bg-aco/15"
       >
         {children}

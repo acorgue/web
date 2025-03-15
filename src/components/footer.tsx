@@ -1,3 +1,4 @@
+import { Link } from "@/i18n/routing";
 import { route } from "@/lib/route";
 import { cn } from "@/lib/utils";
 import {
@@ -7,7 +8,7 @@ import {
   TwitterIcon,
 } from "lucide-react";
 import { getTranslations } from "next-intl/server";
-import Link from "next/link";
+import NextLink from "next/link";
 import { PropsWithChildren } from "react";
 import { Button } from "./ui/button";
 
@@ -30,9 +31,16 @@ export async function Footer({ className }: { className?: string }) {
             </a>
           </address>
 
+          <Link
+            href={{
+              pathname: "/orgues/[provincia]/[comarca]",
+              params: { provincia: "", comarca: "" },
+            }}
+          ></Link>
+
           <Button asChild variant="secondary" size="sm">
             <Link
-              href={`${route("qui-som")}#com-fer-sen-soci`}
+              href={{ pathname: "/qui-som", hash: "com-fer-sen-soci" }}
               className="mt-2"
             >
               {t("footer.joinUs")}
@@ -118,10 +126,10 @@ function FooterHeading({ children }: Readonly<PropsWithChildren>) {
 function FooterListItem({
   className,
   ...props
-}: Readonly<React.ComponentPropsWithoutRef<typeof Link>>) {
+}: Readonly<React.ComponentPropsWithoutRef<typeof NextLink>>) {
   return (
     <li>
-      <Link
+      <NextLink
         className={cn(
           className,
           "text-primary-foreground/85 hover:text-primary-foreground transition-colors dark:text-aco-dark dark:hover:text-aco-dark/70",

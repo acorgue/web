@@ -1,6 +1,4 @@
-import ca from "./messages/ca.json";
-
-type Messages = typeof ca;
+type Messages = typeof import("./messages/ca.json");
 
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-empty-object-type

@@ -1,11 +1,12 @@
 import orgues from "@/database/orgues.json";
+import { LinkHref } from "@/i18n/routing";
 import { baseURL, route } from "@/lib/route";
 import type { MetadataRoute } from "next";
-import { sortedPosts } from "./(markdown)/noticies/posts";
-import { OrguesEdifici } from "./(markdown)/orgues/orgueNavigation";
+import { sortedPosts } from "./[locale]/(markdown)/noticies/posts";
+import { OrguesEdifici } from "./[locale]/(markdown)/orgues/orgueNavigation";
 
-function url(url: string) {
-  return new URL(url, baseURL).toString();
+function url(url: LinkHref) {
+  return new URL(url as string, baseURL).toString();
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
