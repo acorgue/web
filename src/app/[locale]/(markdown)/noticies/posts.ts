@@ -1,4 +1,5 @@
-import { readdirSync } from "node:fs";
+import { existsSync } from "node:fs";
+import { readdir } from "node:fs/promises";
 import { join } from "node:path";
 
 interface MatterPostData {
@@ -17,20 +18,33 @@ export interface PostData extends MatterPostData {
 
 type MatchTuple = [string, string, string];
 
-const postsDirectory = join(
-  process.cwd(),
-  "src/app/\[locale\]/(markdown)/noticies/_posts",
-);
 const fileNameRegExp = /^(\d{4}-\d{2}-\d{2})-(.*?)\.mdx?$/;
 
-export const posts = await getPosts();
+const postsDirectory = join(process.cwd(), "src/content/posts");
+export const posts = await getPosts(postsDirectory);
 
 export const sortedPosts = Object.values(posts).toSorted(
   (a, b) => +b.date - +a.date,
 );
 
-async function getPosts() {
-  const fileNames = readdirSync(postsDirectory);
+async function getPostsFiles(directory: string) {
+  if (!existsSync(directory)) {
+    console.error(`Posts directory not found: ${directory}`);
+
+    return [];
+  }
+
+  try {
+    return await readdir(directory);
+  } catch (error) {
+    console.error(error);
+
+    return [];
+  }
+}
+
+async function getPosts(directory: string) {
+  const fileNames = await getPostsFiles(directory);
   const postEntries = fileNames.map(async (fileName) => {
     const match = fileName.match(fileNameRegExp) as MatchTuple | null;
     if (!match) {
@@ -40,7 +54,7 @@ async function getPosts() {
     }
     const [, date] = match;
 
-    const frontmatter = (await import(`./_posts/${fileName}`))
+    const frontmatter = (await import(`/src/content/posts/${fileName}`))
       .frontmatter as MatterPostData;
 
     return [
