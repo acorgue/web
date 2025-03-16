@@ -32,11 +32,13 @@ async function localizedMDX(locale: string) {
   try {
     return (await import(`./${locale}.mdx`)).default;
   } catch (error) {
-    console.log(`Defaulting to ${routing.defaultLocale}`, error);
+    console.log(`Defaulting to ${routing.defaultLocale}`);
     try {
       return (await import(`./${routing.defaultLocale}.mdx`)).default;
     } catch (error) {
-      console.error(error);
+      if (error instanceof Error) {
+        console.log(error.stack);
+      }
       notFound();
     }
   }

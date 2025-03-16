@@ -13,7 +13,7 @@ export default function Error({
   const t = useTranslations("error");
 
   useEffect(() => {
-    console.error(error);
+    console.error(error.stack);
   }, [error]);
 
   return (
