@@ -4,7 +4,7 @@ import {
 } from "@/app/[locale]/(markdown)/orgues/orgueNavigation";
 import { routeFromParams } from "@/lib/route";
 import { MapPinIcon } from "lucide-react";
-import { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card";
 
 export function PipeOrganHoverCard({

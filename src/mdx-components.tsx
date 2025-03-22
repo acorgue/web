@@ -2,7 +2,12 @@ import { stripDiacritics } from "@/lib/strip-diacritics";
 import { Link2Icon } from "lucide-react";
 import type { MDXComponents } from "mdx/types";
 import Link from "next/link";
-import { Children, PropsWithChildren, ReactElement, ReactNode } from "react";
+import {
+  Children,
+  type PropsWithChildren,
+  type ReactElement,
+  type ReactNode,
+} from "react";
 import { baseURL } from "./lib/route";
 import { cn } from "./lib/utils";
 

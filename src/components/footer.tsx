@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import NextLink from "next/link";
-import { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 import { Button } from "./ui/button";
 
 export async function Footer({ className }: { className?: string }) {

@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { PropsWithChildren, ReactNode } from "react";
+import type { PropsWithChildren, ReactNode } from "react";
 import { PageBreadcrumb, PageBreadcrumbProps } from "./page-breadcrumb";
 
 export function Scaffold({

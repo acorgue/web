@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import ScrollSpy from "react-scrollspy-navigation";
 
 export function TOC({

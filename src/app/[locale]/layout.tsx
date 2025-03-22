@@ -17,7 +17,7 @@ import {
   setRequestLocale,
 } from "next-intl/server";
 import localFont from "next/font/local";
-import { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";

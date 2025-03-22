@@ -3,7 +3,7 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { FileIcon, FileTextIcon, PencilIcon } from "lucide-react";
 import Link from "next/link";
-import { PropsWithChildren, ReactNode } from "react";
+import type { PropsWithChildren, ReactNode } from "react";
 
 export function ProcedenciaDades() {
   return (

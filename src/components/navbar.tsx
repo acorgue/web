@@ -21,7 +21,7 @@ import {
 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
-import { ComponentProps, Fragment, ReactNode } from "react";
+import { type ComponentProps, Fragment, type ReactNode } from "react";
 import { ExternalLink } from "./external-link";
 
 export interface NavigationMenuProps {

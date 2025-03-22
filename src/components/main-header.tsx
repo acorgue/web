@@ -9,7 +9,7 @@ import { Link } from "@/i18n/routing";
 import { MenuIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { Navbar } from "./navbar";
 import { ProfileMenu } from "./profile-menu";
 import { SearchBar } from "./search-bar";

@@ -2,7 +2,7 @@ import orgues from "@/database/orgues.json" with { type: "json" };
 import { route } from "@/lib/route";
 import { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
-import { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 import { orgueNavigation } from "../../../orgueNavigation";
 import { OrguesComarcaParams } from "../layout";
 

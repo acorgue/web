@@ -2,7 +2,7 @@ import { orgueNavigation } from "@/app/[locale]/(markdown)/orgues/orgueNavigatio
 import { route } from "@/lib/route";
 import { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
-import { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 import { OrguesEdificiParams } from "../layout";
 
 export const dynamicParams = false;

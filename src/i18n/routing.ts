@@ -1,6 +1,6 @@
 import { createNavigation } from "next-intl/navigation";
 import { defineRouting } from "next-intl/routing";
-import { ComponentProps } from "react";
+import type { ComponentProps } from "react";
 
 export const routing = defineRouting({
   locales: ["ca", "en"],

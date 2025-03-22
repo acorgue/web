@@ -6,7 +6,7 @@ import { normalizeString } from "@/lib/normalize-string";
 import { cn } from "@/lib/utils";
 import { SearchIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { PropsWithChildren, useEffect, useState } from "react";
+import { type PropsWithChildren, useEffect, useState } from "react";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import {
