@@ -6,32 +6,13 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { DrawerWrapper } from "@/components/ui/drawer";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { baseURL, route } from "@/lib/route";
-import { cn } from "@/lib/utils";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import type { Metadata } from "next";
-import { hasLocale, NextIntlClientProvider } from "next-intl";
-import {
-  getMessages,
-  getTranslations,
-  setRequestLocale,
-} from "next-intl/server";
-import localFont from "next/font/local";
-import type { PropsWithChildren } from "react";
-
 import { routing } from "@/i18n/routing";
+import { baseURL, route } from "@/lib/route";
+import type { Metadata } from "next";
+import { hasLocale } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import "../globals.css";
-
-const fontSans = localFont({
-  src: [
-    { path: "../../../public/fonts/InterVariable.ttf", style: "normal" },
-    { path: "../../../public/fonts/InterVariable-Italic.ttf", style: "italic" },
-  ],
-  variable: "--font-sans",
-  display: "swap",
-  preload: true,
-});
+import type { PropsWithChildren } from "react";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -65,7 +46,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function RootLayout({
+export default async function Layout({
   children,
   params,
 }: Readonly<PropsWithChildren<{ params: Promise<{ locale: string }> }>>) {
@@ -76,30 +57,17 @@ export default async function RootLayout({
 
   setRequestLocale(locale);
 
-  const messages = await getMessages();
-
   return (
-    <html
-      lang={locale}
-      className={cn("scroll-smooth", fontSans.variable)}
-      suppressHydrationWarning
-    >
-      <body className="min-h-screen bg-background antialiased">
-        <SpeedInsights />
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <TooltipProvider delayDuration={100}>
-              <DrawerWrapper>
-                <MainHeader nav={<Navbar />} />
-                {children}
-                <Footer className="mt-24" />
-                <Toaster />
-                <CookieToast />
-              </DrawerWrapper>
-            </TooltipProvider>
-          </ThemeProvider>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <TooltipProvider delayDuration={100}>
+        <DrawerWrapper>
+          <MainHeader nav={<Navbar />} />
+          {children}
+          <Footer className="mt-24" />
+          <Toaster />
+          <CookieToast />
+        </DrawerWrapper>
+      </TooltipProvider>
+    </ThemeProvider>
   );
 }
