@@ -31,13 +31,6 @@ export async function Footer({ className }: { className?: string }) {
             </a>
           </address>
 
-          <Link
-            href={{
-              pathname: "/orgues/[provincia]/[comarca]",
-              params: { provincia: "", comarca: "" },
-            }}
-          ></Link>
-
           <Button asChild variant="secondary" size="sm">
             <Link
               href={{ pathname: "/qui-som", hash: "com-fer-sen-soci" }}
