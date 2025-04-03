@@ -126,6 +126,7 @@ function FooterListItem({
           className,
           "text-primary-foreground/85 hover:text-primary-foreground transition-colors dark:text-aco-dark dark:hover:text-aco-dark/70",
         )}
+        prefetch={false}
         {...props}
       />
     </li>
