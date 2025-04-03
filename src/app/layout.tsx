@@ -19,8 +19,16 @@ import "./globals.css";
 
 const fontSans = localFont({
   src: [
-    { path: "../../public/fonts/InterVariable.ttf", style: "normal" },
-    { path: "../../public/fonts/InterVariable-Italic.ttf", style: "italic" },
+    {
+      path: "../../public/fonts/InterVariable.ttf",
+      style: "normal",
+      weight: "100 900",
+    },
+    {
+      path: "../../public/fonts/InterVariable-Italic.ttf",
+      style: "italic",
+      weight: "100 900",
+    },
   ],
   variable: "--font-sans",
   display: "swap",
