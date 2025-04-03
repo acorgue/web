@@ -3,12 +3,13 @@ import { Scaffold } from "@/components/scaffold";
 import { TOC } from "@/components/toc";
 import { Badge } from "@/components/ui/badge";
 import { route } from "@/lib/route";
-import { findMDXHeadings } from "@/mdx-components";
+import { anchorClassName, findMDXHeadings } from "@/mdx-components";
 import { CalendarIcon, UserIcon } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
-import { posts, sortedPosts } from "../posts";
+import { PostData, posts, sortedPosts } from "../posts";
 import { PublicacioParams } from "./layout";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default async function Page({
   params,
@@ -81,6 +82,7 @@ export default async function Page({
           )}
           <Body />
         </section>
+        <AuthorSection post={post} />
       </article>
       <section>
         <h2>Últimes notícies</h2>
@@ -96,5 +98,35 @@ export default async function Page({
         </ul>
       </section>
     </Scaffold>
+  );
+}
+
+function AuthorSection({ post }: { post: PostData }) {
+  const authorPosts = sortedPosts.filter(
+    ({ slug, author }) => slug !== post.slug && author === post.author,
+  );
+  return (
+    <Card className="mt-4 border-none bg-muted">
+      <CardHeader>{post.author}</CardHeader>
+      {authorPosts.length > 0 ? (
+        <CardContent className="pb-4">
+          <h2 className="mt-2 text-sm uppercase tracking-wide">
+            Més notícies de l’autor
+          </h2>
+          <ul className="mb-0">
+            {authorPosts.map((post) => (
+              <li key={post.slug}>
+                <Link
+                  href={`/noticies/${post.slug}`}
+                  className={anchorClassName}
+                >
+                  {post.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </CardContent>
+      ) : null}
+    </Card>
   );
 }
