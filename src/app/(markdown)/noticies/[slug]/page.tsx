@@ -2,14 +2,14 @@ import { ArticleCard } from "@/components/article-card";
 import { Scaffold } from "@/components/scaffold";
 import { TOC } from "@/components/toc";
 import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { route } from "@/lib/route";
 import { anchorClassName, findMDXHeadings } from "@/mdx-components";
 import { CalendarIcon, UserIcon } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
-import { PostData, posts, sortedPosts } from "../posts";
-import { PublicacioParams } from "./layout";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { type PostData, posts, sortedPosts } from "../posts";
+import type { PublicacioParams } from "./layout";
 
 export default async function Page({
   params,
