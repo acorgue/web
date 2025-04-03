@@ -82,7 +82,7 @@ export default async function Page({
           )}
           <Body />
         </section>
-        <AuthorSection post={post} />
+        {post.author && <AuthorSection post={post} />}
       </article>
       <section>
         <h2>Últimes notícies</h2>
