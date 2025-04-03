@@ -43,7 +43,7 @@ function HeadingLink({
  */
 HeadingLink.displayName = "HeadingLink";
 
-const anchorClassNames =
+export const anchorClassName =
   "text-aco font-semibold no-underline hover:text-aco-dark transition-colors";
 
 function Anchor({
@@ -57,14 +57,14 @@ function Anchor({
     new URL(href).hostname === baseURL.hostname
   ) {
     return (
-      <a href={href} className={cn(className, anchorClassNames)} {...props} />
+      <a href={href} className={cn(className, anchorClassName)} {...props} />
     );
   }
 
   return (
     <a
       href={href}
-      className={cn(className, anchorClassNames, "after:content-['_↗']")}
+      className={cn(className, anchorClassName, "after:content-['_↗']")}
       target="_blank"
       rel="external nofollow noreferrer"
       {...props}
