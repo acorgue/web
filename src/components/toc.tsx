@@ -1,18 +1,52 @@
 "use client";
 
+import { cn } from "@/lib/utils";
+import type { HeadingElement } from "@/mdx-components";
 import type { ReactNode } from "react";
 import ScrollSpy from "react-scrollspy-navigation";
 
-export function TOC({
-  headings,
-}: Readonly<{ headings: { id: string; label: ReactNode }[] }>) {
+export interface TOCItem {
+  id: string;
+  heading: HeadingElement;
+  headings?: TOCItem[];
+  label: ReactNode;
+}
+
+export interface TOCProps {
+  headings: TOCItem[];
+}
+
+export function TOC({ headings }: Readonly<TOCProps>) {
+  function tocList(items: TOCItem[], className?: string) {
+    return (
+      <ol className={cn("flex flex-col gap-2", className)}>
+        {items.map((item) => tocListItem(item))}
+      </ol>
+    );
+  }
+
+  function tocListItem(item: TOCItem) {
+    return (
+      <li key={item.id} className="leading-tight flex flex-col gap-2">
+        <a
+          href={`#${item.id}`}
+          className="text-primary/80 hover:text-primary data-[active=true]:text-aco data-[active=true]:font-bold"
+        >
+          {item.label}
+        </a>
+        {item.headings?.length ? tocList(item.headings, "ps-4") : <></>}
+      </li>
+    );
+  }
+
   return (
     <ScrollSpy
       activeAttr
       rootMargin="180px"
       onClickEach={(e) => {
         const heading = (e.target as HTMLElement).getAttribute("href");
-        if (!heading || !/^#[a-z-]+$/.test(heading)) return;
+        console.log("hhhh", heading);
+        if (!heading || !/^#[0-9a-z-]+$/.test(heading)) return;
         window.location.href = heading;
       }}
     >
@@ -20,18 +54,7 @@ export function TOC({
         <header className="font-bold uppercase tracking-wide text-primary/60 mb-4">
           Taula de continguts
         </header>
-        <ul className="flex flex-col gap-2">
-          {headings.map(({ label, id }) => (
-            <li key={id} className="leading-tight">
-              <a
-                href={`#${id}`}
-                className="text-primary/80 hover:text-primary data-[active=true]:text-aco data-[active=true]:font-bold"
-              >
-                {label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        {tocList(headings)}
       </nav>
     </ScrollSpy>
   );

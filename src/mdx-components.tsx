@@ -4,24 +4,36 @@ import type { MDXComponents } from "mdx/types";
 import Link from "next/link";
 import {
   Children,
+  isValidElement,
+  type JSX,
   type PropsWithChildren,
   type ReactElement,
-  type ReactNode,
 } from "react";
 import { baseURL } from "./lib/route";
 import { cn } from "./lib/utils";
+import { TOCItem } from "./components/toc";
+
+export type HeadingElement = Extract<
+  "h1" | "h2" | "h3" | "h4" | "h5" | "h6",
+  keyof JSX.IntrinsicElements
+>;
+
+type HeadingLinkProps = {
+  heading?: HeadingElement;
+} & React.ComponentPropsWithoutRef<"h2">;
 
 function HeadingLink({
   id,
+  heading: Heading = "h2",
   children,
   ...props
-}: Readonly<React.ComponentPropsWithoutRef<"h2">>) {
+}: Readonly<HeadingLinkProps>) {
   if (!id) return <h2 {...props}>{children}</h2>;
 
   const strippedId = stripDiacritics(id);
 
   return (
-    <h2
+    <Heading
       id={strippedId}
       className="flex items-center gap-2 mt-[-60px] pt-[80px]"
       {...props}
@@ -33,15 +45,28 @@ function HeadingLink({
         <Link2Icon className="size-4" />
       </Link>
       {children}
-    </h2>
+    </Heading>
   );
 }
 
-/**
- * Aquesta assignació és necessària per identificar el component a producció determinísticament.
- * Vegeu {@link findMDXHeadings}.
- */
-HeadingLink.displayName = "HeadingLink";
+const H2 = (props: HeadingLinkProps) => <HeadingLink heading="h2" {...props} />;
+const H3 = (props: HeadingLinkProps) => <HeadingLink heading="h3" {...props} />;
+const H4 = (props: HeadingLinkProps) => <HeadingLink heading="h4" {...props} />;
+const H5 = (props: HeadingLinkProps) => <HeadingLink heading="h5" {...props} />;
+const H6 = (props: HeadingLinkProps) => <HeadingLink heading="h6" {...props} />;
+
+// Aquestes assignacions són necessàries per identificar el component a producció determinísticament.
+// Vegeu {@link findMDXHeadings}.
+H2.displayName = "h2";
+H3.displayName = "h3";
+H4.displayName = "h4";
+H5.displayName = "h5";
+H6.displayName = "h6";
+
+const availableHeadings = { h2: H2, h3: H3, h4: H4, h5: H5, h6: H6 };
+const headingNames = Object.values(availableHeadings).map(
+  (heading) => heading.displayName,
+);
 
 export const anchorClassName =
   "text-aco font-semibold no-underline hover:text-aco-dark transition-colors";
@@ -75,7 +100,7 @@ function Anchor({
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     a: Anchor,
-    h2: HeadingLink,
+    ...availableHeadings,
     ...components,
   };
 }
@@ -84,22 +109,44 @@ type MDXElementProps = PropsWithChildren<{ id: string }>;
 type NamedCallableFunction = CallableFunction & { displayName: string };
 
 export function findMDXHeadings(page: ReactElement<PropsWithChildren>) {
-  return (
-    Children.map(page.props.children, (element) => {
-      if (!element || !isReactElement<MDXElementProps>(element)) return;
-      if (
-        (element.type as unknown as NamedCallableFunction).displayName ===
-        "HeadingLink"
-      ) {
-        return {
-          id: stripDiacritics(element.props.id),
-          label: element.props.children,
-        };
-      }
-    })?.filter(Boolean) ?? []
-  );
-}
+  const toc: TOCItem[] = [];
+  const stack: TOCItem[] = [];
 
-function isReactElement<P>(element: ReactNode): element is ReactElement<P> {
-  return Boolean(element && (element as ReactElement).props);
+  const elements = Children.toArray(page.props.children);
+
+  for (const child of elements) {
+    if (!isValidElement<MDXElementProps>(child)) {
+      continue;
+    }
+
+    const heading = (child.type as unknown as NamedCallableFunction)
+      .displayName as HeadingElement;
+    if (!headingNames.includes(heading)) continue;
+
+    const item = {
+      id: stripDiacritics(child.props.id),
+      heading,
+      label: child.props.children,
+    };
+
+    const level = headingNames.indexOf(heading);
+
+    while (
+      stack.length > 0 &&
+      headingNames.indexOf(stack[stack.length - 1].heading) >= level
+    ) {
+      stack.pop();
+    }
+
+    if (stack.length === 0) {
+      toc.push(item);
+    } else {
+      const parent = stack[stack.length - 1];
+      (parent.headings ??= []).push(item);
+    }
+
+    stack.push(item);
+  }
+
+  return toc;
 }

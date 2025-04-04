@@ -8,7 +8,5 @@ export default async function Layout({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  return (
-    <div className="flex flex-col-reverse lg:flex-row flex-1">{children}</div>
-  );
+  return children;
 }

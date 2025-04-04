@@ -5,6 +5,8 @@ import { Scaffold } from "@/components/scaffold";
 import { route } from "@/lib/route";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { OrguesOrgueParams } from "./layout";
+import { TOC } from "@/components/toc";
+import { findMDXHeadings } from "@/mdx-components";
 
 export default async function Page({
   params,
@@ -17,6 +19,12 @@ export default async function Page({
   const t = await getTranslations("metadata");
   const { provincia, comarca, municipi, edifici, orgue } =
     orgueNavigation(navigation);
+
+  const Content = (
+    await import(
+      `/src/content/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}/${orgue.link}.md`
+    )
+  ).default;
 
   return (
     <Scaffold
@@ -61,6 +69,7 @@ export default async function Page({
         },
         { label: orgue.nom, position: 7 },
       ]}
+      aside={<TOC headings={findMDXHeadings(Content({}))} />}
     >
       <h1>
         {edifici.nom}
@@ -84,6 +93,7 @@ export default async function Page({
           }
         />
       </div>
+      <Content />
     </Scaffold>
   );
 }
