@@ -6,7 +6,7 @@ import { normalizeString } from "@/lib/normalize-string";
 import { cn } from "@/lib/utils";
 import { SearchIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { PropsWithChildren, useEffect, useState } from "react";
+import { type PropsWithChildren, useEffect, useState } from "react";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import {
@@ -104,7 +104,7 @@ export function SearchBar() {
               {group === "orgues"
                 ? items.map((item) => (
                     <SearchItemOrgue
-                      key={item.link}
+                      key={item.link as string}
                       query={query}
                       orgue={item}
                     />
@@ -152,7 +152,7 @@ function SearchItemOrgue({
   orgue: SearchResultOrgue;
 }) {
   return (
-    <SearchItem link={orgue.link}>
+    <SearchItem link={orgue.link as string}>
       <div className="w-full">
         <p className="line-clamp-2">
           <HighlightedText text={orgue.edifici.nom} query={query} />

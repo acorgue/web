@@ -1,4 +1,4 @@
-import { sortedPosts } from "@/app/(markdown)/noticies/posts";
+import { sortedPosts } from "@/app/[locale]/(markdown)/noticies/posts";
 import { Button } from "@/components/ui/button";
 import { DrawerClose } from "@/components/ui/drawer";
 import {
@@ -21,23 +21,22 @@ import {
 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
-import { Fragment, ReactNode } from "react";
+import { type ComponentProps, Fragment, type ReactNode } from "react";
 import { ExternalLink } from "./external-link";
 
 export interface NavigationMenuProps {
   isMobile?: boolean;
 }
 
-export interface MenuItem {
+export type MenuItem = {
   label: string;
-  href: string;
   items?: (MenuItem & {
     description?: string;
     icon?: ReactNode;
     date?: Date;
     isExternal?: boolean;
   })[];
-}
+} & Pick<ComponentProps<typeof Link>, "href">;
 
 export function Navbar({ isMobile }: Readonly<NavigationMenuProps>) {
   const t = useTranslations();
@@ -157,11 +156,9 @@ function DesktopNavigationMenu({
                   </NavigationMenuContent>
                 </>
               ) : (
-                <Link href={menuItem.href!} legacyBehavior passHref>
-                  <NavigationMenuLink className={triggerClassName}>
-                    {menuItem.label}
-                  </NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink asChild className={triggerClassName}>
+                  <Link href={menuItem.href!}>{menuItem.label}</Link>
+                </NavigationMenuLink>
               )}
             </NavigationMenuItem>
           </Fragment>
@@ -237,7 +234,7 @@ export function HighlightedMenuItems({
   return (
     <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] max-h-[calc(100vh-10rem)] overflow-y-auto">
       {items.map((item) => (
-        <Fragment key={item.href}>
+        <Fragment key={item.href as string}>
           <li className="row-span-3">
             <NavigationMenuLink asChild>
               <Link
@@ -258,7 +255,7 @@ export function HighlightedMenuItems({
           {"items" in item
             ? item.items?.map((item) => (
                 <NavigationMenuListItem
-                  key={item.href}
+                  key={item.href as string}
                   href={item.href}
                   title={item.label}
                   iconEnd={

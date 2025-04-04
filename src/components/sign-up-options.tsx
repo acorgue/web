@@ -11,7 +11,7 @@ import {
 import { cn } from "@/lib/utils";
 import { DownloadIcon, FileIcon, MailIcon, PencilIcon } from "lucide-react";
 import Link from "next/link";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 export function SignUpOptions() {
   return (

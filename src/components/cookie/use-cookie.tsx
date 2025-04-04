@@ -1,8 +1,6 @@
-import { route } from "@/lib/route";
+import { Link } from "@/i18n/routing";
 import { CookieIcon } from "lucide-react";
 import type { useTranslations } from "next-intl";
-import Link from "next/link";
-import { toast } from "sonner";
 
 const CONSENT_ACCEPTED_NAME = "isConsentAccepted";
 const CONSENT_ACCEPTED_TRUE = "yes";
@@ -29,16 +27,16 @@ function alreadyAnswered() {
   return Boolean(consentValue());
 }
 
-function showMessage(t: ReturnType<typeof useTranslations<"cookieBanner">>) {
+async function showMessage(
+  t: ReturnType<typeof useTranslations<"cookieBanner">>,
+) {
+  const { toast } = await import("sonner");
   toast.info(t("title"), {
     id: "cookie-consent",
     description: (
       <span>
         {t("description")}
-        <Link
-          href={route("politica-de-privacitat")}
-          className="block underline mt-1"
-        >
+        <Link href="/politica-de-privacitat" className="block underline mt-1">
           {t("moreInfo")}
         </Link>
       </span>

@@ -13,11 +13,11 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import Link from "next/link";
+import { Link, LinkHref } from "@/i18n/routing";
 import { Fragment } from "react";
 
 export interface BreadcrumbFragment {
-  href?: string;
+  href?: LinkHref;
   label: string;
   position: number;
 }
@@ -63,7 +63,7 @@ export function BreadcrumbFragment({
       itemType="https://schema.org/ListItem"
     >
       {fragment.href ? (
-        <BreadcrumbLink href={fragment.href} itemProp="item">
+        <BreadcrumbLink href={fragment.href as string} itemProp="item">
           <span itemProp="name">{fragment.label}</span>
         </BreadcrumbLink>
       ) : (
@@ -91,7 +91,7 @@ export function BreadcrumbCollapsedFragments({
         <DropdownMenuContent align="start">
           {fragments.map((fragment) => (
             <DropdownMenuItem
-              key={fragment.href}
+              key={fragment.href as string}
               itemProp="itemListElement"
               itemScope
               itemType="https://schema.org/ListItem"
