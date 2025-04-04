@@ -45,7 +45,6 @@ export function TOC({ headings }: Readonly<TOCProps>) {
       rootMargin="180px"
       onClickEach={(e) => {
         const heading = (e.target as HTMLElement).getAttribute("href");
-        console.log("hhhh", heading);
         if (!heading || !/^#[0-9a-z-]+$/.test(heading)) return;
         window.location.href = heading;
       }}

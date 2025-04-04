@@ -42,7 +42,7 @@ async function getPostsFiles(directory: string) {
     return await readdir(directory);
   } catch (error) {
     if (error instanceof Error) {
-      console.log(error.stack);
+      console.error(error.stack);
     }
 
     return [];
