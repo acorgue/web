@@ -7,8 +7,8 @@ import { Link, routing } from "@/i18n/routing";
 import { route } from "@/lib/route";
 import { anchorClassName, findMDXHeadings } from "@/mdx-components";
 import { CalendarIcon, UserIcon } from "lucide-react";
-import { getTranslations } from "next-intl/server";
-import { posts, sortedPosts } from "../posts";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { PostData, posts, sortedPosts } from "../posts";
 import { PublicacioParams } from "./layout";
 
 export default async function Page({
@@ -127,7 +127,10 @@ function AuthorSection({ post }: { post: PostData }) {
             {authorPosts.map((post) => (
               <li key={post.slug}>
                 <Link
-                  href={`/noticies/${post.slug}`}
+                  href={{
+                    pathname: "/noticies/[slug]",
+                    params: { slug: post.slug },
+                  }}
                   className={anchorClassName}
                 >
                   {post.title}
