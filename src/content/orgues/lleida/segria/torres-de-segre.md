@@ -1,0 +1,3 @@
+---
+layout: base/bc-municipi
+---

@@ -33,11 +33,11 @@ async function localizedMDX(locale: string) {
     return (await import(`./${locale}.mdx`)).default;
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
-    console.log(`Defaulting to ${routing.defaultLocale}`);
+    console.info(`Defaulting to ${routing.defaultLocale}`);
     try {
       return (await import(`./${routing.defaultLocale}.mdx`)).default;
     } catch (error) {
-      if (error instanceof Error) console.log(error.stack);
+      if (error instanceof Error) console.error(error.stack);
       notFound();
     }
   }
