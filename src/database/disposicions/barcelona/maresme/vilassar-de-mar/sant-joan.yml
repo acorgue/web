@@ -1,0 +1,79 @@
+constructor:
+  nom: Estadella, Gaietà
+  any: 1936
+
+# diapaso
+
+# temperament
+
+# estat
+
+# emplacament
+
+# transmissio
+
+composicio: 15, II/P
+
+teclats:
+  - nom: I. Orgue major (expressiu)
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Bordón
+        peus: 16'
+      - nom: Flautado
+        peus: 8'
+      - nom: Bordón
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Lleno
+        peus: 2'
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Recitatiu expressiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Flauta armónica
+        peus: 8'
+      - nom: Cor de Nuit
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Voz celeste
+        peus: 8'
+        partit: c-g'''
+      - nom: Octaviante
+        peus: 4'
+      - nom: Fagot y oboe
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "32 notes: C-g'"
+  registres:
+    - nom: Contrabajo
+      peus: 16'
+    - nom: Violoncello
+      peus: 8'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/I 4'
+  - nom: I/I 4'
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió I
+  - nom: Expressió II
+  - nom: Trémolo II
+  - nom: "Combinació fixa: Flautats I"
+  - nom: "Combinació fixa: Ple I"
+  - nom: "Combinació fixa: Trompeta I"
+  - nom: Tutti
+  - nom: Crescendo
+  - nom: Dues combinacions lliures

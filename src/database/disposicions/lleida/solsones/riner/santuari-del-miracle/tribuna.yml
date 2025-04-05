@@ -1,0 +1,67 @@
+# TODO diapaso temperatura
+
+constructor:
+  nom: Francesc (o Antoni?) Bordons
+  sort-nom: Bordons, Francesc (o Antoni?)
+  any: 1593
+
+actuacions:
+  - nom: Anònim
+    any: 1758
+    actuacio: AM
+    detalls: S’afegeixen baixons i clarins
+  - nom: Obradors, Pau
+    any: 1822
+    actuacio: RS
+    detalls: Restaura l’orgue malmesa pels soldats francesos el 1810
+  - nom: Grenzing, Gerhard
+    any: 2004
+    actuacio: RS
+
+diapaso:
+  nota: a'
+  frequencia: 418
+
+temperament: mesotònic modificat
+
+estat:
+  - any: 2006
+    nota: 4
+
+emplacament: sobre una capella lateral, al costat de l’Epístola
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 10, I
+
+teclats:
+  - nom: Manual
+    extensio: "45 notes: C,D,E,F,G,A-c'''"
+    registres:
+      - nom: Fusta
+        peus: 8'
+        partit: permanent de C-c'
+      - nom: Octava
+        peus: 4'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Ple [II]
+        partit: c'/cs'
+      - nom: Ple 12a [III]
+        partit: c'/cs'
+      - nom: Ple 15a (quinzena doble des de c)
+        peus: 2'
+      - nom: Corneta [IV]
+        partit: cs'-c'''
+      - nom: Baixons
+        peus: 4'
+        llengueta: true
+        partit: C-c'
+      - nom: Clarins
+        peus: 8'
+        llengueta: true
+        partit: cs'-c'''

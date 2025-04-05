@@ -1,0 +1,145 @@
+# TODo
+#  - construccio, reconstruccio de parts, agafa’t fort. no sé com apuntar-ho
+#  - el llibre i la web antiga no es posen d’acord.
+#  - informació del llibre
+
+constructor:
+  nom: Anònim
+  any: 1607
+
+actuacions:
+  - nom: Boscà i Serinyena, Josep
+    any: 1703
+    actuacio: TR, AM
+    detalls: Trasllat i construcció de l’orgue major, que quedà inacabat.
+  - nom: Boscà i Llorens, Antoni
+    any: 1750
+    detalls: AC
+  - nom: Vicens, Josep i Llorenç
+    sort-nom: Vicens, Josep i Llorenç
+    any: 1799
+    actuacio: treballs no especificats
+  - nom: Florenzano, Juan
+    any: 1889
+    actuacio: AM
+    detalls: -<
+      Allarga l’octava curta corresponent a la primera
+      octava dels teclats i amplia el cos de pedal deixant-lo
+      pràcticament com està actualment.
+  - nom: Blancafort-Capella Orgueners i Georges Lhôte
+    any: 1977
+    actuacio: RS, RC
+    detalls: -<
+      restauració i restabliment de l’orgue a l’especificat als contractes de 1703 i 1750.
+
+diapaso:
+  nota: a'
+  registre: Flautado de Cara 8'
+  frequencia: 443.1
+  temperatura: 20
+
+temperament: mesotònic
+
+estat:
+  - any: 2020
+    nota: 4
+
+emplacament: sobre una capella lateral, al costat de l’Epístola
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 28, II/C
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "42 notes: C,D,E,F,G,A-a''"
+    registres:
+      - nom: Flautado dulce
+        peus: 8'
+      - nom: Octava de cara
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Nazardo en 15a
+        peus: 2'
+      - nom: Nazardo en 17a
+        peus: 1 3/5'
+      - nom: Lleno III
+        peus: 2/3'
+      - nom: Cornetilla III
+        peus: 2 2/3'
+        partit: c'-a''
+      - nom: Regalia
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Orgue major
+    extensio: "45 notes: C,D,E,F,G,A-c'''"
+    registres:
+      - nom: Flautado violón
+        peus: 28 palmos
+      - nom: Flautado de cara
+        peus: 8'
+      - nom: Flauta brillante
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Nazardo en 12a
+        peus: 2 2/3'
+        partit: h/c'
+      - nom: Quincena
+        peus: 2'
+      - nom: Nazardo en 15a
+        peus: 2'
+        partit: h/c'
+      - nom: Nazardo en 17a
+        peus: 1 1/3'
+        partit: h/c'
+      - nom: Lleno IV-V
+        peus: 1 1/3'
+      - nom: Lleno III
+        peus: 2/3'
+      - nom: Lleno III-IV
+        peus: 1/2'
+      - nom: Corneta V
+        peus: 8'
+        partit: c'-c'''
+      - nom: Trompeta magna
+        peus: 16'
+        partit: c'-c'''
+        llengueta: true
+      - nom: Trompeta real
+        peus: 8'
+        partit: h/c'
+        llengueta: true
+      - nom: Bajones y clarín
+        peus: 4' y 8'
+        llengueta: true
+      - nom: Xeremia
+        peus: 2', 4' y 8'
+        llengueta: true
+
+pedal:
+  extensio: "12 notes: C-H"
+  registres:
+    - nom: Contres obertes II
+      peus: 16' i 8'
+    - nom: Bombarda
+      peus: 8'
+      llengueta: true
+    - nom: Bajón
+      peus: 4'
+      llengueta: true
+    - nom: Clarín
+      peus: 2'
+      llengueta: true
+
+acoblaments:
+  - nom: II/P
+    partit: permanent
+
+efectes:
+  - nom: Pajarillo
+    falta: true

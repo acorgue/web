@@ -1,0 +1,95 @@
+constructor:
+  nom: Aragonès, Francesc
+  any: 1910
+
+actuacions:
+  - nom: L’Om-Arrizabalaga Orgueners
+    sort-nom: OM-Arrizabalaga
+    any: 1997
+    actuacio: RS
+
+diapaso:
+  nota: a'
+  frequencia: 438.6
+  temperatura: 23
+  registre: Octava
+
+temperament: igual
+
+estat:
+  - any: 2024
+    nota: 4
+
+emplacament: al fons de la nau, al cor
+
+transmissio:
+  notes: mecànica
+  registres: pneumàtica
+
+composicio: 16, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Violón
+        peus: 16’
+      - nom: Flauta armónica
+        peus: 8’
+      - nom: Violón
+        peus: 8’
+        partit: C-H prestat de Violón 16′
+      - nom: Octava
+        peus: 4’
+      - nom: Octavín
+        peus: 2’
+      - nom: Lleno III
+        peus: 2'
+      - nom: Trompeta real
+        peus: 8’
+        llengueta: true
+      - nom: Bajoncillo y clarín
+        peus: 4’|8’
+        llengueta: true
+        partit: h|c'
+
+  - nom: II. Recitatiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flauta dulce
+        peus: 8’
+      - nom: Violón
+        peus: 8’
+      - nom: Gamba
+        peus: 8’
+      - nom: Voz celeste
+        peus: 8’
+      - nom: Undamaris II
+        peus: 8’
+        partit: sense tubs propis
+      - nom: _Flauta cònica_
+        peus: 4’
+        partit: vegeu les notes
+      - nom: Voz humana
+        peus: 8’
+        llengueta: true
+      - nom: Fagot y oboe
+        peus: 8’
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Sense registres propis
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió general
+  - nom: Tremolo II
+  - nom: Dues combinacions fixes
+  - nom: Tempesta
+  - nom: Avís del manxaire

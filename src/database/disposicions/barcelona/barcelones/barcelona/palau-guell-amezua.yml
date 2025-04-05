@@ -1,0 +1,89 @@
+historic: true
+
+constructor:
+  nom: Amezua, Aquilino
+  any: 1890
+  opus: 151
+
+# diapaso
+
+temperament: igual
+
+# estat
+# desaparegut
+
+# emplacament
+emplacament: saló central del palau
+
+transmissio:
+  notes: mecànica
+  registres: pneumàtica (probablement)
+
+composicio: 17, II/P
+
+teclats:
+  - nom: I. Gran orgue
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 16'
+      - nom: Flautat
+        peus: 8'
+      - nom: Flauta harmònica
+        peus: 8'
+      - nom: Flauta xemeneia
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Trompeta harmònica
+        peus: 8'
+        llengueta: true
+      - nom: Clarí harmònic
+        peus: 4'
+        llengueta: true
+
+  - nom: II. Expressiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flauta travessera
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+      - nom: Viola de gamba
+        peus: 8'
+      - nom: Veus celestes
+        peus: 8'
+        partit: c-g'''
+      - nom: Flauta octaviant
+        peus: 4'
+      - nom: Octaví harmònic
+        peus: 2'
+      - nom: Fagot i oboè
+        peus: 8'
+        llengueta: true
+      - nom: Veu humana
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contres
+      peus: 16'
+    - nom: Contres
+      peus: 8'
+      partit: probablement per extensió
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió II
+  - nom: Trèmol II
+  - nom: Trèmol I
+  - nom: Anul·lador de llengüeteria del II
+  - nom: Anul·lador de llengüeteria del I

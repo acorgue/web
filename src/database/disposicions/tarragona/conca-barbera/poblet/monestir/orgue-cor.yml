@@ -1,0 +1,75 @@
+# TODO actuacions! O. Laguna el va acabar, no sé quin any
+
+constructor:
+  nom: Castro, Joan Carles
+  any: 2018
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: al cor de l’altar, al costat de l’Epístola
+
+# transmissio
+
+composicio: 11, II/P
+
+teclats:
+  - nom: I. Grand-Orgue
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bourdon
+        peus: 16'
+      - nom: Montre
+        peus: 8'
+      - nom: Flûte harmonique
+        peus: 8'
+      - nom: Cor de chamois
+        peus: 8'
+      - nom: Prestant
+        peus: 4'
+      - nom: Doublette/Plein-Jeu
+        peus: 2’/III
+
+  - nom: II. Récit expressif
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Viole
+        peus: 8'
+      - nom: Cor de nuit
+        peus: 8'
+      - nom: Flûte octaviante
+        peus: 4'
+      - nom: Flageolet
+        peus: 2'
+      - nom: Basson-Hautbois
+        peus: 8'
+        llengueta: true
+
+pedal:
+  nom: Pedale
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Soubasse (GO)
+      peus: 16'
+    - nom: Basse (Ext.)
+      peus: 8'
+    - nom: Flûte (Ext.)
+      peus: 4'
+    - nom: Basson (Rec)
+      peus: 8'
+      llengueta: true
+
+acoblaments:
+  - nom: II/I
+  - nom: II/I 16'
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió II
+  - nom: Trémblant II

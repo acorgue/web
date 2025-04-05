@@ -1,0 +1,52 @@
+constructor:
+  nom: Aragonès, Salvador
+  any: 1952
+
+# diapaso
+
+# temperament
+
+# estat:
+
+# emplacament:
+
+transmissio:
+  notes: mecànica amb parts pneumàtiques
+  registres: mecànica
+
+composicio: 4, I/P
+
+teclats:
+  - nom: Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+        partit: h/c'
+      - nom: Principal
+        peus: 4'
+        partit: h/c'
+      - nom: Queralofó
+        peus: 4'
+      - nom: Octaví
+        peus: 2'
+        partit: h/c'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Bordó
+      peus: 8'
+      partit: préstec del Bordó de manual
+    - nom: Octava Bordó
+      peus: 4'
+      partit: extensió
+    - nom: Principal
+      peus: 4'
+      partit: préstec del Principal de manual
+    - nom: Octava Principal
+      peus: 2'
+      partit: extensió
+
+efectes:
+  - nom: Expressió

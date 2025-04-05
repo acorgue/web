@@ -1,0 +1,87 @@
+# TODO diapasó -temperatura
+
+constructor:
+  nom: Amezua, Aquilino
+  any: 1898
+
+actuacions:
+  - nom: Alberdi, Lope
+    any: 1911
+  - nom: Alberdi, Lope
+    sort-any: 1932
+    any: ca. 1930
+  - nom: Alberdi, Lope
+    any: 1941
+
+# diapaso
+
+temperament: igual
+
+estat:
+  - any: 2023
+    nota: 3
+
+emplacament: al cor, sobre l’entrada principal
+
+# transmissio
+
+composicio: 15, II/P
+
+# TODO segur que els registres estan traduïts!
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Violons
+        peus: 16'
+      - nom: Flautats
+        peus: 8'
+      - nom: Flautes harmòniques
+        peus: 8'
+      - nom: Violons
+        peus: 8'
+      - nom: Octaves
+        peus: 4'
+      - nom: Plens III
+        peus: 2 2/3'
+      - nom: Trompetes reals
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Positiu expressiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Corns de nit
+        peus: 8'
+      - nom: Violes de gamba
+        peus: 8'
+      - nom: Veus cèliques
+        peus: 8'
+        partit: c-g'''
+      - nom: Ocarines
+        peus: 4'
+      - nom: Contrafagots
+        peus: 16'
+        llengueta: true
+      - nom: Fagots i oboès
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "27 notes: C-d'"
+  registres:
+    - nom: Subbaixos
+      peus: 16'
+    - nom: Contrabaixos
+      peus: 8'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió general
+  - nom: Expressió II
+  - nom: Trèmol general
+  - nom: Avís del manxaire

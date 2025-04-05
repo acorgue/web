@@ -1,0 +1,52 @@
+constructor:
+  nom: Blancafort-Capella Orgueners
+  any: 1970
+
+# diapaso
+
+# temperament
+
+# estat
+
+# emplacament
+
+# transmissio
+
+composicio: 9, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "51 notes: C-d'''"
+    registres:
+      - nom: Flauta
+        peus: 8'
+      - nom: Cara
+        peus: 4'
+      - nom: Flabiolets
+        peus: 2'
+      - nom: Plens
+        peus: 1'
+
+  - nom: II. Orgue d’eco
+    extensio: "51 notes: C-d'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Nasard XII
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contres
+      peus: 16'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+

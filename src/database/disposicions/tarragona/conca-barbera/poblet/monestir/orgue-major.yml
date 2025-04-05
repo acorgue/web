@@ -1,0 +1,171 @@
+constructor:
+  nom: Metzler Orgelbau AG
+  any: 2012
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: sobre l’entrada principal, en una tribuna dedicada
+
+transmissio:
+  notes: mecànica
+  registres: mecànica i elèctrica
+
+composicio: 56, III/P
+
+teclats:
+  - nom: I. Rückpositiv
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Prestant
+        peus: 8'
+      - nom: Quintade
+        peus: 8'
+      - nom: Bourdon
+        peus: 8'
+      - nom: Octave
+        peus: 4'
+      - nom: Rohrflöte
+        peus: 4'
+      - nom: Nasard
+        peus: 2 2/3'
+      - nom: Doublette
+        peus: 2'
+      - nom: Terz
+        peus: 1 3/5'
+      - nom: Larigot
+        peus: 1 1/3'
+      - nom: Sesquialter II
+      - nom: Scharf IV
+      - nom: Trompete
+        peus: 8'
+        llengueta: true
+      - nom: Cromorne
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Hauptwerk
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Prestant
+        peus: 16'
+      - nom: Bourdon
+        peus: 16'
+      - nom: Principal
+        peus: 8'
+      - nom: Viola
+        peus: 8'
+      - nom: Rohrflöte
+        peus: 8'
+      - nom: Octave
+        peus: 4'
+      - nom: Holzflöte
+        peus: 4'
+      - nom: Quinte
+        peus: 2 2/3'
+      - nom: Superoctave
+        peus: 2'
+      - nom: Mixtur major IV
+      - nom: Mixtur minor III
+      - nom: Cornet V
+      - nom: Fagott
+        peus: 16'
+        llengueta: true
+      - nom: Trompette
+        peus: 8'
+        llengueta: true
+      - nom: Clairon
+        peus: 4'
+        llengueta: true
+
+  - nom: III. Unterwerk
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Gambe
+        peus: 8'
+      - nom: Unda maris
+        peus: 8'
+      - nom: Hohlflöte
+        peus: 8'
+      - nom: Holzgedackt
+        peus: 8'
+      - nom: Prestant
+        peus: 4'
+      - nom: Salicet
+        peus: 4'
+      - nom: Traversflöte
+        peus: 4'
+      - nom: Octave
+        peus: 2'
+      - nom: Waldflöte
+        peus: 2'
+      - nom: Sifflöte
+        peus: 1'
+      - nom: Cornett III
+      - nom: Zimbel III
+      - nom: Oboe
+        peus: 8'
+        llengueta: true
+      - nom: Vox humana
+        peus: 8'
+        llengueta: true
+      - nom: Trompeta
+        partit: en batalla
+        peus: 8'
+        llengueta: true
+      - nom: Clarín
+        partit: en batalla
+        peus: 4'
+        llengueta: true
+
+pedal:
+  nom: Pedalwerk
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Untersatz
+      peus: 32'
+    - nom: Principalbass
+      peus: 16'
+    - nom: Subbass
+      peus: 16'
+    - nom: Octavbass
+      peus: 8'
+    - nom: Violabass (HW)
+      peus: 8'
+    - nom: Choralbass
+      peus: 4'
+    - nom: Bauernflöte
+      peus: 2'
+    - nom: Rauschpfeife V
+    - nom: Bombarde
+      peus: 16'
+      llengueta: true
+    - nom: Fagott (HW)
+      peus: 16'
+      llengueta: true
+    - nom: Trompete
+      peus: 8'
+      llengueta: true
+    - nom: Trompete
+      peus: 4'
+      llengueta: true
+
+acoblaments:
+  - nom: I/II
+  - nom: III/II
+  - nom: III/P
+  - nom: III/P 4'
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Tremulant III
+  - nom: Tremulant II
+  - nom: Tremulant I
+  - nom: Rossignol III
+  - nom: Zimbelstern I

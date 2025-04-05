@@ -1,0 +1,136 @@
+constructor:
+  nom: Organería Española, SA
+  sort-nom: Organería Española, SA
+  any: 1960
+
+# diapaso
+
+# temperament
+
+# estat
+
+# emplacament
+
+# transmissio
+
+# TODO fa pudor de préstecs i extensions
+composicio: 38, III/P
+
+teclats:
+  - nom: I. Gran órgano
+    # TODO extensio
+    registres:
+      - nom: Violón
+        peus: 16'
+      - nom: Principal
+        peus: 8'
+      - nom: Flauta
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Tapadillo
+        peus: 4'
+      - nom: Docena
+        peus: 2 2/3'
+      - nom: Lleno IV-V
+      - nom: Corneta VI
+      - nom: Trompeta de batalla
+        peus: 8'
+        llengueta: true
+      - nom: Bajoncillo y clarín
+        peus: 4' y 8'
+        llengueta: true
+
+  - nom: II. Positivo
+    registres:
+      - nom: Quintadena
+        peus: 8'
+      - nom: Chimenea
+        peus: 8'
+      - nom: Violón
+        peus: 4'
+      - nom: Quincena
+        peus: 2'
+      - nom: Nazardo
+        peus: 1 1/3'
+      - nom: Címbala III
+      - nom: Cromorno
+        peus: 8'
+        llengueta: true
+
+  - nom: III. Recitativo
+    registres:
+      - nom: Quintadena
+        peus: 16'
+      - nom: Flauta campana
+        peus: 8'
+      - nom: Corno
+        peus: 8'
+      - nom: Celeste
+        peus: 8'
+      - nom: Principal
+        peus: 4'
+      - nom: Flauta
+        peus: 4'
+      - nom: Flautín
+        peus: 2'
+      - nom: Lleno II
+      - nom: Lleno V-VI
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Oboe
+        peus: 8'
+        llengueta: true
+
+pedal:
+  registres:
+    - nom: Subajo
+      peus: 16'
+      partit: préstec del Violón I
+    - nom: Flautado
+      peus: 16'
+    - nom: Quintadena
+      peus: 16'
+      partit: préstec de la Quintadena III
+    - nom: Contras
+      peus: 8'
+    - nom: Violón
+      peus: 8'
+    - nom: Principal
+      peus: 4'
+    - nom: Lleno IV
+    - nom: Fagot
+      peus: 16'
+      llengueta: true
+    - nom: Trompeta
+      peus: 8'
+      llengueta: true
+    - nom: Chirimía
+      peus: 4'
+      llengueta: true
+
+acoblaments:
+  - nom: III/II
+  - nom: III/I
+  - nom: II/I
+  - nom: III/I 4'
+  - nom: III/P
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió III
+  - nom: Trémolo III
+  - nom: Trémolo II
+  - nom: Exclusión de 16'
+  - nom: Exclusión de mixturas
+  - nom: Exclusión de lengüetería
+  - nom: "Combinació fixa: Suave 8'"
+  - nom: "Combinació fixa: Fuerte 8'"
+  - nom: "Combinació fixa: Corneta"
+  - nom: "Combinació fixa: Llenos"
+  - nom: "Combinació fixa: Lengüetas 8'"
+  - nom: "Combinació fixa: Lengüetas 16', 8' y 4'"
+  - nom: 3 combinacions fixes
+  - nom: Tutti

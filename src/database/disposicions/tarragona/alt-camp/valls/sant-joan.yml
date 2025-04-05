@@ -1,0 +1,225 @@
+constructor:
+  nom: Grenzing, Gerhard
+  any: 2021
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: en una capella lateral, a peu de nau, al costat de l’Evangeli
+
+transmissio:
+  notes: mecànica
+  registres: elèctrica
+
+composicio: 19, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat major
+        peus: 16'
+      - nom: Bordó major
+        peus: 16'
+        partit: préstec del Bordó major III
+        falta: true
+      - nom: Flautat
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+      - nom: Flauta harmònica
+        peus: 8'
+        partit: C-H préstec del Bordó
+      - nom: Octava
+        peus: 4'
+      - nom: Flauta
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Dotzena
+        peus: 2 2/3'
+        falta: true
+      - nom: Ple IV
+        peus: 2'
+      - nom: Tuba
+        peus: 16'
+        llengueta: true
+      - nom: Trompeta real
+        peus: 8'
+        partit: extensió de la Tuba
+        llengueta: true
+      - nom: Trompeta de batalla
+        peus: 16'
+        partit: C-H préstec de la Tuba; extensió de la Trompeta de batalla 8'
+        falta: true
+        llengueta: true
+      - nom: Trompeta de batalla
+        peus: 8'
+        llengueta: true
+        falta: true
+      - nom: Baixons/Trompeta magna
+        peus: 4' i 16'
+        partit: extensió de la Trompeta de batalla 8'
+        falta: true
+      - nom: Gralla
+        peus: 8'
+        partit: en batalla
+
+  - nom: II. Positiu expressiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flauta catalana
+        peus: 8'
+        falta: true
+      - nom: Flauta travessera
+        peus: 8'
+        falta: true
+      - nom: Bordó
+        peus: 8'
+        falta: true
+      - nom: Gamba
+        peus: 8'
+        falta: true
+      - nom: Ona marina
+        peus: 8'
+        falta: true
+      - nom: Octava
+        peus: 4'
+        falta: true
+      - nom: Tapadet
+        peus: 4'
+        falta: true
+      - nom: Dotzena
+        peus: 2 2/3'
+        falta: true
+      - nom: Quinzena
+        peus: 2'
+        falta: true
+      - nom: Dissetena
+        peus: 1 3/5'
+        falta: true
+      - nom: Veu humana/regalia
+        peus: 8'
+        falta: true
+      - nom: Tenora
+        peus: 8'
+        falta: true
+  - nom: III. Expressiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó major
+        peus: 16'
+        falta: true
+      - nom: Corn de nit
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+      - nom: Viola
+        peus: 8'
+        falta: true
+      - nom: Veu celeste
+        peus: 8'
+        partit: c-g'''
+        falta: true
+      - nom: Fúgara
+        peus: 4'
+        falta: true
+      - nom: Flauta octaviant
+        peus: 4'
+      - nom: Nasard
+        peus: 2 2/3'
+      - nom: Flautí
+        peus: 2'
+      - nom: Nasard
+        peus: 1 3/5'
+      - nom: Progressió IV
+      - nom: Fagot
+        peus: 16'
+        falta: true
+      - nom: Trompeta harmònica
+        peus: 8'
+        falta: true
+      - nom: Oboè
+        peus: 8'
+        partit: extensió del Fagot
+        falta: true
+      - nom: Clarí
+        peus: 4'
+        partit: extensió de la Trompeta harmònica
+        falta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contres obertes
+      peus: 16'
+    - nom: Bordó dolç
+      peus: 16'
+      partit: préstec del Bordó major III
+      falta: true
+    - nom: Subbaix
+      peus: 16'
+    - nom: Contres
+      peus: 8'
+    - nom: Violoncel
+      peus: 8'
+      partit: préstec del Salicional
+      falta: true
+    - nom: Baix
+      peus: 8'
+      partit: extensió del Subbaix
+    - nom: Coral
+      peus: 4'
+      partit: extensió de les Contres
+      falta: true
+    - nom: Bombarda
+      peus: 16'
+      partit: préstec de la Tuba
+      llengueta: true
+    - nom: Fagot
+      peus: 16'
+      partit: préstec del Fagot III
+      falta: true
+      llengueta: true
+    - nom: Trompeta
+      peus: 8'
+      partit: extensió de la Tuba
+      llengueta: true
+    - nom: Trompeta de batalla
+      peus: 8'
+      partit: préstec de la Trompeta de batalla I
+      falta: true
+      llengueta: true
+    - nom: Clarins
+      peus: 4'
+      partit: extensió de la Trompeta de batalla I
+      llengueta: true
+
+acoblaments:
+  - nom: III/II
+    partit: elèctric
+  - nom: III/I
+    partit: mecànic
+  - nom: III/I 16'
+    partit: elèctric
+  - nom: II/I
+    partit: elèctric
+  - nom: III/P
+    partit: elèctric
+  - nom: II/P
+    partit: elèctric
+  - nom: I/P
+    partit: elèctric
+
+efectes:
+  - nom: Expressió II
+    falta: true
+  - nom: Expressió III
+  - nom: Trèmol II
+    falta: true
+  - nom: Trèmol III

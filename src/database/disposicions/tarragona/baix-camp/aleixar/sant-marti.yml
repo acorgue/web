@@ -1,0 +1,103 @@
+# revisat amb el llibre de Vergés
+
+constructor:
+  nom: Ferrer, Joan Baptista
+  any: 1735
+
+actuacions:
+  - nom: Grenzing, Gerhard
+    any: 1986
+    actuacio: RC
+
+temperament: mesotònic d'1/4 de coma modificat
+
+diapaso:
+  nota: a'
+  frequencia: 440
+  temperatura: 22
+
+estat:
+  - any: 2017
+    estat: En bon funcionament
+    nota: 4
+
+emplacament: Lateral, costat de l’Evangeli
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 19, II/C
+
+teclats:
+  - nom: I. Eco
+    extensio: "24 notes: cs'-c'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Violins
+        peus: 8'
+
+  - nom: II. Orgue major
+    extensio: "45 notes: C,D,E,F,G,A,B-c'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+        partit: c'/cs'
+      - nom: Flautat de cara
+        peus: 8'
+        partit: c'/cs'
+      - nom: Octava
+        peus: 4'
+        partit: c'/cs'
+      - nom: Dotzena llarga
+        peus: 2 2/3'
+        partit: c'/cs'
+      - nom: Nazard en 12a
+        peus: 2 2/3'
+        partit: c'/cs'
+      - nom: Nazard en 15a
+        peus: 2'
+        partit: c'/cs'
+      - nom: Nazard en 17a
+        peus: 1 3/5'
+        partit: c'/cs'
+      - nom: Quinzena
+        peus: 2'
+        partit: c'/cs'
+      - nom: Dinovena
+        peus: 1 1/3'
+        partit: c'/cs'
+      - nom: Vint-i-dosena
+        peus: 1'
+        partit: C-c'
+      - nom: Vint-i-sisena
+        peus: 2/3'
+        partit: cs'-c'''
+      - nom: Plens IV
+      - nom: Cimbalet III
+        partit: c'/cs'
+      - nom: Corneta V
+        partit: cs'-c'''
+      - nom: Baixons
+        peus: 4'
+        partit: C-c'; en batalla
+        llengueta: true
+      - nom: Clarins
+        peus: 8'
+        partit: cs'-c'''; en batalla
+        llengueta: true
+
+pedal:
+  extensio: "8 notes: C,D,E,F,G,A-H"
+  registres:
+    - nom: Permanentment acoblat al II
+    - nom: Contres
+      peus: 8'+4'
+      partit: permanents
+
+efectes:
+  - nom: Trèmul
+  - nom: Tabal
+  - nom: Moixons
+  - nom: Expressió I

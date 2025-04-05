@@ -1,0 +1,37 @@
+constructor:
+  nom: Aragonès, Salvador
+  any: 1951
+
+# diapaso
+
+# temperament
+
+# estat:
+
+# emplacament:
+
+transmissio:
+  notes: mecànica amb parts pneumàtiques
+  registres: mecànica
+
+composicio: 4, I
+
+teclats:
+  - nom: Manual
+    extensio: "49 notes: C-c'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+        partit: h/c'
+      - nom: Principal
+        peus: 4'
+        partit: h/c'
+      - nom: Quinzena
+        peus: 2'
+        partit: C-h
+      - nom: Nasard
+        peus: 2 2/3'
+        partit: c'-c'''
+
+efectes:
+  - nom: Trèmol

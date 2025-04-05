@@ -1,0 +1,59 @@
+constructor:
+  nom: Perez Molero, Manuel
+  any: 1719
+
+actuacions:
+  - any: 2005
+    nom: Grenzing, Gerhard
+    actuacio: RS
+
+diapaso:
+  nota: a'
+  frequencia: 419
+  # temperatura!
+
+# temperament:
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: sala dels teclats
+
+transmissio:
+  notes: mecànica
+  registres: mecància
+
+composicio: 7, I
+
+teclats:
+  - nom: Manual
+    extensio: "45 notes: C,D,E,F,G,A-c'''"
+    registres:
+      - nom: Octava
+        peus: 4'
+        partit: c'/cs'
+      - nom: Tapadillo
+        peus: 4'
+        partit: c'/cs'
+      - nom: Quinzena
+        peus: 2'
+        partit: c'/cs'
+      - nom: Lleno IV
+        peus: 1' / 2'
+        partit: c'/cs'
+      - nom: Decinovena
+        peus: 1 1/3'
+        partit: C-c'
+      - nom: Ventidocena
+        peus: 1'
+        partit: C-c'
+      - nom: Violón
+        peus: 8'
+        partit: cs'-c'''
+      - nom: Docena
+        peus: 2 2/3'
+        partit: cs'-c'''
+      - nom: Corneta IV
+        peus: 4'
+        partit: cs'-c'''

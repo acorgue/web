@@ -1,0 +1,125 @@
+constructor:
+  nom: Acitores Organería y Arte, SL
+  sort-nom: Acitores Organería y Arte, SL
+  any: 2015
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2022
+    estat: en bon funcionament
+
+emplacament: al costat dret de l’altar
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 28, III/P
+
+teclats:
+  - nom: I. Orgue positiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Flabiol
+        peus: 2'
+      - nom: Nasard 17a
+        peus: 1 3/5'
+      - nom: Dinovena
+        peus: 1 1/3'
+      - nom: Cromorn
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Flauta de xemeneies
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Bordonet
+        peus: 4'
+      - nom: Dotzena
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Plens III-IV
+        peus: 1 1/3'
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+
+  - nom: III. Recitatiu-expressiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flauta de concert
+        peus: 8'
+      - nom: Cor de nit
+        peus: 8'
+      - nom: Viola de gamba
+        peus: 8'
+      - nom: Veu celeste
+        peus: 8'
+        partit: c-g'''
+      - nom: Salicet
+        peus: 4'
+      - nom: Flauta dolça
+        peus: 4'
+      - nom: Flageolet
+        peus: 2'
+      - nom: Oboè
+        peus: 8'
+        llengueta: true
+      - nom: Tenora
+        peus: 8'
+        partit: f-c''; c-c'' en batalla
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+    - nom: Violoncel
+      peus: 8'
+    - nom: Baix tapat
+      peus: 8'
+      partit: extensió del Subbaix
+    - nom: Tenor
+      peus: 4'
+      partit: extensió del Violoncel
+    - nom: Fagot
+      peus: 16'
+      llengueta: true
+    - nom: Trompeta
+      peus: 8'
+      llengueta: true
+      partit: extensió del Fagot
+
+acoblaments:
+  - nom: III/II
+  - nom: III/I
+  - nom: I/II
+  - nom: III/P
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió III
+  - nom: Regulació del trèmolo de la Tenora
+  - nom: Trèmolo III
+  - nom: Trèmolo dolç I
+  - nom: Trèmolo Tenora

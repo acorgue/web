@@ -1,0 +1,61 @@
+# TODO estat
+
+constructor:
+  nom: Blancafort, Gabriel
+  any: 1996
+
+diapaso:
+  nota: a'
+  frequencia: 440
+  temperatura: 20
+
+temperament: igual
+
+# estat
+
+# emplacament
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 8, II/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Tapadet
+        peus: 4'
+      - nom: Dinovena
+        peus: 1 1/3'
+      - nom: Regalies
+        peus: 8'
+        llengueta: true
+        partit: en batalla
+  - nom: II. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Corneta IV
+        peus: 4'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+    - nom: Baix
+      peus: 8'
+      partit: extensió del Subbaix
+    - nom: Coral
+      peus: 4'
+      partit: C-c en façana
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P

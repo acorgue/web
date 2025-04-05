@@ -1,0 +1,115 @@
+constructor:
+  nom: Blancafort, Gabriel
+  any: 1976
+
+estat:
+  - any: 2022
+    estat: en bon funcionament
+    nota: 4
+
+emplacament: tribuna al fons de la nau
+
+transmissions:
+  notes: mecànica
+  registres: elèctrica
+
+composicio: 29, III/P
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+        partit: temporalment deshabilitada
+      - nom: Nasard de 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Nasard de 17a
+        peus: 1 3/5'
+      - nom: Címbala III-IV
+        peus: 1/2'
+      - nom: Cromorn
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó major
+        peus: 16'
+      - nom: Flautat 8'
+        peus: 8'
+      - nom: Flauta xemeneia
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Plens IV
+        peus: 1 1/3'
+      - nom: Corneta IV
+        peus: 4'
+        partit: g-g''' o bé cs'-g'''
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+      - nom: Clarins
+        peus: 4'
+        llengueta: true
+        partit: en batalla
+      - nom: Violetes
+        peus: 2'-8'
+        llengueta: true
+        partit: c'|cs'; en batalla
+
+  - nom: III. Recitatiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Corn de camussa
+        peus: 8'
+      - nom: Unda maris
+        peus: 8'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Flabiolet
+        peus: 2'
+      - nom: Dinovena
+        peus: 1 1/3'
+      - nom: Vint-i-dosena
+        peus: 1'
+      - nom: Oboè
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contres tapades
+      peus: 16'
+    - nom: Contres obertes
+      peus: 8'
+    - nom: Contres tapades
+      peus: 8'
+    - nom: Octava
+      peus: 4'
+    - nom: Fagot
+      peus: 16'
+      llengueta: true
+
+acoblaments:
+  - nom: III/II
+  - nom: I/II
+  - nom: III/P
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Trèmul III
+  - nom: Quatre combinacions lliures
+  - nom: Quatre combinacions fixes (p,mf,f,ff)
+  - nom: Inclusió/Exclusió de llengüeteria
+  - nom: Tutti

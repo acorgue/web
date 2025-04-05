@@ -1,0 +1,59 @@
+# TODO extensions de registres
+
+constructor:
+  nom: Blancafort-Capella Orgueners
+  any: 1966
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2024
+    nota: 3
+    detalls: li cal un repàs
+
+emplacament: A l’altar, al costat de l’Evangeli
+
+# transmissio:
+#   notes: elèctrica
+#   registres: elèctrica
+
+composicio: 9, II/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Ple
+      - nom: Clarí
+        peus: 4'
+        llengueta: true
+        partit: en batalla
+
+  - nom: II. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Flauta xemeneia
+        peus: 4'
+      - nom: Dissetena
+        peus: 1 3/5'
+      - nom: Vint-i-dosena
+        peus: 1'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contres
+      peus: 16'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P

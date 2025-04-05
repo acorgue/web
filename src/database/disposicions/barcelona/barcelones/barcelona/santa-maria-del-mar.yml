@@ -1,0 +1,110 @@
+# Revisat utilitzant el llibret que es va publicar i que està disponible al web del grenzing
+#  https://www.grenzing.com/pdf/SMM_bookletWEB.pdf
+# Escalona desfasat
+
+constructor:
+  nom: Família Boscà (?)
+  sort-nom: Boscà
+  any: s. XVIII
+  sort-any: 1750
+
+actuacions:
+  - nom: Grenzing, Gerhard
+    any: 2005
+    actuacio: RS
+
+diapaso:
+  nota: a'
+  frequencia: 412
+  temperatura: 20
+
+temperament: mesotònic, 1/5 de coma
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: en una capella lateral al costat de l’Espístola
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 22, II/C
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "45 notes: C,D,E,F,G,A-c'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Cara
+        peus: 4'
+      - nom: Flauta xemeneia
+        peus: 4'
+      - nom: Quinzena II
+        peus: 2' + 1 1/3'
+      - nom: Nasard 19a
+        peus: 1 1/3'
+      - nom: Cimbalet III
+      - nom: Regalia
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Orgue Major
+    extensio: "45 notes: C,D,E,F,G,A-c'''"
+    registres:
+      - nom: Cara
+        peus: 8'
+      - nom: Flautat de fusta
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+        partit: h/c'
+      - nom: Quinzena
+        peus: 2' + 1'
+      - nom: Nasard 15a
+        peus: 2'
+        partit: h/c'
+      - nom: Nasard 17a
+        peus: 1 3/5'
+        partit: d'-c'''
+      - nom: Corona III
+        partit: h/c'
+        peus: 1 1/3'
+      - nom: Ple III
+        peus: 1'
+      - nom: Cimbalet III
+        peus: 2/3'
+      - nom: Corneta VII
+        partit: c'-c'''
+        peus: 8'
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+        partit: h/c'
+      - nom: Baixons-Clarins
+        peus: 4'-8'
+        llengueta: true
+        partit: h/c'
+
+pedal:
+  extensio: "8 notes: C,D,E,F,G,A,B,H"
+  registres:
+    - nom: Contres II
+      peus: 8'
+
+acoblaments:
+  - nom: I/II
+  - nom: II/P
+    partit: permanent
+
+efectes:
+  - nom: Trèmol
+  - nom: Rossinyol
+  - nom: Tambor (en mi)
+  - nom: Gaita (en mi)

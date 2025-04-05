@@ -1,0 +1,178 @@
+# TODO extensió
+
+constructor:
+  nom: Acitores Organería y Arte, SL
+  sort-nom: Acitores Organería y Arte, SL
+  any: 2004
+
+# diapaso
+
+# temperament
+
+# estat
+
+emplacament: al cor, sobre l’entrada principal
+
+# transmissio
+
+composicio: 57, III/P
+
+teclats:
+  - nom: I. Cadireta
+    registres:
+      - nom: Salicional
+        peus: 8'
+      - nom: Violón
+        peus: 8'
+      - nom: Flauta Travesera
+        peus: 8'
+        partit: cs'?-?
+      - nom: Octava Principal
+        peus: 4'
+      - nom: Tapadillo
+        peus: 4'
+      - nom: Nasardo 12a
+        peus: 2 2/3'
+      - nom: Quincena
+        peus: 2'
+      - nom: Flabiol
+        peus: 2'
+      - nom: Nasardo 17a
+        peus: 1 3/5'
+      - nom: Címbala III-IV
+        peus: 1'
+      - nom: Cromorno
+        peus: 8'
+        llengueta: true
+      - nom: Gaitilla
+        peus: 4'
+        llengueta: true
+
+  - nom: II. Orgue major
+    registres:
+      - nom: Violoncello principal
+        peus: 16'
+      - nom: Flautado
+        peus: 8'
+      - nom: Flauta de Chimeneas
+        peus: 8'
+      - nom: Flauta cónica
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flauta
+        peus: 4'
+      - nom: Docena clara
+        peus: 2 2/3'
+      - nom: Quincena clara
+        peus: 2'
+      - nom: Decisetena clara
+        peus: 1 3/5'
+      - nom: Decinovena clara
+        peus: 1 1/3'
+      - nom: Lleno III-IV
+        peus: 2'
+      - nom: Címbala III
+        peus: 2/3'
+      - nom: Corneta V
+        peus: 8'
+        partit: cs'?-?
+      - nom: Trompeta Magna
+        peus: 16'
+        llengueta: true
+      - nom: Trompeta Real
+        peus: 8'
+        llengueta: true
+      - nom: Trompeta de Batalla (Bajos)
+        peus: 8'
+        llengueta: true
+        partit: C-c'?
+      - nom: Clarín (Tiples)
+        peus: 8’
+        llengueta: true
+        partit: cs'?-?
+      - nom: Bajoncillo (Bajos)
+        peus: 4’
+        llengueta: true
+        partit: C-c'?
+      - nom: Clarín alto (Tiples)
+        peus: 4'
+        llengueta: true
+        partit: cs'?-?
+
+  - nom: III. Recitatiu expressiu
+    registres:
+      - nom: Flautado Violón
+        peus: 16'
+      - nom: Flauta Armónica
+        peus: 8'
+      - nom: Corno de noche
+        peus: 8'
+      - nom: Quintatón
+        peus: 8’
+      - nom: Viola de Gamba
+        peus: 8'
+      - nom: Unda Maris
+        peus: 8'
+      - nom: Principal
+        peus: 4'
+      - nom: Flauta octaveante
+        peus: 4'
+      - nom: Flautín
+        peus: 2'
+      - nom: Requinta
+        peus: 1 1/3'
+      - nom: Pífano
+        peus: 1'
+      - nom: Lleno progresivo III-VI
+        peus: 2'
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Fagot y Oboe
+        peus: 8'
+        llengueta: true
+      - nom: Clarín
+        peus: 4'
+        llengueta: true
+      - nom: Voz Humana
+        peus: 8'
+        llengueta: true
+
+pedal:
+  registres:
+    - nom: Bordón
+      peus: 32'
+    - nom: Principal
+      peus: 16'
+    - nom: Subbajo
+      peus: 16'
+    - nom: Contras
+      peus: 8'
+    - nom: Bajo Tapado
+      peus: 8'
+    - nom: Quinta Tapada
+      peus: 5 1/3’
+    - nom: Tenor
+      peus: 4'
+    - nom: Compuestas IV
+      peus: 2 2/3'
+    - nom: Bombarda
+      peus: 16'
+      llengueta: true
+    - nom: Trompeta
+      peus: 8'
+      llengueta: true
+
+acoblaments:
+  - nom: III/II
+  - nom: III/I
+  - nom: I/II
+  - nom: III/P
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Trèmul III
+  - nom: Trèmul I
+  - nom: Expressió III

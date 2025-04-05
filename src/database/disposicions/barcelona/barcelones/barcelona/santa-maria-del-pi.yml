@@ -1,0 +1,164 @@
+# TODO diapaso
+# TODO temperament
+# TODO extensio
+
+constructor:
+  nom: Grenzing, Gerhard
+  any: 2002
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: en una capella lateral al costat de l’Evangeli
+
+transmissio:
+  notes: mecànica
+  registres: elèctrica
+
+composicio: 9, I/P
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Quintatò
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Xemeneia
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Dinovena
+        peus: 1' 1/3
+      - nom: Sesquiàltera II
+      - nom: Simbalet II
+      - nom: Cromorn
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat Major
+        peus: 16'
+        falta: true
+      - nom: Flautat
+        peus: 8'
+        falta: true
+      - nom: Flauta Xemeneia
+        peus: 8'
+        falta: true
+      - nom: Octava
+        peus: 4'
+        falta: true
+      - nom: Dotzena
+        peus: 2 2/3
+        falta: true
+      - nom: Quinzena
+        peus: 2'
+        falta: true
+      - nom: Ple IV-VI
+        falta: true
+      - nom: Corneta VI
+        falta: true
+      - nom: Fagot
+        peus: 16'
+        llengueta: true
+        falta: true
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+        falta: true
+      - nom: Trompeta Batalla
+        peus: 8'
+        llengueta: true
+        falta: true
+      - nom: Baixons-Tr.Magna
+        peus: 4'-16'
+        falta: true
+
+  - nom: III. Eco
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+        falta: true
+      - nom: Bordó
+        peus: 8'
+        falta: true
+      - nom: Viola de Gamba
+        peus: 8'
+        falta: true
+      - nom: Octava
+        peus: 4'
+        falta: true
+      - nom: Flauta
+        peus: 4'
+        falta: true
+      - nom: Nasart Dotzena
+        peus: 2 2/3
+        falta: true
+      - nom: Flabiol
+        peus: 2'
+        falta: true
+      - nom: Nasard 17a
+        peus: 1 3/5'
+        falta: true
+      - nom: Ple IV
+        falta: true
+      - nom: Oboe
+        peus: 8'
+        falta: true
+        llengueta: true
+      - nom: Veu Humana
+        peus: 8'
+        falta: true
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contres
+      peus: 16'
+      falta: true
+    - nom: Subaix
+      peus: 16'
+      falta: true
+    - nom: Flautat
+      peus: 8'
+      falta: true
+    - nom: Baix
+      peus: 8'
+      falta: true
+    - nom: Octava
+      peus: 4'
+      falta: true
+    - nom: Corn
+      peus: 2'
+      falta: true
+    - nom: Ple V
+      falta: true
+    - nom: Bombarda
+      peus: 32'
+      falta: true
+      llengueta: true
+    - nom: Bombarda
+      peus: 16'
+      falta: true
+      llengueta: true
+    - nom: Trompeta
+      peus: 8'
+      falta: true
+      llengueta: true
+    - nom: Clarín
+      peus: 4'
+      falta: true
+      llengueta: true

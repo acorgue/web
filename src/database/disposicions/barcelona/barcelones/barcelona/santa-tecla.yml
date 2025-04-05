@@ -1,0 +1,78 @@
+constructor:
+  nom: Schmidt, Bernhard
+  any: 1974
+
+actuacions:
+  - nom: Grenzing, Gerhard
+    any: 2002
+    actuacio: TR
+
+diapaso:
+  nota: a'
+  frequencia: 445.4
+  temperatura: 30.5
+
+# temperament
+
+estat:
+  - any: 2023
+    estat: en bon funcionament
+
+emplacament: al cor, sobre l’entrada principal
+
+transmissio:
+  notes: mecànica
+  registres: elèctrica
+
+composicio: 14, II/P
+
+teclats:
+  - nom: I. Hauptwerk
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Rohrpommer
+        peus: 8'
+      - nom: Prinzipal
+        peus: 4'
+      - nom: Schweizerpfeife
+        peus: 2'
+      - nom: Mixtur IV
+        peus: 2'
+
+  - nom: II. Oberwerk
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Holzgedackt
+        peus: 8'
+      - nom: Nachthorn
+        peus: 4'
+      - nom: Quinte
+        peus: 2 2/3'
+      - nom: Prinzipal
+        peus: 2'
+      - nom: Terz
+        peus: 1 3/5'
+      - nom: Oktave
+        peus: 1'
+      - nom: Scharff IV
+        peus: 1'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbass
+      peus: 16'
+    - nom: Schweigelprinzipal
+      peus: 8'
+    - nom: Spitzflöte
+      peus: 4'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió comuna per I i II
+  - nom: Trèmol II
+

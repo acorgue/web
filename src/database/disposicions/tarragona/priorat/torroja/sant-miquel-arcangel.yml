@@ -1,0 +1,138 @@
+# Escalona desfasat
+# Aprovat pel Wilfried
+
+constructor:
+  nom: Cavaillé, Jean-Pierre
+  any: 1799
+
+actuacions:
+  - nom: Florenzano, Juan
+    any: 1880
+    actuacio: TR
+    detalls: Trasllat a la ubicació actual i possiblement addició d’una cadireta.
+  - nom: Praet, Wilfried
+    any: 1976
+    actuacio: RS, AC
+    detalls: Restauració de l’instrument i acabament de les parts incompletes.
+
+diapaso:
+  nota: a'
+  frequencia: 421
+  temperatura: 20
+  registre: Cara 8'
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: sobre una capella lateral, al costat de l’Epístola
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 29, III/C
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "51 notes: C-d'''"
+    registres:
+      - nom: Violó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Ple III
+        peus: 1'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Nasard 17a
+        peus: 1 3/5'
+      - nom: Cromorn
+        peus: 8'
+        llengueta: true
+      - nom: Corneta Eco V
+        falta: true
+
+  - nom: II. Orgue Major
+    extensio: "51 notes: C-d'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Violó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Ple IV
+        peus: 1 1/3'
+      - nom: Cimbalet IV
+        peus: 1/2'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Nasard 15a
+        peus: 2'
+      - nom: Nasard 17a
+        peus: 1 3/5'
+      - nom: Flauta Travessera
+        peus: 8'
+        partit: c'-d'''
+      - nom: Corneta V
+        partit: c'-d'''
+        peus: 8'
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Clarí 15a
+        peus: 2'
+        partit: C-h
+        llengueta: true
+      - nom: Baixons
+        peus: 4'
+        partit: C-h
+        llengueta: true
+      - nom: Clarins
+        peus: 8'
+        partit: c'-d'''
+        llengueta: true
+      - nom: Clarí clar
+        peus: 8'
+        partit: c'-d'''
+        llengueta: true
+      - nom: Veu humana
+        peus: 8'
+        llengueta: true
+
+  - nom: III. Ecos
+    extensio: "27 notes: c'-d'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Corneta IV
+        peus: 4'
+      - nom: Oboè
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "15 notes: C-d"
+  registres:
+    - nom: Contres
+      peus: 16'
+    - nom: Flauta tenor
+      peus: 4'
+      falta: true
+    - nom: Trompeta tenor
+      peus: 4'
+      llengueta: true
+
+acoblaments:
+  - nom: II/P
+
+efectes:
+  - nom: Rossinyol
+  - nom: Cascabells

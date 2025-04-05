@@ -1,0 +1,55 @@
+# 432 tubs (9x48)
+
+constructor:
+  nom: Boscà i Serinyena, Josep
+  any: 1712
+
+actuacions:
+  - nom: Blancafort, Gabriel
+    any: 1974
+    actuacio: RS
+  - nom: Blancafort OM, SL
+    sort-nom: Blancafort OM, SL
+    any: 2019
+    actuacio: RS
+
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2024
+    nota: 4
+
+emplacament: a peu de nau, al costat de l’altar
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 7, I/P
+
+teclats:
+  - nom: Manual
+    extensio: "48 notes: C,D-c'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Dinovena
+        peus: 1 1/3'
+      - nom: Vint-i-dosena
+        peus: 1'
+      - nom: Vint-i-sisena
+        peus: 2/3'
+      - nom: Plens III
+        peus: 2/3'
+
+pedal:
+  extensio: "8 notes: C,D,E,F,G,A-H"
+  registres:
+    - nom: Acoblat permanentment al manual

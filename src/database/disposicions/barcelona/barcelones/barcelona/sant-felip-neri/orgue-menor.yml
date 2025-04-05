@@ -1,0 +1,79 @@
+constructor:
+  nom: Organería Española, SA - Alberdi
+  sort-nom: Organería Española, SA - Alberdi
+  any:
+
+diapaso:
+  nota: a'
+  temperatura: 26
+  frequencia: 440.4
+
+temperament: igual
+
+estat:
+  - any: 2023
+    nota: 3
+
+emplacament: al creuer, al costat de l’Epístola, a peu de nau
+
+transmissio:
+  notes: elèctrica
+  registres: elèctrica
+
+composicio: 6, III/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Montre
+        peus: 8'
+      - nom: Prestant
+        peus: 4
+        partit: extensió de la Montre
+
+  - nom: II. Positiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Flute
+        peus: 8'
+      - nom: Flute
+        peus: 4
+        partit: extensió de la Flute
+
+  - nom: III. Expressiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: C. Chamois
+        peus: 8'
+      - nom: Plein-jeux III
+        peus: 1'
+      - nom: Trompette
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "32 notes: C-g'"
+  registres:
+    - nom: Soubasse
+      peus: 16'
+    - nom: Bourdon
+      peus: 8'
+      partit: extensió del Soubasse
+
+acoblaments:
+  - nom: III/III 4'
+    partit: en cascada
+  - nom: III/II
+  - nom: III/I
+  - nom: II/I
+  - nom: III/P
+  - nom: III/P 4'
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expression III
+  - nom: Appel Anche
+  - nom: Tutti
+  - nom: Crecendo

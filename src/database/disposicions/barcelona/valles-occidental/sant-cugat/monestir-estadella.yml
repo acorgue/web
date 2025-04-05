@@ -1,0 +1,71 @@
+historic: true
+
+constructor:
+  nom: Estadella, Gaietà
+  any: 1912
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Violón
+        peus: 16'
+      - nom: Flautado
+        peus: 8'
+      - nom: Violón
+        peus: 8'
+      - nom: Kerotojón
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+      - nom: Bajoncillo
+        peus: 4'
+        llengueta: true
+
+  - nom: II. Recitatiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flauta armónica
+        peus: 8'
+        falta: true
+      - nom: Violón
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+        falta: true
+      - nom: Celeste
+        peus: 8'
+        falta: true
+      - nom: Flauta brillante
+        peus: 4'
+        falta: true
+      - nom: Fagot y oboe
+        peus: 8'
+        llengueta: true
+        falta: true
+      - nom: Voz humana
+        peus: 8'
+        llengueta: true
+        falta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contrabojo
+      peus: 16'
+      partit: probablement préstec del Violón 16'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió II
+  - nom: Trèmol II (?)
+  - nom: 1 combinació lliure

@@ -2,11 +2,11 @@ import { orgueNavigation } from "@/app/[locale]/(markdown)/orgues/orgueNavigatio
 import { slugs } from "@/app/[locale]/(markdown)/orgues/redirects";
 import { CopyButton } from "@/components/copy-button";
 import { Scaffold } from "@/components/scaffold";
+import { TOC } from "@/components/toc";
 import { route } from "@/lib/route";
+import { findMDXHeadings } from "@/mdx-components";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { OrguesOrgueParams } from "./layout";
-import { TOC } from "@/components/toc";
-import { findMDXHeadings } from "@/mdx-components";
 
 export default async function Page({
   params,
@@ -25,6 +25,9 @@ export default async function Page({
       `/src/content/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}/${orgue.link}.md`
     )
   ).default;
+  const disposition = await import(
+    `/src/database/disposicions/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}/${orgue.link}.yml`
+  );
 
   return (
     <Scaffold
@@ -94,6 +97,7 @@ export default async function Page({
         />
       </div>
       <Content />
+      <pre>{JSON.stringify(disposition, null, 2)}</pre>
     </Scaffold>
   );
 }

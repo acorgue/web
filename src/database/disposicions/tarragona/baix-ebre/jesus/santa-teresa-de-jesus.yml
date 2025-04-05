@@ -1,0 +1,71 @@
+constructor:
+  nom: Alberdi, Lope
+  any:
+
+actuacions:
+  - nom: Anònim
+    any: 1978
+    actuacio: TR
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2013
+    nota: 1
+
+# emplacmanet
+
+transmissio:
+  notes: pneumàtica
+  registres: pneumàtica
+
+composicio: 9, II/P # el subbajo fa pudor de ser el violón 16'
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Violón
+        peus: 16'
+      - nom: Flautado
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Lleno
+
+  - nom: II. Recitatiu expressiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flauta armónica
+        peus: 8'
+      - nom: Viola de gamba
+        peus: 8'
+      - nom: Voz celeste
+        peus: 8'
+      - nom: Ocarina
+        peus: 4'
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbajo
+      peus: 16'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/I 16'
+  - nom: II/I 4'
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió II
+  - nom: "4 combinacions fixes: p, mf, f i t"
+  - nom: 1 combinació lliure
+  - nom: Trémolo
+  - nom: Transpositor

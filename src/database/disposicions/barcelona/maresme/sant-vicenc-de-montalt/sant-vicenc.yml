@@ -1,0 +1,64 @@
+constructor:
+  nom: Späth Orgelbau AG
+  any: 2006
+
+# diapaso
+
+# temperament
+
+# estat
+
+emplacament: al cor, sobre l’entrada principal
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 14, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat Major
+        peus: 8'
+      - nom: Flauta Xemeneia
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flauta de fusta
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Ple de 3 fileres
+        peus: 2', 1 1/3' i 1'
+      - nom: Trompeta Real
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Cadireta interior
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Violó
+        peus: 8'
+      - nom: Corn de Nit
+        peus: 4'
+      - nom: Flautí
+        peus: 2'
+      - nom: Dotzena
+        peus: 2 2/3'
+      - nom: Sesquialtera
+        peus: 2 2/3'+ 1 3/5'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+    - nom: Flauta cònica
+      peus: 8'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P

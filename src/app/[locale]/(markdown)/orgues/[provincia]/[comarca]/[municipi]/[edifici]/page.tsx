@@ -2,11 +2,11 @@ import { orgueNavigation } from "@/app/[locale]/(markdown)/orgues/orgueNavigatio
 import { slugs } from "@/app/[locale]/(markdown)/orgues/redirects";
 import { CopyButton } from "@/components/copy-button";
 import { Scaffold } from "@/components/scaffold";
+import { TOC } from "@/components/toc";
 import { route } from "@/lib/route";
+import { findMDXHeadings } from "@/mdx-components";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { OrguesEdificiParams } from "./layout";
-import { TOC } from "@/components/toc";
-import { findMDXHeadings } from "@/mdx-components";
 
 export default async function Page({
   params,

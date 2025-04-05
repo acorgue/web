@@ -1,0 +1,60 @@
+constructor:
+  nom: A&K Orgues de Vent
+  any: 2000
+
+actuacions:
+  - nom: Desconegut
+    any: 2010
+    actuacio: TR
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: a l’auditori de l’escola
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 5, II/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flauta xemeneia
+        peus: 8'
+      - nom: Flautat
+        peus: 4'
+      - nom: Flauta silvestre
+        peus: 2'
+        falta: true
+  - nom: II. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flauta xemeneia
+        peus: 8'
+        partit: per transmissió
+      - nom: Bordó
+        peus: 4'
+      - nom: Nasard
+        peus: 2 2/3'
+      - nom: Dulzian
+        peus: 8'
+        llengueta: true
+        falta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Sense registres propis
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P

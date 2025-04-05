@@ -1,0 +1,89 @@
+# TODO diapaso temperatura
+
+constructor:
+  nom: Estadella, Gaietà
+  any: 1924
+
+actuacions:
+  - nom: Gaietà Estadella i Pau Xuclà
+    any: 1942–1945
+    sort-any: 1942
+    actuacio: RS, TR
+    detalls: Reparació de l’orgue després de l’espoli de la guerra i canvi d’ubicació
+  - nom: Blancafort, Gabriel
+    any: 1987
+    actuacio: RO
+    detalls: Reconversió total de l’orgue i moble nou
+
+diapaso:
+  nota: a'
+  frequencia: 440
+
+temperament: igual
+
+estat:
+  - any: 2005
+    nota: 4
+
+# emplacament
+
+# transmissio
+
+composicio: 17, II/P
+
+teclats:
+  - nom: Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Plens IV
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Clarins
+        peus: 4'
+        llengueta: true
+
+  - nom: Recitatiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Celeste
+        peus: 8'
+        partit: c-g'''
+      - nom: Tapadet
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Simbalet III
+      - nom: Fagot-oboè
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+    - nom: Contres
+      peus: 8'
+    - nom: Coral
+      peus: 4'
+
+acoblaments:
+  - nom: II/I
+  - nom: I/P
+  - nom: II/P
+
+efectes:
+  - nom: Trèmol [II]

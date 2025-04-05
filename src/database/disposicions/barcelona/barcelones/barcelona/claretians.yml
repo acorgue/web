@@ -1,0 +1,68 @@
+constructor:
+  nom: Joan Carles Castro
+  sort-nom: Castro, Joan Carles
+  any: 2000
+
+# diapaso
+
+# temperament
+
+# estat
+
+# emplacament
+
+# transmissio
+
+composicio: 15, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flabiolet
+        peus: 2'
+      - nom: Plens IV
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Positiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Violó
+        peus: 8'
+      - nom: Flauta
+        peus: 4'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Corn anglès
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+    - nom: Baix
+      peus: 8'
+    - nom: Contres
+      peus: 8'
+    - nom: Coral baix
+      peus: 4'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Trèmolo II

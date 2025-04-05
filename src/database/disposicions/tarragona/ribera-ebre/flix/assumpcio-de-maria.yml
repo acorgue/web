@@ -1,0 +1,59 @@
+constructor:
+  nom: Grup de l’Orgue
+  any: 2000
+
+# diapaso
+
+# temperament
+
+# estat
+
+# emplacament
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 11, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Plens
+  - nom: II. Orgue expressiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Viola de gamba
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+      - nom: Cor
+        peus: 8'
+      - nom: Flauta
+        peus: 4'
+      - nom: Flautins
+        peus: 2'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+      partit: permanent
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió II

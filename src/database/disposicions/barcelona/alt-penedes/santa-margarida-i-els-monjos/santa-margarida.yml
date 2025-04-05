@@ -1,0 +1,55 @@
+constructor:
+  nom: Späth Orgelbau AG
+  sort-any: 1960
+  any: Dècada de 1960
+
+actuacions:
+  - nom: Späth Orgelbau AG
+    any: 2005
+    actuacio: TR
+
+diapaso:
+  nota: a'
+  frequencia: 440.1
+  temperatura: 19
+  registre: Octava
+
+temperament: Neidhardt
+
+estat:
+  - any: 2024
+    nota: 4
+
+emplacament: tribuna lateral, al costat de l’Epístola
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 7, I/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flauta cònica
+        peus: 4'
+      - nom: Flabiol
+        peus: 2'
+      - nom: Tolosana III
+        peus: 2 2/3'
+        partit: cs'-g'''
+      - nom: Plens III
+        peus: 1 1/3'
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+
+acoblaments:
+  - nom: I/P

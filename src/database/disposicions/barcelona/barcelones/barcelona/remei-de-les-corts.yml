@@ -1,0 +1,84 @@
+# TODO diapaso
+# TODO temperament
+
+constructor:
+  nom: A&K Orgues de Vent
+  any: 2010
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2022
+    nota: 4
+
+emplacament: al cor baix, sobre l’entrada principal
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 17, II/P
+
+teclats:
+  - nom: I i II. Manuals
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat (façana)
+        peus: 8'
+      - nom: Gamba (*)
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flauta xemeneia
+        peus: 8'
+      - nom: Flauta de bec (*)
+        peus: 4'
+      - nom: Dotzena
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Nasard 17a (*)
+        peus: 1 3/5'
+      - nom: Flauta silvestre (*)
+        peus: 2'
+      - nom: Ple IV
+        peus: 1 1/3'
+      - nom: Trompeta (*)
+        peus: 8'
+        llengueta: true
+      - nom: Cromorn (*)
+        peus: 8'
+        llengueta: true
+      - nom: Corneta V
+        partit: cs-g'''
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix (*)
+      peus: 16'
+    - nom: Baix (per extensió) (*)
+      peus: 8'
+    - nom: Trombó (*)
+      peus: 16'
+      llengueta: true
+    - nom: Trompeta (per extensió) (*)
+      peus: 8'
+      llengueta: true
+
+acoblaments:
+  - nom: II/I
+    partit: C-c'
+  - nom: II/I
+    partit: cs'-g'''
+  - nom: II/I 16'
+  - nom: II/P
+  - nom: II/P 4'
+  - nom: I/P
+
+efectes:
+  - nom: Expressió pels registres amb *
+  - nom: Trèmul I i II
+  - nom: Cucut

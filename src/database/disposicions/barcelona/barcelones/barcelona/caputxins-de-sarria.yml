@@ -1,0 +1,67 @@
+constructor:
+  nom: Blancafort, Gabriel
+  any: 1992
+
+# diapaso
+
+# temperament
+
+# estat
+
+emplacament: en una capella lateral, al costat de l’Epístola
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 16, II/P
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Nasard 17a
+        peus: 1 3/5'
+      - nom: Cimbalet III
+
+  - nom: II. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Espigueta
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flabiolets
+        peus: 2'
+      - nom: Plens IV
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Orlos (en batalla)
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+    - nom: Contres
+      peus: 8'
+    - nom: Coral
+      peus: 4'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P

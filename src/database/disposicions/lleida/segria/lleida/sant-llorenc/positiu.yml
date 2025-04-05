@@ -1,0 +1,32 @@
+constructor:
+  nom:
+  any: ca. 1960
+  sort-any: 1960
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2005
+    nota: 4
+
+# emplacament
+
+# transmissio
+
+composicio: 3, I
+
+teclats:
+  - nom: Manual
+    extensio: "44 notes: F-c'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+        partit: c'/cs'
+      - nom: Flauta
+        peus: 4'
+        partit: c'/cs'
+      - nom: Quinzena
+        peus: 2'
+        partit: cs'-c'''

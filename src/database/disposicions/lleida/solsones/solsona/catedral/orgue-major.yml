@@ -1,0 +1,193 @@
+constructor:
+  nom: Vilardebó, Gaietà
+  any: 1853
+
+actuacions:
+  - nom: Anònim
+    any: 1879
+    actuacio: NE, AM
+  - nom: Florenzano, Juan
+    any: 1885
+    actuacio: AM, RO
+    detalls: Ampliació de l’orgue afegint un tercer teclat d’Ecos
+  - nom: Anònim
+    any: 1888
+    actuacio: AF
+  - nom: Anònim
+    any: 1892
+    actuacio: NE
+  - nom: Anònim
+    any: 1946
+    actuacio: RP
+  - nom: Blancafort OM, SL
+    sort-nom: Blancafort OM, SL
+    any: 2023
+    actuacio: RS
+
+#diapaso:
+#  nota: a'
+#  frequencia: 424,6
+#  temperatura: 20
+#  registre: Flautado 8' (I)
+
+# temperament
+
+estat:
+  - any: 2022
+    estat: en restauració
+  - any: 2023
+    nota: 4
+
+emplacament: sobre una capella lateral, al costat de l’Epístola
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 47, III/C
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "54 notes: C-f'''"
+    registres:
+      - nom: Flautat de cara
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Nasard 15a
+        peus: 2'
+      - nom: Nasard 17a
+        peus: 1 3/5'
+      - nom: Ple II
+        peus: 1 1/3'
+      - nom: Cimbalet III
+        peus: 1'
+      - nom: Corneta V
+        partit: c'-f'''
+        peus: 8'
+      - nom: Regalies
+        peus: 8'
+        partit: c-f'''
+        llengueta: true
+
+  - nom: II. Orgue major
+    extensio: "54 notes: C-f'''"
+    registres:
+      - nom: Flautat major
+        peus: 16'
+        partit: c-f'''
+      - nom: Flautat de cara
+        peus: 8'
+      - nom: Flautat de fusta
+        peus: 8'
+      - nom: Flauta harmònica
+        peus: 8'
+        partit: c'-f'''
+      - nom: Bordó de fusta
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+        partit: c-f'''
+      - nom: Undamaris
+        peus: 8'
+        partit: c-f'''
+      - nom: Octava
+        peus: 4'
+      - nom: Nasard 8a
+        peus: 4'
+      - nom: Dotzena I-II
+        peus: 2 2/3'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Quinzena I-II
+        peus: 2'
+      - nom: Nasard 15a
+        peus: 2'
+      - nom: Nasard 17a
+        peus: 1 3/5'
+      - nom: Ple major IV-V
+        peus: 2'
+      - nom: Ple II
+        peus: 1 1/3'
+      - nom: Címbala II
+        peus: 1'
+      - nom: Cimbalet III
+        peus: 1'
+      - nom: Corona IV
+        peus: 2/3'
+      - nom: Corneta magna VIII
+        partit: c'-f'''
+        peus: 8'
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+      - nom: Clarinet
+        peus: 8'
+        partit: c-f'''
+        llengueta: true
+
+      - nom: Trompa magna
+        peus: 16'
+        llengueta: true
+        partit: c'-f''', en batalla
+      - nom: Trompeta de batalla
+        peus: 8'
+        llengueta: true
+        partit: h/c', en batalla
+      - nom: Baixons - Clarins clars
+        peus: 4'/8'
+        llengueta: true
+        partit: h/c', en batalla
+      - nom: Xeremies - Clarins
+        peus: 2'/8'
+        llengueta: true
+        partit: h/c', en batalla
+
+  - nom: III. Ecos
+    extensio: "54 notes: C-f'''"
+    registres:
+      - nom: Corn de nit
+        peus: 8'
+      - nom: Gamba-Celeste II
+        peus: 8'
+        partit: c-f'''
+      - nom: Octava
+        peus: 4'
+        partit: c-f'''
+      - nom: Tolosana III
+        peus: 2 2/3'
+        partit: c'-f'''
+      - nom: Violins
+        peus: 8'
+        partit: c-f'''
+        llengueta: true
+      - nom: Veu humana
+        peus: 8'
+        partit: c-f'''
+        llengueta: true
+
+pedal:
+  extensio: "27 notes: C-d'"
+  registres:
+    - nom: Contrabaix
+      peus: 16'
+    - nom: Contres
+      peus: 8'
+    - nom: Contrafagot
+      peus: 16'
+      llengueta: true
+
+acoblaments:
+  - nom: II/P
+  - nom: I/II
+
+efectes:
+  - nom: Expressió III
+  - nom: Expressió II
+  - nom: Trèmolo
+    partit: general?
+  - nom: Rossinyol

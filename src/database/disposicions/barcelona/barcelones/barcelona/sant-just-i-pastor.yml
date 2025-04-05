@@ -1,0 +1,129 @@
+constructor:
+  nom: Bertran, Miquel
+  any: 1909
+
+actuacions:
+  - nom: Castro, Joan Carles
+    any: 1988
+    actuacio: RS
+    detalls: Neteja general, renovació de la mecànica i addició de les octaves agudes.
+  - nom: Blancafort OM, SL
+    sort-nom: Blancafort OM, SL
+    any: 2017
+    actuacio: RS
+
+diapaso:
+  nota: a'
+  registre: Flautat
+  frequencia: 447.5
+  temperatura: 28
+
+temperament: igual
+
+estat:
+  - any: 2023
+    estat: en bon funcionament
+    nota: 4
+
+emplacament: tribuna al fons de la nau
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 28, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 16'
+      - nom: Flautat
+        peus: 8'
+      - nom: Flauta harmònica
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+      - nom: Flauta travessera
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Nasard 15a
+        peus: 2'
+      - nom: Ple 15a IV
+        peus: 2'
+      - nom: Ple 19a III
+        peus: 1 1/3'
+      - nom: Corneta VII
+        peus: 8'
+        partit: cs'-g'''
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+      - nom: Trompeta magna
+        peus: 16'
+        llengueta: true
+        partit: c-g'''
+      - nom: Trompeta angèlica
+        peus: 8'
+        llengueta: true
+        partit: llengüeta lliure
+      - nom: Baixons i Clarins
+        peus: 4' i 8'
+        llengueta: true
+        partit: "h|c'"
+      - nom: Clarins
+        peus: 2' i 8'
+        llengueta: true
+        partit: "h|c'"
+
+  - nom: II. Expressiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Veu celeste II
+        peus: 8'
+        partit: c-g'''
+      - nom: Octava
+        peus: 4'
+      - nom: Corn anglès
+        peus: 8'
+        llengueta: true
+      - nom: Fagot oboè
+        peus: 8'
+        llengueta: true
+      - nom: Veu humana
+        peus: 8'
+        partit: c-g'''
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contres
+      peus: 16'
+    - nom: Contres
+      peus: 8'
+    - nom: Coral
+      peus: 4'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/I 4'
+  - nom: II/P
+  - nom: I/P
+  - nom: I/P 4'
+
+efectes:
+  - nom: Expressió II # mecànica
+  - nom: Trèmol general

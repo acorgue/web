@@ -1,0 +1,160 @@
+# Aprovat pel Wilfried? Segur???
+# TODO manca revisió in situ
+
+constructor:
+  nom: Folch, Josep
+  any: 1792
+
+actuacions:
+  - nom: Grenzing, Gerhard
+    any: 1980
+    actuacio: RS
+  - nom: Grenzing, Gerhard
+    any: 1992
+    actuacio: RS
+  - nom: Praet, Wilfried
+    any: 2016
+    actuacio: RS
+
+diapaso:
+  nota: a'
+  frequencia: 440
+  temperatura: 22
+
+temperament: mesotònic modificat
+
+estat:
+  - any: 2016
+    nota: 4
+
+# emplacament
+
+# transmissio
+
+composicio: 33, II/C
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "49 notes:C-c'''"
+    registres:
+      - nom: Violó
+        peus: 8'
+        partit: c'/cs'
+      - nom: Octava
+        peus: 4'
+        partit: c'/cs'
+      - nom: Quinzena i Dinovena
+        peus: 2' i 1 1/3'
+        partit: C-c'
+      - nom: Ple III
+        peus: 1'
+        partit: c'/cs'
+      - nom: Simbalet III
+        partit: c'/cs'
+      - nom: Corneta anglesa IV
+        partit: cs'-c'''
+
+  - nom: I. Ecos
+    extensio: "49 notes:C-c'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+        partit: C-c'
+      - nom: Flautat en ecos
+        peus: 8'
+        partit: cs'-c'''
+      - nom: Nasard 8a
+        peus: 4'
+        partit: cs'-c'''
+      - nom: Nasard 15a
+        peus: 2'
+        partit: c'/cs'
+      - nom: Nasard 17a
+        peus: 1 3/5'
+        partit: C-c'
+      - nom: Violins
+        partit: cs'-c'''
+        llengueta: true
+        peus: 8'
+
+  - nom: II. Orgue major
+    extensio: "49 notes: C-c'''"
+    registres:
+      - nom: Flautat major
+        peus: 13 pams
+        partit: c'/cs'
+      - nom: Violó
+        peus: 8'
+        partit: c'/cs'
+      - nom: Flauta travessera II
+        peus: 8'
+        partit: cs'-c'''
+      - nom: Octava
+        peus: 4'
+        partit: c'/cs'
+      - nom: Tapadet
+        peus: 4'
+        partit: c'/cs'
+      - nom: Dotzena
+        peus: 2 2/3'
+        partit: c'/cs'
+      - nom: Quinzena
+        peus: 2'
+        partit: c'/cs'
+      - nom: Nasard en 12a
+        peus: 2 2/3'
+        partit: c'/cs'
+      - nom: Nasard en 15a
+        peus: 2'
+        partit: c'/cs'
+      - nom: Nasard en 17a
+        peus: 1 3/5'
+        partit: c'/cs'
+      - nom: Dinovena II
+        peus: 1 1/3'
+        partit: c'/cs'
+      - nom: Tolosana III
+        partit: c'/cs'
+      - nom: Plens III
+        peus: 1'
+        partit: c'/cs'
+      - nom: Címbala III
+        peus: 2/3'
+        partit: c'/cs'
+      - nom: Corneta magna VII
+        partit: cs'-c'''
+        peus: 8'
+      - nom: Trompeta real
+        partit: c'/cs'
+        peus: 8'
+        llengueta: true
+      - nom: Baixons
+        peus: 4'
+        partit: C-c', en batalla
+        llengueta: true
+      - nom: Clarí
+        peus: 8'
+        partit: cs'-c''', en batalla
+        llengueta: true
+      - nom: Clarí en 15a
+        partit: C-c', en batalla
+        peus: 2'
+        llengueta: true
+      - nom: Clarí clar
+        partit: cs'-c''', en batalla
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "12 notes: C-H"
+  registres:
+    - nom: Contres II
+      peus: 16' i 8'
+      partit: permanents
+
+acoblaments:
+  - nom: II/P
+
+efectes:
+  - nom: Tambor en do
+  - nom: Tambor en sol

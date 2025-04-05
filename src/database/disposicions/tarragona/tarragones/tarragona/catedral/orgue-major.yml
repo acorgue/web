@@ -1,0 +1,149 @@
+constructor:
+  nom: Verschueren Orgelbouw
+  any: 2013
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2022
+    nota: 4
+
+emplacament: al cor de canonges, al costat de l’Evangeli
+
+transmissio:
+  notes: mecànica
+  registres: elèctrica
+
+composicio: 45, III/P
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "54 notes: C-f'''"
+    registres:
+      - nom: Cara
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Nasard 17a
+        peus: 1 3/5'
+      - nom: Fornitura
+      - nom: Cromorn
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Orgue major
+    extensio: "54 notes: C-f'''"
+    registres:
+      - nom: Flautat major
+        peus: 16'
+      - nom: Flautat
+        peus: 8'
+      - nom: Espigueta
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Dotzena
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Ple
+      - nom: Alemanya (amb o sense tercera)
+      - nom: Cimbalet
+      - nom: Corneta
+        partit: h/c' o bé c'/cs'
+      - nom: Trompeta real (interior)
+        peus: 8'
+        llengueta: true
+      - nom: Trompeta de batalla
+        peus: 8'
+        partit: c/cs'
+        llengueta: true
+      - nom: Trompeta magna
+        peus: 16'
+        partit: cs'-f'''
+        llengueta: true
+      - nom: Baixons
+        peus: 4'
+        partit: C-c'
+        llengueta: true
+      - nom: Clarins clars
+        peus: 8
+        partit: cs'-f'''
+        llengueta: true
+      - nom: Violetes
+        peus: 2'
+        partit: C-c'
+        llengueta: true
+      - nom: Regalies
+        peus: 8'
+        llengueta: true
+
+  - nom: III. Eco
+    extensio: "54 notes: C-f'''"
+    registres:
+      - nom: Cara
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flauta
+        peus: 4'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Nasard 15a
+        peus: 2'
+      - nom: Dissetena
+        peus: 1 3/5'
+      - nom: Nasard 19a
+        peus: 1 1/3'
+      - nom: Mixtura
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Veu humana
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contres obertes
+      peus: 16'
+    - nom: Contres tapades
+      peus: 16'
+    - nom: Flautat
+      peus: 8'
+    - nom: Octava
+      peus: 4'
+    - nom: Bombarda
+      peus: 16'
+      llengueta: true
+    - nom: Trompeta
+      peus: 8'
+      llengueta: true
+    - nom: Clarí
+      peus: 4'
+      llengueta: true
+
+acoblaments:
+  - nom: III/II
+  - nom: I/II
+  - nom: III/P
+  - nom: II/P
+
+efectes:
+  - nom: Rossinyols
+  - nom: Octava curta II
+  - nom: Campanetes
+    falta: true

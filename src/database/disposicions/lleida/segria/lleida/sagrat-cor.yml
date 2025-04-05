@@ -1,0 +1,70 @@
+constructor:
+  nom: Teppati, Francesco
+  any: 1903
+
+actuacions:
+  - nom:
+    any: 1950
+    actuacio: Substitució del motor elèctric
+  - nom: Blancafort, Gabriel
+    any: 1987
+    actuacio: TR
+    detalls: Trasllat, adaptat i resituat al nou edifici de la comunitat
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 1999
+    estat: En bon funcionament
+
+# emplacament
+
+# transmissio
+
+composicio: 10, I/P
+
+teclats:
+  - nom: Manual
+    extensio: "55 notes: C,D-g'''"
+    registres:
+      - nom: Burdón
+        peus: 8'
+        partit: C-c'
+      - nom: Apenino
+        peus: 8'
+        partit: cs'-g'''
+      - nom: Gamba-violino
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+        partit: C-H prestat de la Gamba
+      - nom: Flauta harmònica
+        peus: 8'
+        partit: cs'-g'''
+      - nom: Celeste-violino
+        peus: 8'
+        partit: c-g'''
+      - nom: Octaviante
+        peus: 4'
+      - nom: Lleno-quincena [III]
+      - nom: Trompa
+        peus: 8'
+        partit: C-c'
+        llengueta: true
+      - nom: Clarín
+        peus: 8'
+        partit: cs'-g'''
+        llengueta: true
+
+pedal:
+  extensio: "18 notes: C-f"
+  registres:
+    - nom: Sense registres propis
+    - nom: Permanent acoblat al manual
+
+efectes:
+  - nom: Pajarillos
+  - nom: Trèmol
+  - nom: Accionament de la llengüeteria

@@ -1,0 +1,104 @@
+# TODO encara queden interrogants:
+# - mira el paper per saber quins.
+
+constructor:
+  nom: Amezua y Cia.
+  any: 1955
+
+actuacions:
+  - any: Cap el 2000
+    sort-any: 2000
+    nom: A&K Orgues de Vent
+    actuacio: RS
+  - any: 2017
+    nom: Laguna, Óscar
+    actuacio: RP
+
+# diapaso
+diapaso:
+  nota: a'
+  temperatura: 26
+  frequencia: 442.2
+
+temperament: igual
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: al cor, sobre l’entrada principal
+
+transmissio:
+  notes: pneumàtica
+  registres: pneumàtica
+
+composicio: 15, II/P
+
+teclats:
+  - nom: I. Orgue major
+    registres:
+      - nom: Violón
+        peus: 16'
+      - nom: Flautado
+        peus: 8'
+      - nom: Violón
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Lleno
+
+  - nom: II. Expressiu
+    registres:
+      - nom: Flauta armónica
+        peus: 8'
+      - nom: Cor de nuit
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Voz celeste
+        peus: 8'
+        partit: c-?
+      - nom: Flauta octaviante
+        peus: 4'
+      - nom: Nazardo
+        peus: 2 2/3'
+      - nom: Fagot y oboe
+        peus: 8'
+        llengueta: true
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Clarín
+        peus: 4'
+        llengueta: true
+        partit: c'/cs'
+
+pedal:
+  registres:
+    - nom: Subbajo
+      peus: 16'
+      partit: préstec del Violón 16'
+    - nom: Contras
+      peus: 8'
+      partit: préstec del Violón 8'
+    - nom: Cello
+      peus: 8'
+      partit: préstec del Salicional
+
+acoblaments:
+  - nom: II/I
+  - nom: II/I 16'
+  - nom: II/I 4'
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Trémolo
+  - nom: Expressió II
+  - nom: 1 combinació lliure
+  - nom: 4 combinacions fixes (p, mp, f i tutti)
+  - nom: Exclusió de llengüetes
+  - nom: Exclusió d’octaves
+  - nom: Transpositor

@@ -1,0 +1,476 @@
+constructor:
+  nom: Walcker-Orgelbau
+  any: 1929
+
+actuacions:
+  - nom: Organería Española, SA
+    sort-nom: Organería Española, SA
+    any: 1958
+    actuacio: RO, AM
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 0
+
+emplacament: Sala Oval
+
+transmissio:
+  notes: elèctrica
+  registres: elèctrica
+
+composicio: 126, VI/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Principal
+        peus: 16'
+      - nom: Bordón
+        peus: 16'
+      - nom: Montre
+        peus: 8'
+      - nom: Diapasón
+        peus: 8'
+      - nom: Flauta armónica
+        peus: 8'
+      - nom: Cello
+        peus: 8'
+      - nom: Dulciana
+        peus: 8'
+      - nom: Bordón
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flauta
+        peus: 4'
+      - nom: Flauta de chimenea
+        peus: 4'
+      - nom: Docena
+        peus: 2 2/3'
+      - nom: Doublette
+        peus: 2'
+      - nom: Lleno IV
+        peus: 2'
+      - nom: Forniture IV-V-VI
+        peus: 2'
+      - nom: Címbala IV
+        peus: 2/3'?
+      - nom: Corneta III-IV-V
+        peus: 2 2/3'
+      - nom: Bombarda
+        peus: 16'
+        llengueta: true
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Clarín
+        peus: 4'
+        llengueta: true
+
+  - nom: II. Manual (* expressiu)
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Principal
+        peus: 8'
+      - nom: Quintatón
+        peus: 8'
+      - nom: Principal
+        peus: 4'
+      - nom: Flauta cónica
+        peus: 4'
+      - nom: Nazardo
+        peus: 2 2/3'
+      - nom: Flauta
+        peus: 2'
+      - nom: Decisetena
+        peus: 1 3/5'
+      - nom: Decinovena
+        peus: 1 1/3'
+      - nom: Picolo
+        peus: 1'
+      - nom: Lleno IV
+        peus: 1 1/3'
+      - nom: Címbala II
+        peus: 1/3'
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Cromorno
+        peus: 8'
+        llengueta: true
+      - nom: Flauta dulce
+        peus: 16'
+        partit: "*"
+      - nom: Flauta
+        peus: 8'
+        partit: "*"
+      - nom: Flauta hueca
+        peus: 8'
+        partit: "*"
+      - nom: Salicional
+        peus: 8'
+        partit: "*"
+      - nom: Unda maris
+        peus: 8'
+        partit: "* c-c''''"
+      - nom: Flauta octaviante
+        peus: 4'
+        partit: "*"
+      - nom: Clarinete
+        peus: 8'
+        partit: "*"
+        llengueta: true
+
+  - nom: III. Manual, expressiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Bordón
+        peus: 16'
+      - nom: Gamba
+        peus: 16'
+      - nom: Principal
+        peus: 8'
+      - nom: Flauta armónica
+        peus: 8'
+      - nom: Corno de gamo
+        peus: 8'
+      - nom: Bordón
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Celeste
+        peus: 8'
+        partit: c-c''''
+      - nom: Principal
+        peus: 4'
+      - nom: Cor de nuit
+        peus: 4'
+      - nom: Salicet
+        peus: 4'
+      - nom: Nazardo
+        peus: 2 2/3'
+      - nom: Octavín
+        peus: 2'
+      - nom: Nazardo
+        peus: 1 1/3'
+      - nom: Flauta
+        peus: 1'
+      - nom: Lleno III-IV
+        peus: 1'
+      - nom: Sesquialtera II
+        peus: 2 2/3' i 1 3/5'
+      - nom: Bombarda
+        peus: 16'
+        llengueta: true
+      - nom: Corno Inglés
+        peus: 16'
+        llengueta: true
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Fagot y oboe
+        peus: 8'
+        llengueta: true
+      - nom: Clarín armónico
+        peus: 4'
+        llengueta: true
+
+  - nom: IV. Manual
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Diapasón
+        peus: 16'
+      - nom: Principal
+        peus: 8'
+      - nom: Flauta doble
+        peus: 8'
+      - nom: Viola
+        peus: 8'
+      - nom: Flauta de chimenea
+        peus: 8'
+      - nom: Prestant
+        peus: 4'
+      - nom: Bordón
+        peus: 4'
+      - nom: Nazardo
+        peus: 2 2/3'
+      - nom: Flauta
+        peus: 2'
+      - nom: Decisetena
+        peus: 1 3/5'
+      - nom: Decinovena
+        peus: 1 1/3'
+      - nom: Vigésima primera
+        peus: 1 1/7'
+      - nom: Picolo
+        peus: 1'
+      - nom: Mixtura magna VII
+        peus: 4'
+      - nom: Lleno V
+        peus: 2'
+      - nom: Címbala III
+        peus: 2 2/3'
+      - nom: Corneta V
+        peus: 2'
+      - nom: Bombarda
+        peus: 16'
+      - nom: Tuba
+        peus: 8'
+      - nom: Clarín
+        peus: 5 1/3'
+      - nom: Clarín
+        peus: 4'
+      - nom: Lleno de clarines II
+        peus: 2 2/3'
+
+  - nom: V. Manual, expressiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Quintatón
+        peus: 16'
+      - nom: Docena
+        peus: 10 2/3'
+      - nom: Principal
+        peus: 8'
+      - nom: Flauta doble
+        peus: 8'
+      - nom: Flauta de chimenea
+        peus: 8'
+      - nom: Fúgara
+        peus: 8'
+      - nom: Celeste
+        peus: 8'
+        partit: c-c''''
+      - nom: Principal
+        peus: 4'
+      - nom: Flauta
+        peus: 4'
+      - nom: Nasarte
+        peus: 2 2/3'
+      - nom: Flauta
+        peus: 2'
+      - nom: Decisetena
+        peus: 1 3/5'
+      - nom: Lleno IV
+        peus: 1 1/3'
+      - nom: Corneta III
+        falta: true
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Corn inglés
+        peus: 8'
+        llengueta: true
+      - nom: Clarín
+        peus: 4'
+        llengueta: true
+
+  - nom: VI. Manual, expressiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Bordón
+        peus: 8'
+      - nom: Viola
+        peus: 8'
+      - nom: Celeste
+        peus: 8'
+        partit: c-c''''
+      - nom: Flauta
+        peus: 4'
+      - nom: Campanella III
+        peus: 4'
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Voz humana
+        peus: 8'
+        llengueta: true
+
+pedal:
+  nom: Pedal (* expressiu)
+  extensio: "32 notes: C-g'"
+  registres:
+    - nom: Flautado
+      peus: 32'
+    - nom: Flauta
+      peus: 32'
+    - nom: Bordón
+      peus: 32'
+    - nom: Contras
+      peus: 16'
+    - nom: Flauta
+      peus: 16'
+    - nom: Principal
+      peus: 16'
+    - nom: Subbajo
+      peus: 16'
+    - nom: Flauta cónica
+      peus: 16'
+    - nom: Bordón
+      peus: 16'
+    - nom: Quinta
+      peus: 10 2/3'
+    - nom: Bajo
+      peus: 8'
+    - nom: Flauta cónica
+      peus: 8'
+    - nom: Bordón
+      peus: 8'
+    - nom: Bordón
+      peus: 8'
+    - nom: Salicional
+      peus: 8'
+    - nom: Nazardo
+      peus: 5 1/3'
+    - nom: Prestant
+      peus: 4'
+    - nom: Flauta cónica
+      peus: 4'
+    - nom: Principal
+      peus: 4'
+    - nom: Tercia
+      peus: 3 1/5'
+    - nom: Flauta
+      peus: 2'
+    - nom: Chiflete
+      peus: 1'
+    - nom: Lleno VI
+      peus: 4'
+    - nom: Resultante II
+      peus: 2'
+    - nom: Bombarda
+      peus: 32
+      llengueta: true
+    - nom: Fagot
+      peus: 16'
+      llengueta: true
+    - nom: Bombarda
+      peus: 16'
+      llengueta: true
+    - nom: Basson
+      peus: 8'
+      llengueta: true
+    - nom: Trombón
+      peus: 5 1/3'
+      llengueta: true
+    - nom: Clarín
+      peus: 4'
+      llengueta: true
+    - nom: Chirimía
+      peus: 2'
+      llengueta: true
+    - nom: Cello
+      peus: 16'
+      partit: "*"
+    - nom: Cello
+      peus: 8'
+      partit: "*"
+    - nom: Corneta III
+      peus: 2 2/3'
+      partit: "*"
+    - nom: Trombón
+      peus: 16'
+      partit: "*"
+      llengueta: true
+    - nom: Trompeta
+      partit: "*"
+      peus: 8'
+      llengueta: true
+
+acoblaments:
+  - nom: VI/III
+  - nom: VI/II
+  - nom: VI/I
+  - nom: V/IV
+  - nom: V/III
+  - nom: V/III 16'
+  - nom: V/III 4'
+  - nom: V/II
+  - nom: V/II 16'
+  - nom: V/II 4'
+  - nom: V/I
+  - nom: V/I 16'
+  - nom: V/I 4'
+  - nom: IV/III
+  - nom: IV/II
+  - nom: IV/I
+  - nom: IV/I 16'
+  - nom: IV/I 4'
+  - nom: III/II
+  - nom: III/II 16'
+  - nom: III/II 4'
+  - nom: III/I
+  - nom: III/I 16'
+  - nom: III/I 4'
+  - nom: II/I
+  - nom: II/I 16'
+  - nom: II/I 4'
+  - nom: VI/P
+  - nom: V/P
+  - nom: IV/P
+  - nom: IV/P 4'
+  - nom: III/P
+  - nom: III/P 4'
+  - nom: II/P
+  - nom: II/P 4'
+  - nom: I/P
+  - nom: I/P 4'
+  - nom: VI/VI 16'
+  - nom: VI/VI 4'
+  - nom: V/V 16'
+  - nom: V/V 4'
+  - nom: IV/IV 16'
+  - nom: IV/IV 4'
+  - nom: III/III 16'
+  - nom: III/III 4'
+  - nom: II/II 16'
+  - nom: II/II 4'
+  - nom: I/I 4'
+
+efectes:
+  - nom: 7 combinacions fixes al I
+  - nom: 13 combinacions fixes al II
+  - nom: 13 combinacions fixes al III
+  - nom: 7 combinacions fixes al IV
+  - nom: 5 combinacions fixes al V
+  - nom: 3 combinacions fixes al VI
+  - nom: Ondulantes
+  - nom: Tutti
+  - nom: Exclusión I 8'
+  - nom: Exclusión II 8'
+  - nom: Exclusión III 8'
+  - nom: Exclusión IV 8'
+  - nom: Exclusión V 8'
+  - nom: Exclusión VI 8'
+  - nom: Anulador 16', 8', 4'
+  - nom: Exclusión 16'
+  - nom: Exclusión Lengüetería General
+  - nom: Exclusión Lengüetería I
+  - nom: Exclusión Lengüetería II, III
+  - nom: Exclusión Lengüetería IV, V
+  - nom: Exclusión Bombardas 16'
+  - nom: Exclusión Bombarda 32'
+  - nom: Combinación libre 1
+  - nom: Combinación libre 2
+  - nom: Combinación libre 3
+  - nom: Combinación libre 4
+  - nom: Anulador combinaciones libres
+  - nom: Piano-pedal automatico
+  - nom: Expressió II
+  - nom: Expressió III i pedal
+  - nom: Expressió V
+  - nom: Expressió VI
+  - nom: Expressió VI al II
+  - nom: Expressió V al II
+  - nom: Expressió III al II
+  - nom: Temblante II
+  - nom: Temblante III
+  - nom: Temblante IV
+  - nom: Temblante V
+  - nom: Temblante VI
+  - nom: Crescendo

@@ -1,0 +1,67 @@
+constructor:
+  nom: Fábrica de Órganos de Nuestra Señora de Montserrat
+  any: 1956
+
+actuacions:
+  - any: 1998
+    nom: Castro, Joan Carles
+    actuacio: RS
+
+diapaso:
+  nota: a'
+  registre: Principal
+  frequencia: 442,7
+  temperatura: 20
+
+# temperament
+
+# estat
+
+# emplacament
+
+transmissio:
+  notes: pneumàtica
+  registres: pneumàtica
+
+composicio: 6, I/P
+
+teclats:
+  - nom: Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Principal
+        peus: 8'
+      - nom: Bordón
+        peus: 8'
+      - nom: Celeste
+        peus: 8'
+        partit: c-g'''
+      - nom: Octava
+        peus: 4'
+      - nom: Flautín
+        peus: 2'
+      - nom: Lleno III
+        peus: 2'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Principal
+      peus: 8'
+      partit: per transmissió
+    - nom: Bordón
+      peus: 8'
+      partit: per transmissió
+
+acoblaments:
+  - nom: I/I 16'
+  - nom: I/I 4'
+  - nom: I/P
+  - nom: I/P 4'
+
+efectes:
+  - nom: Expressió general
+  - nom: 5 combinacions fixes (pp, p, mf, f, t)
+  - nom: 1 combinació lliure
+  - nom: Crescendo
+  - nom: Trémolo

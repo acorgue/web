@@ -1,0 +1,67 @@
+constructor:
+  nom: Blancafort-Capella Orgueners
+  any: 1967
+
+# diapaso
+
+# temperament
+
+# estat
+
+# emplacament
+
+# transmissio
+
+composicio: 15, II/P
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Dinovena
+        peus: 1' 1/3
+      - nom: Vintidosena
+        peus: 1'
+      - nom: Corneta III
+        partit: g'-g'''
+      - nom: Cromorn
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Flauta Xemeneia
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flaviolet
+        peus: 2'
+      - nom: Plens IV
+      - nom: Trompeta (en batalla)
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contres
+      peus: 16'
+    - nom: Contres
+      peus: 8'
+      partit: transmissió del Flautat
+    - nom: Quintant
+      peus: 4'
+
+acoblaments:
+  - nom: I/II
+  - nom: II/P
+  - nom: I/P

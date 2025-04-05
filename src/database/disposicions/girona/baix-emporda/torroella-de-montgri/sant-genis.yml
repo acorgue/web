@@ -1,0 +1,62 @@
+constructor:
+  nom: Blancafort, Gabriel
+  any: 1980
+
+diapaso:
+  nota: a'
+  frequencia: 448.1
+  temperatura: 28
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 3
+    detalls: li cal una afinació integral urgent
+
+emplacament: en una capella del deambulatori, cap al costat de l’epístola
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 8, II/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Plens II
+        peus: 1/2'
+      - nom: Regalies
+        peus: 8'
+
+  - nom: II. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Quintant
+        peus: 8'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+    - nom: Baix
+      peus: 8'
+      partit: extensió del Subbaix
+    - nom: Coral
+      peus: 4'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P

@@ -1,0 +1,211 @@
+constructor:
+  nom: Estadella, Gaietà
+  any: 1927
+
+actuacions:
+  - nom: Blancafort-Capella Orgueners
+    any: 1974
+    actuacio: TF
+  - nom: Blancafort, Gabriel
+    any: 1995
+    actuacio: RS
+
+diapaso:
+  nota: a'
+  frequencia: 439.2
+  temperatura: 20
+  registre: Flautat
+
+# temperament
+
+transmissio:
+  notes: mecànica
+  registres: elèctrica
+
+composicio: 61, IV/P
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flauta de fus
+        peus: 4'
+      - nom: Nasard en 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Nasard en 17a
+        peus: 1 3/5'
+      - nom: Vint-i-dosena
+        peus: 1'
+      - nom: Cimbalet III-IV
+        peus: 1/2'
+      - nom: Cromorn
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Orgue major
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Flautat major
+        peus: 16'
+      - nom: Flautat
+        peus: 8'
+      - nom: Flauta de fus
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flauta cònica
+        peus: 4'
+      - nom: Dotzena
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Dinovena i vint-i-dosena
+        peus: 1 1/3' i 1'
+      - nom: Plens IV-V-VI
+        peus: 1 1/3'
+      - nom: Cimbalet IV-V
+        peus: 1/2'
+      - nom: Corneta V
+        peus: 8'
+        partit: g-c''''
+      - nom: Dolçaina
+        peus: 16'
+        llengueta: true
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+      - nom: Clarins
+        peus: 4'
+        llengueta: true
+
+  - nom: III. Recitatiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Quintant
+        peus: 16'
+      - nom: Flauta xemeneia
+        peus: 8'
+      - nom: Viola
+        peus: 8'
+      - nom: Celeste
+        peus: 8'
+        partit: c-c''''
+      - nom: Octava
+        peus: 4'
+      - nom: Nasard en 10a
+        peus: 3 1/5'
+      - nom: Nasards en 12a i 17a
+        peus: 2 2/3' i 1 3/5'
+      - nom: Flabiolets
+        peus: 2'
+      - nom: Mixtura IV-V
+        peus: 1'
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+      - nom: Veu humana
+        peus: 8'
+        llengueta: true
+      - nom: Clarins
+        peus: 4'
+        llengueta: true
+      - nom: Baixons
+        peus: 16'
+        llengueta: true
+        partit: en batalla
+      - nom: Trompeta fina
+        peus: 8'
+        llengueta: true
+        partit: en batalla
+      - nom: Xeremies
+        peus: 4'
+        llengueta: true
+        partit: en batalla
+
+  - nom: IV. Ecos
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Flauta xemeneia
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Dinovena
+        peus: 1 1/3'
+      - nom: Corona III
+        peus: 1'
+      - nom: Orlos
+        peus: 16'
+        llengueta: true
+      - nom: Fagot i oboè
+        peus: 8'
+        llengueta: true
+      - nom: Trompeta de batalla
+        peus: 8'
+        llengueta: true
+        partit: en batalla
+      - nom: Clarins clars
+        peus: 4'
+        llengueta: true
+        partit: en batalla
+      - nom: Violetes i trompeta magna
+        peus: 2' i 16'
+        llengueta: true
+        partit: en batalla
+
+pedal:
+  extensio: "32 notes: C-g'"
+  registres:
+    - nom: Contrabaix
+      peus: 16'
+    - nom: Subbaix
+      peus: 16'
+    - nom: Baix
+      peus: 8'
+    - nom: Bordó
+      peus: 8'
+    - nom: Flauta
+      peus: 4'
+    - nom: Flautí
+      peus: 2'
+    - nom: Fornitura
+      peus: 2 2/3'
+    - nom: Bombarda
+      peus: 16'
+      llengueta: true
+    - nom: Trompeta
+      peus: 8'
+      llengueta: true
+    - nom: Corn anglès
+      peus: 8'
+      llengueta: true
+    - nom: Baixons
+      peus: 4'
+      llengueta: true
+
+acoblaments:
+  - nom: IV/II
+  - nom: III/II
+  - nom: I/II
+  - nom: IV/P
+  - nom: III/P
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió IV
+  - nom: Expressió III
+  - nom: Trèmul III
+  - nom: 1 combinació fixa (tutti)
+  - nom: 6 combinacions lliures

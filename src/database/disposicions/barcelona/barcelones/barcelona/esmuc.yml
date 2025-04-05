@@ -1,0 +1,66 @@
+constructor:
+  nom: Grenzing, Gerhard
+  any: 2002
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2022
+    estat: en bon funcionament
+    nota: 4
+
+emplacament: aula 311
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 10, II/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Dotzena
+        peus: 2 2/3'
+      - nom: Nasard en 17a
+        peus: 1 3/5'
+      - nom: Plens III
+
+  - nom: II. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Flauta Xemeneia
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Oboè
+        peus: 8'
+        llengueta: true
+        partit: expressiu
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+    - nom: Baix
+      peus: 8'
+      partit: extensió del Subbaix
+
+acoblaments:
+  - nom: II/I
+    partit: c'/cs'
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Trèmol II

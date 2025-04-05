@@ -1,0 +1,35 @@
+constructor:
+  nom: Blancafort-Capella Orgueners
+  any: 1965
+
+actuacions:
+  - nom: Blancafort OM, SL
+    sort-nom: Blancafort OM, SL
+    any: 2013
+    actuacio: RS
+
+# diapaso
+
+# temperament
+
+# estat
+
+emplacament: Aula Magna de la facultat
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 3, I
+
+teclats:
+  - nom: Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+        partit: bordó
+      - nom: Quinzena
+        peus: 2'
+      - nom: Nasard
+        peus: 1 1/3'

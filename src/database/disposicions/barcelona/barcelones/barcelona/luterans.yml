@@ -1,0 +1,78 @@
+constructor:
+  nom: Kleuker, Detlef
+  any: 1963
+
+actuacions:
+  - nom: Grenzing, Gerhard
+    any: 2009
+    actuacio: RP
+    detalls: En caure un dels tubs grossos de la façana, els substitueix.
+
+diapaso:
+  nota: a'
+  frequencia: 443
+  temperatura: 24
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: al cor, situat al fons de la nau
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 14, II/P
+
+teclats:
+  - nom: I. Hauptwerk
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Koppelflöte
+        peus: 8'
+      - nom: Prinzipal
+        peus: 4'
+      - nom: Blockflöte
+        peus: 2'
+      - nom: Sesquialtera II
+      - nom: Mixtur V
+        peus: 2'
+  - nom: II. Brustwerk
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Gedackt
+        peus: 8'
+      - nom: Rohrflöte
+        peus: 4'
+      - nom: Prinzipal
+        peus: 2'
+      - nom: Quinte
+        peus: 1 1/3'
+      - nom: Zimbeloktave
+        peus: 1 1/3' + 1'
+        partit: utilitza el mateix tirador de la Quinte
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Pommer
+      peus: 16'
+    - nom: Gemshorn
+      peus: 8'
+    - nom: Choralbaß
+      peus: 4'
+    - nom: Trompete
+      peus: 8'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Tremolo II
+    falta: true
+  - nom: Tremolo I

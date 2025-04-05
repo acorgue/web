@@ -1,0 +1,117 @@
+# segons els meus càlculs, hi ha:
+#  I: 784 tubs
+#  II: 660 tubs
+#  P: 126 tubs
+#  Total: 1570.
+#  Total + canonges (18): 1588
+#  El llibret informatiu diu que en té 1581
+
+constructor:
+  nom: Castro, Joan Carles
+  any: 2004
+
+diapaso:
+  nota: a'
+  registre: Flautat 8'
+  frequencia: 441.5
+  temperatura: 26
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: al cor, sobre l’entrada principal
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 28, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat violó
+        peus: 16'
+      - nom: Flautat
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Dotzena
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Plens IV
+        peus: 1 1/3'
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Clarí
+        peus: 4'
+        llengueta: true
+
+  - nom: II. Recitatiu expressiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flauta harmònica
+        peus: 8'
+      - nom: Violó
+        peus: 8'
+      - nom: Viola de gamba
+        peus: 8'
+      - nom: Veu celeste
+        peus: 8'
+        partit: c-g'''
+      - nom: Flauta octaviant
+        peus: 4'
+      - nom: Viola
+        peus: 4'
+      - nom: Sesquiàltera II
+      - nom: Octaví
+        peus: 2'
+      - nom: Pícolo
+        peus: 1'
+      - nom: Trompeta harmònica
+        peus: 8'
+        llengueta: true
+      - nom: Fagot i oboè
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+    - nom: Baix
+      peus: 8'
+      partit: extensió del Subbaix
+    - nom: Contres
+      peus: 8'
+    - nom: Coral baix
+      peus: 4'
+      partit: extensió de les Contres
+    - nom: Contrafagot
+      peus: 16'
+    - nom: Baixons
+      peus: 8'
+      partit: extensió del Contrafagot
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Trèmolo II
+  - nom: Ocellets
+  - nom: Carilló

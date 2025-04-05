@@ -1,0 +1,42 @@
+constructor:
+  nom: Acitores Organería y Arte, SL
+  sort-nom: Acitores Organería y Arte, SL
+  any: Dècada de 1980
+  sort-any: 1985
+
+# diapaso
+
+# temperament
+
+# estat
+
+# emplacament
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 6, I
+
+teclats:
+  - nom: I. Manual
+    # TODO extensio
+    registres:
+      - nom: Violón
+        peus: 8'
+        partit: c'/cs'
+      - nom: Tapadet
+        peus: 4'
+        partit: c'/cs'
+      - nom: Nazard en 12a
+        peus: 2 2/3'
+        partit: cs'-?
+      - nom: Quinzena
+        peus: 2'
+        partit: c'/cs'
+      - nom: Nazard en 17a
+        peus: 1 3/5'
+        partit: cs'-?
+      - nom: Vint-i-dosena
+        peus: 1'
+        partit: c'/cs'

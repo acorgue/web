@@ -1,0 +1,70 @@
+# Aprovat pel Wilfried
+
+constructor:
+  nom: Florenzano, Juan
+  any: 1865
+
+actuacions:
+  - nom: Praet, Wilfried
+    any: 1992
+    actuacio: RS
+
+diapaso:
+  nota: a'
+  frequencia: 415
+  temperatura: 20
+
+# temperament
+
+estat:
+  - any: 2020
+    nota: 4
+  - any: 2023
+    nota: 4
+
+emplacament: al cor, sobre la porta principal
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 9, I/C
+
+teclats:
+  - nom: "Manual"
+    extensio: "53 notes: C,D-f'''"
+    registres:
+      - nom: Flautado de cara
+        peus: 8'
+      - nom: Flauta travesera
+        peus: 8'
+        partit: c'-f'''
+      - nom: Octava
+        peus: 4'
+      - nom: Nazardo en 12a
+        peus: 2 2/3'
+      - nom: Quinzena lleno
+        peus: 2'
+      - nom: Nasardo en 15a
+        peus: 2'
+        partit: c-f'''
+      - nom: Lleno [IV]
+      - nom: Bajos y clarines
+        peus: 4'|8'
+        partit: c'|cs'
+        llengueta: true
+      - nom: Clarín claro
+        peus: 8'
+        llengueta: true
+        partit: cs'-f'''
+
+pedal:
+  extensio: "11 notes: C,D-H"
+  registres:
+    - nom: Sense registres propis
+    - nom: Acoblat al manual
+
+efectes:
+  - nom: Pajarillos
+  - nom: Trèmol
+  - nom: Anul·lador del «Flautado de cara» de C-H al manual

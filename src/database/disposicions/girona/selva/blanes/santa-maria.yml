@@ -1,0 +1,57 @@
+constructor:
+  nom: Aragonès, Salvador
+  any: 1957
+
+# diapaso
+
+# temperament
+
+# estat:
+
+# emplacament:
+
+transmissio:
+  notes: mecànica amb parts pneumàtiques
+  registres: mecànica
+
+composicio: 5, I/P
+
+teclats:
+  - nom: Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Violó
+        peus: 8'
+        partit: c'/cs'
+      - nom: Principal
+        peus: 4'
+        partit: c'/cs'
+      - nom: Queralofó
+        peus: 4'
+        partit: c'/cs'
+      - nom: Fúgara
+        peus: 2'
+        partit: c'/cs'
+      - nom: Ple II
+        peus: 1 1/3'
+        partit: c'/cs'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Violó
+      peus: 8'
+      partit: préstec del Violó
+    - nom: Octava Violó
+      peus: 4'
+      partit: préstec del Violó
+    - nom: Principal
+      peus: 4'
+      partit: préstec del Principal
+    - nom: Octava Principal
+      peus: 2'
+      partit: préstec del Principal
+
+efectes:
+  - nom: Expressió
+  - nom: Trèmol

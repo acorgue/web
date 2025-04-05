@@ -1,0 +1,53 @@
+# TODO comprovar les repeticions... Són ambígues
+
+constructor:
+  nom: Hauslaib, Lorenz
+  any: ca. 1590
+  sort-any: 1590
+
+actuacions:
+  - any: 2013
+    nom: Grenzing, Gerhard
+    actuacio: RS
+
+diapaso:
+  nota: a'
+  frequencia: 415
+  # temperatura
+
+temperament: mesotònic de 2/7 de coma
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: sala dels teclats
+
+transmissio:
+  notes: mecànica
+  registres: mecància
+
+composicio: 4, I
+
+teclats:
+  - nom: Manual
+    extensio: "41 notes: C,D,E,F,G,A-g'',a''"
+    registres:
+      - nom: Flauteadillo
+        peus: 4'
+        partit: c'/cs'
+      - nom: "[quincena]"
+        peus: 1' - 2'
+        partit: c'/cs'
+      - nom: Beintidosena
+        peus: 1/2' - 1' - 2
+        partit: c'/cs'
+      - nom: Dulzayna
+        peus: 4'
+        partit: c'/cs'
+  - nom: Espineta
+    extensio: "41 notes: C,D,E,F,G,A-g'',a''"
+    registres:
+      - nom: Espineta
+        peus: 4'
+

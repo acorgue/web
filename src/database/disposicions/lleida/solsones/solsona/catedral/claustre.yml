@@ -1,0 +1,86 @@
+# El que hi ha aquí és reflex de la realitat. El que hi ha escrit al llibre del González és erroni
+
+constructor:
+  nom: Florenzano, Juan
+  any: 1881
+
+actuacions:
+  - nom: Blancafort OM, SL
+    sort-nom: Blancafort OM, SL
+    any: 2022
+    actuacio: RS
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2005
+    nota: 2
+  - any: 2022
+    nota: 4
+
+emplacament: A la paret dreta de la capella
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 14, I/C
+
+teclats:
+  - nom: Manual
+    extensio: "54 notes: C-f'''"
+    registres:
+      - nom: Cara
+        peus: 8'
+      - nom: Flautado
+        peus: 8'
+        partit: de fusta
+      - nom: Flauta
+        peus: 8'
+        partit: c-f'''
+      - nom: Gamba
+        peus: 8'
+        partit: c-f'''
+      - nom: Voz celeste
+        peus: 8'
+        partit: c'-f'''
+      - nom: Octavo
+        peus: 4'
+      - nom: Nazardo 15a
+        peus: 2'
+      - nom: LLeno [III]
+      - nom: Trompeta angèlica
+        peus: 8'
+        partit: en batalla
+        llengueta: true
+      - nom: Fagot
+        peus: 8'
+        partit: C-h
+        llengueta: true
+      - nom: Oboe
+        peus: 8'
+        partit: c'-f'''
+        llengueta: true
+      - nom: Voz humana
+        peus: 8'
+        partit: c-f'''
+        llengueta: true
+
+pedal:
+  extensio: "12 notes: C-H"
+  registres:
+    - nom: Contres
+      peus: 16'
+    - nom: Contres
+      peus: 8'
+
+acoblaments:
+  - nom: I/P
+    partit: permanent
+
+efectes:
+  - nom: Pedal per accionar el Lleno
+  - nom: Expressió [general]
+  - nom: Trémolo

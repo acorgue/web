@@ -1,0 +1,53 @@
+constructor:
+  nom: Boscà i Serinyena, Josep
+  any: 1712
+
+actuacions:
+  - nom: Aragonès, Salvador
+    any: 1960
+    actuacio: RH # font: Aragonès (Escalona) p. 110
+  - nom: Blancafort, Gabriel
+    any: 1988
+    opus: 124
+    actuacio: RS
+
+# diapaso
+
+# temperament
+
+# estat
+
+# emplacament
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 10, I/C
+
+teclats:
+  - nom: Manual
+    extensio: "45 notes: C,D,E-c'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Cara
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Nasard 17a
+        peus: 1 3/5'
+      - nom: Dinovena
+        peus: 1 1/3'
+      - nom: Corneta III
+        partit: cs'-c'''
+      - nom: Plens II
+      - nom: Cimbalet III
+
+pedal:
+  extensio: "8 notes: C,D,E,F,G,A,B,H"
+  registres:
+    - nom: Contres
+      peus: "?'"

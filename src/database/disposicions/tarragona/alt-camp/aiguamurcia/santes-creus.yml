@@ -1,0 +1,79 @@
+constructor:
+  nom: Anònim
+  any: s. XVIII
+  sort-any: 1750
+
+actuacions:
+  - nom: Amezua, Manuel de
+    any: 1831
+    actuacio: TF
+  - nom: Mn. Emilà Clemente
+    sort-nom: Clemente
+    any: 1976
+    actuacio: compra
+  - nom: Mn. Luís Galindo
+    sort-nom: Galindo
+    any: 1981
+    actuacio: muntatge
+  - nom: Méndez, Jorge
+    any: 2020
+    actuacio: intent de restauració
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2022
+    nota: 1
+
+emplacament: damunt d’una tribuna, al costat de l’Evangeli
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 11, I
+
+teclats:
+  - nom: Manual
+    extensio: "54 notes: C-f'''"
+    registres:
+      - nom: Flautado mayor
+        peus: 8'
+        partit: c'/cs'
+      - nom: Biolón
+        peus: 8'
+        partit: c'/cs'
+      - nom: Octaba
+        peus: 4'
+        partit: c'/cs'
+      - nom: Quincena i decinovena
+        peus: 2' i 1 1/3'
+        partit: C-c'
+      - nom: Quincena
+        peus: 2'
+        partit: cs'-f'''
+      - nom: Lleno III
+        partit: c'/cs'
+      - nom: Corneta
+        peus: 8'
+        partit: cs'-f'''
+      - nom: Trompeta real
+        partit: c'/cs'
+        llengueta: true
+      - nom: Bajoncillo
+        peus: 4'
+        partit: C-c' en batalla
+        llengueta: true
+      - nom: Clarín de campaña
+        peus: 8'
+        partit: cs'-f''' en batalla
+        llengueta: true
+      - nom: Oboe
+        peus: 8'
+        partit: cs'-f''' en batalla
+        llengueta: true
+
+efectes:
+  - nom: Genolleres

@@ -1,0 +1,97 @@
+constructor:
+  nom: Puggina, Silvio
+  any: 1929
+
+actuacions:
+  - nom: Iglesias, David
+    any: 2023
+    actuacio: RS
+
+#diapaso:
+  #nota: a'
+  #registre: Flautat 8'
+  #frequencia: 441.5
+  #temperatura: 26
+
+# temperament
+
+#estat:
+  #- any: 2023
+    #nota: 4
+
+emplacament: al cor
+
+transmissio:
+  notes: pneumàtica
+  registres: pneumàtica
+
+composicio: 9, II/P
+
+teclats:
+  - nom: I i II. Manuals
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Bordone
+        peus: 16'
+      - nom: Principale
+        peus: 8'
+      - nom: Bordone
+        peus: 8'
+      - nom: Viola
+        peus: 8'
+      - nom: Voce celeste
+        peus: 8'
+      - nom: Ottava
+        peus: 4'
+      - nom: Ripieno III
+      - nom: Oboe
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "32 notes: C-g'"
+  registres:
+    - nom: Subasso
+      peus: 16'
+
+acoblaments:
+  - nom: II/II 16'
+  - nom: II/II 4'
+  - nom: II/I
+  - nom: II/I 16'
+  - nom: II/I 4'
+  - nom: II/I
+  - nom: I/I 16'
+  - nom: I/I 4'
+  - nom: II/P
+  - nom: I/P
+  - nom: P/P 4'
+
+efectes:
+  - nom: Expressió
+  - nom: Tremolo
+    partit: general
+  - nom: Crescendo
+    partit: de sabata
+  - nom: Pianissimo II
+    partit: CF
+  - nom: Piano II
+    partit: CF
+  - nom: Mezzoforte II
+    partit: CF
+  - nom: Forte II
+    partit: CF
+  - nom: Pianissimo I
+    partit: CF
+  - nom: Piano I
+    partit: CF
+  - nom: Mezzoforte I
+    partit: CF
+  - nom: Forte I
+    partit: CF
+  - nom: Fortissimo generale
+    partit: CF
+  - nom: Anul·lador oboè
+  - nom: Anul·lador general
+  - nom: Tres combinacions lliures
+  - nom: Pedal automàtic

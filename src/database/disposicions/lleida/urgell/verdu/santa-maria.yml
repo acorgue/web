@@ -1,0 +1,56 @@
+constructor:
+  nom: Walcker-Orgelbau
+  any: 1960
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+    detalls: actua al cicle d’orgues de Ponent, per tant, deu estar bé
+
+# emplacament
+
+# transmissio
+
+composicio: 11, II/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Rohrflöte
+        peus: 8'
+      - nom: Prinzipal
+        peus: 4'
+      - nom: Sesquialtera II
+      - nom: Mixtur II-III
+
+  - nom: II. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Gedeckt
+        peus: 8'
+      - nom: Nacthhorn
+        peus: 4'
+      - nom: Prinzipal
+        peus: 2'
+      - nom: Quinte
+        peus: 1 1/3'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaß
+      peus: 16'
+    - nom: Oktavbaß
+      peus: 8'
+    - nom: Choralbaß
+      peus: 4'
+
+acoblaments:
+  - nom: I/II
+  - nom: II/P
+  - nom: I/P

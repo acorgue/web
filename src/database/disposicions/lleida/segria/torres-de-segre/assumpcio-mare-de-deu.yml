@@ -1,0 +1,53 @@
+constructor:
+  nom: Anònim
+  any: ca. 1860
+  sort-any: 1860
+
+actuacions:
+  - nom: Blancafort, Gabriel i Albert
+    any: 1998
+    actuacio: TR, RS
+    detalls: Trasllat i restauració
+
+diapaso:
+  nota: a'
+  frequencia: 440
+  temperatura: 20
+
+temperament: igual
+
+estat:
+  - any: 2005
+    nota: 4
+
+# emplacament
+
+# transmissio
+
+composicio: 6, I/P
+
+teclats:
+  - nom: Manual
+    extensio: "54 notes: C-f'''"
+    registres:
+      - nom: Bordón
+        peus: 8'
+      - nom: Flautado
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Octavín
+        peus: 2'
+      - nom: Lleno III
+
+pedal:
+  extensio: "27 notes: C-d'"
+  registres:
+    - nom: Contras
+      peus: 16'
+
+acoblaments:
+  - nom: I/P
+
+efectes:
+  - nom: Combinació fixa (Octava, Octavín i Lleno)

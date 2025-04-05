@@ -1,0 +1,101 @@
+# TODO extensions de registres
+
+constructor:
+  nom: Fábrica de Órganos de Nuestra Señora de Montserrat
+  any: 1960
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2013
+    nota: 3
+    detalls: li cal una restauració
+
+# emplacament
+
+# transmissio
+
+composicio: 26, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Bordó
+        peus: 16'
+      - nom: Principal
+        peus: 8'
+      - nom: Flauta
+        peus: 8'
+      - nom: Queralofó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Ple IV
+      - nom: Contrafagot
+        peus: 16'
+        llengueta: true
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Recitatiu expressiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Flauta harmònica
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Celest
+        peus: 8'
+      - nom: Octaviant
+        peus: 4'
+      - nom: Dotzena nasarda
+        peus: 2 2/3'
+      - nom: Quinzena nasarda
+        peus: 2'
+      - nom: Larigot
+        peus: 1 1/3'
+      - nom: Símbala III
+      - nom: Fagot i oboè
+        peus: 8'
+        llengueta: true
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Flautat
+      peus: 16'
+    - nom: Sub-baix
+      peus: 16'
+    - nom: Contres
+      peus: 8'
+    - nom: Violó
+      peus: 8'
+    - nom: Tapada
+      peus: 4'
+    - nom: Flautí
+      peus: 2'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+  - nom: I/P 4'
+
+efectes:
+  - nom: Expressió II
+  - nom: Trèmol II
+  - nom: "Combinacions fixes: pp, p, mf, f, tutti"
+  - nom: Dues combinacions lliures
+  - nom: Anul·lador de llengüeteria II
+  - nom: Anul·lador de llengüeteria I

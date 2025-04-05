@@ -1,0 +1,38 @@
+constructor:
+  nom: Grenzing, Gerhard
+  any: 1978
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: aula 102
+
+transmissio:
+  notes: mecànica
+  registres: permanents
+
+composicio: 2, II/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Quintatò
+        peus: 8'
+
+  - nom: II. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Bordó
+      peus: 8'

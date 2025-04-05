@@ -1,0 +1,121 @@
+# TODO actualitzar
+# TODO extensions
+# TODO discrepàncies
+# TODO any restauracio
+#   Info contrastada amb el llibre de l’escalona. No concorda. Cal revisar-ho
+
+constructor:
+  nom: Boscà i Serinyena, Josep
+  any: 1691
+
+actuacions:
+  - nom: Grenzing, Gerhard
+    any: 1984
+    actuacio: RC
+
+diapaso:
+  nota: a'
+  frequencia: 437.8
+  temperatura: 20
+  registres: Flautat 8'
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+  - any: 2024
+    nota: 4
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 27, II/C
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "42 notes: C,D,E,F,G,A-a''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Dinovena
+        peus: 1 1/3'
+      - nom: Nasard 19a
+        peus: 1 1/3'
+      - nom: Vint-i-dosena i vint-i-sisena I-II
+        peus: 1'
+      - nom: Cimbalet III
+        peus: 1/2'
+
+  - nom: II. Orgue major
+    extensio: "45 notes: C,D,E,F,G,A-c'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava I-II
+        peus: 4'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Dotzena I-II
+        peus: 2 2/3'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Quinzena I-II
+        peus: 2'
+      - nom: Nasard 15a
+        peus: 2'
+      - nom: Nasard 17a
+        peus: 1 3/5'
+      - nom: Dinovena II
+        peus: 1 1/3'
+      - nom: Vint-i-dosena II
+        peus: 1'
+      - nom: Ple III
+        peus: 1/2'
+      - nom: Simbalet IV
+        peus: 1/2'
+      - nom: Corneta V
+        peus: 3 1/5'
+        partit: cs'-c'''
+      - nom: Baixons
+        peus: 4'
+        partit: C-c'
+        llengueta: true
+      - nom: Trompeta
+        peus: 8'
+        partit: cs'-c'''
+        llengueta: true
+      - nom: Xirimia
+        peus: 2'
+        partit: C-c'
+        llengueta: true
+      - nom: Clarins
+        peus: 8'
+        partit: cs'-c'''
+        llengueta: true
+
+pedal:
+  extensio: "8 notes: C,D,E,F,G,A-H"
+  registres:
+    - nom: Contres
+      peus: 16'
+      partit: permanent
+
+acoblaments:
+  - nom: II/P
+    partit: permanent
+
+efectes:
+  - nom: Trèmol
+  - nom: Ocells
+  - nom: Gaita gallega
+    partit: re-fad-la-re

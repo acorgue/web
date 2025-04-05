@@ -1,0 +1,144 @@
+# TODO extensions al pedal. Segur que hi són
+
+constructor:
+  nom: Blancafort, Gabriel
+  any: 1996
+
+diapaso:
+  nota: a'
+  frequencia: 441
+  temperatura: 20
+  registre: Cara
+
+# temperament
+
+# estat
+
+# emplacament
+
+transmissio:
+  notes: mecànica
+  registres: elèctrica
+
+composicio: 39, III/P
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Nasard 17a
+        peus: 1 3/5'
+      - nom: Dinovena
+        peus: 1 1/3'
+      - nom: Cimbalet III
+        peus: 2/3'
+      - nom: Cromorn
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Quintant
+        peus: 16'
+      - nom: Cara
+        peus: 8'
+      - nom: Espigueta
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Dotzena
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Septinona II
+        peus: 1 1/7' i 8/9'
+      - nom: Ple IV-V
+        peus: 1 1/3'
+      - nom: Címbala III
+        peus: 1/2'
+      - nom: Corneta V
+        peus: 8'
+        partit: g-d'''
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Orlos
+        peus: 8'
+        llengueta: true
+      - nom: Baixons
+        peus: 4'
+        partit: C-c'
+        llengueta: true
+      - nom: Clarins
+        peus: 8'
+        partit: cs'-g'''
+        llengueta: true
+
+  - nom: III. Expressiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Corn de nit
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+      - nom: Unda maris
+        peus: 8'
+        partit: c-g'''
+      - nom: Flauta de fus
+        peus: 4'
+      - nom: Viola
+        peus: 4'
+      - nom: Flabiolet
+        peus: 2'
+      - nom: Corona III-IV
+        peus: 1 1/3'
+      - nom: Fagot i oboè
+        peus: 8'
+        llengueta: true
+      - nom: Veu humana
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contrabaix
+      peus: 16'
+    - nom: Subbaix
+      peus: 8'
+    - nom: Contres
+      peus: 8'
+    - nom: Baix
+      peus: 8'
+    - nom: Coral
+      peus: 4'
+    - nom: Bombarda
+      peus: 16'
+      llengueta: true
+    - nom: Trompeta
+      peus: 8'
+      llengueta: true
+
+acoblaments:
+  - nom: III/II
+  - nom: I/II
+  - nom: III/P
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió III
+  - nom: Trèmolo III
+  - nom: Combinador electrònic amb 96 memòries
+  - nom: Combinacions fixes (Bordons, Flautats, Ple i Tutti)
