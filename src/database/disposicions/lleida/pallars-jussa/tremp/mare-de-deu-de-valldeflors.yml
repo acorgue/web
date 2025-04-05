@@ -1,0 +1,118 @@
+# TODO hi ha discrepàncies
+
+# Discrepàncies entre el llibre del González i el llibret editat en motiu de la restauració:
+# No es posen d’acord en:
+#  - Pájaros
+#  - Combinació fixa: Tutti
+#  - I/I 4'
+#  - Tinc dubtes que la flauta sigui harmònica i no armónica.
+
+constructor:
+  nom: Rodrigez, Ricardo
+  any: 1914
+
+actuacions:
+  - nom: Grenzing, Gerhard
+    any: 2007
+    actuacio: restauració i ampliació del cos de pedal amb una trompeta i una bombarda
+
+diapaso:
+  nota: a'
+  frequencia: 435
+  temperatura: 15
+
+temperament: igual
+
+estat:
+  - any: 2003
+    nota: 2
+    detalls: Funciona el 35% de l’orgue. Necessita una restauració immediata
+  - any: 2007
+    nota: 3
+
+# emplacament
+
+# transmissio
+
+composicio: 23, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bourdon
+        peus: 16'
+      - nom: Montre
+        peus: 8'
+      - nom: Principal
+        peus: 8'
+      - nom: Violon
+        peus: 8'
+      - nom: Prestant
+        peus: 4'
+      - nom: Nazardo
+        peus: 2 2/3'
+      - nom: Lleno [IV]
+        peus: 2 2/3'
+      - nom: Dubleta
+        peus: 2'
+      - nom: Trompeta [Real]
+        peus: 8'
+        llengueta: true
+      - nom: Trompeta
+        peus: 4' i 8'
+        llengueta: true
+
+  - nom: Recitatiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flauta armónica
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Celeste
+        peus: 8'
+      - nom: Coro de noche
+        peus: 8'
+      - nom: Ocarina
+        peus: 4'
+      - nom: Flauta sylvestre
+        peus: 2'
+      - nom: Clarinette
+        peus: 8'
+        llengueta: true
+      - nom: Fagot y oboe
+        peus: 8'
+        llengueta: true
+      - nom: Voz humana
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbajo
+      peus: 16'
+    - nom: Cello
+      peus: 8'
+    - nom: Bombarda
+      peus: 16'
+      llengueta: true
+    - nom: Trompeta
+      peus: 8'
+      llengueta: true
+
+acoblaments:
+  - nom: II/I
+  - nom: I/I 4'
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Piano
+  - nom: Fuerte
+  - nom: Tutti
+  - nom: Expressió II
+  - nom: Trémolo II
+  - nom: Timbre
+  - nom: Pájaros

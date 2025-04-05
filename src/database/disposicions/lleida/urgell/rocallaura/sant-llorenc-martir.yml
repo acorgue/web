@@ -1,0 +1,50 @@
+# TODO diapaso temperatura
+
+constructor:
+  nom: Grenzing, Gerhard
+  any: 2000
+
+diapaso:
+  nota: a'
+  frequencia: 440
+
+temperament: gairebé igual
+
+estat:
+  - any: 2004
+    estat: en bon funcionament
+
+# emplacament
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 5, I/P
+
+teclats:
+  - nom: Manual
+    extensio: "54 notes: C-f'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+        partit: c'/cs'
+      - nom: Flauta xemeneia
+        peus: 4'
+        partit: c'/cs'
+      - nom: Quinzena
+        peus: 2'
+        partit: c'/cs'
+      - nom: Dissetena
+        peus: 1 3/5'
+        partit: cs'-f'''
+      - nom: Dinovena
+        peus: 1 1/3'
+        partit: c'/cs'
+
+pedal:
+  extensio: "27 notes: C-d'"
+  registres:
+    - nom: Sense registres propis
+    - nom: Permanentment acoblat
+

@@ -1,0 +1,59 @@
+constructor:
+  nom: Anònim
+  any: segona meitat del s. XVII
+  sort-any: 1650
+
+# actuacions: N’ha tingut, però no sé quan
+
+diapaso:
+  nota: a'
+  frequencia: 440
+  # temperatura
+
+# temperament:
+
+# estat:
+  # - any: 2023
+  # nota: 4
+
+emplacament: sala dels teclats
+
+transmissio:
+  notes: mecànica
+  registres: mecància
+
+composicio: 4, I
+
+teclats:
+  - nom: Manual
+    extensio: "42 notes: C,D,E,F,G,A-a''"
+    registres:
+      - nom: Espigueta
+        peus: 4'
+      - nom: Dotzena nasarda
+        peus: 2 2/3'
+        partit: cs'-a''
+      - nom: Quinzena
+        peus: 2'
+        partit: cs'-a''
+      - nom: Dissetena
+        peus: 1 3/5'
+        partit: cs'-a''
+      - nom: Dinovena
+        peus: 1 1/3'
+        partit: c'/cs'
+      - nom: Vint-i-dosena
+        peus: 1'
+        partit: c'/cs'
+      - nom: Vint-i-dosena
+        peus: 1'
+        partit: cs'-a''
+      - nom: Vint-i-quatrena
+        peus: 4/5'
+        partit: C-c'
+      - nom: Vint-i-novena
+        peus: 1/2'
+        partit: C-c'
+      - nom: Vint-i-novena
+        peus: 1/2'
+        partit: C-c'

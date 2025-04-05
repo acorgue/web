@@ -1,0 +1,107 @@
+constructor:
+  nom: Walcker-Orgelbau
+  sort-any: 1910
+  any: principis del s. XX
+
+actuacions:
+  - nom: Anònim
+    any: 1945
+    actuacio: TR
+  - nom: Anònim
+    any: anys 80
+    sort-any: 1980
+    actuacio: RS
+    detalls: >-
+      Substitució de la tracció pneumàtica-tubular dels registres per una de mecànica mitjançant fil de fre de
+      bicicleta.
+
+diapaso:
+  nota: a'
+  frequencia: 431.2
+  temperatura: 17
+  registre: Montre
+
+temperament: igual
+
+estat:
+  - any: 2024
+    nota: 2
+
+emplacament: al cor, sobre l’entrada principal
+
+transmissio:
+  notes: pneumàtica
+  registres: mecànica
+
+composicio: 10, II/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Montre
+        peus: 8'
+      - nom: Flûte
+        peus: 8'
+      - nom: Cor
+        peus: 8'
+        partit: g-c''''
+      - nom: Viola d’orchestre
+        peus: 8'
+      - nom: Hautbois
+        peus: 8'
+        partit: g-c''''
+        llengueta: true
+      - nom: Clarinette
+        peus: 8'
+        partit: g-c''''
+        llengueta: true
+
+  - nom: II. Manual
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Montre
+        peus: 8'
+        partit: transmissió del I
+      - nom: Flûte harmonique
+        peus: 8'
+        partit: transmissió de Flûte I
+      - nom: Viola d’orchestre
+        peus: 8'
+        partit: transmissió del I
+      - nom: Voix céleste
+        peus: 8'
+        partit: c-c''''
+      - nom: Flûte
+        peus: 4'
+      - nom: Basson
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Bourdon
+      peus: 16'
+    - nom: Flûte
+      peus: 8'
+      partit: transmissió de I
+
+acoblaments:
+  - nom: II/I 16'
+  - nom: II/I 4'
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió general
+  - nom: Trèmul
+    falta: true
+  - nom: 5 combinacions fixes
+    partit: pp, p, mf, f, tutti
+    falta: true
+  - nom: 1 combinació lliure
+    falta: true
+  - nom: Crescendo
+    falta: true

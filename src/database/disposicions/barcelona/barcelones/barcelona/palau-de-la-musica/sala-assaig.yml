@@ -1,0 +1,37 @@
+constructor:
+  nom: Heissler
+  any: 1986
+  opus: 443
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: sala d’assaig de l’Orfeó Català; mòbil
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 4, I
+
+teclats:
+  - nom: Manual
+    extensio: "49 notes: C,D-d'''"
+    registres:
+      - nom: Holzgedackt
+        peus: 8'
+      - nom: Rohrflöte
+        peus: 4'
+      - nom: Gemsprinzipal
+        peus: 2'
+      - nom: Regal
+        peus: 8'
+        llengueta: true
+
+efectes:
+  - nom: Transpositor

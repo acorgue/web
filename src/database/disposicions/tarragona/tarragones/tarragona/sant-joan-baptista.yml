@@ -1,0 +1,79 @@
+constructor:
+  nom: Organería Española, SA
+  sort-nom: Organería Española, SA
+  any: 1954
+
+actuacions:
+  - nom: Desconegut
+    any:
+    actuacio: TR
+
+# diapaso
+
+# temperament
+
+# estat
+
+# emplacament
+
+transmissio:
+  notes: electropneumàtica
+  registres: electropneumàtica
+
+composicio: 14, II/P # fa pudor que el subbajo i violón del pedal siguin per transmissió
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Violón
+        peus: 16'
+      - nom: Flautado
+        peus: 8'
+      - nom: Flauta chimenea
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Docena
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+
+  - nom: II. Expressiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flauta de viena
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Celeste
+        peus: 8'
+      - nom: Flauta cónica
+        peus: 4'
+      - nom: Lleno III
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subajo
+      peus: 16'
+    - nom: Violón
+      peus: 8'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/I 16'
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió II
+  - nom: Exclusió del primer teclat
+  - nom: Exclusió de mixtures
+  - nom: Exclusió de la trompeta
+  - nom: Exclusió del 16' del primer teclat
+  - nom: Tutti
+  - nom: Trèmol general

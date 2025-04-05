@@ -1,0 +1,82 @@
+# Revisat amb el llibre d’orgues de ponent
+
+constructor:
+  nom: Teppati, Francesco
+  any: 1903
+
+actuacions:
+  - nom: Grenzing, Gerhard
+    any: 1992
+    actuacio: RS
+  - nom: Blancafort, Albert
+    any: 2011
+    actuacio: RS
+
+diapaso:
+  nota: a'
+  frequencia: 441
+  temperatura: 20.8
+
+temperament: igual
+
+estat:
+  - any: 2006
+    estat: en bon funcionament
+    nota: 4
+  - any: 2024
+    nota: 4
+
+emplacament: a peu de nau, al creuer, al costat de l’Evangeli
+
+# transmissio
+
+composicio: 9, I/P
+
+teclats:
+  - nom: Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Burdón
+        peus: 16'
+        partit: C-h
+      - nom: Violón
+        peus: 16'
+        partit: c'-g'''
+      - nom: Flauta armónica
+        peus: 8'
+        partit: h/c'
+      - nom: Gamba violino
+        peus: 8'
+      - nom: Celeste
+        peus: 8'
+        partit: c-g'''
+      - nom: Flauta octaviante
+        peus: 4'
+        partit: C-h
+      - nom: Apeninos
+        peus: 4'
+        partit: c'-g'''
+      - nom: Octavín
+        peus: 2'
+      - nom: Lleno-quinzena [IV]
+      - nom: Trompeta real
+        peus: 8'
+        partit: C-h
+      - nom: Clarín
+        peus: 8'
+        partit: c-g'''
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbajo
+      peus: 16'
+
+acoblaments:
+  - nom: I/P
+
+efectes:
+  - nom: Trompeteria
+  - nom: Trémolo
+  - nom: Subbajo
+  - nom: Expressió

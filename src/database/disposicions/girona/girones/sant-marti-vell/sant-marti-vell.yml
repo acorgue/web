@@ -1,0 +1,52 @@
+constructor:
+  nom: Anònim
+  any: mitjan segle XX
+  sort-any: 1950
+
+#diapaso:
+  #nota: a'
+  #frequencia:
+
+#temperament:
+
+#estat:
+  #- any:
+    #nota:
+
+#emplacament:
+
+#transmissio:
+  #notes:
+  #registres:
+
+composicio: 6, II/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Rohrflöte
+        peus: 8'
+      - nom: Principal
+        peus: 4'
+      - nom: Octave
+        peus: 2'
+
+  - nom: II. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Gemshorn
+        peus: 8'
+      - nom: Hohlflöte
+        peus: 4'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbass
+      peus: 16'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P

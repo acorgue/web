@@ -1,0 +1,209 @@
+# TODO actuacions
+
+constructor:
+  nom: Cavaillé, Jean-Pierre
+  any: 1803
+
+actuacions:
+  - nom: Vilardebó, Gaietà
+    any: 1854
+    actuacio: AM
+  - nom: Grenzing, Gerhard
+    any: 1974
+    actuacio: RS
+  - nom: Grenzing, Gerhard
+    any: 1981
+    actuacio: RS
+  - nom: Grenzing, Gerhard
+    any: 2004
+    actuacio: RS
+  - nom: Grenzing, Gerhard
+    any: 2016
+    actuacio: RS
+
+diapaso:
+  nota: a'
+  frequencia: 444.4
+  temperatura: 29
+  registre: Octava de l’orgue major
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: sobre l’entrada principal, al fons de la nau
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 56, IV/P
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "50 notes: C,D-d'''"
+    registres:
+      - nom: Cara
+        peus: 14 pams
+      - nom: Bordó
+        peus: 8'
+      - nom: Cara
+        peus: 7 pams
+      - nom: Flauta
+        peus: 4'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Dissetena
+        peus: 1 3/5'
+      - nom: Larigot
+        peus: 1 1/3'
+      - nom: Fornitura VII
+        peus: 2/3'
+      - nom: Corneta V
+        partit: c'-d'''
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Cromorn
+        peus: 8'
+        llengueta: true
+      - nom: Clarins
+        peus: 4'
+        llengueta: true
+
+  - nom: II. Orgue major
+    extensio: "54 notes: C-f'''"
+    registres:
+      - nom: Flautat Major
+        peus: 16'
+      - nom: Flauta
+        peus: 16'
+        partit: c-f'''
+      - nom: Flautat
+        peus: 8'
+      - nom: Flauta Xemeneia
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flauta dolça
+        peus: 4'
+      - nom: Gran Tercera
+        peus: 3 1/5'
+      - nom: Dotzena I-II
+        peus: 2 2/3' | 4'+2 2/3'
+        partit: h|c'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Quinzena I-II
+        peus: 2'
+        partit: h|c'
+      - nom: Flabiolet
+        peus: 2'
+      - nom: Dissetena
+        peus: 1 3/5'
+      - nom: Corneta Magna IX
+        partit: c'-f'''
+      - nom: Ple de 16' IV
+      - nom: Alemanya IV
+        peus: 1 1/3'
+      - nom: Fornitura IV
+        peus: 1 1/3'
+      - nom: Simbalet III
+      - nom: Simbalet en 17a III
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Clarí
+        peus: 4'
+        llengueta: true
+      - nom: Trompeta de batalla
+        peus: 8'
+        partit: h/c'
+        llengueta: true
+      - nom: Baixons
+        peus: 4'
+        partit: C-h en batalla
+        llengueta: true
+      - nom: Clarins
+        peus: 8'
+        partit: c'-f''' en batalla
+        llengueta: true
+      - nom: Xirimia
+        peus: 2' | 4'
+        partit: h|c' en batalla
+        llengueta: true
+      - nom: Trompeta Magna
+        peus: 16'
+        partit: c'-f''' en batalla
+        llengueta: true
+
+  - nom: III. Recitatiu
+    extensio: "51 notes: C-d'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Nasard en 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Dinovena
+        peus: 1 1/3'
+        partit: c-d'''
+      - nom: Oboè
+        peus: 8'
+        llengueta: true
+
+  - nom: IV. Eco
+    extensio: "54 notes: C-f'''"
+    registres:
+      - nom: Flauta de Fusta
+        peus: 8'
+        partit: C-H obligat
+      - nom: Flauta
+        peus: 4'
+        partit: c-f'''
+      - nom: Quinzena
+        peus: 2'
+        partit: c-f'''
+      - nom: Corneta III
+        partit: c-f'''
+      - nom: Corn Anglès
+        peus: 8'
+        partit: c-f'''
+        llengueta: true
+      - nom: Veu humana
+        peus: 8'
+        partit: c'-f'''
+        llengueta: true
+
+pedal:
+  extensio: "27 notes: C-d'"
+  registres:
+    - nom: Flautat
+      peus: 16'
+    - nom: Flauta
+      peus: 8'
+    - nom: Octava
+      peus: 4'
+    - nom: Bombarda
+      peus: 16'
+      llengueta: true
+    - nom: Trompeta
+      peus: 8'
+      llengueta: true
+
+acoblaments:
+  - nom: II/P
+  - nom: I/II
+    partit: amb poms
+
+efectes:
+  - nom: Rossinyol

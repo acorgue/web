@@ -1,0 +1,165 @@
+constructor:
+  nom: Grenzing, Gerhard
+  any: 2018
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: tribuna al fons de la nau
+
+transmissio:
+  notes: mecànica
+  registres: elèctrica
+
+composicio: 37, III/P
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Suavial
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Dotzena
+        peus: 2 2/3'
+      - nom: Flabiol
+        peus: 2'
+      - nom: Dissetena
+        peus: 1 3/5'
+      - nom: Címbala III
+        peus: 1 1/3'
+      - nom: Cromorn
+        peus: 8'
+        llengueta: true
+      - nom: Baritona
+        peus: 16'
+        falta: true
+        llengueta: true
+
+  - nom: II. Orgue major
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Flautat major
+        peus: 16'
+      - nom: Cara
+        peus: 8'
+      - nom: Flauta xemeneia
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flauta
+        peus: 4'
+      - nom: Dotzena
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Corneta V
+      - nom: Ple IV-V
+        peus: 2'
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+
+  - nom: III. Recitatiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Bordó major
+        peus: 16'
+      - nom: Flauta doble
+        peus: 8'
+      - nom: Corn de nit
+        peus: 8'
+      - nom: Viola de gamba
+        peus: 8'
+      - nom: Veu celeste
+        peus: 8'
+      - nom: Fúgara
+        peus: 4'
+      - nom: Flauta octaviant
+        peus: 4'
+      - nom: Octaví
+        peus: 2'
+      - nom: Corona IV
+        peus: 2'
+      - nom: Fagot
+        peus: 16'
+        llengueta: true
+      - nom: Trompeta harmònica
+        peus: 8'
+        llengueta: true
+      - nom: Oboè
+        peus: 8'
+        llengueta: true
+      - nom: Veu Humana
+        peus: 8'
+        llengueta: true
+        falta: true
+
+pedal:
+  extensio: "32 notes: C-g'"
+  registres:
+    - nom: Profunda
+      peus: 32'
+      falta: true
+      partit: extensió de les Contres
+    - nom: Subbaix
+      peus: 32'
+      falta: true
+      partit: extensió del Subbaix
+    - nom: Contres
+      peus: 16'
+    - nom: Subbaix
+      peus: 16'
+    - nom: Cinquena major
+      peus: 10'2/3
+    - nom: Contres
+      peus: 8'
+      partit: extensió de les Contres
+    - nom: Baix
+      peus: 8'
+      partit: extensió del Subbaix
+    - nom: Tenor
+      peus: 4'
+    - nom: Bombarda
+      peus: 16'
+      llengueta: true
+    - nom: Trompeta
+      peus: 8'
+      llengueta: true
+      partit: extensió de la Bombarda
+
+acoblaments:
+  - nom: III/II
+    partit: mecànic
+  - nom: III/II 16'
+    partit: elèctric
+  - nom: III/I
+    partit: mecànic
+  - nom: I/II
+    partit: mecànic
+  - nom: III/P
+    partit: elèctric
+  - nom: III/P 4'
+    partit: elèctric
+  - nom: II/P
+    partit: mecànic
+  - nom: I/P
+    partit: mecànic
+
+efectes:
+  - nom: Trèmul III
+  - nom: Trèmul II
+  - nom: Expressió III
+  - nom: Combinador electrònic

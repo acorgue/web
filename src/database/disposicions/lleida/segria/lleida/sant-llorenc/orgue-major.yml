@@ -1,0 +1,96 @@
+# TODO diapaso temperatura
+
+constructor:
+  nom: Blancafort, Gabriel
+  any: 1997
+
+diapaso:
+  nota: a'
+  frequencia: 440
+
+# temperament
+
+estat:
+  - any: 2006
+    nota: 4
+
+# emplacament
+
+# transmissio
+
+composicio: 22, II/P
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Nasard 17a
+        peus: 1 3/5'
+      - nom: Dinovena
+        peus: 1 1/3'
+      - nom: Cromorn
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+        partit: c'/cs'
+      - nom: Espigueta
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flauta de fus
+        peus: 4'
+      - nom: Dotzena
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Plens IV-V
+        peus: 1 1/3'
+      - nom: Corneta magna V
+        peus: 8'
+        partit: g-g''' o bé cs'-g'''
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+        partit: c'/cs'
+      - nom: Baixons (en batalla)
+        peus: 4'
+        llengueta: true
+        partit: C-c'
+      - nom: Clarins (en batalla)
+        peus: 8'
+        llengueta: true
+        partit: cs'-g'''
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+    - nom: Baix
+      peus: 8'
+    - nom: Flauta
+      peus: 4'
+    - nom: Trompeta
+      peus: 8'
+      llengueta: true
+
+acoblaments:
+  - nom: I/II
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Trèmol I

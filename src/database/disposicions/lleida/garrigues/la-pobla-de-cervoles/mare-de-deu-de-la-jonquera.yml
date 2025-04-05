@@ -1,0 +1,100 @@
+# TODO diapasó temperatura
+
+constructor:
+  nom: Casas, Antoni
+  any: 1752
+
+actuacions:
+  - nom: Casas, Josep
+    any: finals del s. XVIII
+    sort-any: 1790
+    actuacio: AM
+    detalls: S’afegeix una cadireta interior (caixa d’ecos) en un segon teclat
+  - nom: Florenzano, Juan
+    any: finals del s. XIX
+    sort-any: 1890
+    actuacio: AM, RP
+    detalls: Substitució de les manxes originals per unes de faiçó i afegiment de dos registres a l’orgue major.
+  - nom: Praet, Wilfried
+    any: 1999
+    actuacio: RS, RC
+
+# temperatura!
+diapaso:
+  nota: a'
+  frequencia: 415
+
+temperament: mesotònic modificat
+
+estat:
+  - any: 2022
+    nota: 4
+
+# emplacament
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 15, II/P
+
+teclats:
+  - nom: I. Cadireta interior
+    extensio: "45 notes: C,D,E,F,G,A-c'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+        partit: c'/cs'
+      - nom: Corneta [IV]
+        partit: cs'-c'''
+        peus: 4'
+      - nom: Violins
+        peus: 8'
+        llengueta: true
+  - nom: II. Orgue major
+    extensio: "45 notes: C,D,E,F,G,A-c'''"
+    registres:
+      - nom: Cara
+        peus: 8'
+        partit: c'/cs'
+      - nom: Octava
+        peus: 4'
+        partit: c'/cs'
+      - nom: Quinzena
+        peus: 2'
+        partit: c'/cs'
+      - nom: Nasard de 17a
+        peus: 1 3/5'
+        partit: c'/cs'
+      - nom: Nasard de 19a
+        peus: 1 1/3'
+        partit: c'/cs'
+      - nom: Ple [IV]
+        partit: c'/cs'
+      - nom: Símbala [III]
+        partit: c'/cs'
+      - nom: Cascavells [III]
+        partit: c'/cs'
+      - nom: Corneta [VI]
+        partit: cs'-c'''
+        peus: 8'
+      - nom: Baixons
+        peus: 4'
+        partit: C-c', en batalla
+        llengueta: true
+      - nom: Clarins
+        peus: 8'
+        partit: cs'-c''', en batalla
+        llengueta: true
+
+pedal:
+  extensio: "8 notes: C,D,E,F,G,A-H"
+  registres:
+    - nom: Contres
+      peus: 8'
+
+acoblaments:
+  - nom: II/P
+
+efectes:
+  - nom: Pedalet per obrir i tancar l’arca d’ecos

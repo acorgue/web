@@ -1,0 +1,78 @@
+# TODO actualitzar
+# TODO actuacions
+
+constructor:
+  nom: Juan Dourte i Lope Alberdi
+  sort-nom: Dourte, Juan
+  any: 1925
+
+# diapaso
+
+# temperatura
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: al cor, sobre l’entrada principal
+
+# transmissio
+
+composicio: 14, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Violón
+        peus: 16'
+      - nom: Flautado principal
+        peus: 8'
+      - nom: Flauta armónica
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Recitatiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Cor de nuit
+        peus: 8'
+      - nom: Viola de Gamba
+        peus: 8'
+      - nom: Voz celeste
+        peus: 8'
+        partit: c-c''''
+      - nom: Ocarina
+        peus: 4'
+      - nom: Fagot y oboe
+        peus: 8'
+        llengueta: true
+      - nom: Voz humana
+        peus: 8'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Violón
+      peus: 16'
+    - nom: Contrabajo
+      peus: 8'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+  - nom: II/I 16'
+  - nom: I/I 4'
+
+efectes:
+  - nom: Expressió general
+  - nom: "Combinació fixa: flautados"
+  - nom: "Combinació fixa: trompetería"
+  - nom: Tremolo II

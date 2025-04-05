@@ -1,0 +1,61 @@
+# TODO
+#  - diapaso
+#  - temperament
+
+constructor:
+  nom: Blancafort-Capella Orgueners
+  any: 1969
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2022
+    estat: en bon funcionament
+    nota: 4
+
+emplacament: al lateral dret de la capella
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 8, I/P
+
+teclats:
+  - nom: Manual
+    extensio: "50 notes: C-d'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+        partit: c/cs'
+      - nom: Bordonet
+        peus: 4'
+        partit: c/cs'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+        partit: cs-d'''
+      - nom: Dinovena i vint-i-dosena
+        peus: 1 1/3' i 1'
+        partit: C-c'
+      - nom: Quinzena i dinovena
+        peus: 2' i 1 1/3'
+        partit: cs'-d'''
+      - nom: Regalies altes
+        peus: 4'
+        llengueta: true
+        partit: C-c'
+      - nom: Regalies
+        peus: 8'
+        llengueta: true
+        partit: cs'-d'''
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contres
+      peus: 16'
+
+acoblaments:
+  - nom: I/P

@@ -1,0 +1,56 @@
+# Revisat amb el llibre d’orgues de ponent
+
+constructor:
+  nom: Anònim
+  any: ca. 1810
+  sort-any: 1810
+
+actuacions:
+  - nom: Frédéric Desmottes, SL
+    sort-nom: Desmottes
+    any: 2003–2004
+    sort-any: 2003
+    actuacio: RS
+
+diapaso:
+  nota: b'
+  frequencia: 422
+  temperatura: 18
+
+# temperament
+
+estat:
+  - any: 2006
+    nota: 4
+
+# emplacament
+
+# transmissio
+
+composicio: 9, I
+
+teclats:
+  - nom: Manual
+    extensio: "47 notes: C,D-c'''"
+    registres:
+      - nom: Violó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+        partit: h/c'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Dinovena
+        peus: 1 1/3'
+      - nom: Ple II
+      - nom: Nasard 17a
+        peus: 1 3/5'
+        partit: C,D-h
+      - nom: Corneta III
+        partit: c'-c''' o bé cs'-c'''
+      - nom: Baixons
+        peus: 4'
+        partit: C-h
+      - nom: Clarins
+        peus: 8'
+        partit: c'-c'''

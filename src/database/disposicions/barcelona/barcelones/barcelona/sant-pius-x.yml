@@ -1,0 +1,104 @@
+# TODO tolosana i corneta tenen el mateix tirador?
+
+constructor:
+  nom: Blancafort-Capella Orgueners
+  any: 1971
+
+actuacions:
+  - nom: Castro, Joan Carles
+    any:
+    actuacio: AM
+    detalls: Ampliació del cos de pedal amb un Fagot 16'
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2022
+    nota: 4
+
+emplacament: en una tribuna dedicada, a la banda de l’epístola, immediatament després de l’altar.
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 25, II/P
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Octava
+        peus: 4'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Nasard 17a
+        peus: 1 3/5'
+      - nom: Dinovena
+        peus: 1 1/3'
+      - nom: Cimbalet 3f
+        peus: 1/2'
+      - nom: Regalies
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 16'
+      - nom: Flautat major
+        peus: 8'
+      - nom: Flauta xemeneia
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Plens
+        peus: 1 1/3'
+      - nom: TolosanaIII
+        peus: 2 2/3'
+        partit: C-c'
+      - nom: Corneta anglesa IV
+        peus: 4'
+        partit: cs'-g'''
+      - nom: Trompeta
+        peus: 8'
+        partit: c'/cs'
+        llengueta: true
+      - nom: Baixons
+        peus: 4'
+        partit: C-c'
+        llengueta: true
+      - nom: Clarins clars
+        peus: 8'
+        partit: cs'-g'''
+        llengueta: true
+      - nom: Violetes
+        peus: 2'
+        partit: C-c'
+        llengueta: true
+      - nom: Clarins alts
+        peus: 4'
+        partit: cs'-g'''
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+    - nom: Baix
+      peus: 8'
+    - nom: Fagot
+      peus: 16'
+      llengueta: true

@@ -1,0 +1,44 @@
+constructor:
+  nom: Aragonès, Salvador
+  any: 1951
+
+actuacions:
+  - nom: Aragonès, Salvador
+    any: 1957
+    actuacio: TR
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2024
+    nota: 0
+
+emplacament: al cor, sobre l’entrada principal
+
+transmissio:
+  notes: mecànica amb parts pneumàtiques
+  registres: mecànica
+
+composicio: 4, I
+
+teclats:
+  - nom: Manual
+    extensio: "49 notes: C-c'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+        partit: c'/cs'
+      - nom: Principal
+        peus: 4'
+        partit: c'/cs'
+      - nom: Quinzena
+        peus: 2'
+        partit: C-h
+      - nom: Nasard
+        peus: 2 2/3'
+        partit: c'-c'''
+
+efectes:
+  - nom: Tremolo

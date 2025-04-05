@@ -1,0 +1,38 @@
+constructor:
+  nom: Anònim
+  any: Finals del s. XVIII
+  sort-any: 1780
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2004
+    nota: 3
+    detalls: En funcionament, però li cal una bona revisió
+
+# emplacament
+
+# transmissio
+
+composicio: 4, I/P
+
+teclats:
+  - nom: Manual
+    extensio: "49 notes: C-c'''"
+    registres:
+      - nom: Gedackt
+        peus: 8'
+      - nom: Salicional
+        peus: 4'
+      - nom: Flöte
+        peus: 4'
+      - nom: Oktav
+        peus: 2'
+
+pedal:
+  extensio: "22 notes: C-a"
+  registres:
+    - nom: Sense registres propis
+    - nom: Permanentment acoblat

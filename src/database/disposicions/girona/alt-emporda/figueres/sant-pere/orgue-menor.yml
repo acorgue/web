@@ -1,0 +1,71 @@
+constructor:
+  nom: Walcker-Orgelbau
+  any: 1943
+  opus: 2793
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 0
+    detalls: té molts defectes en la part elèctrica i nombroses fugues d’aire que el fan intocable
+
+emplacament: en una capella lateral
+
+transmissio:
+  notes: elèctrica
+  registres: elèctrica
+
+composicio: 3, II/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bourdon
+        peus: 16'
+      - nom: Gedackt
+        peus: 8'
+      - nom: Germshorn
+        peus: 8'
+      - nom: Prinzipal
+        peus: 4'
+      - nom: Flöte
+        peus: 4'
+      - nom: Nasat
+        partit: [sic]
+        peus: 2 2/3'
+      - nom: Nachthorn
+        peus: 2'
+  - nom: II. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flöte
+        peus: 8'
+      - nom: Prästant
+        peus: 4'
+      - nom: Traversflöte
+        peus: 4'
+      - nom: Piccolo
+        peus: 2'
+      - nom: Quinte
+        peus: 1 1/3'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbass
+      peus: 16'
+    - nom: Bourdon
+      peus: 8'
+    - nom: Choralbass
+      peus: 4'
+    - nom: Bauernflöte
+      peus: 2'
+
+efectes:
+  - nom: Expressió general
+  - nom: Tutti
+  - nom: Tremolo

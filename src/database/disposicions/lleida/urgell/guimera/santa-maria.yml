@@ -1,0 +1,58 @@
+# TODO diapaso temperatura
+
+constructor:
+  nom: Blancafort-Capella Orgueners
+  any: 1972
+
+actuacions:
+  - nom: Blancafort (?), Gabriel
+    any: 1975
+    actuacio: AM
+    detalls: Ampliació amb una Regalia al segon teclat i un Subbaix
+
+diapaso:
+  nota: a'
+  frequencia: 440
+
+temperament: igual
+
+estat:
+  - any: 2004
+    nota: 4
+
+# emplacament
+
+# transmissio
+
+composicio: 6, II/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Tapadet
+        peus: 4'
+      - nom: Dinovena
+        peus: 1 1/3'
+
+  - nom: II. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Regalies
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P

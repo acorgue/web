@@ -30,4 +30,6 @@ const withMDX = createMDX({
   },
 });
 
-export default withNextIntl(withMDX(nextConfig));
+const withYAML = require("next-yaml");
+
+export default withNextIntl(withYAML(withMDX(nextConfig)));

@@ -1,0 +1,115 @@
+# TODO fa pudor d’extensions al pedal
+
+constructor:
+  nom: Castro, Joan Carles
+  any: 2008
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2019
+    nota: 4
+
+emplacament: darrere l’altar major
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 30, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat violó
+        peus: 16'
+      - nom: Flautat
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Dotzena
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Plens IV
+      - nom: Corneta V
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+      - nom: Clarí
+        peus: 4'
+        llengueta: true
+
+  - nom: II. Recitatiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flauta harmònica
+        peus: 8'
+      - nom: Violó
+        peus: 8'
+      - nom: Viola de gamba
+        peus: 8'
+      - nom: Veu celecte
+        peus: 8'
+      - nom: Flauta octaviant
+        peus: 4'
+      - nom: Viola
+        peus: 4'
+      - nom: Sesquiàltera II
+      - nom: Octaví
+        peus: 2'
+      - nom: Píccolo
+        peus: 1'
+      - nom: Trompeta harmònica
+        peus: 8'
+        llengueta: true
+      - nom: Fagot-oboè
+        peus: 8'
+        llengueta: true
+      - nom: Veu humana
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 32'
+      falta: true
+    - nom: Contres
+      peus: 16'
+      falta: true
+    - nom: Subbaix
+      peus: 16'
+    - nom: Contres
+      peus: 8'
+    - nom: Baix
+      peus: 8'
+    - nom: Coral baix
+      peus: 4'
+    - nom: Contrafagot
+      peus: 16'
+      llengueta: true
+    - nom: Baixons
+      peus: 8'
+      llengueta: true
+
+acoblaments:
+  - nom: II/P
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Trèmul II?
+  - nom: Ocellets
+  - nom: Carilló
+  - nom: Expressió II

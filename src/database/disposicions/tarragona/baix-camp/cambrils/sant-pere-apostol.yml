@@ -1,0 +1,73 @@
+constructor:
+  nom: Walcker-Orgelbau
+  any: 1920
+
+actuacions:
+  - nom: A&K Orgues de Vent
+    any: 2006
+    actuacio: RS
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2013
+    estat: en bon funcionament
+
+# emplacament
+
+transmissio:
+  notes: pneumàtica
+  registres: pneumàtica
+
+composicio: 11, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Principal
+        peus: 8'
+      - nom: Flauto amabile
+        peus: 8'
+      - nom: Viola di Gamba
+        peus: 8'
+      - nom: Oktave
+        peus: 4'
+      - nom: Oktave
+        peus: 2'
+      - nom: Trompette
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Expressiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Salicional
+        peus: 8'
+      - nom: Voix Céleste
+        peus: 8'
+      - nom: Lieblich Gedeckt
+        peus: 8'
+      - nom: Flauto dolce
+        peus: 4'
+
+pedal:
+  extensio: "27 notes: C-d'"
+  registres:
+    - nom: Subbaß
+      peus: 16'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/I 4'
+  - nom: II/I 16'
+  - nom: I/I 4'
+  - nom: I/P
+  - nom: Baß Coppel
+
+efectes:
+  - nom: Expressió II
+  - nom: Tremolo
+  - nom: Tutti

@@ -1,0 +1,81 @@
+constructor:
+  nom: Bertran, Miquel
+  any: 1929
+
+actuacions:
+  - nom: Camps, Lluís
+    any: 1960
+    actuacio: RC
+
+diapaso:
+  nota: a'
+  temperatura: 14
+  frequencia: 426
+  registre: Principal 8'
+
+temperament: igual
+
+estat:
+  - any: 2023
+    nota: 3
+
+emplacament: al cor, al costat de l’Epístola
+
+transmissio:
+  notes: mecànica
+  registres: pneumàtica
+
+composicio: 12, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Bordón
+        peus: 16'
+      - nom: Bordón
+        peus: 8'
+      - nom: Principal
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Lleno III
+        peus: 2 2/3'
+
+  - nom: II. Positiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Cor de nuit
+        peus: 8'
+      - nom: Viola de gamba
+        peus: 8'
+      - nom: Voz celeste
+        peus: 8'
+      - nom: Nasardo 12a
+        peus: 2 2/3'
+      - nom: Flauta octaviante
+        peus: 4'
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbajo
+      peus: 16'
+      partit: préstec del Bordón 16'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: "Combinacions fixes: piano"
+  - nom: "Combinacions fixes: forte"
+  - nom: "Combinacions fixes: tutti"
+  - nom: Trémolo II
+  - nom: Expressió general

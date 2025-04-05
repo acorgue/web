@@ -1,0 +1,179 @@
+constructor:
+  nom: Amezua, Aquilino
+  any: 1892
+
+actuacions:
+  - nom: Xuclà, Pau
+    any: 1950
+    actuacio: RO
+  - nom: Camps, Lluís
+    any: 1957
+    actuacio: AM
+  - nom: A&K Orgues de Vent
+    any: 1992–1996
+    sort-any: 1996
+    actuacio: TF
+    detalls: Mecanització dels teclats i desconnexió del tercer teclat.
+
+diapaso:
+  nota: a'
+  frequencia: 446.6
+  temperatura: 27
+  registre: Flautado 8' (I)
+
+temperament: igual
+
+estat:
+  - any: 2023
+    nota: 2
+
+emplacament: al cor, sobre l’entrada principal
+
+transmissio:
+  notes: mecànica
+  registres: pneumàtica
+
+composicio: 28, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautado
+        peus: 16'
+      - nom: Flautado
+        peus: 8'
+      - nom: Bordón
+        peus: 8'
+      - nom: Flauta catalana
+        peus: 8'
+      - nom: Kerolofón
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quincena
+        peus: 2'
+      - nom: Lleno IV
+      - nom: Contrafagot
+        peus: 16'
+        llengueta: true
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Bajoncillo y clarín
+        peus: 4'
+        llengueta: true
+
+  - nom: II. Positiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flauta armónica
+        peus: 8'
+      - nom: Cor de nuit
+        peus: 8'
+      - nom: Principal
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+      - nom: Undamaris
+        peus: 8'
+      - nom: Bordon
+        peus: 4'
+      - nom: Octavín
+        peus: 2'
+      - nom: Lleno III
+      - nom: Fagot oboe
+        peus: 8'
+        llengueta: true
+      - nom: Baixons i clarins
+        peus: 4' y 8'
+        llengueta: true
+        partit: c'|cs'
+      - nom: Clarinet
+        peus: 8'
+        llengueta: true
+
+  - nom: III. Expressiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordón
+        peus: 16'
+        falta: true
+      - nom: Bordón
+        peus: 8'
+        falta: true
+      - nom: Flauta armónica
+        peus: 8'
+        falta: true
+      - nom: Gamba
+        peus: 8'
+        falta: true
+      - nom: Voz celeste
+        peus: 8'
+        falta: true
+      - nom: Flauta octaviante
+        peus: 4'
+        falta: true
+      - nom: Ocarina
+        peus: 4'
+        falta: true
+      - nom: Flauta cónica
+        peus: 4'
+        falta: true
+      - nom: Nazardos 12a
+        peus: 2 2/3'
+        falta: true
+      - nom: Nazardos 15a
+        peus: 2'
+        falta: true
+      - nom: Nazardos 17a
+        peus: 1 3/5'
+        falta: true
+      - nom: Lleno I
+        falta: true
+        partit: sic.
+      - nom: Voz humana
+        peus: 8'
+        llengueta: true
+        falta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contrabajo
+      peus: 16'
+      falta: true
+    - nom: Bordó
+      peus: 16'
+    - nom: Contrabajo
+      peus: 8'
+    - nom: Flauta
+      peus: 8'
+    - nom: Bordó
+      peus: 8'
+    - nom: Coral bajo
+      peus: 4'
+    - nom: Bombarda
+      peus: 16'
+      llengueta: true
+
+acoblaments:
+  - nom: III/II
+    falta: true
+  - nom: III/I
+    falta: true
+  - nom: II/I
+  - nom: III/P
+    falta: true
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Trèmul II
+  - nom: Trèmul III
+    falta: true
+  - nom: 1 combinació lliure
+  - nom: Flautados, Llenos, Trompetería i Gran Juego III
+  - nom: Flautados, Llenos, Trompetería i Gran Juego II
+  - nom: Flautados, Llenos, Trompetería i Gran Juego I
+  - nom: Gran Juego General

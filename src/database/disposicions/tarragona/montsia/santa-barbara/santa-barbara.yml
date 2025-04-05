@@ -1,0 +1,62 @@
+# TODO actuacions
+
+constructor:
+  nom: Pedro Palop
+  any: 1920
+
+# actuacions
+
+# diapaso
+
+# temperament
+
+# estat
+
+# emplacament
+
+# transmissio
+
+composicio: 10, I/C
+
+teclats:
+  - nom: "Manual"
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautado mayor
+        peus: 8'
+        partit: h/c'
+      - nom: Bordón
+        peus: 8'
+        partit: h/c'
+      - nom: Viola de gamba
+        peus: 8'
+        partit: h/c'
+      - nom: Voz celeste
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+        partit: h/c'
+      - nom: Flageolet
+        peus: 2'
+        partit: h/c'
+      - nom: Lleno
+        peus: 1 1/3'
+      - nom: Nasardo y corneta
+      - nom: Trompa real
+        peus: 8'
+        llengueta: true
+        partit: h/c'
+
+pedal:
+  extensio: "13 notes: C-c'"
+  registres:
+    - nom: Flauta sonora
+      peus: 8'
+
+acoblaments:
+  - nom: I/P
+
+efectes:
+  - nom: Expressió general
+  - nom: Trèmol
+  - nom: Llamada de trompa y lleno

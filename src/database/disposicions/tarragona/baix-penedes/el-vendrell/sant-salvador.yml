@@ -1,0 +1,165 @@
+# TODO revisió
+
+constructor:
+  nom: Scherrer, Ludwig
+  any: 1775
+
+actuacions:
+  - nom: Vandunneghem, Giusseppe
+    any: 1792
+    actuacio: NE
+    detalls: Neteja i afinació
+  - nom: Toldrà, Joan
+    any: 1860
+    actuacio: RP
+    detalls: Reparació i afinació
+  - nom: Florenzano, Juan
+    any: 1884
+    actuacio: RS
+    detalls: Restauració(?)
+  - nom: Puggina, Silvio
+    any: 1928
+    actuacio: Canvi d’emplaçament de l’orgue
+  - nom: Blancafort-Capella Orgueners
+    any: 1963
+    actuacio: AM
+    detalls: Restitució de la cadireta, avançament de l’orgue, s’alça 50 cm i s’hi afegeix un pedaler de 30 notes.
+  - nom: Blancafort, Gabriel
+    any: 1983
+    actuacio: RS
+  - nom: Blancafort, Albert
+    any: 1997
+    actuacio: RP
+  - nom: Frédéric Desmottes, SL
+    sort-nom: Desmottes
+    any: 2010
+    actuacio: RS
+
+diapaso:
+  nota: a'
+  frequencia: 415
+  temperatura: 20
+
+temperament: Bach-Jobin
+
+estat:
+  - any: 2023
+    estat: en bon funcionament
+    nota: 4
+
+emplacament: al cor, sobre l’entrada principal
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 33, III/P
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "48 notes: C,D-c'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Cara
+        peus: 4'
+        partit: "*"
+      - nom: Flauta travessera
+        partit: c'-c'''
+        peus: 8'
+      - nom: Nasard en 12a
+        peus: 2 2/3'
+      - nom: Nasard en 19a
+        peus: 1 1/3'
+      - nom: Corneta IV
+        partit: c'-c'''
+      - nom: Cromorn
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Orgue major
+    extensio: "48 notes: C,D-c'''"
+    registres:
+      - nom: Cara
+        peus: 8'
+        partit: "*"
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Nasard en 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Nasard en 15a
+        peus: 2'
+      - nom: Fornitura IV
+      - nom: Alemanya IV
+      - nom: Cimbalet IV
+      - nom: Címbala III
+        partit: amb dissetena
+      - nom: Corneta VII
+        peus: 8'
+        partit: cs'-c'''?
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+      - nom: Veu humana
+        peus: 8'
+        llengueta: true
+      - nom: Baixons i clarins
+        peus: 4' i 8'
+        partit: h|c' en batalla
+        llengueta: true
+      - nom: Clarins en 15a
+        peus: 2'
+        partit: C-h en batalla
+        llengueta: true
+      - nom: Clarí de campanya
+        peus: 8'
+        llengueta: true
+        partit: c'-c''' en batalla
+
+  - nom: III. Ecos
+    extensio: "25 notes: c'-c'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Violins
+        peus: 8'
+
+pedal:
+  extensio: "26 notes: C,D-d'"
+  registres:
+    - nom: Contres majors
+      peus: 16'
+      partit: "*"
+    - nom: Principal
+      peus: 8'
+      partit: "*"
+    - nom: Contres
+      peus: 8'
+      partit: C,D-h
+    - nom: Octava
+      peus: 4'
+      partit: "*"
+    - nom: Flauta
+      peus: 2'
+      partit: "*"
+    - nom: Plens V
+      partit: "*"
+    - nom: Bombarda
+      peus: 16'
+      partit: "*"
+      llengueta: true
+    - nom: Trompeta
+      peus: 8'
+      partit: "*"
+      llengueta: true
+
+acoblaments:
+  - nom: Sense acoblaments
+
+efectes:
+  - nom: Trèmol pels teclats
+  - nom: Cullera d’expressió del III

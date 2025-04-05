@@ -1,0 +1,164 @@
+constructor:
+  nom: Blancafort OM, SL
+  sort-nom: Blancafort OM, SL
+  any: 2018
+
+diapaso:
+  nota: a'
+  frequencia: 440
+  temperatura: 20
+
+temperament: Bach-Kellner
+
+estat:
+  - any: 2022
+    nota: 4
+
+emplacament: al cor, sobre l’entrada principal
+
+transmissio:
+  notes: mecànica
+  registres: elèctrica
+
+composicio: 24, II/P
+
+teclats:
+  - nom: I. Cadireta expressiva
+    extensio: "58 notes: C-a'''"
+    registres:
+      - nom: Cara
+        peus: 8'
+        falta: true
+      - nom: Bordó de fusta
+        peus: 8'
+        falta: true
+      - nom: Octava
+        peus: 4'
+        falta: true
+      - nom: Tapadet
+        peus: 4'
+        falta: true
+      - nom: Nasard 12a
+        peus: 2 2/3'
+        partit: cs'?-a'''
+        falta: true
+      - nom: Quinzena
+        peus: 2'
+        falta: true
+      - nom: Nasard 17a
+        peus: 1 3/5'
+        falta: true
+      - nom: Larigot
+        peus: 1 1/3'
+        falta: true
+      - nom: Cimbalet 3f
+        peus: 1'
+        falta: true
+      - nom: Trompeta harmònica
+        peus: 8'
+        llengueta: true
+        falta: true
+
+  - nom: II. Orgue major
+    extensio: "58 notes: C-a'''"
+    registres:
+      - nom: Bordó major
+        peus: 16'
+        falta: true
+      - nom: Flautat
+        peus: 8'
+      - nom: Flauta harmònica
+        peus: 8'
+      - nom: Flauta xemeneia
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flauta cònica
+        peus: 4'
+      - nom: Dotzena
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Plens 4-5f
+        peus: 1 1/3'
+      - nom: Corneta V
+        peus: 8'
+        partit: g-d''' o bé cs'-d'''
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+      - nom: Baixons - clarins (en batalla)
+        peus: 4' - 8'
+        llengueta: true
+      - nom: Orlos (en batalla)
+        peus: 8'
+        llengueta: true
+
+  - nom: III. Expressiu
+    extensio: "58 notes: C-a'''"
+    registres:
+      - nom: Principal
+        peus: 8'
+      - nom: Cor de nit
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+      - nom: Veu Celeste
+        peus: 8'
+        partit: c-a'''
+      - nom: Octava
+        peus: 4'
+      - nom: Octaviant
+        peus: 4'
+      - nom: Flautí
+        peus: 2'
+      - nom: Progressió harmònica
+        peus: 2'
+      - nom: Fagot-Oboè
+        peus: 8'
+        llengueta: true
+      - nom: Veu humana
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contrabaix
+      peus: 16'
+      falta: true
+    - nom: Subbaix
+      peus: 16'
+    - nom: Contres
+      peus: 8'
+      falta: true
+    - nom: Baix
+      peus: 8'
+    - nom: Coral
+      peus: 4'
+      falta: true
+    - nom: Contrafagot
+      peus: 16'
+      llengueta: true
+      falta: true
+    - nom: Trompeta
+      peus: 8'
+      llengueta: true
+      falta: true
+
+acoblaments:
+  - nom: III/II
+  - nom: II/I
+    falta: true
+  - nom: III/P
+  - nom: II/P
+  - nom: I/P
+    falta: true
+
+efectes:
+  - nom: Trèmul III
+  - nom: Trèmul I
+    falta: true
+  - nom: Expressió III
+  - nom: Expressió I
+    falta: true

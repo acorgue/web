@@ -1,0 +1,71 @@
+constructor:
+  nom: Schwenkedel
+  any: 1967
+
+actuacions:
+  - nom: Organum BCN
+    any: 2015
+    actuacio: TR
+
+diapaso:
+  nota: a'
+  frequencia: 448.2
+  temperatura: 26
+  registre: Prestant 4'
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: a peu de nau, al fons, de cara a l’altar
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 12, II/P
+
+teclats:
+  - nom: "I. Manual"
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flûte conique
+        peus: 8'
+        partit: C-H prestat del Bordó
+      - nom: Prestant
+        peus: 4'
+      - nom: Flûte conique
+        peus: 2'
+      - nom: Plein Jeu III
+        peus: 1'
+      - nom: Regale
+        peus: 8'
+        llengueta: true
+  - nom: "II. Manual"
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bourdon
+        peus: 8'
+      - nom: Flûte à cheminée
+        peus: 4'
+      - nom: Doublette
+        peus: 2'
+      - nom: Sesquialtera
+        peus: 2 2/3' i 1 3/5'
+      - nom: Cymbale II
+        peus: 1/2'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Soubasse
+      peus: 16'
+    - nom: Quintaton
+      peus: 4'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P

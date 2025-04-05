@@ -1,0 +1,63 @@
+constructor:
+  nom: Klop
+  any: 1992
+
+diapaso:
+  nota: a
+  frequencia: 446.6
+  temperatura: 28
+  registre: Praestant
+
+temperament: Bach-Kellner
+
+estat:
+  - any: 2022
+    nota: 4
+
+emplacament: al cor de l’ermita, sobre l’entrada principal
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 8, II/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Praestant
+        peus: 8'
+      - nom: Roerfluit
+        peus: 4'
+      - nom: Octaaf
+        peus: 2'
+
+  - nom: II. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Holpijp
+        peus: 8'
+      - nom: Octaaf
+        peus: 4'
+      - nom: Quint
+        peus: 2 2/3'
+        partit: c'/cs'
+      - nom: Regaal
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Fagot
+      peus: 16'
+      llengueta: true
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Tremulant (general)

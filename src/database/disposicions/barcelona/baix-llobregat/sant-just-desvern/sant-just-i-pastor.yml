@@ -1,0 +1,69 @@
+constructor:
+  nom: Castro, Joan Carles
+  any: 2005
+
+# diapaso
+
+temperament: Valotti
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: al cor, sobre l’entrada principal
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 15, II/P
+
+teclats:
+  - nom: I. Cadireta interior
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flauta xemeneia
+        peus: 8'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Dinovena
+        peus: 1 1/3'
+      - nom: Cromorn
+        peus: 8'
+
+  - nom: II. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Plens IV
+        peus: 1 1/3'
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+    - nom: Baix
+      peus: 8'
+    - nom: Flauta
+      peus: 4'
+    - nom: Trompeta
+      peus: 8'
+      llengueta: true
+
+acoblaments:
+  - nom: I/II
+  - nom: II/P
+  - nom: I/P

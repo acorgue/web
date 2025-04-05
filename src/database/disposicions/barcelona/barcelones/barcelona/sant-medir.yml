@@ -1,0 +1,54 @@
+constructor:
+  nom: Blancafort-Capella Orgueners
+  any: 1974
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: a peu de nau, a l’esquerra de l’altar
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 8, I/P
+
+teclats:
+  - nom: Manual
+    extensio: "51 notes: C-d'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+        partit: c'/cs'
+      - nom: Octava
+        peus: 4'
+        partit: c'/cs'
+      - nom: Tapadet
+        peus: 4'
+        partit: c'/cs'
+      - nom: Quinzena
+        peus: 2'
+        partit: c'/cs'
+      - nom: Plens III
+        peus: 1 1/3'
+        partit: c'/cs'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+        partit: cs'-d'''
+      - nom: Nasard 17a
+        peus: 1 3/5'
+        partit: cs'-d'''
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+
+acoblaments:
+  - nom: I/P

@@ -1,0 +1,77 @@
+constructor:
+  nom: Cavaillé-Coll, Aristide
+  any: 1896
+
+actuacions:
+  - nom: Blancafort OM, SL
+    sort-nom: Blancafort OM, SL
+    any: 2020
+    actuacio: TR, RS, AM
+    detalls: Trasllat, restauració i addició d’un cos de pedal propi
+
+diapaso:
+  nota: a'
+  frequencia: 440
+  temperatura: 21
+
+temperament: igual
+
+estat:
+  - any: 2023
+    estat: En bon funcionament
+    nota: 4
+
+composicio: 13, II/P
+
+teclats:
+  - nom: I. Gran orgue
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bourdon
+        peus: 16'
+      - nom: Montre
+        peus: 8'
+      - nom: Flûte harmonique
+        peus: 8'
+      - nom: Prestant
+        peus: 4'
+
+  - nom: II. Récit
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Cor de nuit
+        peus: 8'
+      - nom: Viole de Gambe
+        peus: 8'
+      - nom: Voix céleste
+        peus: 8'
+        partit: c-g'''
+      - nom: Flûte octaviant
+        peus: 4'
+      - nom: Basson-hautbois
+        peus: 8'
+        llengueta: true
+      - nom: Trompette
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Soubasse
+      peus: 16'
+    - nom: Flûte
+      peus: 8'
+    - nom: Basson
+      peus: 16'
+      llengueta: true
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió II
+  - nom: Trèmol II
+  - nom: Appel Trompette

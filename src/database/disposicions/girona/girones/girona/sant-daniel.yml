@@ -1,0 +1,47 @@
+constructor:
+  nom: Blancafort-Capella Orgueners
+  any: 1970
+
+# diapaso
+
+# temperament
+
+# estat
+
+# emplacament
+
+# transmissio
+
+composicio: 7, II/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Flabiolets
+        peus: 2'
+      - nom: Cimbalet III
+
+  - nom: II. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flauta xemeneia
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Regalies
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "32 notes: C-g'"
+  registres:
+    - nom: Contres
+      peus: 16'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P

@@ -1,0 +1,70 @@
+constructor:
+  nom: Blancafort-Capella Orgueners i Georges Lhôte
+  any: 1965
+
+diapaso:
+  nota: a'
+  frequencia: 433.4
+  registre: Flautat
+
+# temperament
+
+estat:
+  - any: 2024
+    nota: 4
+
+emplacament: a peu de nau a la dreta, de cara a l’altar
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 12, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Dinovena
+        peus: 1 1/3'
+      - nom: Ple III-IV
+        peus: 1 1/3'
+      - nom: Trompeta de batalla
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Orgue de pit
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Flauta xemeneia
+        peus: 4'
+      - nom: Nazard 17a
+        peus: 1 3/5'
+      - nom: Vint-i-dosena
+        peus: 1'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contres majors
+      peus: 16'
+    - nom: Trompeta
+      peus: 8'
+      llengueta: true
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Pedal d’octava aguda de les Contres majors
+  - nom: Pedal d’octava aguda de la Trompeta
