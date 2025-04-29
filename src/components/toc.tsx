@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import type { HeadingElement } from "@/mdx-components";
-import type { ReactNode } from "react";
+import type { ComponentProps, ReactNode } from "react";
 import ScrollSpy from "react-scrollspy-navigation";
 
 export interface TOCItem {
@@ -17,9 +17,26 @@ export interface TOCProps {
 }
 
 export function TOC({ headings }: Readonly<TOCProps>) {
+  return (
+    <ScrollSpy
+      activeAttr
+      rootMargin="180px"
+      onClickEach={(e) => {
+        const heading = (e.target as HTMLElement).getAttribute("href");
+        if (!heading || !/^#[0-9a-z-]+$/.test(heading)) return;
+        window.location.href = heading;
+      }}
+    >
+      <nav className="not-prose sticky top-24 ">
+        <AsideHeading>Taula de continguts</AsideHeading>
+        {tocList(headings)}
+      </nav>
+    </ScrollSpy>
+  );
+
   function tocList(items: TOCItem[], className?: string) {
     return (
-      <ol className={cn("flex flex-col gap-2", className)}>
+      <ol className={cn("flex flex-col gap-2 text-sm", className)}>
         {items.map((item) => tocListItem(item))}
       </ol>
     );
@@ -38,23 +55,13 @@ export function TOC({ headings }: Readonly<TOCProps>) {
       </li>
     );
   }
+}
 
+export function AsideHeading(props: ComponentProps<"header">) {
   return (
-    <ScrollSpy
-      activeAttr
-      rootMargin="180px"
-      onClickEach={(e) => {
-        const heading = (e.target as HTMLElement).getAttribute("href");
-        if (!heading || !/^#[0-9a-z-]+$/.test(heading)) return;
-        window.location.href = heading;
-      }}
-    >
-      <nav className="not-prose sticky top-24 text-sm">
-        <header className="font-bold uppercase tracking-wide text-primary/60 mb-4">
-          Taula de continguts
-        </header>
-        {tocList(headings)}
-      </nav>
-    </ScrollSpy>
+    <header
+      className="font-bold uppercase tracking-wide text-primary/60 mb-4 text-sm"
+      {...props}
+    />
   );
 }

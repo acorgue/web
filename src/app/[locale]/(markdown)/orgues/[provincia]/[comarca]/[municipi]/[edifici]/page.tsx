@@ -1,8 +1,10 @@
 import { orgueNavigation } from "@/app/[locale]/(markdown)/orgues/orgueNavigation";
 import { slugs } from "@/app/[locale]/(markdown)/orgues/redirects";
+import { AsideOrgue } from "@/components/aside-orgue";
 import { CopyButton } from "@/components/copy-button";
 import { Scaffold } from "@/components/scaffold";
 import { TOC } from "@/components/toc";
+import { normalizeOrgue } from "@/lib/normalize-orgue";
 import { route } from "@/lib/route";
 import { findMDXHeadings } from "@/mdx-components";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -24,6 +26,13 @@ export default async function Page({
       `/src/content/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}.md`
     )
   ).default;
+  const orgue = normalizeOrgue(
+    (
+      await import(
+        `/src/database/disposicions/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}.yml`
+      )
+    ).default,
+  );
 
   return (
     <Scaffold
@@ -58,7 +67,12 @@ export default async function Page({
         },
         { label: edifici.nom, position: 6 },
       ]}
-      aside={<TOC headings={findMDXHeadings(Content({}))} />}
+      aside={
+        <AsideOrgue
+          orgue={orgue}
+          end={<TOC headings={findMDXHeadings(Content({}))} />}
+        />
+      }
     >
       <h1>{edifici.nom}</h1>
       <div className="not-prose flex justify-between items-baseline">
