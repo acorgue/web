@@ -1,0 +1,104 @@
+# TODO efectes, trèmol i aquestes coses
+
+constructor:
+  nom: Boscà i Llorens, Antoni
+  any: 1758
+
+actuacions:
+  - nom: Bertran, Miquel
+    any: 1912
+    actuacio: RC
+  - nom: Grenzing, Gerhard
+    any: 1978–1990
+    actuacio: RS
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2022
+    nota: 4
+
+emplacament: al cor, sobre l’entrada principal
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 27, II/P
+
+teclats:
+  - nom: I. Orgue major
+    registres:
+      - nom: Flautat violó
+        peus: 16'
+      - nom: Flautat principal
+        peus: 8'
+      - nom: Flautat
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Nasard en 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Nasard en 15a
+        peus: 2'
+      - nom: Plens IV
+      - nom: Plens III
+      - nom: Corneta V
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+      - nom: Baixons i clarins
+        peus: 4' i 8'
+        llengueta: true
+      - nom: Clarins
+        peus: 2' i 8'
+        llengueta: true
+
+  - nom: Recitatiu
+    registres:
+      - nom: Flauta harmònica
+        peus: 8'
+      - nom: Flautat violó
+        peus: 8'
+      - nom: Veu celeste
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Cimbalet III
+      - nom: Fagot-Oboè
+        peus: 8'
+        llengueta: true
+      - nom: Clarinet
+        peus: 8'
+        llengueta: true
+
+pedal:
+  registres:
+    - nom: Contres
+      peus: 16'
+    - nom: Contres
+      peus: 8'
+    - nom: Octava
+      peus: 4'
+    - nom: Corn
+      peus: 2'
+    - nom: Bombarda
+      peus: 16'
+      llengueta: true
+    - nom: Trompeta
+      peus: 8'
+      llengueta: true
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió II

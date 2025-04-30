@@ -1,0 +1,136 @@
+# González i Escalona
+
+constructor:
+  nom: Organería Española, SA
+  sort-nom: Organería Española, SA
+  any: 1958
+
+diapaso:
+  nota: a'
+  frequencia: 437.6
+  temperatura: 20
+  registre: Principal 8'
+
+temperament: igual
+
+# estat
+
+# emplacament
+
+# transmissio
+
+composicio: 23, III/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Flautado
+        peus: 16'
+      - nom: Principal
+        peus: 8'
+      - nom: Flauta
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Lleno [IV]
+        peus: 1 1/3'
+      - nom: Trompeta
+        peus: 8'
+        partit: c-c'''' en batalla
+        llengueta: true
+
+  - nom: II. Cadireta interior
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Violón
+        peus: 8'
+      - nom: Tapadillo
+        peus: 4'
+      - nom: Nazardo
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Decisetena
+        peus: 1 3/5'
+      - nom: Decinovena
+        peus: 1 1/3'
+      - nom: Lleno [II]
+        partit: suma de la Decisetena i la Decinovena
+      - nom: Corneta [V]
+        peus: 8'
+        partit: suma dels 5 primers registres
+
+  - nom: III. Recitatiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Quintadena
+        peus: 16'
+      - nom: Flauta de campana
+        peus: 8'
+      - nom: Corno de gamo
+        peus: 8'
+      - nom: Principal
+        peus: 4'
+      - nom: Flautín
+        peus: 2'
+      - nom: Mixturas [III]
+        peus: 1'
+      - nom: Dulzaina
+        peus: 16'
+        llengueta: true
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contras
+      partit: préstec de l’orgue major
+      peus: 16'
+    - nom: Quintadena
+      partit: préstec del recitatiu)
+      peus: 16'
+    - nom: Flauta
+      peus: 8'
+    - nom: Flauta
+      partit: extensió de la Flauta
+      peus: 4'
+    - nom: Lleno [II]
+      peus: 1 1/3'
+    - nom: Bombarda
+      peus: 16'
+      llengueta: true
+    - nom: Trompeta
+      partit: extensió de la Bombarda
+      peus: 8'
+      llengueta: true
+    - nom: Chirimía
+      partit: extensió de la Trompeta
+      peus: 4'
+      llengueta: true
+
+acoblaments:
+  - nom: III/II
+  - nom: III/I
+  - nom: II/I
+  - nom: III/P
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressión III
+  - nom: Temblante III
+  - nom: Fondos suaves 8'
+  - nom: Fondos fuertes 8'
+  - nom: Fondos 16', 8' y 4'
+  - nom: Llenos
+  - nom: Corneta
+  - nom: Lengüetería
+  - nom: Tutti
+  - nom: Acoplamientos
+  - nom: Exclusión de 16'
+  - nom: Exclusión de mixturas
+  - nom: Exclusión de lengüetería
+  - nom: Exclusión de registros

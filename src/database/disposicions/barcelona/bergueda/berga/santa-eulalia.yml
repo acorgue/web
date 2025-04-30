@@ -1,0 +1,86 @@
+# TODO extensio pedal
+
+constructor:
+  nom: Teppati, Francesco
+  any: 1896
+
+actuacions:
+  - nom: Grenzing, Gerhard
+    any: 1988
+    actuacio: RS
+
+# diapaso
+
+# temperament
+
+# estat
+
+# emplacament
+
+# transmissio
+
+composicio: 20, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 16'
+      - nom: Flautat
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Dotzena
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Plens III
+        peus: 1 3/5', 1 1/3', 1'
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+      - nom: Baixons-clarins
+        peus: 4' i 8'
+        llengueta: true
+
+  - nom: II. Expressiu
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Flauta harmònica
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Unda maris
+        peus: 8'
+      - nom: Octaviant
+        peus: 4'
+      - nom: Viola-violí I-II-III-IV
+      - nom: Quinzena
+        peus: 2'
+      - nom: Fagot-oboè
+        peus: 8'
+        llengueta: true
+      - nom: Veu humana
+        peus: 8'
+        llengueta: true
+
+pedal:
+  registres:
+    - nom: Subbaix
+      peus: 16'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Trèmul II?
+  - nom: Expressió II (tres posicions)
+  - nom: "Combinacions fixes: llengüeteria i ple"

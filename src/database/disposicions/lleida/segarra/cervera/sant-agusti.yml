@@ -1,0 +1,79 @@
+# Revisat amb el llibre d’orgues de ponent
+# TODO anotar els préstecs que surten al llibre
+
+constructor:
+  nom: Teppati, Francesco
+  any: 1895
+
+actuacions:
+  - nom: Camps, Lluís
+    any: 1958
+    actuacio: RS
+  - nom: Blancafort OM, SL
+    sort-nom: Blancafort OM, SL
+    any: 2001
+    actuacio: nou motor elèctric Laukhuff
+
+diapaso:
+  nota: a'
+  frequencia: 441
+
+temperament: igual
+
+estat:
+  - any: 2005
+    estat: En bon funcionament
+    nota: 4
+
+composicio: 12, II/P
+
+teclats:
+  - nom: I. Recitatiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordón
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Unda maris
+        peus: 8'
+        partit: c-g'''
+      - nom: Apeninos
+        peus: 4'
+      - nom: Violino
+        peus: 2'
+      - nom: Fagot y oboe
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Violón
+        peus: 16'
+      - nom: Salicional
+        peus: 8'
+      - nom: Flauta harmònica
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Trompeta bajos
+        peus: 8'
+        llengueta: true
+      - nom: Bajoncillo - clarín
+        peus: 8' - 4'
+        llengueta: true
+
+pedal:
+  extensio: "25 notes: C-c'"
+  registres:
+    - nom: Sense registres propis
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Trémolo
+  - nom: Expressió I

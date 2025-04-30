@@ -1,0 +1,31 @@
+# TODO diapaso temperatura
+
+constructor:
+  nom: Josep Maria Falcó, OSB i Josep Maria Sanromà, OSB
+  sort-nom: Falcó, Josep Maria
+  any: 1981
+
+diapaso:
+  nota: a'
+  frequencia: 440
+
+temperament: igual
+
+estat:
+  - any: 2005
+    nota: 4
+
+# emplacament
+
+transmissio:
+  notes: mecànica
+  registres: permanents
+
+composicio: 1, I
+
+teclats:
+  - nom: Manual
+    extensio: "51 notes: C-d'''"
+    registres:
+      - nom: Flauta
+        peus: 4'

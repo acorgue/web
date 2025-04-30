@@ -1,0 +1,95 @@
+constructor:
+  nom: Estadella, Gaietà
+  any: 1945
+
+actuacions:
+  - nom: Xuclà, Pau
+    any: 1945
+    actuacio: AC
+    detalls: >-
+      Acabà l’orgue degut a la mort de Gaietà Estadella l’any 1944.
+  - nom: Iglesias, David
+    any: 2017–2019
+    sort-any: 2019
+    actuacio: TR, RS
+    detalls: >-
+      Trasllat, restauració i renovació de l’orgue.
+
+diapaso:
+  nota: a'
+  frequencia: 410
+  temperatura: 20
+
+temperament: igual
+
+estat:
+  - any: 2023
+    estat: En bon funcionament
+
+emplacament: al cor, sobre l’entrada principal
+
+transmissio:
+  notes: pneumàtica
+  registres: pneumàtica
+
+composicio: 14, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Bordó
+        peus: 16'
+      - nom: Principal
+        peus: 8'
+      - nom: Flauta harmònica
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Plens III
+        peus: 2'
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Positiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Flauta travessera
+        peus: 8'
+      - nom: Quintatò
+        peus: 8'
+      - nom: Viola de gamba
+        peus: 8'
+      - nom: Veu celeste
+        peus: 8'
+      - nom: Flauta cònica
+        peus: 4'
+      - nom: Fagot i oboè
+        peus: 8'
+        llengueta: true
+      - nom: Veu humana
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+      partit: transmissió del Bordó 16'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió general
+  - nom: Trèmol II
+  - nom: 1 combinació lliure
+  - nom: "Combinacions fixes: Piano, Fuerte, Tutti"
+  - nom: Pedal per activar la trompeta
+    falta: true

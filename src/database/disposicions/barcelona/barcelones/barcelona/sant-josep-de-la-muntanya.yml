@@ -1,0 +1,77 @@
+constructor:
+  nom: Organería Española, SA
+  sort-nom: Organería Española, SA
+  any: 1947
+
+# diapaso
+
+# temperament
+
+# estat
+
+# emplacament
+
+# transmissio
+
+composicio: 17, II/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautado
+        peus: 8'
+      - nom: Flauta armónica
+        peus: 8'
+      - nom: Violón
+        peus: 8'
+      - nom: Bordón
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Docena-Quinzena II
+        peus: 2 2/3' i 2'
+
+  - nom: II. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flauta dulce
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Celeste
+        peus: 8'
+      - nom: Ocarina
+        peus: 4'
+      - nom: Nazardo
+        peus: 2 2/3'
+      - nom: Zimbala III
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Clarín
+        peus: 4'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbajo
+      peus: 16'
+    - nom: Violón
+      peus: 8'
+    - nom: Cello
+      peus: 8'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expresión II
+  - nom: Exclusión de mixtures
+  - nom: Exclusión de lengüetería
+  - nom: Trémolo II
+  - nom: Trémolo I
+  - nom: "Combinacions fixes: P, MF, F i T"

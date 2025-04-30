@@ -1,0 +1,234 @@
+# TODO extensions i préstecs de registres
+# TODO des d’on es toca el carilló i com s’acobla (consola mecànica vs elèctrica vs acoblaments mecànics i elèctrics)
+# TODO principal 2. Des d’on sona i quina extensió té
+# TODO limitacions de les octaves agudes (consola mecànica vs consola elèctrica)
+
+constructor:
+  nom: Blancafort OM, SL
+  sort-nom: Blancafort OM, SL
+  any: 2010
+
+diapaso:
+  nota: a'
+  frequencia: 440
+  temperatura: 18
+
+temperament: Bach-Kellner
+
+estat:
+  - any: 2023
+    estat: en bon funcionament
+    nota: 4
+
+emplacament: lateral esquerra
+
+transmissio:
+  notes: mecànica (i elèctrica per la consola mòbil)
+  registres: elèctrica
+
+composicio: 66, IV/P
+
+teclats:
+  - nom: I. Cadireta
+    extensio: "58 notes: C-a'''"
+    registres:
+      - nom: Quintant
+        peus: 16'
+      - nom: Cara
+        peus: 8'
+      - nom: Bordó de fusta
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Nasard 17a
+        peus: 1 3/5'
+      - nom: Larigot
+        peus: 1 1/3'
+      - nom: Septinona 2f.
+        peus: 1 1/7'
+      - nom: Flautí
+        peus: 1'
+      - nom: Címbal 4f
+        peus: 1'
+      - nom: Regal
+        peus: 16'
+        llengueta: true
+      - nom: Clarinet
+        peus: 8'
+        llengueta: true
+      - nom: Cromorn
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Orgue major
+    extensio: "58 notes: C-a'''"
+    registres:
+      - nom: Flautat major
+        peus: 16'
+      - nom: Bordó major
+        peus: 16'
+      - nom: Principal
+        peus: 8'
+      - nom: Flauta de fusta
+        peus: 8'
+      - nom: Espigueta
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flauta
+        peus: 4'
+      - nom: Dotzena
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Dissetena
+        peus: 1 3/5'
+      - nom: Plens 5f.
+        peus: 2'
+      - nom: Cimbalet 3f.
+        peus: 2/3'
+      - nom: Corneta 5f.
+        peus: 8'
+        partit: g-a''' o bé cs'-a'''
+      - nom: Bombarda
+        peus: 16'
+        partit: c?-a'''
+        llengueta: true
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+
+  - nom: III. Expressiu
+    extensio: "58 notes: C-a'''"
+    registres:
+      - nom: Viola
+        peus: 16'
+      - nom: Flauta harmònica
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Corn de nit
+        peus: 8'
+      - nom: Veu celest
+        peus: 8'
+        partit: c-a'''
+      - nom: Flauta cònica
+        peus: 4'
+      - nom: Octaviant
+        peus: 4'
+      - nom: Sesquialtera
+        peus: 2 2/3' i 1 3/5'
+      - nom: Octaví
+        peus: 2'
+      - nom: Progressió harmònica 3-5f.
+        peus: 2 2/3'
+      - nom: Fagot
+        peus: 16'
+        llengueta: true
+      - nom: Oboè
+        peus: 8'
+        llengueta: true
+      - nom: Trompeta harmònica
+        peus: 8'
+        llengueta: true
+      - nom: Clarí harmònic
+        peus: 4'
+        llengueta: true
+      - nom: Veu humana
+        peus: 8'
+        llengueta: true
+  - nom: IV. Batalla
+    extensio: "58 notes: C-a'''"
+    registres:
+      - nom: Trompeta magna
+        peus: 16'
+        partit: cs'-a'''
+        llengueta: true
+      - nom: Trompeta de batalla
+        peus: 8'
+        partit: c/cs'
+        llengueta: true
+      - nom: Baixons
+        peus: 4'
+        partit: C-c'
+        llengueta: true
+      - nom: Clarins clars
+        peus: 4'
+        partit: cs'-a'''
+        llengueta: true
+      - nom: Violetes
+        peus: 2'
+        partit: C-c'
+        llengueta: true
+      - nom: Orlos
+        peus: 8'
+        llengueta: true
+      - nom: Flauta travessera
+        peus: 8'
+        partit: cs'?-a'''
+      - nom: Carilló (expressiu)
+
+pedal:
+  extensio: "32 notes: C-g'"
+  registres:
+    - nom: Greu
+      peus: 32'
+    - nom: Contrabaix
+      peus: 16'
+    - nom: Principal
+      peus: 16'
+    - nom: Subbaix
+      peus: 16'
+    - nom: Subbaix 2
+      peus: 16'
+      partit: C-g, extensió del Greu
+    - nom: Contres
+      peus: 8'
+    - nom: Baix
+      peus: 8'
+    - nom: Coral
+      peus: 4'
+    - nom: Composta 5f.
+      peus: 2 2/3'
+    - nom: Bombarda
+      peus: 16'
+      llengueta: true
+    - nom: Trompeta
+      peus: 8'
+      llengueta: true
+    - nom: Clarí
+      peus: 4'
+      llengueta: true
+
+acoblaments:
+  - nom: IV/II
+  - nom: III/II (mecànic o elèctric)
+  - nom: III/I (elèctric)
+  - nom: I/II (mecànic o elèctric)
+  - nom: IV/P
+  - nom: III/P
+  - nom: II/P
+  - nom: I/P
+  - nom: III/III 16' (elèctric)
+  - nom: III/III 4' (elèctric)
+  - nom: II/II 16' (elèctric)
+  - nom: II/II 4' (elèctric)
+  - nom: I/I 16' (elèctric)
+  - nom: I/I 4' (elèctric)
+
+efectes:
+  - nom: Expressió I
+  - nom: Expressió III
+  - nom: Trèmol I
+  - nom: Trèmol III
+  - nom: Combinador electrònic
+  - nom: Combinacions fixes
+  - nom: 2na consola elèctrica al presbiteri

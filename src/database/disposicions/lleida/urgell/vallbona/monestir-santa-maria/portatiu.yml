@@ -1,0 +1,31 @@
+# TODO actuacions?
+
+constructor:
+  nom: Anònim
+  any: inicis del s. XIX
+  sort-any: 1820
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 1999
+    nota: 1
+    detalls: necessita una restauració
+
+# emplacament
+
+# transmissio
+
+composicio: 2, I
+
+teclats:
+  - nom: Manual
+    extensio: "42 notes: G-c'''"
+    registres:
+      - nom: Principal
+        peus: 4'
+        partit: permanent
+      - nom: Principal
+        peus: 2'

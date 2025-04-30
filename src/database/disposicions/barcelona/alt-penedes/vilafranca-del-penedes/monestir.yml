@@ -1,0 +1,57 @@
+constructor:
+  nom: Vallès i Vallès, Isidre
+  any: 2012
+
+diapaso:
+  nota: a'
+  frequencia: 415
+  temperatura: 20
+
+# temperament
+
+estat:
+  - any: 2022
+    estat: en bon funcionament
+    nota: 4
+
+emplacament: al fons de la capella, al costat de l’Epístola
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 8, II/P
+
+teclats:
+  - nom: I. Primer teclat
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+
+  - nom: II. Segon teclat
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Dotzena (cs'-g''')
+        peus: 2 2/3'
+      - nom: Dissetena (cs'-g''')
+        peus: 1 3/5'
+
+pedal:
+  extensio: "27 notes: C-d'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P

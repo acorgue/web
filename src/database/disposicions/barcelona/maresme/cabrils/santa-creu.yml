@@ -1,0 +1,94 @@
+constructor:
+  nom: Família Inchaurbe
+  sort-nom: Inchaurbe
+  any: 1885
+
+actuacions:
+  - nom: Organum BCN
+    any: 2015–2021
+    sort-any: 2021
+    actuacio: Restauració i rehabilitació
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2021
+    nota: 4
+
+emplacament: al cor, sobre l’entrada principal
+
+# transmissio
+
+composicio: 17, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Violón
+        peus: 16'
+      - nom: Flautado
+        peus: 8'
+      - nom: Flautado violón
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flauta de fus
+        peus: 4'
+      - nom: Quincena
+        peus: 2'
+      - nom: Lleno II-III
+        peus: 2 2/3'
+
+  - nom: II. Positiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Corn de nit
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+      - nom: Flautado octaviante
+        peus: 4'
+      - nom: Docena
+        peus: 2 2/3'
+      - nom: Corneta V
+        peus: 8'
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Clarinete
+        peus: 8'
+        llengueta: true
+      - nom: Voz humana
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Violón
+      peus: 16'
+    - nom: Baix
+      peus: 8'
+      partit: préstec del Flautado violón
+    - nom: Contras bordón
+      peus: 8'
+    - nom: Flautado
+      peus: 8'
+      partit: préstec del Flautado
+    - nom: Trompeta
+      peus: 8'
+      llengueta: true
+      partit: préstec de la Trompeta
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió II
+  - nom: Trèmol II
+  - nom: Trèmol I

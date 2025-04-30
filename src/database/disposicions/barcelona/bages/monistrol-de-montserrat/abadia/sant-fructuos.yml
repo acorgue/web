@@ -1,0 +1,99 @@
+# TODO actualitzar?
+
+constructor:
+  nom: Blancafort-Capella Orgueners
+  any: 1970
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: Capella de Sant Fructuós
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 15, III/P
+
+teclats:
+  - nom: I. Eco
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó de fusta
+        peus: 8'
+        partit: c'/cs'
+      - nom: Nasard XV
+        peus: 2'
+        partit: c'/cs'
+      - nom: Vint-i-dosena
+        peus: 1'
+        partit: c'/cs'
+      - nom: Dolçaina
+        peus: 16'
+        partit: cs'-g'''
+        llengueta: true
+      - nom: Regalies
+        peus: 8'
+        partit: c'/cs'
+        llengueta: true
+
+  - nom: II. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó major
+        peus: 16'
+      - nom: Flautat
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Plens III
+        peus: 1 1/3'
+      - nom: Baixons i clarins
+        peus: 4' i 8'
+        llengueta: true
+        partit: c'/cs', en batalla
+
+  - nom: III. Positiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Nasard XIX
+        peus: 1 1/3'
+      - nom: Cimbalet II
+        peus: 1/2'
+
+pedal:
+  extensio: "32 notes: C-g'"
+  registres:
+    - nom: Contres majors
+      peus: 16'
+      partit: préstec del Bordó major
+    - nom: Contres flautat
+      peus: 8'
+      partit: préstec del Flautat
+    - nom: Contres octava
+      peus: 4'
+      partit: préstec de l’Octava
+    - nom: Contres baixons
+      peus: 4'
+      partit: préstec dels Baixons
+
+acoblaments:
+  - nom: I/II
+  - nom: III/P
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió I (sabata)
+  - nom: Expressió III (manual)

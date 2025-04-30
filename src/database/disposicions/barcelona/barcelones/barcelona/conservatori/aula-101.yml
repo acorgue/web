@@ -1,0 +1,68 @@
+constructor:
+  nom: Blancafort, Gabriel
+  any: 1978
+
+diapaso:
+  nota: a'
+  frequencia: 438.4
+  temperatura: 25
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: Aula 101
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 12, II/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Cara
+        peus: 8'
+      - nom: Flauta
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Ple III
+      - nom: Regalies (en batalla)
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Nasard en 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+    - nom: Baix
+      peus: 8'
+      partit: per extensió
+    - nom: Coral
+      peus: 4'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P

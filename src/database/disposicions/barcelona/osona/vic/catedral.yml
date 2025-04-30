@@ -1,0 +1,99 @@
+# TODo any de construccio
+# TODO actuacions
+# TODO revisió
+# Ho he fet a partir d’unes fotos de l’any de la quica (2013)
+
+constructor:
+  nom: Organería Española, SA - Alberdi
+  sort-nom: Organería Española, SA - Alberdi
+  any:
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2013
+    nota: 3
+    detalls: Li cal una restauració
+
+# emplacament
+
+# transmissio
+
+composicio: 22, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautado
+        peus: 16'
+      - nom: Flautado
+        peus: 8'
+      - nom: Flauta armónica
+        peus: 8'
+      - nom: Violon dulce
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Lleno 4h
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+
+  - nom: II. Expressiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Diapason
+        peus: 8'
+      - nom: Flauta dulce
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Celeste
+        peus: 8'
+      - nom: Ocarina
+        peus: 4'
+      - nom: Nazardo
+        peus: 2 2/3'
+      - nom: Zímbala 3h
+      - nom: Oboe
+        peus: 8'
+        llengueta: true
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+      - nom: Clarín
+        peus: 4'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contras
+      peus: 16'
+    - nom: Subajo
+      peus: 16'
+    - nom: Violon
+      peus: 8'
+    - nom: Cello
+      peus: 8'
+    - nom: Fagot
+      peus: 16'
+      llengueta: true
+
+acoblaments:
+  - nom: II/I
+  - nom: II/I 16'
+  - nom: II/I 4'
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió II
+  - nom: Trémolo II
+  - nom: Trémolo I
+  - nom: Exclusión I
+  - nom: Exclusión Mixturas
+  - nom: Exclusión Lengüetas

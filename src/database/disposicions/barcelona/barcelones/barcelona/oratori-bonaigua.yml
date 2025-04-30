@@ -1,0 +1,75 @@
+constructor:
+  nom: Metzler Orgelbau AG
+  any: 1949
+
+actuacions:
+  - nom: Späth Orgelbau AG
+    any: 1998
+    actuacio: TR
+    detalls: Instal·lació al santuari amb un moble nou
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2022
+    nota: 4
+
+emplacament: a peu de nau, oposat a l’altar major
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 12, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Flauta d’espigueta
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Cor de nit
+        peus: 4'
+      - nom: Ple III
+        peus: 2'
+
+  - nom: II. Positiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+        partit: C-G prestat del Bordó
+      - nom: Tapadet
+        peus: 4'
+      - nom: Suavial
+        peus: 4'
+      - nom: Dotzena
+        peus: 2 2/3'
+        partit: c-g'''
+      - nom: Nasard en 15a
+        peus: 2'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+    - nom: Baix
+      peus: 8'
+      partit: extensió del Subbaix
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Pedal per posar/treure el ple

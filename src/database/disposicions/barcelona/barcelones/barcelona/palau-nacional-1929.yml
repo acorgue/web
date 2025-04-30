@@ -1,0 +1,424 @@
+historic: true
+
+constructor:
+  nom: Walcker-Orgelbau
+  any: 1929
+
+teclats:
+  - nom: I. Manual
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Principal
+        peus: 16'
+      - nom: Bourdon
+        peus: 16'
+      - nom: Montre
+        peus: 8'
+      - nom: Principal
+        peus: 8'
+      - nom: Violonchello
+        peus: 8'
+      - nom: Bourdon
+        peus: 8'
+      - nom: Flauta armónica
+        peus: 8'
+      - nom: Dulciana
+        peus: 8'
+      - nom: Prestant
+        peus: 4'
+      - nom: Flauta abierta
+        peus: 4'
+      - nom: Flauta chimenea
+        peus: 4'
+      - nom: Nazardo
+        peus: 2 2/3'
+      - nom: Doublette
+        peus: 2'
+      - nom: Lleno 3-4 h.
+      - nom: Corneta 3-5 h.
+        peus: 8'
+      - nom: Fourniture 4-6 h.
+      - nom: Cimbalo 3 h.
+      - nom: Bombarda
+        peus: 16'
+        llengueta: true
+      - nom: Trombone
+        peus: 8'
+        llengueta: true
+      - nom: Clairon
+        peus: 4'
+        llengueta: true
+
+  - nom: II. Manual, expressiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Flauta chimenea
+        peus: 16'
+      - nom: Principal
+        peus: 8'
+      - nom: Flauta
+        peus: 8'
+      - nom: Quintatón
+        peus: 8'
+      - nom: Flute à bec
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+      - nom: Unda maris
+        peus: 8'
+      - nom: Principal
+        peus: 4'
+      - nom: Cor à chamois
+        peus: 4'
+      - nom: Flauta octaviante
+        peus: 4'
+      - nom: Nazardo a chim.
+        peus: 2 2/3'
+      - nom: Piccolo arm.
+        peus: 2'
+      - nom: Terza
+        peus: 1 3/5'
+      - nom: Quinta
+        peus: 1 1/3'
+      - nom: Septima
+        peus: 1 1/7'
+      - nom: Fifre
+        peus: 1'
+      - nom: Armonia progr. 4-7 h.
+      - nom: Fagot
+        peus: 8' [16'?]
+        llengueta: true
+      - nom: Clarinette
+        peus: 8'
+        llengueta: true
+      - nom: Baritono
+        peus: 4'
+        llengueta: true
+
+  - nom: III. Manual, expressiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Gamba mayor
+        peus: 16'
+      - nom: Bordón dulce
+        peus: 16'
+      - nom: Prestant
+        peus: 8'
+      - nom: Viola alta
+        peus: 8'
+      - nom: Cor à chamois
+        peus: 8'
+      - nom: Bourdon
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Voz celeste
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Viola
+        peus: 4'
+      - nom: Quintatón
+        peus: 4'
+      - nom: Cor de nuit
+        peus: 4'
+      - nom: Nazardo à bec
+        peus: 2 2/3'
+      - nom: Octavín
+        peus: 2'
+      - nom: Larigot
+        peus: 1 1/3'
+      - nom: Flautino
+        peus: 1'
+      - nom: Corneta 3-4 h.
+        peus: 4'
+      - nom: Plein jeu 3-5 h.
+      - nom: Fagot
+        peus: 16'
+        llengueta: true
+      - nom: Trompeta armónica
+        peus: 8'
+        llengueta: true
+      - nom: Oboe
+        peus: 8'
+        llengueta: true
+      - nom: Clairon armónico
+        peus: 8' [4'?]
+        llengueta: true
+
+  - nom: IV. Manual, expressiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Cor de nuit
+        peus: 16'
+      - nom: Syntematophone
+        peus: 8'
+      - nom: Flauta doble
+        peus: 8'
+      - nom: Cor de nuit
+        peus: 8'
+      - nom: Fugara
+        peus: 8'
+      - nom: Viola celéste
+        peus: 8'
+      - nom: Gran Nazardo
+        peus: 5 1/3'
+      - nom: Prestant
+        peus: 4'
+      - nom: Bourdon
+        peus: 5 1/3'
+      - nom: Gran Terza
+        peus: 5 1/5'
+      - nom: Quinta
+        peus: 2 2/3'
+      - nom: Octava
+        peus: 2'
+      - nom: Doublette 2 h.
+      - nom: Gran Corneta 4-8 h.
+        peus: 8'
+      - nom: Tuba magna
+        peus: 16'
+        llengueta: true
+      - nom: Tuba mirabilis
+        peus: 8'
+        llengueta: true
+      - nom: Corno
+        peus: 8'
+        llengueta: true
+      - nom: Voz humana
+        peus: 8'
+        llengueta: true
+      - nom: Cor armónica
+        peus: 4'
+        llengueta: true
+      - nom: Clairon
+        peus: 2'
+        llengueta: true
+      - nom: Pianoforte
+      - nom: Banjo
+      - nom: Xylophone
+      - nom: Campanas tubulares
+
+  - nom: V. Manual, expressiu. (* Ecos)
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Quintatón
+        peus: 16'
+      - nom: Principal
+        peus: 8'
+      - nom: Flauta alemana
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flageolet
+        peus: 2'
+      - nom: Fourniture 4-5 h.
+      - nom: Corno
+        peus: 8'
+        llengueta: true
+      - nom: Chalumeau
+        peus: 4'
+        llengueta: true
+      - nom: Arpa celesta
+      - nom: Campanas cimbales
+      - nom: Bourdon de eco
+        peus: 8'
+        partit: "*"
+      - nom: Viola de eco
+        peus: 8'
+        partit: "*"
+      - nom: Voix angélique
+        peus: 8'
+        partit: "*"
+      - nom: Flute à bec
+        peus: 4'
+        partit: "*"
+      - nom: Campanelli 1-3 h.
+        partit: "*"
+      - nom: Trompete
+        peus: 16'
+        partit: "*"
+        llengueta: true
+      - nom: Voz humana
+        peus: 8'
+        partit: "*"
+        llengueta: true
+
+  - nom: Juegos a percusión
+    registres:
+      - nom: 4 Camp. igl. (Ped.)
+      - nom: Camp. igl. (efecto aut.)
+      - nom: Efecto de reloj (Tamt.)
+      - nom: Gong, ejec. en pp
+      - nom: Gong, golpe piano
+      - nom: Gong, golpe forte
+      - nom: Cimbal à trémolo
+      - nom: Platillos, golpe forte
+      - nom: Triangulo à trémolo
+      - nom: Castañuelas
+      - nom: Tamborino
+      - nom: Petit Tambour à trémolo
+      - nom: Grand Tambour à trémolo
+      - nom: Grand Tambour, golpe forte
+      - nom: Trueno flojo
+      - nom: Trueno fuerte
+
+pedal:
+  nom: Pedal. II-V Expressiu
+  registres:
+    - nom: Gran Flautado
+      peus: 32'
+    - nom: Grand Bourdon
+      peus: 32'
+    - nom: Gran Flauta
+      peus: 16'
+    - nom: Montre
+      peus: 16'
+    - nom: Contrabajo
+      peus: 16'
+    - nom: Violon
+      peus: 16'
+      partit: III
+    - nom: Flute à bec
+      peus: 16'
+      partit: II
+    - nom: Subajo
+      peus: 16'
+    - nom: Bourdon
+      peus: 16'
+      partit: V
+    - nom: Octava baja
+      peus: 8'
+    - nom: Violoncello
+      peus: 8'
+    - nom: Violon
+      peus: 8'
+      partit: IV
+    - nom: Flauta baja
+      peus: 8'
+      partit: II
+    - nom: Bourdon
+      peus: 8'
+    - nom: Salicional
+      peus: 8'
+      partit: V
+    - nom: Octava
+      peus: 4'
+    - nom: Principal
+      peus: 4'
+      partit: V
+    - nom: Flauta
+      peus: 4'
+      partit: II
+    - nom: Gran Nazardo
+      peus: 10 2/3'
+    - nom: Gran Terza
+      peus: 6 2/5'
+    - nom: Nazardo
+      peus: 5 1/3'
+    - nom: T. y S.
+      peus: 3 1/5' y 2 2/7'
+    - nom: Flute à bec
+      peus: 2'
+    - nom: Flautino
+      peus: 1'
+    - nom: Corneta 3 h.
+      partit: IV
+    - nom: Fourniture 6 h.
+    - nom: Gran Bombarda
+      peus: 32'
+      llengueta: true
+    - nom: Bombarda
+      peus: 16'
+      llengueta: true
+    - nom: Trombone
+      peus: 16'
+      partit: IV
+      llengueta: true
+    - nom: Fagot
+      peus: 16'
+      llengueta: true
+    - nom: Trombone
+      peus: 8'
+      llengueta: true
+    - nom: Trompeta dulce
+      peus: 8'
+      partit: III
+      llengueta: true
+    - nom: Basson
+      peus: 8'
+      partit: V
+      llengueta: true
+    - nom: Trompeta
+      peus: 4'
+      llengueta: true
+    - nom: Corneta
+      peus: 2'
+      partit: V
+
+acoblaments:
+  - nom: II/I
+  - nom: III/I
+  - nom: IV/I
+  - nom: V/I
+  - nom: III/I 16'
+  - nom: IV/I 16'
+  - nom: V/I 16'
+  - nom: I/I 4'
+  - nom: II/I 4'
+  - nom: III/I 4'
+  - nom: IV/I 4'
+  - nom: V/I 4'
+  - nom: III/II
+  - nom: IV/II
+  - nom: II/II 16'
+  - nom: II/II 4'
+  - nom: IV/III
+  - nom: III/III 16'
+  - nom: III/III 4'
+  - nom: IV/IV 16'
+  - nom: IV/IV 4'
+  - nom: V/V 16'
+  - nom: V/V 4'
+  - nom: I/P
+  - nom: II/P
+  - nom: III/P
+  - nom: IV/P
+  - nom: V/P
+  - nom: IV/P 4'
+  - nom: V/P 4'
+
+efectes:
+  - nom: Trémolo II
+  - nom: Trémolo III
+  - nom: Trémolo IV
+  - nom: Trémolo V
+  - nom: Trémolo V Eco
+  - nom: Registros a manos
+  - nom: Combinación libre 1
+  - nom: Combinación libre 2
+  - nom: Combinación libre 3
+  - nom: Combinación libre 4
+  - nom: Cresc. y decrescendo
+  - nom: Tutti general
+  - nom: Tutti normal
+  - nom: Tutti Eco
+  - nom: Acoplamiento general
+  - nom: Acoplamiento normal
+  - nom: Piano-Pedal aut. II
+  - nom: Piano-Pedal aut. III
+  - nom: Piano-Pedal aut. IV
+  - nom: Piano-Pedal aut. V
+  - nom: Eco al V sólo
+  - nom: Registros a Comb.
+  - nom: Anulador de los Reg.
+  - nom: Anulador del Cresc.
+  - nom: Anulador del Cresc. en Combinación
+  - nom: Anulador del Leng.
+  - nom: Anuladores de 32', 16' y octavas graves
+  - nom: Anulador de los Acoplamientos
+  - nom: Expresión II
+  - nom: Expresión III
+  - nom: Expresión IV
+  - nom: Expresión V
+  - nom: Percusión

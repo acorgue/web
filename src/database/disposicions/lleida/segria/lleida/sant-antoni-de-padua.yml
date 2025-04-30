@@ -1,0 +1,83 @@
+constructor:
+  nom: Organería Española, SA
+  sort-nom: Organería Española, SA
+  any: 1958
+
+actuacions:
+  - nom: Berenguer & Díaz
+    any: 1999 i 2003
+    actuacio: Reparacions, manteniment, substitució del motor ventilador, de les plaquetes dels registres, neteja i reharmonització general
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2006
+    nota: 4
+
+# emplacament
+
+# transmissio
+
+composicio: 19, II/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Violó
+        peus: 16'
+      - nom: Flautat
+        peus: 8'
+        partit: C-H en façana
+      - nom: Espigueta
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Dinovena
+        peus: 1 1/3'
+      - nom: Vint-i-dosena
+        peus: 1'
+      - nom: Ple II
+
+  - nom: II. Manual
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Principal
+        peus: 4'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Oboè
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+      partit: C-H acústic en façana
+    - nom: Baix
+      peus: 8'
+    - nom: Contres
+      peus: 8'
+    - nom: Coral
+      peus: 4'
+    - nom: Ple II
+    - nom: Fagot
+      peus: 8'
+      llengueta: true
+
+efectes:
+  - nom: Ex. 16' (exclusió dels 16')
+  - nom: Ex. Lleng. (exclusió de la llengüeteria)
+  - nom: Trèmol [general]
+  - nom: Expressió general
+  - nom: Tutti

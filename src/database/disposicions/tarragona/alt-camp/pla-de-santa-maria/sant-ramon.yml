@@ -1,0 +1,74 @@
+# TODo actualitzar
+
+constructor:
+  nom: Germans Gheude
+  sort-nom: Gheude
+  any: 1876
+
+actuacions:
+  - nom: Praet, Wilfried
+    any: 1990
+    actuacio: TR, RS, AM
+    detalls: Restauració i addició d’un registre de ple d’un orgue desaparegut dels mateixos germans Gheude.
+  - nom: Praet, Wilfried
+    any: 2021
+    actuacio: AM
+    detalls: Addició d’un cos de pedal independent amb tubs d’un orgue desaparegut dels mateixos germans Gheude.
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: al creuer, al costat de l’Evangeli, a peu de nau
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 14, I/P
+
+teclats:
+  - nom: Manual
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bourdon
+        peus: 16'
+      - nom: Montre
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+      - nom: Bourdon
+        peus: 8'
+      - nom: Voix céleste
+        peus: 8'
+      - nom: Prestant
+        peus: 4'
+      - nom: Flûte
+        peus: 4'
+      - nom: Doublette
+        peus: 2'
+      - nom: Fourniture III-IV
+      - nom: Trompette
+        peus: 8'
+        llengueta: true
+      - nom: Clairon
+        peus: 4'
+        llengueta: true
+
+pedal:
+  extensio: "27 notes: C-d'"
+  registres:
+    - nom: Bourdon
+      peus: 16'
+    - nom: Montre
+      peus: 8'
+    - nom: Bombarde
+      peus: 16'
+      llengueta: true
+
+acoblaments:
+  - nom: I/P

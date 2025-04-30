@@ -1,0 +1,88 @@
+# Revisat amb el llibre d’orgues de ponent
+
+# TODO diapaso temperatura
+
+constructor:
+  nom: Teppati, Francesco
+  any: 1906
+
+actuacions:
+  - nom: Grenzing, Gerhard
+    any: 1985
+    actuacio: RS
+
+diapaso:
+  nota: a'
+  frequencia: 435
+
+temperament: igual
+
+estat:
+  - any: 2024
+    nota: 3
+
+emplacament: al cor, sobre l’entrada principal
+
+# transmissio
+
+composicio: 15, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Burdon
+        peus: 16'
+      - nom: Flauta harmònica
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Lleno 4 puntos
+      - nom: Trompeta real y magna
+        peus: 8'|16'
+        partit: h|c
+        llengueta: true
+      - nom: Bajoncillo y clarín
+        peus: 4'|8'
+        partit: h|c
+        llengueta: true
+
+  - nom: II. Recitatiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Violón
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Octaviante
+        peus: 4'
+      - nom: Hunda maris
+        peus: 8'
+        partit: c-g'''
+      - nom: Violeta violino I-II-III
+        partit: c-g'''
+      - nom: Fagot oboe
+        peus: 8'
+        llengueta: true
+      - nom: Veu humana
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "27 notes: C-d'"
+  registres:
+    - nom: Sense registres propis
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Trèmul
+  - nom: Trompeteria
+  - nom: Expressió general

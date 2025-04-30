@@ -1,0 +1,73 @@
+constructor:
+  nom: Boscà i Serinyena, Josep
+  any: 1746
+
+actuacions:
+  - nom: Grenzing, Gerhard
+    any: 1975
+    actuacio: RS
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2004
+    estat: en bon funcionament
+  - any: 2024
+    nota: 3
+
+emplacament: sobre una capella, al costat de l’Evangeli
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 13, I/C
+
+teclats:
+  - nom: Manual
+    extensio: "48 notes: C-c'''"
+    registres:
+      - nom: Cara
+        peus: 8'
+      - nom: Bordó
+        peus: 8'
+        partit: c-c'''
+      - nom: Octava
+        peus: 4'
+      - nom: Nasart 12a
+        peus: 2 2/3'
+        partit: c'/cs'
+      - nom: Quinsena
+        peus: 2'
+      - nom: Nasart 15a
+        peus: 2'
+        partit: c'/cs'
+      - nom: Nasart 17a
+        peus: 1 3/5'
+        partit: c'/cs'
+      - nom: Ple [III]
+      - nom: Simbalet [IV]
+      - nom: Corneta [V]
+        partit: cs'-c'''
+        peus: 8'
+      - nom: Baixons
+        peus: 4'
+        partit: C-c', en batalla
+        llengueta: true
+      - nom: Clarins
+        peus: 8'
+        partit: cs'-c''', en batalla
+        llengueta: true
+
+pedal:
+  extensio: "8 notes: C,D,E,F,G,A-H"
+  registres:
+    - nom: Permanentment acoblat
+    - nom: Contres
+      peus: 8' i 4'
+      partit: permanents
+
+efectes:
+  - nom: Ocellets

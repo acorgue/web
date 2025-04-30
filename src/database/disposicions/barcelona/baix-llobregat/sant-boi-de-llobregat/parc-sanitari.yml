@@ -1,0 +1,101 @@
+constructor:
+  nom: Juan Dourte i Lope Alberdi
+  sort-nom: Dourte, Juan
+  any: 1929
+
+actuacions:
+  - nom: Grenzing, Gerhard
+    any: 2018
+    actuacio: RS
+
+diapaso:
+  nota: a'
+  temperatura: 19
+  frequencia: 436.1
+  registre: Flautado
+
+temperament: igual
+
+estat:
+  - any: 2024
+    nota: 4
+
+emplacament: al cor, sobre l’entrada principal
+
+transmissio:
+  notes: elèctrica
+  registres: elèctrica
+
+composicio: 16, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Violón
+        peus: 16'
+      - nom: Flautado
+        peus: 8'
+      - nom: Flauta armónica
+        peus: 8'
+      - nom: Violon
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Lleno II
+        peus: 2'
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+      - nom: Clarín
+        peus: 4'
+        llengueta: true
+
+  - nom: II. Recitatiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Cor de nuit
+        peus: 8'
+      - nom: Viola de gamba
+        peus: 8'
+      - nom: Voz celeste
+        peus: 8'
+        partit: c-c''''
+      - nom: Tiple dulce
+        peus: 4'
+      - nom: Flauta octavianta
+        peus: 4'
+      - nom: Clarinete
+        peus: 8'
+        llengueta: true
+      - nom: Fagot-oboe
+        peus: 8'
+        llengueta: true
+      - nom: Voz humana
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbajo
+      peus: 16'
+      partit: transmissió del Violón 16′
+    - nom: Flauta baja
+      peus: 8'
+      partit: transmissió del Violón 8′
+
+acoblaments:
+  - nom: II/I
+  - nom: II/I 16'
+  - nom: II/I 4'
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió general
+  - nom: Tremolo II
+  - nom: Combinació fixa «Fuerte flautados»
+  - nom: Combinació fixa «Tutti»
+  - nom: 1 combinació lliure
+  - nom: Transpositor (−4+0)

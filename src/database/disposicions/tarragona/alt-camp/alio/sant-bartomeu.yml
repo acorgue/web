@@ -1,0 +1,109 @@
+# TODO diapasó
+# TODO temperament
+# TODO extensions i transmissions. Especulació
+# TODO discrepàncies entre Vergés i González (Llibre de l’orgue de Valls)
+
+constructor:
+  nom: Hermanos Orta, Organeros
+  sort-nom: Orta
+  any: 2011
+
+# diapaso
+
+# temperatura
+
+# estat
+
+# emplacament
+
+transmissio:
+  notes: elèctrica
+  registres: elèctrica
+
+composicio: 4, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Violón
+        peus: 16'
+        partit: extensió del Violón
+      - nom: Flautado mayor
+        peus: 8'
+      - nom: Flauta
+        peus: 8'
+      - nom: Violón
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+        partit: extensió del Flautado mayor
+      - nom: Tapadillo
+        peus: 4'
+        partit: extensió del Violón
+      - nom: Docena
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+        partit: extensió del Flautado mayor
+      - nom: Diecinovena
+        peus: 1 1/3'
+        partit: extensió de la Docena
+
+  - nom: II. Recitatiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Armónica
+        peus: 8'
+        partit: préstec de la Flauta
+      - nom: Salicional
+        peus: 8'
+        partit: préstec del Flautado mayor
+      - nom: Cor de nuit
+        peus: 8'
+        partit: préstec del Violón
+      - nom: Octaviante
+        peus: 4'
+        partit: extensió de la Flauta
+      - nom: Nocturno
+        peus: 4'
+        partit: extensió del Violón
+      - nom: Nasardo
+        peus: 2 2/3'
+        partit: préstec de la Docena
+      - nom: Octavín
+        peus: 2'
+        partit: extensió de la Flauta
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbajo
+      peus: 16'
+      partit: extensió del Violón
+    - nom: Contras
+      peus: 8'
+      partit: préstec del Flautado mayor
+    - nom: Flauta
+      peus: 8'
+      partit: préstec de la Flauta
+    - nom: Bordón
+      peus: 8'
+      partit: préstec del Violón
+    - nom: Principal
+      peus: 4'
+      partit: extensió del Flautado mayor
+    - nom: Coral
+      peus: 4'
+      partit: extensió de la Flauta
+
+acoblaments:
+  - nom: II/I
+  - nom: II/I 16'
+  - nom: II/I 4'
+  - nom: I/I 4'
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió II

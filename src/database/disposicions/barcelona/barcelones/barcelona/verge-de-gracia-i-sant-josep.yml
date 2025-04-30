@@ -1,0 +1,69 @@
+# TODO actuacions
+# TODO fa pudor de transmissions
+
+constructor:
+  nom: Alberdi, Antonio
+  any: 1945
+
+# diapaso
+
+# temperament
+
+estat:
+  - any: 2012
+    nota: 2
+
+# emplacament
+
+# transmissio
+
+composicio: 11, II/P
+
+teclats:
+  - nom: I. Órgano mayor
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Flautado violón
+        peus: 16'
+      - nom: Flautado principal
+        peus: 8'
+      - nom: Violón
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Lleno
+
+  - nom: II. Recitativo
+    extensio: "56 notes: C-c''''"
+    registres:
+      - nom: Flauta armónica
+        peus: 8'
+      - nom: Voz celeste
+        peus: 8'
+      - nom: Flauta octaviante
+        peus: 4'
+      - nom: Trompeta real
+        peus: 8'
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subajo
+      peus: 16'
+    - nom: Contras
+      peus: 8'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió II?
+  - nom: Trémolo II?
+  - nom: Octavas graves
+  - nom: Octavas agudas
+  - nom: 1 combinació lliure
+  - nom: "3 combinacions fixes: Piano, Medio fuerte, Fuerte"
+  - nom: Tutti
+  - nom: Transpositor

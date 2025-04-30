@@ -1,0 +1,92 @@
+constructor:
+  nom: Blancafort OM, SL
+  sort-nom: Blancafort OM, SL
+  any: 2011
+  opus: 151
+
+# diapaso
+
+# temperament
+
+# estat
+
+# emplacament
+
+transmissio:
+  notes: mecànica
+  registres: elèctrica
+
+composicio: 22, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Flauta xemeneia
+        peus: 8'
+      - nom: Flauta harmònica
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Corneta V
+        peus: 8'
+        partit: g-g''' o bé cs'-g'''
+      - nom: Plens III-IV
+        peus: 1 1/3'
+      - nom: Trompeta real
+        peus: 8'
+        llengueta: true
+      - nom: Baixons i clarins
+        peus: 4' i 8'
+        partit: en batalla
+        llengueta: true
+
+  - nom: II. Expressiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Gamba
+        peus: 8'
+      - nom: Veu celeste
+        peus: 8'
+      - nom: Flauta
+        peus: 4'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Flabiolet
+        peus: 2'
+      - nom: Nasard 17a
+        peus: 1 3/5'
+      - nom: Piccolo
+        peus: 1'
+      - nom: Fagot-oboè
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Contrabaix
+      peus: 16'
+    - nom: Contres
+      peus: 8'
+      partit: extensió del Contrabaix
+    - nom: Baix
+      peus: 8'
+    - nom: Coral
+      peus: 4'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió II
+  - nom: Trèmol II
+  - nom: Reproductor automàtic MIDI

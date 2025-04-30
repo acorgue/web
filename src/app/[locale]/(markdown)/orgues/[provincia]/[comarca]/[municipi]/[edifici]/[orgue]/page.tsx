@@ -1,12 +1,14 @@
 import { orgueNavigation } from "@/app/[locale]/(markdown)/orgues/orgueNavigation";
 import { slugs } from "@/app/[locale]/(markdown)/orgues/redirects";
+import { AsideOrgue } from "@/components/aside-orgue";
 import { CopyButton } from "@/components/copy-button";
 import { Scaffold } from "@/components/scaffold";
+import { TOC } from "@/components/toc";
+import { normalizeOrgue } from "@/lib/normalize-orgue";
 import { route } from "@/lib/route";
+import { findMDXHeadings } from "@/mdx-components";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { OrguesOrgueParams } from "./layout";
-import { TOC } from "@/components/toc";
-import { findMDXHeadings } from "@/mdx-components";
 
 export default async function Page({
   params,
@@ -17,14 +19,26 @@ export default async function Page({
   setRequestLocale(locale);
 
   const t = await getTranslations("metadata");
-  const { provincia, comarca, municipi, edifici, orgue } =
-    orgueNavigation(navigation);
+  const {
+    provincia,
+    comarca,
+    municipi,
+    edifici,
+    orgue: orgueNav,
+  } = orgueNavigation(navigation);
 
   const Content = (
     await import(
-      `/src/content/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}/${orgue.link}.md`
+      `/src/content/orgues/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}/${orgueNav.link}.md`
     )
   ).default;
+  const orgue = normalizeOrgue(
+    (
+      await import(
+        `/src/database/disposicions/${provincia.link}/${comarca.link}/${municipi.link}/${edifici.link}/${orgueNav.link}.yml`
+      )
+    ).default,
+  );
 
   return (
     <Scaffold
@@ -67,13 +81,20 @@ export default async function Page({
           label: edifici.nom,
           position: 6,
         },
-        { label: orgue.nom, position: 7 },
+        { label: orgueNav.nom, position: 7 },
       ]}
-      aside={<TOC headings={findMDXHeadings(Content({}))} />}
+      aside={
+        <AsideOrgue
+          orgue={orgue}
+          end={<TOC headings={findMDXHeadings(Content({}))} />}
+        />
+      }
     >
       <h1>
         {edifici.nom}
-        <span className="block mt-2 text-2xl font-semibold">{orgue.nom}</span>
+        <span className="block mt-2 text-2xl font-semibold">
+          {orgueNav.nom}
+        </span>
       </h1>
       <div className="not-prose flex justify-between items-baseline">
         <p>
@@ -87,13 +108,18 @@ export default async function Page({
                 comarca: comarca.link,
                 municipi: municipi.link,
                 edifici: edifici.link,
-                orgue: orgue.link,
+                orgue: orgueNav.link,
               }) as string
             ]
           }
         />
       </div>
       <Content />
+
+      <details>
+        <summary>Disposition</summary>
+        <pre>{JSON.stringify(orgue, null, 2)}</pre>
+      </details>
     </Scaffold>
   );
 }

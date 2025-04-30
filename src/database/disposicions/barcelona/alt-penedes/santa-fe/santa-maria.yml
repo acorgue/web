@@ -1,0 +1,63 @@
+constructor:
+  nom: Vallès i Vallès, Isidre
+  any: 2001
+
+actuacions:
+  - nom: Vallès i Vallès, Isidre
+    any: 2003
+    actuacio: AC
+
+diapaso:
+  nota: a'
+  frequencia: 435
+  temperatura: 20
+
+temperament: Werckmeister III
+
+estat:
+  - any: 2022
+    nom: en bon funcionament
+    nota: 4
+  - any: 2023
+    nom: en bon funcionament
+    nota: 4
+
+emplacament: dalt al cor, sobre la porta principal
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 7, I/P
+
+teclats:
+  - nom: I. Manual
+    extensio: "53 notes: C-e'''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+        partit: c/cs'
+      - nom: Bordó
+        peus: 8'
+        partit: c/cs'
+      - nom: Octava
+        peus: 4'
+        partit: c/cs'
+      - nom: Tapadet
+        peus: 4'
+        partit: c/cs'
+      - nom: Quinzena
+        peus: 2'
+        partit: c/cs'
+      - nom: Dissetena
+        peus: 1 3/5'
+        partit: cs'-e'''
+
+pedal:
+  extensio: "27 notes: C-d'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+
+acoblaments:
+  - nom: I/P

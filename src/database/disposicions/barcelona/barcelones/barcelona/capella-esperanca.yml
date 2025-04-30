@@ -1,0 +1,80 @@
+# TODO acabar de mirar préstecs, trémolo, etc
+
+constructor:
+  nom: Aragonès, Francesc
+  any: 1927
+
+actuacions:
+  - nom: Blancafort OM, SL
+    sort-nom: Blancafort OM, SL
+    any: 2018
+    actuacio: RS
+
+diapaso:
+  nota: a'
+  frequencia: 442.4
+  temperatura: 26
+  registre: Flautado principal
+
+temperament: igual
+
+estat:
+  - any: 2023
+    nota: 4
+
+emplacament: al cor, sobre l’entrada
+
+transmissio:
+  notes: mecànica
+  registres: pneumàtica
+
+composicio: 11, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Flautado violón
+        peus: 16'
+      - nom: Flautado principal
+        peus: 8'
+      - nom: Flauta armónica
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Lleno de 3 puntos
+        peus: 2'
+      - nom: Clarín armónico
+        peus: 4'
+        llengueta: true
+
+  - nom: II. Positiu
+    extensio: "56 notes: C-g'''"
+    registres:
+      - nom: Violón
+        peus: 8'
+      - nom: Viola de gamba
+        peus: 8'
+      - nom: Voz celeste
+        peus: 8'
+      - nom: Fagot-oboe
+        peus: 8'
+        llengueta: true
+
+pedal:
+  registres:
+    - nom: Contrebasse
+      peus: 16'
+      partit: préstec del Flautado violón
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Fuerte general
+  - nom: Tremolo II?
+  - nom: Expresion general

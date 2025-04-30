@@ -1,0 +1,66 @@
+# TODO temperament
+# TODO reconstruccions/restauracions
+
+constructor:
+  nom: Anònim
+  any: 1700
+
+actuacions:
+  - nom: Florenzano, Juan
+    any: ca. 1865
+    sort-any: 1865
+    actuacio: desconegut
+    detalls: Segurament eliminà els registres partits i completà la primera octava
+  - nom: A&K Orgues de Vent
+    any: 1992
+    actuacio: RS
+  - nom: Blancafort OM, SL
+    sort-nom: Blancafort OM, SL
+    any: 2017
+    actuacio: RS
+
+diapaso:
+  nota: a'
+  frequencia: 415
+  temperatura: 21
+
+# temperament
+
+estat:
+  - any: 2022
+    nota: 4
+
+emplacament: al petit cor sobre la porta de la capella
+
+transmissio:
+  notes: mecànica
+  registres: mecànica
+
+composicio: 7, I/C
+
+teclats:
+  - nom: Manual
+    extensio: "54 notes: C-f'''"
+    registres:
+      - nom: Bordó
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Nasard 12a
+        peus: 2 2/3'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Corneta III
+        peus: 2 2/3'
+        partit: cs'-f'''
+      - nom: Plens II
+        peus: 1 1/3'
+      - nom: Regalies
+        peus: 8'
+        partit: c'/cs'
+
+pedal:
+  extensio: "12 notes: C-H"
+  registres:
+    - nom: Sense registres propis
+    - nom: Permanentment acoblat al manual

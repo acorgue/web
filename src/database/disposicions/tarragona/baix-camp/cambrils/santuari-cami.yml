@@ -1,0 +1,81 @@
+constructor:
+  nom: Aragonès, Francesc
+  any: 1935
+
+actuacions:
+  - nom: Blancafort-Capella Orgueners
+    any: 1976
+    actuacio: TR, TF
+
+# diapaso
+
+# temperament
+
+# estat
+
+emplacament: a la capella del costat de l’Evangeli immediata a l’altar major
+
+# transmissio
+
+composicio: 17, II/P
+
+teclats:
+  - nom: I. Orgue major
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Flautat
+        peus: 8'
+      - nom: Quintant
+        peus: 8'
+      - nom: Octava
+        peus: 4'
+      - nom: Flauta
+        peus: 4'
+      - nom: Quinzena
+        peus: 2'
+      - nom: Flabiolet
+        peus: 2'
+      - nom: Plens III-IV
+      - nom: Trompeta
+        peus: 8'
+        llengueta: true
+  - nom: II. Recitatiu
+    extensio: "61 notes: C-c''''"
+    registres:
+      - nom: Corn de nit
+        peus: 8'
+      - nom: Salicional
+        peus: 8'
+      - nom: Celeste
+        peus: 8'
+      - nom: Tapadet
+        peus: 4'
+      - nom: Sesquiàltera II
+        peus: 2 2/3' i 1 3/5'
+        falta: true
+      - nom: Quinzena
+        peus: 2'
+      - nom: Fagot i oboè
+        peus: 8'
+        llengueta: true
+
+pedal:
+  extensio: "30 notes: C-f'"
+  registres:
+    - nom: Subbaix
+      peus: 16'
+    - nom: Contres
+      peus: 8'
+    - nom: Bordó
+      peus: 8'
+
+acoblaments:
+  - nom: II/I
+  - nom: II/P
+  - nom: I/P
+
+efectes:
+  - nom: Expressió II
+  - nom: 4 combinacions lliures
+  - nom: 4 combinacions fixes
+  - nom: Tutti
