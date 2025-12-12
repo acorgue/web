@@ -35,7 +35,7 @@ function HeadingLink({
   return (
     <Heading
       id={strippedId}
-      className="flex items-center gap-2 mt-[-60px] pt-[80px]"
+      className="flex items-center gap-2 mt-[-60px] pt-20"
       {...props}
     >
       <Link
